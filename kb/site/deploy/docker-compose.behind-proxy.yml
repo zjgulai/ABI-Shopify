@@ -1,11 +1,20 @@
 # 方案B:主机 80/443 已被其它 nginx/应用占用时使用。
 # 用法: docker compose -f docker-compose.yml -f docker-compose.behind-proxy.yml up -d --build
-# 效果:停用内置 caddy,改为把 app 仅绑到本机回环高端口 127.0.0.1:8088,由你现有 nginx 反代。
+# 效果:停用内置 caddy,把 app 绑到本机回环高端口 127.0.0.1:8088,
+# 同时加入现有共享 nginx 网络,由现有 nginx 通过容器名反代。
 services:
   app:
     ports:
       - "127.0.0.1:8088:8000"   # 仅回环,外部不可直连
+    networks:
+      - kbnet
+      - shared_proxy
   caddy:
     deploy:
       replicas: 0               # 不启动内置 caddy
     profiles: ["disabled"]
+
+networks:
+  shared_proxy:
+    external: true
+    name: lighthouse_ai_video_net
