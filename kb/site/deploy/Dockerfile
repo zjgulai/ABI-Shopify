@@ -3,7 +3,10 @@ FROM python:3.12-slim
 ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
 WORKDIR /app
 COPY site/deploy/requirements.deploy.txt /tmp/req.txt
-RUN pip install -r /tmp/req.txt
+RUN pip install --timeout 120 --retries 5 \
+    -i https://mirrors.cloud.tencent.com/pypi/simple \
+    --trusted-host mirrors.cloud.tencent.com \
+    -r /tmp/req.txt
 # 只拷运行所需(保持 retriever 期望的相对结构:/app/_rag, /app/_kg, /app/site)
 COPY _rag/chunks.jsonl      /app/_rag/chunks.jsonl
 COPY _rag/kb_index          /app/_rag/kb_index
