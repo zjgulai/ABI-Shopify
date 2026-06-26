@@ -1,0 +1,35 @@
+# 独立 project,绝不污染其他应用:专属网络/卷/容器名,app 不占主机端口(仅 caddy 用 80/443)
+name: shopify-kb
+services:
+  app:
+    build:
+      context: ../../          # = kb/ 目录(含 site / _rag / _kg)
+      dockerfile: site/deploy/Dockerfile
+    image: shopify-kb-app:latest
+    container_name: shopifykb-app
+    env_file: .env
+    expose: ["8000"]           # 仅在专属网络内暴露,不映射到主机
+    networks: [kbnet]
+    restart: unless-stopped
+
+  caddy:                        # 方案A:独立反代 + 自动 HTTPS(主机 80/443 必须空闲)
+    image: caddy:2
+    container_name: shopifykb-caddy
+    depends_on: [app]
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - kb_caddy_data:/data
+      - kb_caddy_config:/config
+    networks: [kbnet]
+    restart: unless-stopped
+
+networks:
+  kbnet:
+    name: shopify-kb-net        # 专属网络
+
+volumes:
+  kb_caddy_data:   { name: shopify-kb-caddy-data }
+  kb_caddy_config: { name: shopify-kb-caddy-config }

@@ -1,0 +1,7 @@
+{
+  "name": "shopify-ai-kb",
+  "version": "1.0.0",
+  "description": "Shopify 独立站 AI 全链路经营技能包:建站/上架/CRO/履约/UCP/Hydrogen 可执行 SOP + 知识库检索,均内置人审闸。",
+  "author": { "name": "frank", "email": "frank.dengpanpan@gmail.com" },
+  "keywords": ["shopify", "ecommerce", "ai-toolkit", "ucp", "hydrogen", "rag", "agentic-commerce"]
+}

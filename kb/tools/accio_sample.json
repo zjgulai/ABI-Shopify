@@ -1,0 +1,4 @@
+[
+ {"product_name":"便携式电动吸奶器 Pro","supplier":"Shenzhen XX Maternal Co.","cost":12.5,"suggested_price":39.99,"moq":500,"category":"Breast Pumps","market":"US/EU","image_url":"https://example.com/pump.jpg","certifications":"CE,FDA","description":"<p>免手扶、静音、可充电的便携吸奶器。</p>"},
+ {"product_name":"婴儿恒温调奶器","supplier":"Ningbo YY Baby","cost":8.2,"suggested_price":29.99,"moq":1000,"category":"Feeding","market":"US","image_url":"https://example.com/warmer.jpg","certifications":"CE,RoHS","description":"<p>一键恒温、夜间冲奶神器。</p>"}
+]

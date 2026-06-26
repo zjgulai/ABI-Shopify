@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "shopify-kb": {
+      "command": "python",
+      "args": ["${SHOPIFY_KB_DIR}/_rag/kb_index/mcp_server.py"],
+      "env": { "PYTHONUNBUFFERED": "1" }
+    }
+  }
+}

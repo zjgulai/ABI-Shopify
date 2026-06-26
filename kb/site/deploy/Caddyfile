@@ -1,0 +1,5 @@
+# 自动 HTTPS(Let's Encrypt)。需 DNS 已指向本机 + 防火墙放行 80/443。
+platform.shopify.lute-tlz-dddd.top {
+    encode gzip
+    reverse_proxy app:8000
+}

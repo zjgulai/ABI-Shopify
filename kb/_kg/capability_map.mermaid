@@ -1,0 +1,67 @@
+```mermaid
+flowchart LR
+  subgraph CAP[Shopify 原生 AI 能力]
+    cap_sidekick["Sidekick"]
+    cap_pulse["Sidekick Pulse"]
+    cap_magic["Shopify Magic"]
+    cap_flow["Shopify Flow"]
+    cap_storefront_mcp["Storefront MCP"]
+    cap_dev_mcp["Dev MCP"]
+    cap_catalog["Catalog API"]
+    cap_ai_toolkit["AI Toolkit(MIT开源)"]
+    cap_autopilot["Campaign Autopilot"]
+    cap_store_ai["Store AI / Agentic Storefront"]
+    cap_ucp["UCP(与Google共建)"]
+    cap_hydrogen["Hydrogen(agent-first)"]
+    cap_oxygen["Oxygen"]
+    cap_functions["Shopify Functions"]
+    cap_sidekick_ext["Sidekick App Extensions"]
+  end
+  stage_02(["02 建站与基础设施"])
+  cap_sidekick --> stage_02
+  stage_04(["04 内容与素材生产"])
+  cap_sidekick --> stage_04
+  stage_05(["05 营销与引流"])
+  cap_sidekick --> stage_05
+  stage_07(["07 数据与归因"])
+  cap_sidekick --> stage_07
+  stage_10(["10 自动化编排"])
+  cap_sidekick --> stage_10
+  stage_06(["06 转化优化CRO"])
+  cap_pulse --> stage_06
+  cap_pulse --> stage_07
+  stage_03(["03 商品上架与Listing"])
+  cap_magic --> stage_03
+  cap_magic --> stage_04
+  cap_magic --> stage_05
+  stage_08(["08 订单履约与供应链"])
+  cap_flow --> stage_08
+  cap_flow --> stage_10
+  cap_storefront_mcp --> stage_08
+  stage_09(["09 客户与会员运营"])
+  cap_storefront_mcp --> stage_09
+  cap_storefront_mcp --> stage_10
+  cap_dev_mcp --> stage_02
+  cap_dev_mcp --> stage_10
+  stage_01(["01 选品与市场调研"])
+  cap_catalog --> stage_01
+  cap_catalog --> stage_03
+  cap_catalog --> stage_10
+  cap_ai_toolkit --> stage_02
+  cap_ai_toolkit --> stage_10
+  cap_autopilot --> stage_05
+  cap_store_ai --> stage_03
+  cap_store_ai --> stage_09
+  cap_ucp --> stage_01
+  cap_ucp --> stage_09
+  cap_ucp --> stage_10
+  cap_hydrogen --> stage_02
+  cap_hydrogen --> stage_06
+  cap_oxygen --> stage_02
+  cap_functions --> stage_02
+  cap_functions --> stage_03
+  cap_functions --> stage_06
+  cap_sidekick_ext --> stage_05
+  cap_sidekick_ext --> stage_09
+  cap_sidekick_ext --> stage_10
+```

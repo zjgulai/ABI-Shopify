@@ -1,0 +1,15 @@
+{
+  "name": "shopify-ai-kb-marketplace",
+  "owner": { "name": "frank", "email": "frank.dengpanpan@gmail.com" },
+  "metadata": { "description": "Shopify 独立站 AI 全链路经营 · 插件市场", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "shopify-ai-kb",
+      "source": "./plugins/shopify-ai-kb",
+      "description": "Shopify 独立站 AI 经营技能包:建站/上架/CRO/履约/UCP/Hydrogen 可执行 SOP + 知识库检索,内置人审闸。",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": ["shopify", "ecommerce", "ucp", "hydrogen", "ai-toolkit", "rag"]
+    }
+  ]
+}
