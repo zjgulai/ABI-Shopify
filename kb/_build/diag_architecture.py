@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
+import os
 import diag_common as d
 from diag_common import txt,box,arrow
+KB=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CHUNKS=sum(1 for _ in open(os.path.join(KB,"_rag","chunks.jsonl"),encoding="utf-8"))
 f,ax=d.fig(16,12)  # 160 x 120
 H=120
 # ---- Title ----
 txt(ax,7,H-6,"ABI 智能化独立站",size=29,color=d.INK,bold=True,ha="left")
 txt(ax,7,H-10.3,"知识库 + 产品 总架构 · 让 Shopify 独立站从「人肉运营」升级为「AI 自动化经营」",size=12.5,color=d.GREEN,ha="left",bold=True)
 txt(ax,153,H-6,"momcozy · 2026",size=10,color=d.GREY,ha="right")
-txt(ax,153,H-11.3,"60 文档 · 268 RAG块 · 213 实体/593 关系 · 8 信息源",size=9,color=d.GREY,ha="right")
+txt(ax,153,H-11.3,f"60+ 文档 · {CHUNKS} RAG块 · 213 实体/593 关系 · 8 信息源",size=9,color=d.GREY,ha="right")
 
 # ---- 商业价值 ribbon ----
 box(ax,4,99,140,8.5,fc=d.NAVY,ec=d.NAVY,r=0.5,z=2)
@@ -40,7 +43,7 @@ for i,(t,s) in enumerate([("网站+server.py","RAG+DeepSeek"),("腾讯云 Docker
     chip(33+i*21.6,74.8,20.4,6.6,t,"#9AA3DA",sz=7.6,sub=s)
 # L3 机器层
 band(59,11,"#D7EEF0","#0E7C86","机器可用层","RAG + 知识图谱")
-chip(33,61.2,52,6.4,"RAG 检索","#5FA9B0",sz=9.3,sub="chunks.jsonl · 268 块 · 生产检索包(LSA→bge/OpenAI)")
+chip(33,61.2,52,6.4,"RAG 检索","#5FA9B0",sz=9.3,sub=f"chunks.jsonl · {CHUNKS} 块 · 生产检索包(LSA→bge/OpenAI)")
 chip(88,61.2,52,6.4,"知识图谱","#5FA9B0",sz=9.3,sub="213 实体 / 593 关系(0 悬挂)· Mermaid")
 # L4 内容层
 band(37,19,"#DCF0E6","#008060","知识内容层","14 节点 + 深度专题")

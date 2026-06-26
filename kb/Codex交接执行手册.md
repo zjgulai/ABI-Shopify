@@ -1,13 +1,13 @@
 ---
 title: Codex 交接执行手册 · ABI 智能化独立站
 type: handoff
-updated: 2026-06-26
-summary: 把未完成任务 T2–T7 交给 Codex 执行的精确手册:仓库结构、可移植构建脚本、每任务的文件级改动/命令/验收、通用重建与红线。
+updated: 2026-06-27
+summary: ABI 智能化独立站 Codex 执行手册:仓库结构、可移植构建脚本、T1–T7 状态、命令、验收与红线。
 ---
 
 # 🤝 Codex 交接执行手册 · ABI 智能化独立站
 
-> 由助手交接。已完成:整套知识库+产品(60+ 文档、RAG 281 块、知识图谱 213 实体/593 关系、5 张商业图、网站+DeepSeek 后端、腾讯云部署包、Claude Code 插件、Accio 数据桥)、T1 图堆叠修复。**以下 T2–T7 待 Codex 执行。**
+> 当前事实层:整套知识库+产品已落地,CodeGraph 已初始化,腾讯云站点已上线到 `platform.shopify.lute-tlz-dddd.top`。T1/T2/T3/T5 已有本地或生产证据;T4/T6/T7 仍是后续任务,其中 T7 必须测试店与人审授权。
 
 ## 0. 环境与一键重建
 - 仓库根:`<repo>/kb`(本机为 `/Users/pray/project/shopify/kb`)。
@@ -37,11 +37,16 @@ kb/
 └─ 迭代方案与PRD_TODO.md / 项目总览与收敛.md
 ```
 
-## 2. 任务 T2–T7(执行 → 测试 → 验收)
+## 2. 任务 T1–T7(执行 → 测试 → 验收)
 
-### ▶ T2 网站迭代(P0)
-**数据侧已就绪**:`build_site_data.py` 已为每节点生成 `docs:[{title,md}]`;`kb_data.js` 已含。仍需:
-1. **前端渲染专题文档**(`site/index.html`,`showNode(i)` 函数内,在"查看完整文档"按钮前插入):
+### ✅ T1 商业图堆叠修复(P0)
+- 状态:脚本坐标已采用修复版,当前生成 5 张 PNG/PDF 商业图与 `商业图全集_5页.pdf`。
+- 本轮补充:图脚本中的 RAG 块数量改为从 `_rag/chunks.jsonl` 动态读取,避免统计漂移。
+- 验收:重跑 `diag_*.py` 后检查 `_diagrams/*.png` 无明显重叠/出血。
+
+### ✅ T2 网站迭代(P0)
+状态:节点专题文档渲染、`openDoc`、P0/P1/P2 路线图、页脚 8 源 + ABI、页面手动录入 DeepSeek API Key 已落地。保留实现参考:
+1. **前端渲染专题文档**(`site/index.html`,`showNode(i)` 函数内):
    ```js
    if(n.docs&&n.docs.length){h+=`<h3>本节点专题文档</h3><div class="chips">`+
      n.docs.map((dd,j)=>`<span class="chip" style="cursor:pointer" onclick="openDoc(${i},${j})">📄 ${esc(dd.title)}</span>`).join('')+`</div>`;}
@@ -50,32 +55,34 @@ kb/
    ```js
    function openDoc(i,j){document.getElementById('mbody').innerHTML=md(K.nodes[i].docs[j].md);document.getElementById('modal').style.display='block';window.scrollTo(0,0)}
    ```
-2. **下一步换 P0/P1/P2**(`_build/build_site_data.py` 的 `roadmap=[...]` 改为《迭代方案与PRD_TODO.md》§D 的 P0/P1/P2;`nextplan` 同步)。
-3. **页脚 8 源 + ABI**(`index.html` `<footer>` 文案;可用 `K.sources` 渲染,需在 build_site_data 的 `data` 加 `"sources":[…8源…]`)。
+2. **下一步 P0/P1/P2**:`_build/build_site_data.py` 的 `roadmap` / `nextplan` 已同步。
+3. **页脚 8 源 + ABI**:`index.html` 已写入 8 信息源说明;`kb_data.js` 包含 `sources`。
 4. 重建:`cd kb/_build && python build_site_data.py`。
 - **测试**:`awk '/<script>$/{f=1;next}/<\/script>/{f=0}f' site/index.html|node --check -` JS 无误。
 - **验收**:浏览器开 `site/index.html` → 点节点 02 能看到并打开「Shopify 代理式商务技术栈2026 / Hydrogen脚手架SOP」;下一步显示 P0/P1/P2;页脚显示 8 源 + ABI。
 
-### ▶ T3 完整 PRD(P0)
-- 基于 `迭代方案与PRD_TODO.md` §C「每节点主-副工具×实现方法」核心表,扩写为 `kb/PRD_ABI智能化独立站.md`。
-- 结构:1 背景 2 产品定位与商业价值 3 用户角色 4 范围(In/Out)5 总体架构(引用 `_diagrams/00_ABI总架构`)6 **各节点功能需求**(每节点:主工具/副工具/实现方法/输入/输出/人审闸/验收标准/依赖)7 非功能需求(性能/安全/合规/可维护/数据隐私)8 里程碑 9 验收 10 风险。
+### ✅ T3 完整 PRD(P0)
+- 文件:`kb/PRD_ABI智能化独立站.md`。
+- 内容:背景、产品定位、用户角色、范围、总体架构、14 节点功能需求、非功能需求、里程碑、验收、风险。
 - **验收**:14 节点 + 横切层全覆盖,每节点字段齐全;重建 RAG/site 后可检索到。
 
-### ▶ T4 检索生产化(P1)
+### ▶ T4 检索生产化(P1,未执行)
 - `kb/_rag/kb_index/retriever.py`:新增 `STEmbedder`(`sentence-transformers`,模型 `BAAI/bge-m3`)与 `OpenAIEmbedder`,把 `build_index`/`Retriever` 默认嵌入由 `LSAEmbedder` 切换(保留接口)。`index_store` 可换 **Chroma**(`chromadb`,文件级)。`_kg/*.json` 可导入 **Neo4j**。
 - 命令:`pip install sentence-transformers chromadb` → `python cli.py build` → `pip install mcp && python mcp_server.py`。
 - **验收**:同义/中文 query 召回质量明显优于 LSA;`kb_search/kb_ask` MCP 可被 Claude Code 调用。
 
-### ▶ T5 网站上线(P1,需账号操作)
-- 按 `kb/site/部署SOP.md`:DNS A 记录 → 腾讯云防火墙 80/443 → `cd site/deploy && cp .env.example .env`(仅模型配置,不填 Key,`chmod 600`)→ `docker compose -p shopify-kb up -d --build` → 在网站页面手动录入 DeepSeek API Key。
-- **验收**:`https://platform.shopify.lute-tlz-dddd.top/api/health` 返回 ok;页面手动录入 API Key 后问答可用。**Key 不入镜像/git/服务器 env。**
+### ✅ T5 网站上线(P1)
+- 已执行:腾讯云轻量服务器独立 Docker project `shopify-kb`;共享 nginx 反代 `platform.shopify.lute-tlz-dddd.top`;HTTPS 证书独立签发。
+- 运行边界:服务器 `.env` 仅模型配置,不保存 `DEEPSEEK_API_KEY`;API Key 在网站页面手动录入。
+- **验收**:`https://platform.shopify.lute-tlz-dddd.top/api/health` 返回 ok;无 key 调用 `/api/chat` 返回页面填 key 提示。真实 provider 问答需用户在页面输入 Key 后授权验证。
 
-### ▶ T6 多源深挖(P1,持续)
+### ▶ T6 多源深挖(P1,持续/部分完成)
 - 视频字幕:按 `kb/90-AI能力地图/视频深度萃取_模板与说明.md` 的 8 段结构逐条萃取,写入对应节点/专题文档。
 - 新增源(抖音/小红书等):仿 `_build` 思路写入 `_kg/graph.json`(Source+条目)→ 重建 RAG/site。
+- 当前状态:已有 `视频深度萃取_精选.md` 两条内容级萃取;其余高价值视频仍需用户提供字幕。
 - **验收**:高价值视频有内容级萃取(非仅标题);新源进图谱与检索。
 
-### ▶ T7 接 AI-Toolkit / UCP(P2,需测试店)
+### ▶ T7 接 AI-Toolkit / UCP(P2,需测试店/未执行)
 - `/plugin marketplace add <repo>/kb/marketplace` → `/plugin install shopify-ai-kb@shopify-ai-kb-marketplace`。
 - `claude mcp add --transport stdio shopify-dev-mcp -- npx -y @shopify/dev-mcp@latest` → `shopify auth login`(**测试店**)。
 - 跑「读店铺数据 → 受控写(人审)」;UCP:Developer Dashboard 注册 agent profile。

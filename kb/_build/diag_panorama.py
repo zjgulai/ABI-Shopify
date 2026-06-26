@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
+import os
 import diag_common as d
 from diag_common import txt,box,arrow
+KB=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CHUNKS=sum(1 for _ in open(os.path.join(KB,"_rag","chunks.jsonl"),encoding="utf-8"))
 f,ax=d.fig(16,10)  # 160 x 100
 
 # ---- Title ----
 txt(ax,8,95.5,"ABI 智能化独立站",size=25,color=d.INK,bold=True,ha="left")
 txt(ax,8,91,"全景图 · 知识库 + 产品 · 建站 → 全自动运营",size=13,color=d.GREEN,ha="left",bold=True)
 txt(ax,157,95,"momcozy 独立站 · 2026",size=10,color=d.GREY,ha="right")
-txt(ax,157,91.5,"14 节点 · 8 源 · 268 RAG块 · 213 实体/593 关系",size=9,color=d.GREY,ha="right")
+txt(ax,157,91.5,f"14 节点 · 8 源 · {CHUNKS} RAG块 · 213 实体/593 关系",size=9,color=d.GREY,ha="right")
 
 def band(y,h,fc,ec,title,tcolor):
     box(ax,4,y,152,h,fc=fc,ec=ec,lw=1.6,r=0.6,z=2)
@@ -86,7 +89,7 @@ arrow(ax,104,20.2,108,20.2,color=d.GREY,lw=1.4,mut=9,z=3)
 
 # ---- outputs (right) ----
 txt(ax,108,26.5,"产出 / 消费",size=11,color=d.INK,bold=True,ha="left")
-outs=[("RAG 检索","chunks.jsonl · 268 块"),("知识图谱","213 实体 · 593 关系"),("商业图 ×4 + 网站","DeepSeek 问答"),("插件 + 数据桥","运营 Agent")]
+outs=[("RAG 检索",f"chunks.jsonl · {CHUNKS} 块"),("知识图谱","213 实体 · 593 关系"),("商业图 ×4 + 网站","DeepSeek 问答"),("插件 + 数据桥","运营 Agent")]
 for i,(s,sub) in enumerate(outs):
     cx=108+(i%2)*26; cy=15+(1-i//2)*5.6
     chip(cx,cy,24.5,4.8,s,"#FFFFFF",d.LINE,sz=9,sub=sub,)
