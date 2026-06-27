@@ -64,14 +64,14 @@ for e in G["entities"]:
         caps[e["label"]]=sup
 # roadmap
 roadmap=[
-{"phase":"P0 · 今天-明天","when":"P0","items":["T1 修复全部商业图堆叠并逐图核验","T2 网站迭代:专题文档渲染 + 下一步 P0/P1/P2 + 页脚 8 源","T3 输出完整 PRD 文档"]},
-{"phase":"P1 · 1-2 周","when":"P1","items":["T4 检索生产化:bge-m3/OpenAI + Chroma/Qdrant + Neo4j + MCP","T5 网站上线腾讯云:页面手动录入 DeepSeek API Key 并验证 HTTPS 问答","T6 多源深挖:视频字幕萃取 + 抖音/小红书来源入图谱/RAG"]},
-{"phase":"P2 · 1 月+","when":"P2","items":["T7 接 AI-Toolkit/UCP 测试店受控写","按《全自动运营蓝图》把节点 skill 化、编排化","保留人审闸、审计日志与回滚"]},
+{"phase":"P0 · 已收口","when":"P0","items":["T1/T2/T3/T5 已形成本地或生产证据","页脚 9 源 + ABI,站点统计 366 chunks / 220 entities / 639 relations","代码与知识库已提交并可按 release 目录部署"]},
+{"phase":"P1 · 继续深挖","when":"P1","items":["T6 视频字幕深度萃取:优先 Ac Hampton P0/P1 队列","抖音/小红书维持粘贴清单或字幕→离线草稿→人审入库","页面手动录入 DeepSeek API Key 后做真实 provider 问答验收"]},
+{"phase":"P2 · 受控写闭环","when":"P2","items":["T7 接 AI-Toolkit/UCP 测试店真实读写","Shopify 测试店授权 + mutation 预览 + 人审批准","按《全自动运营蓝图》把节点 skill 化、编排化"]},
 ]
 nextplan=[
-{"t":"P0 · 收口可用","d":"T1 修图、T2 网站迭代、T3 完整 PRD;今天-明天完成可读可验收闭环。"},
-{"t":"P1 · 生产化准备","d":"T4 检索升级、T5 腾讯云上线、T6 多源深挖;1-2 周推进。"},
-{"t":"P2 · 自动化闭环","d":"T7 测试店接 AI-Toolkit/UCP 受控写,再按《全自动运营蓝图》编排化。"},
+{"t":"P0 · 发布收口","d":"本地 KB/RAG/KG/site 已重建;线上使用 BAAI/bge-small-zh-v1.5 + Chroma + Neo4j,服务器不保存 DeepSeek Key。"},
+{"t":"P1 · 内容扩充","d":"继续 T6 视频字幕与抖音/小红书多源入库;只用可复核文本、字幕或用户粘贴材料。"},
+{"t":"P2 · 自动化闭环","d":"T7 等测试店授权后接 AI-Toolkit/UCP,先只读,再经人审做低风险测试写入。"},
 ]
 # chunks
 chunks=[]
