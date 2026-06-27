@@ -1,8 +1,8 @@
 numpy>=1.24            # 核心:离线 LSA 嵌入 + 检索(开箱即用)
 # —— 生产可选(按需取消注释) ——
-# sentence-transformers  # 本地开源嵌入:bge-m3 / Qwen3-Embedding(中文强、数据不出门)
-# chromadb               # 文件级持久向量库(无需起服务)
-# qdrant-client          # 规模化向量库(需服务)
-# openai                 # 托管嵌入:text-embedding-3-large(省事)
-# neo4j                  # 图数据库(graph.json 可直接转节点/边)
+# sentence-transformers>=2.7  # 本地开源嵌入:bge-m3 / Qwen3-Embedding(中文强、数据不出门)
+# chromadb>=0.5               # 文件级持久向量库(无需起服务)
+# qdrant-client>=1.9          # 规模化向量库(预留;当前实现优先 Chroma)
+# openai>=1.40                # 托管嵌入:text-embedding-3-large(省事)
+# neo4j>=5.20                 # 图数据库(graph.json 可导入/查询)
 # mcp                    # 暴露为 MCP 服务给 Claude Code / 其它 Agent
