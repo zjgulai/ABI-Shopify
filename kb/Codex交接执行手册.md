@@ -103,7 +103,7 @@ kb/
   ```bash
   python3 kb/tools/t6_multisource_intake.py /path/to/t6_sources.jsonl --out kb/drafts/t6_multisource --index
   ```
-- 当前状态:已有 `视频深度萃取_精选.md` 两条内容级萃取;其余高价值视频仍需用户提供字幕/清单。
+- 当前状态:已有 `视频深度萃取_精选.md` 三条内容级萃取,其中 Ac Hampton `vXmF10ZNmoo` 为 browser-harness 真实 Chrome 页面/章节/采样帧 v0.1;其余高价值视频完整逐字稿仍需稳定转写或用户提供字幕/清单。
 - **验收**:高价值视频有内容级萃取(非仅标题);新源进图谱与检索。
 
 ### ▶ T7 接 AI-Toolkit / UCP(P2,Runbook 已落地/真实读写待授权)
@@ -127,6 +127,6 @@ PY
 
 ## 4. 红线(必须遵守)
 - `execution`/真改店铺/支付/上线/数据采集 **一律人审 + 测试店先行**。
-- 不绕过外站抓取限制(GitHub/YouTube/Reddit 等);多源走「粘贴→归类」。
+- 不绕过外站抓取限制(GitHub/YouTube/Reddit 等);YouTube 可用用户授权的真实 Chrome browser-harness 做只读页面/转写入口/采样帧复核,否则多源走「粘贴→归类」。
 - **密钥只走环境变量,绝不入镜像/git/前端。**
 - 收入类宣传仅作打法参考,合规/选型把关(节点 91)。
