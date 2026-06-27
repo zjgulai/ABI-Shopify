@@ -7,7 +7,7 @@ summary: 知识库的 RAG 就绪切块。chunks.jsonl 每行一个块,含 stage/
 
 # _rag — RAG 切块层
 
-- **chunks.jsonl**:303 个块,来自 62 个文档;每行一个 JSON。
+- **chunks.jsonl**:319 个块,来自 64 个文档;每行一个 JSON。
 - 切块粒度:按 Markdown 的 `## 一级小节`,每块尽量自洽。
 - 字段:`id, doc_title, section, stage, layer, tags[], sources[], summary, source_file, text, char_len`。
 - 用法:对 `text` 做 embedding;用 `stage/tags/sources` 做过滤与按节点路由;`summary` 可作卡片/重排序信号。

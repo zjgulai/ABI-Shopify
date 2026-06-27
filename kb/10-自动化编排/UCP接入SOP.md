@@ -37,6 +37,8 @@ summary: Universal Commerce Protocol 接入可执行 SOP:注册 Agent profile→
 ## 5. 验证
 用 Claude Code + MCP 跑一遍:搜品 → 加购 → 结账(测试店铺),确认 profile/能力可被外部 Agent 调用。
 
+真实店铺读写前,按 `AI-Toolkit_UCP测试店受控写验收Runbook.md` 先完成测试店授权、只读检查、写入预案、人审批准、低风险写入、写后复查与回滚记录。
+
 ### 来源
 - shopify.dev《Build commerce agents with UCP》https://shopify.dev/docs/agents · 《About Catalogs》https://shopify.dev/docs/agents/catalog
 - ucp.dev 与 Core Concepts:http://ucp.dev/documentation/core-concepts/

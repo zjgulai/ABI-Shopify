@@ -18,7 +18,11 @@ CASES = [
     },
     {
         "query": "PRD 人审闸 测试店 受控写 上架改价",
-        "any_file": ["PRD_ABI智能化独立站.md", "迭代方案与PRD_TODO.md"],
+        "any_file": [
+            "PRD_ABI智能化独立站.md",
+            "迭代方案与PRD_TODO.md",
+            "10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md",
+        ],
     },
     {
         "query": "Accio Work RFQ 选品 供应商 数据桥 导入 Shopify",
