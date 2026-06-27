@@ -10,17 +10,17 @@ summary: Shopify AI 全链路经营知识图谱:实体+关系,可视化为 Merma
 把知识库结构化为**实体 + 关系**,与 [[_rag]] 的文本切块互补:RAG 管"语义召回",KG 管"结构推理/关联追溯"。
 
 ## 文件
-- `entities.json` — 213 个实体。字段:`id, type, label, props`。
-- `relations.json` — 593 条关系。字段:`source, type, target`。
+- `entities.json` — 220 个实体。字段:`id, type, label, props`。
+- `relations.json` — 639 条关系。字段:`source, type, target`。
 - `graph.json` — 实体+关系合集(一次性加载)。
 - `pipeline.mermaid` — 全流程 + 横切层 + 复购回流(可视化)。
 - `capability_map.mermaid` — Shopify 原生能力 → 支撑的流程节点。
 
-## 实体类型(9)
-以 `entities.json` 为准;当前包含 Stage/Source/Capability/Tool/Concept/Team/Project/Repo/Skill/Video 等类型。
+## 实体类型(12)
+以 `entities.json` 为准;当前包含 AIStep / Concept / Org / Project / Repo / ShopifyCapability / Skill / Source / Stage / Team / Tool / Video。
 
-## 关系类型(14)
-以 `relations.json` 为准;当前包含 ENRICHES、SUPPORTS、CROSSCUTS、USES_TOOL、APPLIES_TO、BELONGS_TO、OWNED_BY、NEXT、MAPS_TO_STAGE、FEEDS_BACK、INTEGRATES、ENABLED_BY、CO_BUILT_WITH、DISCOVERY_LAYER_OF 等关系。
+## 关系类型(19)
+以 `relations.json` 为准;当前包含 APPLIES_TO、BELONGS_TO、CO_BUILT_WITH、CROSSCUTS、DISCOVERY_LAYER_OF、ENABLES、ENABLED_BY、ENRICHES、FEEDS_BACK、INCLUDES、INTEGRATES、MAPS_TO_STAGE、NEXT、OWNED_BY、PART_OF、SERVES、SUPPORTS、TEACHES、USES_TOOL。
 
 ## Schema(主要边)
 - `Stage -NEXT-> Stage`(流程顺序);`Stage(横切) -CROSSCUTS-> Stage`;`Stage09 -FEEDS_BACK-> Stage01/05`(复购闭环)

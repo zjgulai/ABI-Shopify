@@ -3,9 +3,9 @@ title: 内容与素材生产
 stage: 04-内容与素材生产
 layer: 流程阶段
 tags: [素材, 主图, 视频, 配音, 配乐, AI生成]
-sources: [周报, twitter, shopify官方]  # 三源已融合
+sources: [周报, twitter, shopify官方, inbox]  # 三源已融合 + inbox资料包
 status: verified      # 三源萃取完成
-updated: 2026-06-25
+updated: 2026-06-27
 summary: 规模化“造素材”:主图、A+、视频、配音、配乐的AI流水线。
 ---
 
@@ -53,3 +53,9 @@ summary: 规模化“造素材”:主图、A+、视频、配音、配乐的AI流
 - [[03-商品上架与Listing]]
 - [[05-营销与引流]]
 - [[90-AI能力地图]]
+
+## 8. Inbox 独立站实操资料包补充(2026-06-27)
+<!-- enrich:inbox -->
+新增资料把红人内容定位为可复用资产,不只是一次曝光:一次 KOL/KOC/UGC 合作产出的内容可进入广告、官网、EDM、SEO、Amazon A+ 和社媒矩阵,从而摊薄素材成本并提升转化一致性〔来源:独立站网红+全域社媒流量增长〕。
+
+`listing优化模板.xlsx` 还把主图、A+、主图视频首图、关联视频首图、品牌广告视频首图拆成明确画面需求、展示卖点、尺寸、风格和放置文案,适合转成素材 Agent 的标准 Brief〔来源:listing优化模板〕。

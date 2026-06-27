@@ -3,9 +3,9 @@ title: 建站与基础设施
 stage: 02-建站与基础设施
 layer: 流程阶段
 tags: [建站, shopify, 支付, 站群, hydrogen, cms]
-sources: [周报, twitter, shopify官方]  # 三源已融合 + 2026官方账号深化
+sources: [周报, twitter, shopify官方, inbox]  # 三源已融合 + 2026官方账号深化 + inbox资料包
 status: verified      # 三源萃取完成
-updated: 2026-06-25
+updated: 2026-06-27
 summary: 把店“立起来”:从域名到支付到多站点的技术底座。
 ---
 
@@ -65,3 +65,9 @@ summary: 把店“立起来”:从域名到支付到多站点的技术底座。
 - [[03-商品上架与Listing]]
 - [[08-订单履约与供应链]]
 - [[10-自动化编排]]
+
+## 8. Inbox 独立站实操资料包补充(2026-06-27)
+<!-- enrich:inbox -->
+新增资料给出建站取舍:偏 B 端询盘和 Google Ads 的项目可用 WordPress,偏 C 端交易闭环则 Shopify 更适合,原因是交易系统和运营组件更完整〔来源:独立站新手高频问题解答〕。
+
+建站供应商评估要看四点:网站所有权、后续托管续费、是否能自行修改代码、服务态度。域名建议优先可记忆的品牌+关键词组合;基础工具至少覆盖 Google Ads、GA、GSC 与 SEMrush 类 SEO/竞品工具〔来源:独立站新手高频问题解答〕。

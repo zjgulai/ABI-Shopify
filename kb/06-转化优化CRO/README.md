@@ -3,9 +3,9 @@ title: 转化优化 CRO
 stage: 06-转化优化CRO
 layer: 流程阶段
 tags: [cro, 转化, abtest, 结账, 落地页]
-sources: [周报, shopify官方]  # 已融合: 周报+shopify官方
+sources: [周报, shopify官方, inbox]  # 已融合: 周报+shopify官方 + inbox资料包
 status: verified      # 三源萃取完成
-updated: 2026-06-25
+updated: 2026-06-27
 summary: 把流量“榨干”:用实验把每一份访问变成更多订单。
 ---
 
@@ -51,3 +51,9 @@ summary: 把流量“榨干”:用实验把每一份访问变成更多订单。
 - [[03-商品上架与Listing]]
 - [[05-营销与引流]]
 - [[07-数据与归因]]
+
+## 8. Inbox 独立站实操资料包补充(2026-06-27)
+<!-- enrich:inbox -->
+新增资料把高转化页面拆成产品页/类目页/落地页的信息架构,重点包括 FAB、信任状、社会证明、移动端速度、图片压缩、Lazyload、浏览-加购-结账-支付漏斗和 A/B 测试〔来源:独立站从0-1搭建高流量店铺〕。
+
+Listing 模板中的评价分析、QA 分析和卖点排序可作为 CRO 假设来源:当广告 CTR 高而 CVR 低时,优先检查价格、Review、页面信息、卖点承接和场景图是否匹配流量意图〔来源:listing优化模板;手把手带你做广告报告分析〕。

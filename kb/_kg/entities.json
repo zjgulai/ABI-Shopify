@@ -1304,5 +1304,66 @@
   "type": "Video",
   "label": "AH:Shopify President: How to Win in the Gol",
   "props": {}
+ },
+ {
+  "id": "src_inbox_indie_ops",
+  "type": "Source",
+  "label": "inbox 独立站实操资料包",
+  "props": {
+   "files": 15,
+   "unique_contents": 14,
+   "status": "verified",
+   "boundary": "local-read-only"
+  }
+ },
+ {
+  "id": "con_indie_growth_loop",
+  "type": "Concept",
+  "label": "独立站全域增长闭环",
+  "props": {
+   "source": "inbox 独立站实操资料包"
+  }
+ },
+ {
+  "id": "con_social_first_product_research",
+  "type": "Concept",
+  "label": "社媒前置选品",
+  "props": {
+   "source": "inbox 独立站实操资料包"
+  }
+ },
+ {
+  "id": "con_listing_content_factory",
+  "type": "Concept",
+  "label": "Listing内容工厂",
+  "props": {
+   "source": "inbox 独立站实操资料包",
+   "doc": "03-商品上架与Listing/Listing内容工厂SOP.md"
+  }
+ },
+ {
+  "id": "con_offsite_traffic_stack",
+  "type": "Concept",
+  "label": "站外全域流量组合",
+  "props": {
+   "source": "inbox 独立站实操资料包"
+  }
+ },
+ {
+  "id": "con_ad_report_diagnosis",
+  "type": "Concept",
+  "label": "广告报告归因诊断",
+  "props": {
+   "source": "inbox 独立站实操资料包"
+  }
+ },
+ {
+  "id": "con_channel_risk_guardrails",
+  "type": "Concept",
+  "label": "站外渠道风控护栏",
+  "props": {
+   "source": "inbox 独立站实操资料包",
+   "doc": "91-合规与风控/站外渠道风控SOP.md"
+  }
  }
 ]

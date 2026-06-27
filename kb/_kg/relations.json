@@ -3556,5 +3556,281 @@
   "type": "ENRICHES",
   "target": "stage_00",
   "props": {}
+ },
+ {
+  "source": "con_indie_growth_loop",
+  "type": "APPLIES_TO",
+  "target": "stage_00",
+  "props": {}
+ },
+ {
+  "source": "con_indie_growth_loop",
+  "type": "APPLIES_TO",
+  "target": "stage_05",
+  "props": {}
+ },
+ {
+  "source": "con_indie_growth_loop",
+  "type": "APPLIES_TO",
+  "target": "stage_07",
+  "props": {}
+ },
+ {
+  "source": "con_indie_growth_loop",
+  "type": "APPLIES_TO",
+  "target": "stage_09",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_indie_growth_loop",
+  "props": {}
+ },
+ {
+  "source": "con_social_first_product_research",
+  "type": "APPLIES_TO",
+  "target": "stage_01",
+  "props": {}
+ },
+ {
+  "source": "con_social_first_product_research",
+  "type": "APPLIES_TO",
+  "target": "stage_04",
+  "props": {}
+ },
+ {
+  "source": "con_social_first_product_research",
+  "type": "APPLIES_TO",
+  "target": "stage_90",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_social_first_product_research",
+  "props": {}
+ },
+ {
+  "source": "con_listing_content_factory",
+  "type": "APPLIES_TO",
+  "target": "stage_03",
+  "props": {}
+ },
+ {
+  "source": "con_listing_content_factory",
+  "type": "APPLIES_TO",
+  "target": "stage_04",
+  "props": {}
+ },
+ {
+  "source": "con_listing_content_factory",
+  "type": "APPLIES_TO",
+  "target": "stage_06",
+  "props": {}
+ },
+ {
+  "source": "con_listing_content_factory",
+  "type": "APPLIES_TO",
+  "target": "stage_90",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_listing_content_factory",
+  "props": {}
+ },
+ {
+  "source": "con_offsite_traffic_stack",
+  "type": "APPLIES_TO",
+  "target": "stage_05",
+  "props": {}
+ },
+ {
+  "source": "con_offsite_traffic_stack",
+  "type": "APPLIES_TO",
+  "target": "stage_07",
+  "props": {}
+ },
+ {
+  "source": "con_offsite_traffic_stack",
+  "type": "APPLIES_TO",
+  "target": "stage_91",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_offsite_traffic_stack",
+  "props": {}
+ },
+ {
+  "source": "con_ad_report_diagnosis",
+  "type": "APPLIES_TO",
+  "target": "stage_05",
+  "props": {}
+ },
+ {
+  "source": "con_ad_report_diagnosis",
+  "type": "APPLIES_TO",
+  "target": "stage_07",
+  "props": {}
+ },
+ {
+  "source": "con_ad_report_diagnosis",
+  "type": "APPLIES_TO",
+  "target": "stage_10",
+  "props": {}
+ },
+ {
+  "source": "con_ad_report_diagnosis",
+  "type": "APPLIES_TO",
+  "target": "stage_90",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_ad_report_diagnosis",
+  "props": {}
+ },
+ {
+  "source": "con_channel_risk_guardrails",
+  "type": "APPLIES_TO",
+  "target": "stage_05",
+  "props": {}
+ },
+ {
+  "source": "con_channel_risk_guardrails",
+  "type": "APPLIES_TO",
+  "target": "stage_08",
+  "props": {}
+ },
+ {
+  "source": "con_channel_risk_guardrails",
+  "type": "APPLIES_TO",
+  "target": "stage_91",
+  "props": {}
+ },
+ {
+  "source": "con_channel_risk_guardrails",
+  "type": "APPLIES_TO",
+  "target": "stage_92",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "INCLUDES",
+  "target": "con_channel_risk_guardrails",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_00",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_01",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_02",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_03",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_04",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_05",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_06",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_07",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_08",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_09",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_10",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_90",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_91",
+  "props": {}
+ },
+ {
+  "source": "src_inbox_indie_ops",
+  "type": "ENRICHES",
+  "target": "stage_92",
+  "props": {}
+ },
+ {
+  "source": "con_social_first_product_research",
+  "type": "ENABLED_BY",
+  "target": "con_agent",
+  "props": {}
+ },
+ {
+  "source": "con_listing_content_factory",
+  "type": "ENABLED_BY",
+  "target": "con_agent",
+  "props": {}
+ },
+ {
+  "source": "con_ad_report_diagnosis",
+  "type": "ENABLED_BY",
+  "target": "con_agent",
+  "props": {}
+ },
+ {
+  "source": "con_channel_risk_guardrails",
+  "type": "ENABLED_BY",
+  "target": "con_agent",
+  "props": {}
  }
 ]
