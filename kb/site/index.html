@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>ABI 智能化独立站 · Shopify AI 经营知识库</title>
+<link rel="icon" href="data:,"/>
 <style>
 :root{
   --ink:#0B1F3A;--navy:#13294B;--green:#008060;--green2:#0a9b78;--lime:#95BF47;--mint:#E4F4EC;
@@ -160,13 +161,13 @@ footer a{color:#9ad9bf}
 
 <section id="arch"><div class="wrap">
   <div class="eyebrow">一图看懂 · 产品 + 知识库</div><h2 class="t">ABI 总架构</h2>
-  <p class="lead">商业价值(降本/提效/可复制/可治理)→ 信息源(8)→ 知识内容(14 节点)→ 机器层(RAG+图谱)→ 产品/工具(网站/部署/插件/数据桥)→ 消费/Agent,贯穿人审/合规闸。点击放大。</p>
+  <p class="lead">商业价值(降本/提效/可复制/可治理)→ 信息源(9)→ 知识内容(14 节点)→ 机器层(RAG+图谱)→ 产品/工具(网站/部署/插件/数据桥)→ 消费/Agent,贯穿人审/合规闸。点击放大。</p>
   <div class="frame" onclick="lb('assets/architecture.png')"><img src="assets/architecture.png" alt="ABI 总架构"/></div>
 </div></section>
 
 <section id="panorama" class="alt"><div class="wrap">
   <div class="eyebrow">一张图看懂</div><h2 class="t">全景图</h2>
-  <p class="lead">编排层 → 全流程 11 节点 → Shopify 能力层 → 数据底座 → 三源/产出 → 横切层。点击放大。</p>
+  <p class="lead">编排层 → 全流程 11 节点 → Shopify 能力层 → 数据底座 → 9 源/产出 → 横切层。点击放大。</p>
   <div class="frame" onclick="lb('assets/panorama.png')"><img src="assets/panorama.png" alt="全景图"/></div>
 </div></section>
 
@@ -205,7 +206,7 @@ footer a{color:#9ad9bf}
     <div id="chatlog"></div>
     <div class="chatin"><input id="cq" placeholder="问问:怎么用 AI 自动建站?Accio Work 怎么和 Shopify 配合?" onkeydown="if(event.key==='Enter')send()"/><button class="btn" onclick="send()">发送</button></div>
     <div class="note" id="cnote"></div>
-    <div id="keybox"><input id="dskey" type="password" placeholder="DeepSeek API Key(页面手动录入,不写入服务器)"/><label><input id="rememberKey" type="checkbox"/>记住到本浏览器</label><button class="btn ghost" onclick="saveKey()">保存</button><button class="btn ghost" onclick="clearKey()">清除</button></div>
+    <div id="keybox"><input id="dskey" type="password" autocomplete="off" placeholder="DeepSeek API Key(页面手动录入,不写入服务器)"/><label><input id="rememberKey" type="checkbox"/>记住到本浏览器</label><button class="btn ghost" onclick="saveKey()">保存</button><button class="btn ghost" onclick="clearKey()">清除</button></div>
   </div>
 </div></section>
 
@@ -219,7 +220,7 @@ footer a{color:#9ad9bf}
 
 <footer><div class="wrap">
   <b style="color:#fff">ABI 智能化独立站 · Shopify AI 全链路经营知识库</b><br/><br/>
-  8 信息源(周报 / Twitter / Shopify 官方文档 + 官方账号 / GitHub / YouTube×3 / 社区痛点 / Accio)· RAG + 知识图谱 · 商业图 · DeepSeek 问答<br/>
+  9 信息源(周报 / Twitter / Shopify 官方文档 + 官方账号 / GitHub / YouTube×3 / 社区痛点 / Accio / inbox 独立站资料包)· RAG + 知识图谱 · 商业图 · DeepSeek 问答<br/>
   问答需在页面手动录入 DeepSeek API Key;后端仅做 RAG 与转发代理,不在服务器保存 Key。详见 site/README.md。
 </div></footer>
 
