@@ -21,5 +21,5 @@ python server.py                                 # 3) 打开 http://localhost:80
 - 勾选“记住到本浏览器”时,Key 仅保存在当前浏览器 localStorage;不勾选则只保留在当前页面内存中。
 
 ## 文件
-- `index.html` 单文件前端 · `kb_data.js` 站点数据(由 outputs/build_site_data.py 生成)
+- `index.html` 单文件前端 · `kb_data.js` 站点数据(由 `../_build/build_site_data.py` 生成)
 - `server.py` 安全后端 · `assets/` 商业图
