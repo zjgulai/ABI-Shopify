@@ -13,7 +13,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 | T1 | 商业图堆叠修复 | 已完成脚本坐标修复与 5 张商业图输出;本轮将 RAG 块统计改为动态读取并重建核验 |
 | T2 | 网站迭代 | 已完成节点专题文档 modal、P0/P1/P2 路线图、页脚 8 源、页面手动录入 API Key;本轮修正旧知识块数量文案 |
 | T3 | 完整 PRD | 本轮新增 `PRD_ABI智能化独立站.md`,覆盖 14 节点与横切层 |
-| T4 | 检索生产化 | 基础代码已落地:可选 ST/OpenAI embedder、Chroma store、Neo4j 导出/查询、MCP status、离线评测;生产仍默认 LSA/numpy/json |
+| T4 | 检索生产化 | T4a 已完成;T4b 已补 vector compose、Neo4j 容器、A/B 评测脚本,待服务器启用与线上验收 |
 | T5 | 网站上线 | 已上线到 `platform.shopify.lute-tlz-dddd.top`;服务器不保存 API Key;真实 provider 问答需用户页面录入 Key |
 | T6 | 多源深挖 | 已有 2 条精选内容级萃取;其余视频需字幕;抖音/小红书待补 |
 | T7 | 接 AI-Toolkit/UCP | 待在测试店跑通「Claude 读店铺 → 受控写(人审)」 |
@@ -33,8 +33,9 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 
 **T4 · 检索生产化(P1,基础代码已落地;后端启用待依赖)**
 - 已做:`retriever.py` 可选 `LSA/ST/OpenAI` 嵌入、`numpy/Chroma` store、`JSON/Neo4j` graph backend;`mcp_server` 暴露 `kb_status/kb_search/kb_ask`;新增 `eval_retrieval.py` 和 `neo4j_export.py`。
-- 本地验收:默认 LSA `eval_retrieval.py` 5/5;本机缓存 `BAAI/bge-small-zh-v1.5` ST smoke 5/5;Neo4j dry-run 213 实体 / 593 关系并导出 809 行 Cypher。
-- 待做:安装并启用 `BAAI/bge-m3 + Chroma` 或 OpenAI embedding;接真实 Neo4j;对中文同义 query 做 LSA vs 生产嵌入 A/B 评测。
+- T4b 已补:`docker-compose.vector.yml`、`requirements.vector.txt`、`entrypoint.sh`、`compare_retrieval.py` 与 `T4b生产检索启用TODO.md`。
+- 本地验收:默认 LSA `eval_retrieval.py` 5/5;vector compose config 已确认;Neo4j dry-run 213 实体 / 593 关系并可导出 Cypher。
+- 待做:服务器启用 `BAAI/bge-m3 + Chroma + Neo4j`;若 bge-m3 构建受资源/网络影响,降级到 BAAI 中文小模型并记录边界;对中文同义 query 做 LSA vs 生产嵌入 A/B 评测。
 
 **T5 · 网站上线(P1,0.5 天,用户侧)**
 - 做法:DNS A 记录 → 防火墙 80/443 → `cp .env.example .env`(仅模型配置,不填 Key)→ `docker compose -p shopify-kb up -d --build` → 浏览器页面手动录入 DeepSeek API Key → 验证 https 问答(详见 `site/部署SOP.md`)。

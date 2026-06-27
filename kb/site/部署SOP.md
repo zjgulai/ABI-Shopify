@@ -75,6 +75,23 @@ sudo nginx -t && sudo systemctl reload nginx
 sudo certbot --nginx -d platform.shopify.lute-tlz-dddd.top   # 签 HTTPS
 ```
 
+### 方案 C · 生产检索后端(bge/Chroma/Neo4j,显式启用)
+适用:需要 T4b 生产检索验收。该方案在方案 A 或 B 的基础上追加 `docker-compose.vector.yml`,会新增独立 `shopifykb-neo4j` 容器和 `shopify-kb-neo4j-*` 卷,不暴露主机端口。
+```bash
+cd /opt/shopify-kb/current/kb/site/deploy
+# 首次启用前:在 /opt/shopify-kb/shared/.env 写入 NEO4J_PASSWORD 和模型配置,不要提交到 Git
+docker compose -p shopify-kb \
+  -f docker-compose.yml \
+  -f docker-compose.behind-proxy.yml \
+  -f docker-compose.vector.yml \
+  up -d --build
+```
+回滚到轻量检索:
+```bash
+docker compose -p shopify-kb -f docker-compose.yml -f docker-compose.behind-proxy.yml up -d --build
+docker compose -p shopify-kb -f docker-compose.vector.yml rm -sf neo4j
+```
+
 ---
 
 ## 7. 验证
@@ -129,9 +146,10 @@ basic_auth { admin <用 `caddy hash-password` 生成的哈希> }
 | HTTPS 证书签发失败 | DNS 未生效或 80 未放行;`dig` 确认解析、放行 80,再 `docker compose -p shopify-kb restart caddy` 看日志 |
 | 端口冲突(80/443 占用) | 改用**方案 B** |
 | `env file .../.env not found` | release 目录不带 `.env`;按 §8 将 `/opt/shopify-kb/shared/.env` 链接到当前 release |
+| vector 构建耗时/模型下载慢 | 先确认磁盘/内存;可临时把 `SHOPIFY_KB_ST_MODEL` 改为 `BAAI/bge-small-zh-v1.5`,并在验收中记录该边界 |
 | `/api/chat` 提示需填 API Key | 在网页问答区域手动录入 DeepSeek API Key;服务器默认不保存 Key |
 | 构建拉包慢(国内) | 在 `Dockerfile` 的 pip 行加 `-i https://mirrors.tencent.com/pypi/simple`,docker 配 registry mirror |
 | 问答慢/超时 | gunicorn timeout 已设 120s;DeepSeek 首响较慢属正常 |
 
 ## 11. 文件清单(`site/deploy/`)
-`Dockerfile` · `docker-compose.yml`(方案A)· `docker-compose.behind-proxy.yml`(方案B)· `Caddyfile` · `nginx-vhost.example.conf` · `.env.example` · `.dockerignore` · `requirements.deploy.txt`
+`Dockerfile` · `docker-compose.yml`(方案A)· `docker-compose.behind-proxy.yml`(方案B)· `docker-compose.vector.yml`(方案C)· `entrypoint.sh` · `Caddyfile` · `nginx-vhost.example.conf` · `.env.example` · `.dockerignore` · `requirements.deploy.txt` · `requirements.vector.txt`

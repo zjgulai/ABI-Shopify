@@ -86,11 +86,11 @@ def apply_neo4j(graph):
             label = qident(ent.get("type"))
             session.run(
                 f"MERGE (n:KGEntity:`{label}` {{id:$id}}) "
-                "SET n.kg_type=$kg_type, n.label=$label, n.props=$props",
+                "SET n.kg_type=$kg_type, n.label=$label, n.props_json=$props_json",
                 id=ent["id"],
                 kg_type=ent.get("type", ""),
                 label=ent.get("label", ""),
-                props=ent.get("props") or {},
+                props_json=json.dumps(ent.get("props") or {}, ensure_ascii=False),
             )
         for rel in graph["relations"]:
             rel_type = qident(rel.get("type"))

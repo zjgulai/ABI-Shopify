@@ -66,9 +66,10 @@ kb/
 - 内容:背景、产品定位、用户角色、范围、总体架构、14 节点功能需求、非功能需求、里程碑、验收、风险。
 - **验收**:14 节点 + 横切层全覆盖,每节点字段齐全;重建 RAG/site 后可检索到。
 
-### ◐ T4 检索生产化(P1,基础代码已落地)
+### ◐ T4 检索生产化(P1,T4b 执行中)
 - 已落地:`retriever.py` 支持 manifest 驱动的 `LSAEmbedder` / `STEmbedder` / `OpenAIEmbedder`,`numpy` / `Chroma` store,`JSON` / `Neo4j` graph backend;`mcp_server.py` 暴露 `kb_status` / `kb_search` / `kb_ask`。
-- 新增:`eval_retrieval.py` 小型离线召回评测;`neo4j_export.py` 支持 dry-run、Cypher 导出与显式 `NEO4J_*` 写入。
+- 新增:`eval_retrieval.py` 小型离线召回评测;`compare_retrieval.py` 做 LSA vs candidate A/B;`neo4j_export.py` 支持 dry-run、Cypher 导出与显式 `NEO4J_*` 写入。
+- 部署新增:`site/deploy/docker-compose.vector.yml` 启用 vector extras + `shopifykb-neo4j`;`entrypoint.sh` 等待 Neo4j 并按需导入图谱;`requirements.vector.txt` 与默认运行依赖分离。
 - 默认生产部署边界:当前 Docker 仍使用 `embedder=lsa, store=numpy, graph_backend=json`,不强制安装 bge-m3/Chroma/Neo4j。
 - 命令:
   ```bash
@@ -76,19 +77,17 @@ kb/
   python cli.py build
   python cli.py doctor
   python eval_retrieval.py --min-pass-rate 0.6
+  python compare_retrieval.py --candidate-embedder st --candidate-store chroma --candidate-model BAAI/bge-m3
   python neo4j_export.py
   python neo4j_export.py --write-cypher /tmp/shopify_kb_graph.cypher
   ```
 - 生产可选启用:
   ```bash
-  pip install sentence-transformers chromadb neo4j
-  python cli.py build --embedder st --model BAAI/bge-m3 --store chroma
-  export NEO4J_URI=bolt://... NEO4J_USER=neo4j NEO4J_PASSWORD=...
-  python neo4j_export.py --apply
-  KB_GRAPH_BACKEND=neo4j python cli.py ask "UCP 和 Catalog 的关系是什么"
+  cd kb/site/deploy
+  docker compose -p shopify-kb -f docker-compose.yml -f docker-compose.behind-proxy.yml -f docker-compose.vector.yml up -d --build
   ```
-- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本机缓存 `BAAI/bge-small-zh-v1.5` 的 ST 路径 smoke `pass_rate=1.00(5/5)`;Neo4j dry-run 为 213 实体 / 593 关系并可导出 809 行 Cypher。
-- 未启用:本机未安装 `chromadb/openai/neo4j`;未下载 `BAAI/bge-m3`;未连接真实 Neo4j 服务。中文召回“明显优于 LSA”的最终验收需在 bge-m3 或 OpenAI embedding 实际启用后做 A/B 评测。
+- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本地 compose config 已确认 vector args、Neo4j 服务和回环端口;Neo4j dry-run 为 213 实体 / 593 关系并可导出 Cypher。
+- 待线上验收:服务器启用 bge/Chroma/Neo4j 后,`cli.py status/doctor`,`compare_retrieval.py`,Neo4j 查询与公开站点只读检查。
 
 ### ✅ T5 网站上线(P1)
 - 已执行:腾讯云轻量服务器独立 Docker project `shopify-kb`;共享 nginx 反代 `platform.shopify.lute-tlz-dddd.top`;HTTPS 证书独立签发。
