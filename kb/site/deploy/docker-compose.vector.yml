@@ -9,16 +9,23 @@ services:
         KB_EMBEDDER: ${SHOPIFY_KB_EMBEDDER:-st}
         KB_VECTOR_STORE: ${SHOPIFY_KB_VECTOR_STORE:-chroma}
         KB_ST_MODEL: ${SHOPIFY_KB_ST_MODEL:-BAAI/bge-m3}
+        HF_ENDPOINT: ${HF_ENDPOINT:-https://hf-mirror.com}
     environment:
       KB_EMBEDDER: ${SHOPIFY_KB_EMBEDDER:-st}
       KB_VECTOR_STORE: ${SHOPIFY_KB_VECTOR_STORE:-chroma}
       KB_ST_MODEL: ${SHOPIFY_KB_ST_MODEL:-BAAI/bge-m3}
+      HF_ENDPOINT: ${HF_ENDPOINT:-https://hf-mirror.com}
+      HF_HOME: /root/.cache/huggingface
+      KB_RUNTIME_BUILD_ON_START: ${SHOPIFY_KB_RUNTIME_BUILD_ON_START:-1}
+      KB_RUNTIME_BUILD_REQUIRED: ${SHOPIFY_KB_RUNTIME_BUILD_REQUIRED:-0}
       KB_GRAPH_BACKEND: neo4j
       KB_GRAPH_IMPORT_ON_START: "1"
       NEO4J_URI: bolt://shopifykb-neo4j:7687
       NEO4J_USER: ${NEO4J_USER:-neo4j}
       NEO4J_PASSWORD: ${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}
       NEO4J_WAIT_SECONDS: "120"
+    volumes:
+      - kb_hf_cache:/root/.cache/huggingface
     depends_on:
       neo4j:
         condition: service_healthy
@@ -51,3 +58,4 @@ services:
 volumes:
   kb_neo4j_data: { name: shopify-kb-neo4j-data }
   kb_neo4j_logs: { name: shopify-kb-neo4j-logs }
+  kb_hf_cache: { name: shopify-kb-hf-cache }

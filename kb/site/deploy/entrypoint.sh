@@ -1,6 +1,60 @@
 #!/bin/sh
 set -eu
 
+if [ ! -f /app/_rag/kb_index/index_store/manifest.json ]; then
+  cd /app/_rag/kb_index
+  python cli.py build --embedder lsa --store numpy
+fi
+
+if [ "${KB_RUNTIME_BUILD_ON_START:-0}" = "1" ]; then
+  need_runtime_build="$(
+    python - <<'PY'
+import json
+import os
+
+path = "/app/_rag/kb_index/index_store/manifest.json"
+try:
+    manifest = json.load(open(path, encoding="utf-8"))
+except Exception:
+    manifest = {}
+
+desired_embedder = (os.environ.get("KB_EMBEDDER") or "lsa").strip().lower()
+desired_store = (os.environ.get("KB_VECTOR_STORE") or "numpy").strip().lower()
+desired_model = (os.environ.get("KB_ST_MODEL") or "").strip()
+current_model = (manifest.get("model") or "").strip()
+
+needs_model = desired_embedder not in {"", "lsa"} and desired_model and current_model != desired_model
+need = (
+    (manifest.get("embedder") or "").lower() != desired_embedder
+    or (manifest.get("store") or "").lower() != desired_store
+    or needs_model
+)
+print("1" if need else "0")
+PY
+  )"
+
+  if [ "$need_runtime_build" = "1" ]; then
+    echo "runtime_index_build_start embedder=${KB_EMBEDDER:-lsa} store=${KB_VECTOR_STORE:-numpy} model=${KB_ST_MODEL:-}"
+    if [ -n "${KB_ST_MODEL:-}" ] && [ "${KB_EMBEDDER:-lsa}" != "lsa" ]; then
+      if cd /app/_rag/kb_index && python cli.py build --embedder "${KB_EMBEDDER:-lsa}" --store "${KB_VECTOR_STORE:-numpy}" --model "$KB_ST_MODEL"; then
+        echo "runtime_index_build_ready"
+      elif [ "${KB_RUNTIME_BUILD_REQUIRED:-0}" = "1" ]; then
+        exit 1
+      else
+        echo "runtime_index_build_unavailable; continuing with existing index"
+      fi
+    else
+      if cd /app/_rag/kb_index && python cli.py build --embedder "${KB_EMBEDDER:-lsa}" --store "${KB_VECTOR_STORE:-numpy}"; then
+        echo "runtime_index_build_ready"
+      elif [ "${KB_RUNTIME_BUILD_REQUIRED:-0}" = "1" ]; then
+        exit 1
+      else
+        echo "runtime_index_build_unavailable; continuing with existing index"
+      fi
+    fi
+  fi
+fi
+
 if [ "${KB_GRAPH_BACKEND:-json}" = "neo4j" ]; then
   python - <<'PY'
 import os
@@ -28,4 +82,5 @@ PY
   fi
 fi
 
+cd /app/site
 exec "$@"
