@@ -6,6 +6,7 @@ ARG KB_EMBEDDER=lsa
 ARG KB_VECTOR_STORE=numpy
 ARG KB_ST_MODEL=BAAI/bge-m3
 ARG HF_ENDPOINT=
+ARG TORCH_CPU_VERSION=2.12.1+cpu
 ENV KB_EMBEDDER=${KB_EMBEDDER} \
     KB_VECTOR_STORE=${KB_VECTOR_STORE} \
     KB_ST_MODEL=${KB_ST_MODEL} \
@@ -21,7 +22,8 @@ RUN if [ "$INSTALL_VECTOR_EXTRAS" = "1" ]; then \
       pip install --timeout 600 --retries 5 \
         --index-url https://download.pytorch.org/whl/cpu \
         --trusted-host download.pytorch.org \
-        torch; \
+        --no-deps \
+        "torch==$TORCH_CPU_VERSION"; \
       pip install --timeout 600 --retries 5 \
         -i https://mirrors.cloud.tencent.com/pypi/simple \
         --trusted-host mirrors.cloud.tencent.com \
