@@ -1,1369 +1,1850 @@
 [
- {
-  "id": "stage_00",
-  "type": "Stage",
-  "label": "00 战略与定位",
-  "props": {
-   "layer": "流程阶段"
+  {
+    "id": "stage_00",
+    "type": "Stage",
+    "label": "00 战略与定位",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_01",
+    "type": "Stage",
+    "label": "01 选品与市场调研",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_02",
+    "type": "Stage",
+    "label": "02 建站与基础设施",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_03",
+    "type": "Stage",
+    "label": "03 商品上架与Listing",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_04",
+    "type": "Stage",
+    "label": "04 内容与素材生产",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_05",
+    "type": "Stage",
+    "label": "05 营销与引流",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_06",
+    "type": "Stage",
+    "label": "06 转化优化CRO",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_07",
+    "type": "Stage",
+    "label": "07 数据与归因",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_08",
+    "type": "Stage",
+    "label": "08 订单履约与供应链",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_09",
+    "type": "Stage",
+    "label": "09 客户与会员运营",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_10",
+    "type": "Stage",
+    "label": "10 自动化编排",
+    "props": {
+      "layer": "流程阶段"
+    }
+  },
+  {
+    "id": "stage_90",
+    "type": "Stage",
+    "label": "90 AI能力地图",
+    "props": {
+      "layer": "横切层"
+    }
+  },
+  {
+    "id": "stage_91",
+    "type": "Stage",
+    "label": "91 合规与风控",
+    "props": {
+      "layer": "横切层"
+    }
+  },
+  {
+    "id": "stage_92",
+    "type": "Stage",
+    "label": "92 组织与SOP",
+    "props": {
+      "layer": "横切层"
+    }
+  },
+  {
+    "id": "src_weekly",
+    "type": "Source",
+    "label": "数字化中心周报",
+    "props": {}
+  },
+  {
+    "id": "src_twitter",
+    "type": "Source",
+    "label": "Twitter书签(中文AI博主)",
+    "props": {}
+  },
+  {
+    "id": "src_shopify_docs",
+    "type": "Source",
+    "label": "Shopify官方文档",
+    "props": {}
+  },
+  {
+    "id": "src_shopify_accounts",
+    "type": "Source",
+    "label": "Shopify官方账号@ShopifyDevs/@ShopifyEng",
+    "props": {}
+  },
+  {
+    "id": "cap_sidekick",
+    "type": "ShopifyCapability",
+    "label": "Sidekick",
+    "props": {}
+  },
+  {
+    "id": "cap_pulse",
+    "type": "ShopifyCapability",
+    "label": "Sidekick Pulse",
+    "props": {}
+  },
+  {
+    "id": "cap_magic",
+    "type": "ShopifyCapability",
+    "label": "Shopify Magic",
+    "props": {}
+  },
+  {
+    "id": "cap_flow",
+    "type": "ShopifyCapability",
+    "label": "Shopify Flow",
+    "props": {}
+  },
+  {
+    "id": "cap_storefront_mcp",
+    "type": "ShopifyCapability",
+    "label": "Storefront MCP",
+    "props": {}
+  },
+  {
+    "id": "cap_dev_mcp",
+    "type": "ShopifyCapability",
+    "label": "Dev MCP",
+    "props": {}
+  },
+  {
+    "id": "cap_catalog",
+    "type": "ShopifyCapability",
+    "label": "Catalog API",
+    "props": {}
+  },
+  {
+    "id": "cap_ai_toolkit",
+    "type": "ShopifyCapability",
+    "label": "AI Toolkit(MIT开源)",
+    "props": {}
+  },
+  {
+    "id": "cap_autopilot",
+    "type": "ShopifyCapability",
+    "label": "Campaign Autopilot",
+    "props": {}
+  },
+  {
+    "id": "cap_store_ai",
+    "type": "ShopifyCapability",
+    "label": "Store AI / Agentic Storefront",
+    "props": {}
+  },
+  {
+    "id": "cap_ucp",
+    "type": "ShopifyCapability",
+    "label": "UCP(与Google共建)",
+    "props": {}
+  },
+  {
+    "id": "cap_hydrogen",
+    "type": "ShopifyCapability",
+    "label": "Hydrogen(agent-first)",
+    "props": {}
+  },
+  {
+    "id": "cap_oxygen",
+    "type": "ShopifyCapability",
+    "label": "Oxygen",
+    "props": {}
+  },
+  {
+    "id": "cap_functions",
+    "type": "ShopifyCapability",
+    "label": "Shopify Functions",
+    "props": {}
+  },
+  {
+    "id": "cap_sidekick_ext",
+    "type": "ShopifyCapability",
+    "label": "Sidekick App Extensions",
+    "props": {}
+  },
+  {
+    "id": "org_google",
+    "type": "Org",
+    "label": "Google",
+    "props": {}
+  },
+  {
+    "id": "step1",
+    "type": "AIStep",
+    "label": "找产品",
+    "props": {}
+  },
+  {
+    "id": "step2",
+    "type": "AIStep",
+    "label": "看市场趋势",
+    "props": {}
+  },
+  {
+    "id": "step3",
+    "type": "AIStep",
+    "label": "分析竞品",
+    "props": {}
+  },
+  {
+    "id": "step4",
+    "type": "AIStep",
+    "label": "写Listing",
+    "props": {}
+  },
+  {
+    "id": "step5",
+    "type": "AIStep",
+    "label": "多语翻译",
+    "props": {}
+  },
+  {
+    "id": "step6",
+    "type": "AIStep",
+    "label": "做主图和A+",
+    "props": {}
+  },
+  {
+    "id": "step7",
+    "type": "AIStep",
+    "label": "剪广告影片",
+    "props": {}
+  },
+  {
+    "id": "step8",
+    "type": "AIStep",
+    "label": "做配音",
+    "props": {}
+  },
+  {
+    "id": "step9",
+    "type": "AIStep",
+    "label": "做音乐氛围音",
+    "props": {}
+  },
+  {
+    "id": "step10",
+    "type": "AIStep",
+    "label": "自动化营运",
+    "props": {}
+  },
+  {
+    "id": "tool_helium10",
+    "type": "Tool",
+    "label": "Helium 10",
+    "props": {}
+  },
+  {
+    "id": "tool_junglescout",
+    "type": "Tool",
+    "label": "Jungle Scout",
+    "props": {}
+  },
+  {
+    "id": "tool_googletrends",
+    "type": "Tool",
+    "label": "Google Trends",
+    "props": {}
+  },
+  {
+    "id": "tool_perplexity",
+    "type": "Tool",
+    "label": "Perplexity",
+    "props": {}
+  },
+  {
+    "id": "tool_chatgpt",
+    "type": "Tool",
+    "label": "ChatGPT",
+    "props": {}
+  },
+  {
+    "id": "tool_claude",
+    "type": "Tool",
+    "label": "Claude",
+    "props": {}
+  },
+  {
+    "id": "tool_deepseek",
+    "type": "Tool",
+    "label": "DeepSeek",
+    "props": {}
+  },
+  {
+    "id": "tool_deepl",
+    "type": "Tool",
+    "label": "DeepL",
+    "props": {}
+  },
+  {
+    "id": "tool_gemini",
+    "type": "Tool",
+    "label": "Gemini",
+    "props": {}
+  },
+  {
+    "id": "tool_midjourney",
+    "type": "Tool",
+    "label": "Midjourney",
+    "props": {}
+  },
+  {
+    "id": "tool_imini",
+    "type": "Tool",
+    "label": "imini",
+    "props": {}
+  },
+  {
+    "id": "tool_canva",
+    "type": "Tool",
+    "label": "Canva",
+    "props": {}
+  },
+  {
+    "id": "tool_photoshop",
+    "type": "Tool",
+    "label": "Photoshop",
+    "props": {}
+  },
+  {
+    "id": "tool_capcut",
+    "type": "Tool",
+    "label": "CapCut",
+    "props": {}
+  },
+  {
+    "id": "tool_jianying",
+    "type": "Tool",
+    "label": "剪映",
+    "props": {}
+  },
+  {
+    "id": "tool_runway",
+    "type": "Tool",
+    "label": "Runway",
+    "props": {}
+  },
+  {
+    "id": "tool_kling",
+    "type": "Tool",
+    "label": "Kling",
+    "props": {}
+  },
+  {
+    "id": "tool_elevenlabs",
+    "type": "Tool",
+    "label": "ElevenLabs",
+    "props": {}
+  },
+  {
+    "id": "tool_suno",
+    "type": "Tool",
+    "label": "Suno",
+    "props": {}
+  },
+  {
+    "id": "tool_zapier",
+    "type": "Tool",
+    "label": "Zapier",
+    "props": {}
+  },
+  {
+    "id": "tool_make",
+    "type": "Tool",
+    "label": "Make",
+    "props": {}
+  },
+  {
+    "id": "tool_ga4",
+    "type": "Tool",
+    "label": "GA4",
+    "props": {}
+  },
+  {
+    "id": "tool_gtm",
+    "type": "Tool",
+    "label": "GTM",
+    "props": {}
+  },
+  {
+    "id": "tool_bigquery",
+    "type": "Tool",
+    "label": "BigQuery",
+    "props": {}
+  },
+  {
+    "id": "tool_klaviyo",
+    "type": "Tool",
+    "label": "Klaviyo",
+    "props": {}
+  },
+  {
+    "id": "tool_omnisend",
+    "type": "Tool",
+    "label": "Omnisend",
+    "props": {}
+  },
+  {
+    "id": "tool_loop",
+    "type": "Tool",
+    "label": "Loop",
+    "props": {}
+  },
+  {
+    "id": "tool_nanobanana",
+    "type": "Tool",
+    "label": "nano banana(内部生图)",
+    "props": {}
+  },
+  {
+    "id": "tool_seedream",
+    "type": "Tool",
+    "label": "seedream5.0(内部扩图)",
+    "props": {}
+  },
+  {
+    "id": "con_agentic_commerce",
+    "type": "Concept",
+    "label": "代理式商务",
+    "props": {}
+  },
+  {
+    "id": "con_mcp",
+    "type": "Concept",
+    "label": "MCP",
+    "props": {}
+  },
+  {
+    "id": "con_agent",
+    "type": "Concept",
+    "label": "AI Agent",
+    "props": {}
+  },
+  {
+    "id": "con_rag",
+    "type": "Concept",
+    "label": "RAG",
+    "props": {}
+  },
+  {
+    "id": "con_kg",
+    "type": "Concept",
+    "label": "知识图谱",
+    "props": {}
+  },
+  {
+    "id": "con_claudemd",
+    "type": "Concept",
+    "label": "CLAUDE.md/AGENTS.md规范",
+    "props": {}
+  },
+  {
+    "id": "con_trellis",
+    "type": "Concept",
+    "label": "Trellis持久记忆",
+    "props": {}
+  },
+  {
+    "id": "con_skillopt",
+    "type": "Concept",
+    "label": "SkillOpt自进化Skill",
+    "props": {}
+  },
+  {
+    "id": "con_datalayer",
+    "type": "Concept",
+    "label": "AI数据层",
+    "props": {}
+  },
+  {
+    "id": "con_emotion",
+    "type": "Concept",
+    "label": "情绪公式(短视频)",
+    "props": {}
+  },
+  {
+    "id": "con_human_loop",
+    "type": "Concept",
+    "label": "人审兜底",
+    "props": {}
+  },
+  {
+    "id": "con_attribution",
+    "type": "Concept",
+    "label": "渠道归因",
+    "props": {}
+  },
+  {
+    "id": "team_site",
+    "type": "Team",
+    "label": "站点产品组",
+    "props": {}
+  },
+  {
+    "id": "team_data",
+    "type": "Team",
+    "label": "数据组",
+    "props": {}
+  },
+  {
+    "id": "team_platform",
+    "type": "Team",
+    "label": "平台研发组",
+    "props": {}
+  },
+  {
+    "id": "team_mai",
+    "type": "Team",
+    "label": "营销AI组",
+    "props": {}
+  },
+  {
+    "id": "team_supply",
+    "type": "Team",
+    "label": "产研与供应链系统组",
+    "props": {}
+  },
+  {
+    "id": "team_test",
+    "type": "Team",
+    "label": "系统测试组",
+    "props": {}
+  },
+  {
+    "id": "team_ops",
+    "type": "Team",
+    "label": "软件运维组",
+    "props": {}
+  },
+  {
+    "id": "team_agent",
+    "type": "Team",
+    "label": "Agent工程组",
+    "props": {}
+  },
+  {
+    "id": "proj_invsync",
+    "type": "Project",
+    "label": "独立站库存同步(Shopify)",
+    "props": {}
+  },
+  {
+    "id": "proj_help",
+    "type": "Project",
+    "label": "帮助中心V1-V1.2",
+    "props": {}
+  },
+  {
+    "id": "proj_member",
+    "type": "Project",
+    "label": "momcozy会员中心(全球化/多店铺)",
+    "props": {}
+  },
+  {
+    "id": "proj_sea",
+    "type": "Project",
+    "label": "东南亚站群拆分",
+    "props": {}
+  },
+  {
+    "id": "proj_mday",
+    "type": "Project",
+    "label": "母亲节活动/Mama Registry",
+    "props": {}
+  },
+  {
+    "id": "proj_admid",
+    "type": "Project",
+    "label": "自建广告中台(Meta/AMZ/TikTok)",
+    "props": {}
+  },
+  {
+    "id": "proj_attr",
+    "type": "Project",
+    "label": "渠道归因/CLV看板",
+    "props": {}
+  },
+  {
+    "id": "proj_senti",
+    "type": "Project",
+    "label": "AI舆情监控系统",
+    "props": {}
+  },
+  {
+    "id": "proj_cainiao",
+    "type": "Project",
+    "label": "Shopify对接菜鸟海外仓",
+    "props": {}
+  },
+  {
+    "id": "proj_video",
+    "type": "Project",
+    "label": "视频中心(AI视频1.0/2.0)",
+    "props": {}
+  },
+  {
+    "id": "proj_imggen",
+    "type": "Project",
+    "label": "AI生图/扩图工作流",
+    "props": {}
+  },
+  {
+    "id": "proj_agentops",
+    "type": "Project",
+    "label": "epros营运Agent/VOC企划Agent",
+    "props": {}
+  },
+  {
+    "id": "repo_ai_toolkit",
+    "type": "Repo",
+    "label": "Shopify/Shopify-AI-Toolkit",
+    "props": {}
+  },
+  {
+    "id": "repo_hydrogen",
+    "type": "Repo",
+    "label": "Shopify/hydrogen",
+    "props": {}
+  },
+  {
+    "id": "repo_ucp",
+    "type": "Repo",
+    "label": "universal-commerce-protocol/ucp",
+    "props": {}
+  },
+  {
+    "id": "repo_awesome_ucp",
+    "type": "Repo",
+    "label": "Upsonic/awesome-ucp",
+    "props": {}
+  },
+  {
+    "id": "repo_mcp_hydrogen",
+    "type": "Repo",
+    "label": "commerce-atoms/mcp-hydrogen-kit",
+    "props": {}
+  },
+  {
+    "id": "repo_sf_mcp_comm",
+    "type": "Repo",
+    "label": "QuentinCody/shopify-storefront-mcp-server",
+    "props": {}
+  },
+  {
+    "id": "repo_agent_reach",
+    "type": "Repo",
+    "label": "Panniantong/agent-reach",
+    "props": {}
+  },
+  {
+    "id": "repo_horizon",
+    "type": "Repo",
+    "label": "Thysrael/Horizon",
+    "props": {}
+  },
+  {
+    "id": "repo_claude_md",
+    "type": "Repo",
+    "label": "Karpathy CLAUDE.md",
+    "props": {}
+  },
+  {
+    "id": "repo_trellis",
+    "type": "Repo",
+    "label": "Trellis (Claude Code memory)",
+    "props": {}
+  },
+  {
+    "id": "repo_autohedge",
+    "type": "Repo",
+    "label": "The-Swarm-Corp/AutoHedge",
+    "props": {}
+  },
+  {
+    "id": "repo_one_person",
+    "type": "Repo",
+    "label": "awesome-one-person-company",
+    "props": {}
+  },
+  {
+    "id": "repo_universaldl",
+    "type": "Repo",
+    "label": "universalDownloader",
+    "props": {}
+  },
+  {
+    "id": "src_github",
+    "type": "Source",
+    "label": "GitHub 开源仓库",
+    "props": {
+      "updated": "2026-06-28",
+      "scope": "Shopify engineering repos, AI Toolkit, UCP, Hydrogen, Agent tools",
+      "source_path": "_sources/github-shopify-repos/README.md",
+      "repo_count": 26,
+      "verification_status": "local_readonly_snapshot"
+    }
+  },
+  {
+    "id": "skill_admin",
+    "type": "Skill",
+    "label": "shopify-admin",
+    "props": {}
+  },
+  {
+    "id": "skill_admin_exec",
+    "type": "Skill",
+    "label": "shopify-admin-execution(真改)",
+    "props": {}
+  },
+  {
+    "id": "skill_storefront_gql",
+    "type": "Skill",
+    "label": "shopify-storefront-graphql",
+    "props": {}
+  },
+  {
+    "id": "skill_dev",
+    "type": "Skill",
+    "label": "shopify-dev(Dev MCP)",
+    "props": {}
+  },
+  {
+    "id": "skill_liquid",
+    "type": "Skill",
+    "label": "shopify-liquid(主题)",
+    "props": {}
+  },
+  {
+    "id": "skill_hydrogen",
+    "type": "Skill",
+    "label": "shopify-hydrogen",
+    "props": {}
+  },
+  {
+    "id": "skill_custom_data",
+    "type": "Skill",
+    "label": "shopify-custom-data",
+    "props": {}
+  },
+  {
+    "id": "skill_functions",
+    "type": "Skill",
+    "label": "shopify-functions",
+    "props": {}
+  },
+  {
+    "id": "skill_ui_ext",
+    "type": "Skill",
+    "label": "Polaris UI 扩展(admin/checkout/customer/pos/app-home)",
+    "props": {}
+  },
+  {
+    "id": "skill_customer",
+    "type": "Skill",
+    "label": "shopify-customer",
+    "props": {}
+  },
+  {
+    "id": "skill_payments_apps",
+    "type": "Skill",
+    "label": "shopify-payments-apps",
+    "props": {}
+  },
+  {
+    "id": "skill_partner",
+    "type": "Skill",
+    "label": "shopify-partner",
+    "props": {}
+  },
+  {
+    "id": "skill_appstore_review",
+    "type": "Skill",
+    "label": "shopify-app-store-review",
+    "props": {}
+  },
+  {
+    "id": "skill_onb_dev",
+    "type": "Skill",
+    "label": "shopify-onboarding-dev",
+    "props": {}
+  },
+  {
+    "id": "skill_onb_merchant",
+    "type": "Skill",
+    "label": "shopify-onboarding-merchant",
+    "props": {}
+  },
+  {
+    "id": "src_youtube_ks",
+    "type": "Source",
+    "label": "YouTube · Kevin Stratvert",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_beg2026",
+    "type": "Video",
+    "label": "KS:Shopify Beginners 2026",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_crash",
+    "type": "Video",
+    "label": "KS:Use Shopify Crash Course",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_design",
+    "type": "Video",
+    "label": "KS:Website Design (Avoid AI Scams)",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_cs1",
+    "type": "Video",
+    "label": "KS:Automate Customer Service with AI",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_cs2",
+    "type": "Video",
+    "label": "KS:AI Handle Questions While You Sleep",
+    "props": {}
+  },
+  {
+    "id": "vid_ks_15min",
+    "type": "Video",
+    "label": "KS:15 Mins From Scratch to Storefront",
+    "props": {}
+  },
+  {
+    "id": "src_youtube_metics",
+    "type": "Source",
+    "label": "YouTube · Metics Media",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_fQZntbd5QGI",
+    "type": "Video",
+    "label": "MM:Shopify 初学者教程 - 10分钟内设置您的商店",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_uorQJ_ucDhg",
+    "type": "Video",
+    "label": "MM:Shopify 新手教程 – 完整店铺设置指南",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_nJMqRgKkkBg",
+    "type": "Video",
+    "label": "MM:Shopify 新手教程(完整商店设置)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_zTmFF58HRsE",
+    "type": "Video",
+    "label": "MM:2024 年如何在 Shopify 上销售(适合初学者)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_lCkrcxsm95Q",
+    "type": "Video",
+    "label": "MM:5分钟打造一个Shopify商店(使用AI)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_YtbaxJFb9zE",
+    "type": "Video",
+    "label": "MM:如何创建 Shopify 网站——初学者分步教程",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_wQGabloRalM",
+    "type": "Video",
+    "label": "MM:Shopify 新手终极指南",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_BKFBxoU9vUk",
+    "type": "Video",
+    "label": "MM:Shopify 网站设计教程 - 一步一步",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_istNOWqKKQk",
+    "type": "Video",
+    "label": "MM:如何创建一个 Shopify 无货源店铺(使用 AI)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_sbDOdXi4nXk",
+    "type": "Video",
+    "label": "MM:适用于初学者的 Shopify 网站设计 – 分步教程",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_UebgVScwFto",
+    "type": "Video",
+    "label": "MM:如何建立 Shopify 商店:10 分钟掌握基础",
+    "props": {}
+  },
+  {
+    "id": "vid_mm__p7hoAdVv3g",
+    "type": "Video",
+    "label": "MM:Shopify 初学者教程 – 一步一步",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_zgUbeJnlXfw",
+    "type": "Video",
+    "label": "MM:Print on Demand Shopify 教程(完整设置指南)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_OPkVbIy7bxs",
+    "type": "Video",
+    "label": "MM:开设Shopify商店的最佳方式(使用AI)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_27foEj8ujSI",
+    "type": "Video",
+    "label": "MM:如何利用人工智能构建单一产品 Shopify 商店(分步指南)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_8nxk8FARDTw",
+    "type": "Video",
+    "label": "MM:如何使用 Shopify:新手教程",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_1FgCo5-222M",
+    "type": "Video",
+    "label": "MM:如何建立网上商店 - 步骤详解",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_TYYgCXNwTtQ",
+    "type": "Video",
+    "label": "MM:最佳网站建设平台(我的首选推荐)",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_wDBcYlt_DZU",
+    "type": "Video",
+    "label": "MM:How to Actually Start Shopify Dropshippi",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_XMLjZB1ASUM",
+    "type": "Video",
+    "label": "MM:The ONLY Shopify Dropshipping Tutorial Y",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_RWI59fC7Z48",
+    "type": "Video",
+    "label": "MM:The OFFICIAL Shopify Tutorial For Beginn",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_UKs338dQzbY",
+    "type": "Video",
+    "label": "MM:Shopify Tutorial for Beginners (2026) · ",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_NjogxU1oRaE",
+    "type": "Video",
+    "label": "MM:The ONLY Shopify Tutorial You Need · Bui",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_xfOT2elC2Ok",
+    "type": "Video",
+    "label": "MM:I Tried AI Dropshipping For 7 Days, Here",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_rgZU5pDf6mw",
+    "type": "Video",
+    "label": "MM:The Shopify Story",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_YImqGsOPqU8",
+    "type": "Video",
+    "label": "MM:How to Actually Start Shopify Dropshippi",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_rhuYy9LP72M",
+    "type": "Video",
+    "label": "MM:I Tried AI Dropshipping For a Week (RAW ",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_roM3wlSqk1c",
+    "type": "Video",
+    "label": "MM:The OFFICIAL Shopify Tutorial For Beginn",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_iwmz1sL5r9g",
+    "type": "Video",
+    "label": "MM:Shopify Tutorial for Beginners 2026 (Ful",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_hoIzMTdSe5w",
+    "type": "Video",
+    "label": "MM:Shopify 2026 Review · Tips and tricks fo",
+    "props": {}
+  },
+  {
+    "id": "vid_mm_YatPsQlGM3g",
+    "type": "Video",
+    "label": "MM:Claude Just Changed Shopify Forever",
+    "props": {}
+  },
+  {
+    "id": "src_youtube_achampton",
+    "type": "Source",
+    "label": "YouTube · Ac Hampton",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_zJj3KjQJU_E",
+    "type": "Video",
+    "label": "AH:How I'd Start Dropshipping on Shopify wi",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_Tt1UzjlEunc",
+    "type": "Video",
+    "label": "AH:Watch me speedrun a shopify store ($0 to",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_4eVGNBVJos8",
+    "type": "Video",
+    "label": "AH:The ONLY Way to Start Dropshipping From ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_6WpY-5LvBO8",
+    "type": "Video",
+    "label": "AH:How to Actually Sell on Shopify in 2026 ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_5FYIA-hKh6w",
+    "type": "Video",
+    "label": "AH:How To Start Shopify Dropshipping in 202",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_KSP0JxWEC4Q",
+    "type": "Video",
+    "label": "AH:How to Start Shopify Dropshipping in 202",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_QnQ5tOGDWVw",
+    "type": "Video",
+    "label": "AH:How To Create A Shopify Store in 2026 (F",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_fMt3kv1vc_A",
+    "type": "Video",
+    "label": "AH:How To Start Shopify Dropshipping (FOR B",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_e7oiWBn7KwU",
+    "type": "Video",
+    "label": "AH:The TRUTH To Why You Aren't Making Sales",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_vXmF10ZNmoo",
+    "type": "Video",
+    "label": "AH:Laziest Way to Start Shopify Dropshippin",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_-3H6CW5FgLY",
+    "type": "Video",
+    "label": "AH:How to Start Dropshipping With $0 in 202",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_r-akYidsTHU",
+    "type": "Video",
+    "label": "AH:How To Start Dropshipping With $0 in 202",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_OjwWTPck2d0",
+    "type": "Video",
+    "label": "AH:It's never too late to start dropshippin",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_1EgjCxk0-kM",
+    "type": "Video",
+    "label": "AH:Best Apps For Shopify Dropshipping as a ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_xZjkLrHJheE",
+    "type": "Video",
+    "label": "AH:AI Built My Shopify Store in Minutes… He",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_G0ixSNfa0vk",
+    "type": "Video",
+    "label": "AH:How To Start Dropshipping From Your PHON",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_m-8yOo_F6CY",
+    "type": "Video",
+    "label": "AH:How I'd Start Dropshipping in 2026 if I ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_F97pwb80QIE",
+    "type": "Video",
+    "label": "AH:I Tried Teaching My Friend Dropshipping ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_Y3iXtMjE4bw",
+    "type": "Video",
+    "label": "AH:My AI Dropshipping Store Is Boring But M",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_k13zZ6hdXOw",
+    "type": "Video",
+    "label": "AH:Give Me 15 Minutes and I'll Build a $10K",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_lx0wQb3FBQU",
+    "type": "Video",
+    "label": "AH:Beginners Guide To Start A Dropshipping ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_NX-5ChIZBRQ",
+    "type": "Video",
+    "label": "AH:How To Fulfill Your Dropshipping Orders ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_xrfZshDuPBU",
+    "type": "Video",
+    "label": "AH:Watch Me LIVE Show You How to Start Drop",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_WkUkzdMnRHo",
+    "type": "Video",
+    "label": "AH:How To Fulfill Your Dropshipping Orders ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_GGwXtC4WXvc",
+    "type": "Video",
+    "label": "AH:Seriously, Watch This Before You Start D",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_7jC2H8Nf-7M",
+    "type": "Video",
+    "label": "AH:How to Start Dropshipping with $100 (The",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_aKIHLrdsv8o",
+    "type": "Video",
+    "label": "AH:Top Shopify Apps You NEED for More Sales",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_mjry59gEteM",
+    "type": "Video",
+    "label": "AH:Shopify Tutorial for Beginners 2026 - Bu",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_tUu7W4oAlmw",
+    "type": "Video",
+    "label": "AH:How To Create a Website To Sell Products",
+    "props": {}
+  },
+  {
+    "id": "vid_ah__1caEZ7t3UY",
+    "type": "Video",
+    "label": "AH:The COMPLETE Shopify Tutorial 2026",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_okSKWf8PBNY",
+    "type": "Video",
+    "label": "AH:Shopify Theme Development - Build a them",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_AX0eHDslSEc",
+    "type": "Video",
+    "label": "AH:How To Build A Shopify Store In 27 Minut",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_8O_69fP_WZc",
+    "type": "Video",
+    "label": "AH:Claude Code + Shopify = $130,000/Month",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_1o6cKeK24Mw",
+    "type": "Video",
+    "label": "AH:Shopify 零基础建站新手教程【2026最新版】",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_9coOU5ea3nk",
+    "type": "Video",
+    "label": "AH:Shopify Tutorial 2026 · How to Build You",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_uRHm5WpPJyU",
+    "type": "Video",
+    "label": "AH:$278K in 30 days on shopify (with proof)",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_2y71Lc3bB1k",
+    "type": "Video",
+    "label": "AH:Shopify Store Setup Full Tutorial 2026: ",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_w9tLiCLEIrg",
+    "type": "Video",
+    "label": "AH:How To Create A Shopify Store 2026 · Com",
+    "props": {}
+  },
+  {
+    "id": "vid_ah_CYH_dRPD2B4",
+    "type": "Video",
+    "label": "AH:Shopify President: How to Win in the Gol",
+    "props": {}
+  },
+  {
+    "id": "src_inbox_indie_ops",
+    "type": "Source",
+    "label": "inbox 独立站实操资料包",
+    "props": {
+      "files": 15,
+      "unique_contents": 14,
+      "status": "verified",
+      "boundary": "local-read-only"
+    }
+  },
+  {
+    "id": "con_indie_growth_loop",
+    "type": "Concept",
+    "label": "独立站全域增长闭环",
+    "props": {
+      "source": "inbox 独立站实操资料包"
+    }
+  },
+  {
+    "id": "con_social_first_product_research",
+    "type": "Concept",
+    "label": "社媒前置选品",
+    "props": {
+      "source": "inbox 独立站实操资料包"
+    }
+  },
+  {
+    "id": "con_listing_content_factory",
+    "type": "Concept",
+    "label": "Listing内容工厂",
+    "props": {
+      "source": "inbox 独立站实操资料包",
+      "doc": "03-商品上架与Listing/Listing内容工厂SOP.md"
+    }
+  },
+  {
+    "id": "con_offsite_traffic_stack",
+    "type": "Concept",
+    "label": "站外全域流量组合",
+    "props": {
+      "source": "inbox 独立站实操资料包"
+    }
+  },
+  {
+    "id": "con_ad_report_diagnosis",
+    "type": "Concept",
+    "label": "广告报告归因诊断",
+    "props": {
+      "source": "inbox 独立站实操资料包"
+    }
+  },
+  {
+    "id": "con_channel_risk_guardrails",
+    "type": "Concept",
+    "label": "站外渠道风控护栏",
+    "props": {
+      "source": "inbox 独立站实操资料包",
+      "doc": "91-合规与风控/站外渠道风控SOP.md"
+    }
+  },
+  {
+    "id": "source_platform_operations_wiki",
+    "type": "Source",
+    "label": "platform-operations-wiki",
+    "props": {
+      "kind": "local_knowledge_base",
+      "status": "copied_and_extracted",
+      "entries": 27,
+      "verification_status": "local_source_only"
+    }
+  },
+  {
+    "id": "concept_dtc_full_domain_growth",
+    "type": "Concept",
+    "label": "DTC 全域内容营销",
+    "props": {
+      "verification_status": "local_source_only"
+    }
+  },
+  {
+    "id": "concept_creator_storefront_affiliate",
+    "type": "Concept",
+    "label": "Creator Store Front 联盟红人",
+    "props": {
+      "verification_status": "local_source_only"
+    }
+  },
+  {
+    "id": "concept_reddit_geo_ai_citation",
+    "type": "Concept",
+    "label": "Reddit GEO AI 引用",
+    "props": {
+      "verification_status": "needs_external_verification"
+    }
+  },
+  {
+    "id": "concept_meta_andromeda_creative_semantics",
+    "type": "Concept",
+    "label": "Facebook Andromeda 素材策略",
+    "props": {
+      "verification_status": "needs_external_verification"
+    }
+  },
+  {
+    "id": "concept_home_page_seo_cro",
+    "type": "Concept",
+    "label": "独立站 HOME 页 SEO",
+    "props": {
+      "verification_status": "needs_external_verification"
+    }
+  },
+  {
+    "id": "concept_offsite_ai_workflow_agents",
+    "type": "Concept",
+    "label": "站外 AI Workflow Agent",
+    "props": {
+      "verification_status": "local_source_only"
+    }
+  },
+  {
+    "id": "repo_shopify_hydrogen",
+    "type": "Repo",
+    "label": "Shopify/hydrogen",
+    "props": {
+      "url": "https://github.com/Shopify/hydrogen",
+      "priority": "P0",
+      "bucket": "Storefront/Headless",
+      "import_status": "imported",
+      "head_sha_prefix": "b4df055281f6",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "current_official; requires Storefront API/token boundary for live use",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_dawn",
+    "type": "Repo",
+    "label": "Shopify/dawn",
+    "props": {
+      "url": "https://github.com/Shopify/dawn",
+      "priority": "P0",
+      "bucket": "Theme",
+      "import_status": "imported",
+      "head_sha_prefix": "83d5e6b4094d",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official reference theme; source-available/license must be respected",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_skeleton_theme",
+    "type": "Repo",
+    "label": "Shopify/skeleton-theme",
+    "props": {
+      "url": "https://github.com/Shopify/skeleton-theme",
+      "priority": "P0",
+      "bucket": "Theme",
+      "import_status": "imported",
+      "head_sha_prefix": "a4f32d393b9e",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official starter theme; use as structure reference",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_cli",
+    "type": "Repo",
+    "label": "Shopify/cli",
+    "props": {
+      "url": "https://github.com/Shopify/cli",
+      "priority": "P0",
+      "bucket": "Developer tooling",
+      "import_status": "imported",
+      "head_sha_prefix": "53a96ee0f104",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official CLI; commands may operate on stores if authenticated",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_shopify_app_template_remix",
+    "type": "Repo",
+    "label": "Shopify/shopify-app-template-remix",
+    "props": {
+      "url": "https://github.com/Shopify/shopify-app-template-remix",
+      "priority": "P0",
+      "bucket": "App template",
+      "import_status": "imported",
+      "head_sha_prefix": "e421374031a9",
+      "readme_status": "fetched",
+      "license_hint": "unknown",
+      "risk_note": "official template; live app auth/webhook/storage needs env review",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_shopify_app_template_react_router",
+    "type": "Repo",
+    "label": "Shopify/shopify-app-template-react-router",
+    "props": {
+      "url": "https://github.com/Shopify/shopify-app-template-react-router",
+      "priority": "P0",
+      "bucket": "App template",
+      "import_status": "imported",
+      "head_sha_prefix": "2d32d3fcde35",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official template; React Router app conventions may supersede Remix in some flows",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_shopify_app_template_node",
+    "type": "Repo",
+    "label": "Shopify/shopify-app-template-node",
+    "props": {
+      "url": "https://github.com/Shopify/shopify-app-template-node",
+      "priority": "P1",
+      "bucket": "App template",
+      "import_status": "imported",
+      "head_sha_prefix": "a8a889509916",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "official but older template pattern; compare with current React Router/Remix",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_shopify_api_js",
+    "type": "Repo",
+    "label": "Shopify/shopify-api-js",
+    "props": {
+      "url": "https://github.com/Shopify/shopify-api-js",
+      "priority": "P0",
+      "bucket": "Admin API SDK",
+      "import_status": "needs_external_verification",
+      "head_sha_prefix": "9dd9284376de",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "legacy_or_moved_signal_in_readme; official SDK; admin scopes and write APIs require strict boundary",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_storefront_api_examples",
+    "type": "Repo",
+    "label": "Shopify/storefront-api-examples",
+    "props": {
+      "url": "https://github.com/Shopify/storefront-api-examples",
+      "priority": "P0",
+      "bucket": "Storefront API",
+      "import_status": "imported",
+      "head_sha_prefix": "0b3b8e9735ca",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "official examples; verify current API version before implementation",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_storefront_api_learning_kit",
+    "type": "Repo",
+    "label": "Shopify/storefront-api-learning-kit",
+    "props": {
+      "url": "https://github.com/Shopify/storefront-api-learning-kit",
+      "priority": "P1",
+      "bucket": "Storefront API",
+      "import_status": "imported",
+      "head_sha_prefix": "7c4154334671",
+      "readme_status": "fetched",
+      "license_hint": "unknown",
+      "risk_note": "official learning material; check freshness per module",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_ui_extensions",
+    "type": "Repo",
+    "label": "Shopify/ui-extensions",
+    "props": {
+      "url": "https://github.com/Shopify/ui-extensions",
+      "priority": "P0",
+      "bucket": "Checkout/UI Extensions",
+      "import_status": "imported",
+      "head_sha_prefix": "80040db41a35",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "extension examples can affect checkout/order surfaces; no live deployment without test store",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_polaris_tokens",
+    "type": "Repo",
+    "label": "Shopify/polaris-tokens",
+    "props": {
+      "url": "https://github.com/Shopify/polaris-tokens",
+      "priority": "P1",
+      "bucket": "Design system tokens",
+      "import_status": "merged",
+      "head_sha_prefix": "9cf5e0f2b478",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "legacy_or_moved_signal_in_readme; official design tokens; do not rely on deprecated polaris-react as current implementation",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_polaris_viz",
+    "type": "Repo",
+    "label": "Shopify/polaris-viz",
+    "props": {
+      "url": "https://github.com/Shopify/polaris-viz",
+      "priority": "P1",
+      "bucket": "Analytics UI",
+      "import_status": "merged",
+      "head_sha_prefix": "9ec7b27bad7c",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "legacy_or_moved_signal_in_readme; official visualization system; useful for dashboards not store operations",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_shopify_python_api",
+    "type": "Repo",
+    "label": "Shopify/shopify_python_api",
+    "props": {
+      "url": "https://github.com/Shopify/shopify_python_api",
+      "priority": "P1",
+      "bucket": "Admin API SDK",
+      "import_status": "merged",
+      "head_sha_prefix": "307fa92c92e0",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official Python SDK; admin write scope must stay gated",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_frontvibe_fluid",
+    "type": "Repo",
+    "label": "frontvibe/fluid",
+    "props": {
+      "url": "https://github.com/frontvibe/fluid",
+      "priority": "P1",
+      "bucket": "Hydrogen theme/CMS",
+      "import_status": "merged",
+      "head_sha_prefix": "d8ce2f82877c",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "community; needs license/security review before reuse",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_weaverse_pilot",
+    "type": "Repo",
+    "label": "Weaverse/pilot",
+    "props": {
+      "url": "https://github.com/Weaverse/pilot",
+      "priority": "P1",
+      "bucket": "Hydrogen theme/CMS",
+      "import_status": "merged",
+      "head_sha_prefix": "313bff8e9f92",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "community; evaluate commercial/editor dependency",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_weaverse_weaverse",
+    "type": "Repo",
+    "label": "Weaverse/weaverse",
+    "props": {
+      "url": "https://github.com/Weaverse/weaverse",
+      "priority": "P1",
+      "bucket": "Hydrogen SDK/CMS",
+      "import_status": "merged",
+      "head_sha_prefix": "659de4c6ea52",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "community SDK; integration and vendor dependency review",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_sanity_io_hydrogen_sanity",
+    "type": "Repo",
+    "label": "sanity-io/hydrogen-sanity",
+    "props": {
+      "url": "https://github.com/sanity-io/hydrogen-sanity",
+      "priority": "P1",
+      "bucket": "Hydrogen CMS integration",
+      "import_status": "merged",
+      "head_sha_prefix": "2745a1b78e32",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "community/partner; Sanity dependency and schema ownership review",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_packdigital_pack_hydrogen_theme_blueprint",
+    "type": "Repo",
+    "label": "packdigital/pack-hydrogen-theme-blueprint",
+    "props": {
+      "url": "https://github.com/packdigital/pack-hydrogen-theme-blueprint",
+      "priority": "P1",
+      "bucket": "Hydrogen theme blueprint",
+      "import_status": "merged",
+      "head_sha_prefix": "30abff50341b",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "community/vendor blueprint; license and platform dependency review",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_uicrooks_shopify_theme_lab",
+    "type": "Repo",
+    "label": "uicrooks/shopify-theme-lab",
+    "props": {
+      "url": "https://github.com/uicrooks/shopify-theme-lab",
+      "priority": "P1",
+      "bucket": "Theme workflow",
+      "import_status": "merged",
+      "head_sha_prefix": "478019b8fc16",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "community workflow; compare with official CLI before adoption",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_geli2001_shopify_mcp",
+    "type": "Repo",
+    "label": "GeLi2001/shopify-mcp",
+    "props": {
+      "url": "https://github.com/GeLi2001/shopify-mcp",
+      "priority": "P1",
+      "bucket": "MCP/Admin API",
+      "import_status": "needs_external_verification",
+      "head_sha_prefix": "c90faaf43402",
+      "readme_status": "fetched",
+      "license_hint": "MIT",
+      "risk_note": "needs_security_review; community MCP; mark needs_security_review and no live token use",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_shopify_dev_mcp_gemini_cli",
+    "type": "Repo",
+    "label": "Shopify/dev-mcp-gemini-cli",
+    "props": {
+      "url": "https://github.com/Shopify/dev-mcp-gemini-cli",
+      "priority": "P0",
+      "bucket": "Official Dev MCP setup",
+      "import_status": "imported",
+      "head_sha_prefix": "02c1f74db1f8",
+      "readme_status": "fetched",
+      "license_hint": "custom/copyright",
+      "risk_note": "official setup helper; still read-only/dev boundary unless authorized",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_ctrlaltdylan_mock_bridge",
+    "type": "Repo",
+    "label": "ctrlaltdylan/mock-bridge",
+    "props": {
+      "url": "https://github.com/ctrlaltdylan/mock-bridge",
+      "priority": "P1",
+      "bucket": "App Bridge testing",
+      "import_status": "merged",
+      "head_sha_prefix": "dc9a32945b64",
+      "readme_status": "fetched",
+      "license_hint": "unknown",
+      "risk_note": "community test mock; not a replacement for production App Bridge",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_colbymchenry_shopify_graphql_admin_mcp",
+    "type": "Repo",
+    "label": "colbymchenry/shopify-graphql-admin-mcp",
+    "props": {
+      "url": "https://github.com/colbymchenry/shopify-graphql-admin-mcp",
+      "priority": "P2",
+      "bucket": "MCP/Admin GraphQL",
+      "import_status": "needs_external_verification",
+      "head_sha_prefix": "241ce3408f00",
+      "readme_status": "fetched",
+      "license_hint": "unknown",
+      "risk_note": "needs_security_review; community MCP; admin GraphQL live-write risk high",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_julionc_awesome_shopify",
+    "type": "Repo",
+    "label": "julionc/awesome-shopify",
+    "props": {
+      "url": "https://github.com/julionc/awesome-shopify",
+      "priority": "P2",
+      "bucket": "Awesome list",
+      "import_status": "copied_only",
+      "head_sha_prefix": "0bcf7dd44cbf",
+      "readme_status": "missing_or_blocked",
+      "license_hint": "custom/copyright",
+      "risk_note": "curated list only; not source of truth",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
+  },
+  {
+    "id": "repo_vercel_commerce",
+    "type": "Repo",
+    "label": "vercel/commerce",
+    "props": {
+      "url": "https://github.com/vercel/commerce",
+      "priority": "P2",
+      "bucket": "Generic commerce architecture",
+      "import_status": "copied_only",
+      "head_sha_prefix": "3761e52e60df",
+      "readme_status": "fetched",
+      "license_hint": "unknown",
+      "risk_note": "high quality but not Shopify-native; use only as architecture reference",
+      "source_batch": "github-shopify-repos-2026-06-28"
+    }
   }
- },
- {
-  "id": "stage_01",
-  "type": "Stage",
-  "label": "01 选品与市场调研",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_02",
-  "type": "Stage",
-  "label": "02 建站与基础设施",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_03",
-  "type": "Stage",
-  "label": "03 商品上架与Listing",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_04",
-  "type": "Stage",
-  "label": "04 内容与素材生产",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_05",
-  "type": "Stage",
-  "label": "05 营销与引流",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_06",
-  "type": "Stage",
-  "label": "06 转化优化CRO",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_07",
-  "type": "Stage",
-  "label": "07 数据与归因",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_08",
-  "type": "Stage",
-  "label": "08 订单履约与供应链",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_09",
-  "type": "Stage",
-  "label": "09 客户与会员运营",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_10",
-  "type": "Stage",
-  "label": "10 自动化编排",
-  "props": {
-   "layer": "流程阶段"
-  }
- },
- {
-  "id": "stage_90",
-  "type": "Stage",
-  "label": "90 AI能力地图",
-  "props": {
-   "layer": "横切层"
-  }
- },
- {
-  "id": "stage_91",
-  "type": "Stage",
-  "label": "91 合规与风控",
-  "props": {
-   "layer": "横切层"
-  }
- },
- {
-  "id": "stage_92",
-  "type": "Stage",
-  "label": "92 组织与SOP",
-  "props": {
-   "layer": "横切层"
-  }
- },
- {
-  "id": "src_weekly",
-  "type": "Source",
-  "label": "数字化中心周报",
-  "props": {}
- },
- {
-  "id": "src_twitter",
-  "type": "Source",
-  "label": "Twitter书签(中文AI博主)",
-  "props": {}
- },
- {
-  "id": "src_shopify_docs",
-  "type": "Source",
-  "label": "Shopify官方文档",
-  "props": {}
- },
- {
-  "id": "src_shopify_accounts",
-  "type": "Source",
-  "label": "Shopify官方账号@ShopifyDevs/@ShopifyEng",
-  "props": {}
- },
- {
-  "id": "cap_sidekick",
-  "type": "ShopifyCapability",
-  "label": "Sidekick",
-  "props": {}
- },
- {
-  "id": "cap_pulse",
-  "type": "ShopifyCapability",
-  "label": "Sidekick Pulse",
-  "props": {}
- },
- {
-  "id": "cap_magic",
-  "type": "ShopifyCapability",
-  "label": "Shopify Magic",
-  "props": {}
- },
- {
-  "id": "cap_flow",
-  "type": "ShopifyCapability",
-  "label": "Shopify Flow",
-  "props": {}
- },
- {
-  "id": "cap_storefront_mcp",
-  "type": "ShopifyCapability",
-  "label": "Storefront MCP",
-  "props": {}
- },
- {
-  "id": "cap_dev_mcp",
-  "type": "ShopifyCapability",
-  "label": "Dev MCP",
-  "props": {}
- },
- {
-  "id": "cap_catalog",
-  "type": "ShopifyCapability",
-  "label": "Catalog API",
-  "props": {}
- },
- {
-  "id": "cap_ai_toolkit",
-  "type": "ShopifyCapability",
-  "label": "AI Toolkit(MIT开源)",
-  "props": {}
- },
- {
-  "id": "cap_autopilot",
-  "type": "ShopifyCapability",
-  "label": "Campaign Autopilot",
-  "props": {}
- },
- {
-  "id": "cap_store_ai",
-  "type": "ShopifyCapability",
-  "label": "Store AI / Agentic Storefront",
-  "props": {}
- },
- {
-  "id": "cap_ucp",
-  "type": "ShopifyCapability",
-  "label": "UCP(与Google共建)",
-  "props": {}
- },
- {
-  "id": "cap_hydrogen",
-  "type": "ShopifyCapability",
-  "label": "Hydrogen(agent-first)",
-  "props": {}
- },
- {
-  "id": "cap_oxygen",
-  "type": "ShopifyCapability",
-  "label": "Oxygen",
-  "props": {}
- },
- {
-  "id": "cap_functions",
-  "type": "ShopifyCapability",
-  "label": "Shopify Functions",
-  "props": {}
- },
- {
-  "id": "cap_sidekick_ext",
-  "type": "ShopifyCapability",
-  "label": "Sidekick App Extensions",
-  "props": {}
- },
- {
-  "id": "org_google",
-  "type": "Org",
-  "label": "Google",
-  "props": {}
- },
- {
-  "id": "step1",
-  "type": "AIStep",
-  "label": "找产品",
-  "props": {}
- },
- {
-  "id": "step2",
-  "type": "AIStep",
-  "label": "看市场趋势",
-  "props": {}
- },
- {
-  "id": "step3",
-  "type": "AIStep",
-  "label": "分析竞品",
-  "props": {}
- },
- {
-  "id": "step4",
-  "type": "AIStep",
-  "label": "写Listing",
-  "props": {}
- },
- {
-  "id": "step5",
-  "type": "AIStep",
-  "label": "多语翻译",
-  "props": {}
- },
- {
-  "id": "step6",
-  "type": "AIStep",
-  "label": "做主图和A+",
-  "props": {}
- },
- {
-  "id": "step7",
-  "type": "AIStep",
-  "label": "剪广告影片",
-  "props": {}
- },
- {
-  "id": "step8",
-  "type": "AIStep",
-  "label": "做配音",
-  "props": {}
- },
- {
-  "id": "step9",
-  "type": "AIStep",
-  "label": "做音乐氛围音",
-  "props": {}
- },
- {
-  "id": "step10",
-  "type": "AIStep",
-  "label": "自动化营运",
-  "props": {}
- },
- {
-  "id": "tool_helium10",
-  "type": "Tool",
-  "label": "Helium 10",
-  "props": {}
- },
- {
-  "id": "tool_junglescout",
-  "type": "Tool",
-  "label": "Jungle Scout",
-  "props": {}
- },
- {
-  "id": "tool_googletrends",
-  "type": "Tool",
-  "label": "Google Trends",
-  "props": {}
- },
- {
-  "id": "tool_perplexity",
-  "type": "Tool",
-  "label": "Perplexity",
-  "props": {}
- },
- {
-  "id": "tool_chatgpt",
-  "type": "Tool",
-  "label": "ChatGPT",
-  "props": {}
- },
- {
-  "id": "tool_claude",
-  "type": "Tool",
-  "label": "Claude",
-  "props": {}
- },
- {
-  "id": "tool_deepseek",
-  "type": "Tool",
-  "label": "DeepSeek",
-  "props": {}
- },
- {
-  "id": "tool_deepl",
-  "type": "Tool",
-  "label": "DeepL",
-  "props": {}
- },
- {
-  "id": "tool_gemini",
-  "type": "Tool",
-  "label": "Gemini",
-  "props": {}
- },
- {
-  "id": "tool_midjourney",
-  "type": "Tool",
-  "label": "Midjourney",
-  "props": {}
- },
- {
-  "id": "tool_imini",
-  "type": "Tool",
-  "label": "imini",
-  "props": {}
- },
- {
-  "id": "tool_canva",
-  "type": "Tool",
-  "label": "Canva",
-  "props": {}
- },
- {
-  "id": "tool_photoshop",
-  "type": "Tool",
-  "label": "Photoshop",
-  "props": {}
- },
- {
-  "id": "tool_capcut",
-  "type": "Tool",
-  "label": "CapCut",
-  "props": {}
- },
- {
-  "id": "tool_jianying",
-  "type": "Tool",
-  "label": "剪映",
-  "props": {}
- },
- {
-  "id": "tool_runway",
-  "type": "Tool",
-  "label": "Runway",
-  "props": {}
- },
- {
-  "id": "tool_kling",
-  "type": "Tool",
-  "label": "Kling",
-  "props": {}
- },
- {
-  "id": "tool_elevenlabs",
-  "type": "Tool",
-  "label": "ElevenLabs",
-  "props": {}
- },
- {
-  "id": "tool_suno",
-  "type": "Tool",
-  "label": "Suno",
-  "props": {}
- },
- {
-  "id": "tool_zapier",
-  "type": "Tool",
-  "label": "Zapier",
-  "props": {}
- },
- {
-  "id": "tool_make",
-  "type": "Tool",
-  "label": "Make",
-  "props": {}
- },
- {
-  "id": "tool_ga4",
-  "type": "Tool",
-  "label": "GA4",
-  "props": {}
- },
- {
-  "id": "tool_gtm",
-  "type": "Tool",
-  "label": "GTM",
-  "props": {}
- },
- {
-  "id": "tool_bigquery",
-  "type": "Tool",
-  "label": "BigQuery",
-  "props": {}
- },
- {
-  "id": "tool_klaviyo",
-  "type": "Tool",
-  "label": "Klaviyo",
-  "props": {}
- },
- {
-  "id": "tool_omnisend",
-  "type": "Tool",
-  "label": "Omnisend",
-  "props": {}
- },
- {
-  "id": "tool_loop",
-  "type": "Tool",
-  "label": "Loop",
-  "props": {}
- },
- {
-  "id": "tool_nanobanana",
-  "type": "Tool",
-  "label": "nano banana(内部生图)",
-  "props": {}
- },
- {
-  "id": "tool_seedream",
-  "type": "Tool",
-  "label": "seedream5.0(内部扩图)",
-  "props": {}
- },
- {
-  "id": "con_agentic_commerce",
-  "type": "Concept",
-  "label": "代理式商务",
-  "props": {}
- },
- {
-  "id": "con_mcp",
-  "type": "Concept",
-  "label": "MCP",
-  "props": {}
- },
- {
-  "id": "con_agent",
-  "type": "Concept",
-  "label": "AI Agent",
-  "props": {}
- },
- {
-  "id": "con_rag",
-  "type": "Concept",
-  "label": "RAG",
-  "props": {}
- },
- {
-  "id": "con_kg",
-  "type": "Concept",
-  "label": "知识图谱",
-  "props": {}
- },
- {
-  "id": "con_claudemd",
-  "type": "Concept",
-  "label": "CLAUDE.md/AGENTS.md规范",
-  "props": {}
- },
- {
-  "id": "con_trellis",
-  "type": "Concept",
-  "label": "Trellis持久记忆",
-  "props": {}
- },
- {
-  "id": "con_skillopt",
-  "type": "Concept",
-  "label": "SkillOpt自进化Skill",
-  "props": {}
- },
- {
-  "id": "con_datalayer",
-  "type": "Concept",
-  "label": "AI数据层",
-  "props": {}
- },
- {
-  "id": "con_emotion",
-  "type": "Concept",
-  "label": "情绪公式(短视频)",
-  "props": {}
- },
- {
-  "id": "con_human_loop",
-  "type": "Concept",
-  "label": "人审兜底",
-  "props": {}
- },
- {
-  "id": "con_attribution",
-  "type": "Concept",
-  "label": "渠道归因",
-  "props": {}
- },
- {
-  "id": "team_site",
-  "type": "Team",
-  "label": "站点产品组",
-  "props": {}
- },
- {
-  "id": "team_data",
-  "type": "Team",
-  "label": "数据组",
-  "props": {}
- },
- {
-  "id": "team_platform",
-  "type": "Team",
-  "label": "平台研发组",
-  "props": {}
- },
- {
-  "id": "team_mai",
-  "type": "Team",
-  "label": "营销AI组",
-  "props": {}
- },
- {
-  "id": "team_supply",
-  "type": "Team",
-  "label": "产研与供应链系统组",
-  "props": {}
- },
- {
-  "id": "team_test",
-  "type": "Team",
-  "label": "系统测试组",
-  "props": {}
- },
- {
-  "id": "team_ops",
-  "type": "Team",
-  "label": "软件运维组",
-  "props": {}
- },
- {
-  "id": "team_agent",
-  "type": "Team",
-  "label": "Agent工程组",
-  "props": {}
- },
- {
-  "id": "proj_invsync",
-  "type": "Project",
-  "label": "独立站库存同步(Shopify)",
-  "props": {}
- },
- {
-  "id": "proj_help",
-  "type": "Project",
-  "label": "帮助中心V1-V1.2",
-  "props": {}
- },
- {
-  "id": "proj_member",
-  "type": "Project",
-  "label": "momcozy会员中心(全球化/多店铺)",
-  "props": {}
- },
- {
-  "id": "proj_sea",
-  "type": "Project",
-  "label": "东南亚站群拆分",
-  "props": {}
- },
- {
-  "id": "proj_mday",
-  "type": "Project",
-  "label": "母亲节活动/Mama Registry",
-  "props": {}
- },
- {
-  "id": "proj_admid",
-  "type": "Project",
-  "label": "自建广告中台(Meta/AMZ/TikTok)",
-  "props": {}
- },
- {
-  "id": "proj_attr",
-  "type": "Project",
-  "label": "渠道归因/CLV看板",
-  "props": {}
- },
- {
-  "id": "proj_senti",
-  "type": "Project",
-  "label": "AI舆情监控系统",
-  "props": {}
- },
- {
-  "id": "proj_cainiao",
-  "type": "Project",
-  "label": "Shopify对接菜鸟海外仓",
-  "props": {}
- },
- {
-  "id": "proj_video",
-  "type": "Project",
-  "label": "视频中心(AI视频1.0/2.0)",
-  "props": {}
- },
- {
-  "id": "proj_imggen",
-  "type": "Project",
-  "label": "AI生图/扩图工作流",
-  "props": {}
- },
- {
-  "id": "proj_agentops",
-  "type": "Project",
-  "label": "epros营运Agent/VOC企划Agent",
-  "props": {}
- },
- {
-  "id": "repo_ai_toolkit",
-  "type": "Repo",
-  "label": "Shopify/Shopify-AI-Toolkit",
-  "props": {}
- },
- {
-  "id": "repo_hydrogen",
-  "type": "Repo",
-  "label": "Shopify/hydrogen",
-  "props": {}
- },
- {
-  "id": "repo_ucp",
-  "type": "Repo",
-  "label": "universal-commerce-protocol/ucp",
-  "props": {}
- },
- {
-  "id": "repo_awesome_ucp",
-  "type": "Repo",
-  "label": "Upsonic/awesome-ucp",
-  "props": {}
- },
- {
-  "id": "repo_mcp_hydrogen",
-  "type": "Repo",
-  "label": "commerce-atoms/mcp-hydrogen-kit",
-  "props": {}
- },
- {
-  "id": "repo_sf_mcp_comm",
-  "type": "Repo",
-  "label": "QuentinCody/shopify-storefront-mcp-server",
-  "props": {}
- },
- {
-  "id": "repo_agent_reach",
-  "type": "Repo",
-  "label": "Panniantong/agent-reach",
-  "props": {}
- },
- {
-  "id": "repo_horizon",
-  "type": "Repo",
-  "label": "Thysrael/Horizon",
-  "props": {}
- },
- {
-  "id": "repo_claude_md",
-  "type": "Repo",
-  "label": "Karpathy CLAUDE.md",
-  "props": {}
- },
- {
-  "id": "repo_trellis",
-  "type": "Repo",
-  "label": "Trellis (Claude Code memory)",
-  "props": {}
- },
- {
-  "id": "repo_autohedge",
-  "type": "Repo",
-  "label": "The-Swarm-Corp/AutoHedge",
-  "props": {}
- },
- {
-  "id": "repo_one_person",
-  "type": "Repo",
-  "label": "awesome-one-person-company",
-  "props": {}
- },
- {
-  "id": "repo_universaldl",
-  "type": "Repo",
-  "label": "universalDownloader",
-  "props": {}
- },
- {
-  "id": "src_github",
-  "type": "Source",
-  "label": "GitHub 开源仓库",
-  "props": {}
- },
- {
-  "id": "skill_admin",
-  "type": "Skill",
-  "label": "shopify-admin",
-  "props": {}
- },
- {
-  "id": "skill_admin_exec",
-  "type": "Skill",
-  "label": "shopify-admin-execution(真改)",
-  "props": {}
- },
- {
-  "id": "skill_storefront_gql",
-  "type": "Skill",
-  "label": "shopify-storefront-graphql",
-  "props": {}
- },
- {
-  "id": "skill_dev",
-  "type": "Skill",
-  "label": "shopify-dev(Dev MCP)",
-  "props": {}
- },
- {
-  "id": "skill_liquid",
-  "type": "Skill",
-  "label": "shopify-liquid(主题)",
-  "props": {}
- },
- {
-  "id": "skill_hydrogen",
-  "type": "Skill",
-  "label": "shopify-hydrogen",
-  "props": {}
- },
- {
-  "id": "skill_custom_data",
-  "type": "Skill",
-  "label": "shopify-custom-data",
-  "props": {}
- },
- {
-  "id": "skill_functions",
-  "type": "Skill",
-  "label": "shopify-functions",
-  "props": {}
- },
- {
-  "id": "skill_ui_ext",
-  "type": "Skill",
-  "label": "Polaris UI 扩展(admin/checkout/customer/pos/app-home)",
-  "props": {}
- },
- {
-  "id": "skill_customer",
-  "type": "Skill",
-  "label": "shopify-customer",
-  "props": {}
- },
- {
-  "id": "skill_payments_apps",
-  "type": "Skill",
-  "label": "shopify-payments-apps",
-  "props": {}
- },
- {
-  "id": "skill_partner",
-  "type": "Skill",
-  "label": "shopify-partner",
-  "props": {}
- },
- {
-  "id": "skill_appstore_review",
-  "type": "Skill",
-  "label": "shopify-app-store-review",
-  "props": {}
- },
- {
-  "id": "skill_onb_dev",
-  "type": "Skill",
-  "label": "shopify-onboarding-dev",
-  "props": {}
- },
- {
-  "id": "skill_onb_merchant",
-  "type": "Skill",
-  "label": "shopify-onboarding-merchant",
-  "props": {}
- },
- {
-  "id": "src_youtube_ks",
-  "type": "Source",
-  "label": "YouTube · Kevin Stratvert",
-  "props": {}
- },
- {
-  "id": "vid_ks_beg2026",
-  "type": "Video",
-  "label": "KS:Shopify Beginners 2026",
-  "props": {}
- },
- {
-  "id": "vid_ks_crash",
-  "type": "Video",
-  "label": "KS:Use Shopify Crash Course",
-  "props": {}
- },
- {
-  "id": "vid_ks_design",
-  "type": "Video",
-  "label": "KS:Website Design (Avoid AI Scams)",
-  "props": {}
- },
- {
-  "id": "vid_ks_cs1",
-  "type": "Video",
-  "label": "KS:Automate Customer Service with AI",
-  "props": {}
- },
- {
-  "id": "vid_ks_cs2",
-  "type": "Video",
-  "label": "KS:AI Handle Questions While You Sleep",
-  "props": {}
- },
- {
-  "id": "vid_ks_15min",
-  "type": "Video",
-  "label": "KS:15 Mins From Scratch to Storefront",
-  "props": {}
- },
- {
-  "id": "src_youtube_metics",
-  "type": "Source",
-  "label": "YouTube · Metics Media",
-  "props": {}
- },
- {
-  "id": "vid_mm_fQZntbd5QGI",
-  "type": "Video",
-  "label": "MM:Shopify 初学者教程 - 10分钟内设置您的商店",
-  "props": {}
- },
- {
-  "id": "vid_mm_uorQJ_ucDhg",
-  "type": "Video",
-  "label": "MM:Shopify 新手教程 – 完整店铺设置指南",
-  "props": {}
- },
- {
-  "id": "vid_mm_nJMqRgKkkBg",
-  "type": "Video",
-  "label": "MM:Shopify 新手教程(完整商店设置)",
-  "props": {}
- },
- {
-  "id": "vid_mm_zTmFF58HRsE",
-  "type": "Video",
-  "label": "MM:2024 年如何在 Shopify 上销售(适合初学者)",
-  "props": {}
- },
- {
-  "id": "vid_mm_lCkrcxsm95Q",
-  "type": "Video",
-  "label": "MM:5分钟打造一个Shopify商店(使用AI)",
-  "props": {}
- },
- {
-  "id": "vid_mm_YtbaxJFb9zE",
-  "type": "Video",
-  "label": "MM:如何创建 Shopify 网站——初学者分步教程",
-  "props": {}
- },
- {
-  "id": "vid_mm_wQGabloRalM",
-  "type": "Video",
-  "label": "MM:Shopify 新手终极指南",
-  "props": {}
- },
- {
-  "id": "vid_mm_BKFBxoU9vUk",
-  "type": "Video",
-  "label": "MM:Shopify 网站设计教程 - 一步一步",
-  "props": {}
- },
- {
-  "id": "vid_mm_istNOWqKKQk",
-  "type": "Video",
-  "label": "MM:如何创建一个 Shopify 无货源店铺(使用 AI)",
-  "props": {}
- },
- {
-  "id": "vid_mm_sbDOdXi4nXk",
-  "type": "Video",
-  "label": "MM:适用于初学者的 Shopify 网站设计 – 分步教程",
-  "props": {}
- },
- {
-  "id": "vid_mm_UebgVScwFto",
-  "type": "Video",
-  "label": "MM:如何建立 Shopify 商店:10 分钟掌握基础",
-  "props": {}
- },
- {
-  "id": "vid_mm__p7hoAdVv3g",
-  "type": "Video",
-  "label": "MM:Shopify 初学者教程 – 一步一步",
-  "props": {}
- },
- {
-  "id": "vid_mm_zgUbeJnlXfw",
-  "type": "Video",
-  "label": "MM:Print on Demand Shopify 教程(完整设置指南)",
-  "props": {}
- },
- {
-  "id": "vid_mm_OPkVbIy7bxs",
-  "type": "Video",
-  "label": "MM:开设Shopify商店的最佳方式(使用AI)",
-  "props": {}
- },
- {
-  "id": "vid_mm_27foEj8ujSI",
-  "type": "Video",
-  "label": "MM:如何利用人工智能构建单一产品 Shopify 商店(分步指南)",
-  "props": {}
- },
- {
-  "id": "vid_mm_8nxk8FARDTw",
-  "type": "Video",
-  "label": "MM:如何使用 Shopify:新手教程",
-  "props": {}
- },
- {
-  "id": "vid_mm_1FgCo5-222M",
-  "type": "Video",
-  "label": "MM:如何建立网上商店 - 步骤详解",
-  "props": {}
- },
- {
-  "id": "vid_mm_TYYgCXNwTtQ",
-  "type": "Video",
-  "label": "MM:最佳网站建设平台(我的首选推荐)",
-  "props": {}
- },
- {
-  "id": "vid_mm_wDBcYlt_DZU",
-  "type": "Video",
-  "label": "MM:How to Actually Start Shopify Dropshippi",
-  "props": {}
- },
- {
-  "id": "vid_mm_XMLjZB1ASUM",
-  "type": "Video",
-  "label": "MM:The ONLY Shopify Dropshipping Tutorial Y",
-  "props": {}
- },
- {
-  "id": "vid_mm_RWI59fC7Z48",
-  "type": "Video",
-  "label": "MM:The OFFICIAL Shopify Tutorial For Beginn",
-  "props": {}
- },
- {
-  "id": "vid_mm_UKs338dQzbY",
-  "type": "Video",
-  "label": "MM:Shopify Tutorial for Beginners (2026) · ",
-  "props": {}
- },
- {
-  "id": "vid_mm_NjogxU1oRaE",
-  "type": "Video",
-  "label": "MM:The ONLY Shopify Tutorial You Need · Bui",
-  "props": {}
- },
- {
-  "id": "vid_mm_xfOT2elC2Ok",
-  "type": "Video",
-  "label": "MM:I Tried AI Dropshipping For 7 Days, Here",
-  "props": {}
- },
- {
-  "id": "vid_mm_rgZU5pDf6mw",
-  "type": "Video",
-  "label": "MM:The Shopify Story",
-  "props": {}
- },
- {
-  "id": "vid_mm_YImqGsOPqU8",
-  "type": "Video",
-  "label": "MM:How to Actually Start Shopify Dropshippi",
-  "props": {}
- },
- {
-  "id": "vid_mm_rhuYy9LP72M",
-  "type": "Video",
-  "label": "MM:I Tried AI Dropshipping For a Week (RAW ",
-  "props": {}
- },
- {
-  "id": "vid_mm_roM3wlSqk1c",
-  "type": "Video",
-  "label": "MM:The OFFICIAL Shopify Tutorial For Beginn",
-  "props": {}
- },
- {
-  "id": "vid_mm_iwmz1sL5r9g",
-  "type": "Video",
-  "label": "MM:Shopify Tutorial for Beginners 2026 (Ful",
-  "props": {}
- },
- {
-  "id": "vid_mm_hoIzMTdSe5w",
-  "type": "Video",
-  "label": "MM:Shopify 2026 Review · Tips and tricks fo",
-  "props": {}
- },
- {
-  "id": "vid_mm_YatPsQlGM3g",
-  "type": "Video",
-  "label": "MM:Claude Just Changed Shopify Forever",
-  "props": {}
- },
- {
-  "id": "src_youtube_achampton",
-  "type": "Source",
-  "label": "YouTube · Ac Hampton",
-  "props": {}
- },
- {
-  "id": "vid_ah_zJj3KjQJU_E",
-  "type": "Video",
-  "label": "AH:How I'd Start Dropshipping on Shopify wi",
-  "props": {}
- },
- {
-  "id": "vid_ah_Tt1UzjlEunc",
-  "type": "Video",
-  "label": "AH:Watch me speedrun a shopify store ($0 to",
-  "props": {}
- },
- {
-  "id": "vid_ah_4eVGNBVJos8",
-  "type": "Video",
-  "label": "AH:The ONLY Way to Start Dropshipping From ",
-  "props": {}
- },
- {
-  "id": "vid_ah_6WpY-5LvBO8",
-  "type": "Video",
-  "label": "AH:How to Actually Sell on Shopify in 2026 ",
-  "props": {}
- },
- {
-  "id": "vid_ah_5FYIA-hKh6w",
-  "type": "Video",
-  "label": "AH:How To Start Shopify Dropshipping in 202",
-  "props": {}
- },
- {
-  "id": "vid_ah_KSP0JxWEC4Q",
-  "type": "Video",
-  "label": "AH:How to Start Shopify Dropshipping in 202",
-  "props": {}
- },
- {
-  "id": "vid_ah_QnQ5tOGDWVw",
-  "type": "Video",
-  "label": "AH:How To Create A Shopify Store in 2026 (F",
-  "props": {}
- },
- {
-  "id": "vid_ah_fMt3kv1vc_A",
-  "type": "Video",
-  "label": "AH:How To Start Shopify Dropshipping (FOR B",
-  "props": {}
- },
- {
-  "id": "vid_ah_e7oiWBn7KwU",
-  "type": "Video",
-  "label": "AH:The TRUTH To Why You Aren't Making Sales",
-  "props": {}
- },
- {
-  "id": "vid_ah_vXmF10ZNmoo",
-  "type": "Video",
-  "label": "AH:Laziest Way to Start Shopify Dropshippin",
-  "props": {}
- },
- {
-  "id": "vid_ah_-3H6CW5FgLY",
-  "type": "Video",
-  "label": "AH:How to Start Dropshipping With $0 in 202",
-  "props": {}
- },
- {
-  "id": "vid_ah_r-akYidsTHU",
-  "type": "Video",
-  "label": "AH:How To Start Dropshipping With $0 in 202",
-  "props": {}
- },
- {
-  "id": "vid_ah_OjwWTPck2d0",
-  "type": "Video",
-  "label": "AH:It's never too late to start dropshippin",
-  "props": {}
- },
- {
-  "id": "vid_ah_1EgjCxk0-kM",
-  "type": "Video",
-  "label": "AH:Best Apps For Shopify Dropshipping as a ",
-  "props": {}
- },
- {
-  "id": "vid_ah_xZjkLrHJheE",
-  "type": "Video",
-  "label": "AH:AI Built My Shopify Store in Minutes… He",
-  "props": {}
- },
- {
-  "id": "vid_ah_G0ixSNfa0vk",
-  "type": "Video",
-  "label": "AH:How To Start Dropshipping From Your PHON",
-  "props": {}
- },
- {
-  "id": "vid_ah_m-8yOo_F6CY",
-  "type": "Video",
-  "label": "AH:How I'd Start Dropshipping in 2026 if I ",
-  "props": {}
- },
- {
-  "id": "vid_ah_F97pwb80QIE",
-  "type": "Video",
-  "label": "AH:I Tried Teaching My Friend Dropshipping ",
-  "props": {}
- },
- {
-  "id": "vid_ah_Y3iXtMjE4bw",
-  "type": "Video",
-  "label": "AH:My AI Dropshipping Store Is Boring But M",
-  "props": {}
- },
- {
-  "id": "vid_ah_k13zZ6hdXOw",
-  "type": "Video",
-  "label": "AH:Give Me 15 Minutes and I'll Build a $10K",
-  "props": {}
- },
- {
-  "id": "vid_ah_lx0wQb3FBQU",
-  "type": "Video",
-  "label": "AH:Beginners Guide To Start A Dropshipping ",
-  "props": {}
- },
- {
-  "id": "vid_ah_NX-5ChIZBRQ",
-  "type": "Video",
-  "label": "AH:How To Fulfill Your Dropshipping Orders ",
-  "props": {}
- },
- {
-  "id": "vid_ah_xrfZshDuPBU",
-  "type": "Video",
-  "label": "AH:Watch Me LIVE Show You How to Start Drop",
-  "props": {}
- },
- {
-  "id": "vid_ah_WkUkzdMnRHo",
-  "type": "Video",
-  "label": "AH:How To Fulfill Your Dropshipping Orders ",
-  "props": {}
- },
- {
-  "id": "vid_ah_GGwXtC4WXvc",
-  "type": "Video",
-  "label": "AH:Seriously, Watch This Before You Start D",
-  "props": {}
- },
- {
-  "id": "vid_ah_7jC2H8Nf-7M",
-  "type": "Video",
-  "label": "AH:How to Start Dropshipping with $100 (The",
-  "props": {}
- },
- {
-  "id": "vid_ah_aKIHLrdsv8o",
-  "type": "Video",
-  "label": "AH:Top Shopify Apps You NEED for More Sales",
-  "props": {}
- },
- {
-  "id": "vid_ah_mjry59gEteM",
-  "type": "Video",
-  "label": "AH:Shopify Tutorial for Beginners 2026 - Bu",
-  "props": {}
- },
- {
-  "id": "vid_ah_tUu7W4oAlmw",
-  "type": "Video",
-  "label": "AH:How To Create a Website To Sell Products",
-  "props": {}
- },
- {
-  "id": "vid_ah__1caEZ7t3UY",
-  "type": "Video",
-  "label": "AH:The COMPLETE Shopify Tutorial 2026",
-  "props": {}
- },
- {
-  "id": "vid_ah_okSKWf8PBNY",
-  "type": "Video",
-  "label": "AH:Shopify Theme Development - Build a them",
-  "props": {}
- },
- {
-  "id": "vid_ah_AX0eHDslSEc",
-  "type": "Video",
-  "label": "AH:How To Build A Shopify Store In 27 Minut",
-  "props": {}
- },
- {
-  "id": "vid_ah_8O_69fP_WZc",
-  "type": "Video",
-  "label": "AH:Claude Code + Shopify = $130,000/Month",
-  "props": {}
- },
- {
-  "id": "vid_ah_1o6cKeK24Mw",
-  "type": "Video",
-  "label": "AH:Shopify 零基础建站新手教程【2026最新版】",
-  "props": {}
- },
- {
-  "id": "vid_ah_9coOU5ea3nk",
-  "type": "Video",
-  "label": "AH:Shopify Tutorial 2026 · How to Build You",
-  "props": {}
- },
- {
-  "id": "vid_ah_uRHm5WpPJyU",
-  "type": "Video",
-  "label": "AH:$278K in 30 days on shopify (with proof)",
-  "props": {}
- },
- {
-  "id": "vid_ah_2y71Lc3bB1k",
-  "type": "Video",
-  "label": "AH:Shopify Store Setup Full Tutorial 2026: ",
-  "props": {}
- },
- {
-  "id": "vid_ah_w9tLiCLEIrg",
-  "type": "Video",
-  "label": "AH:How To Create A Shopify Store 2026 · Com",
-  "props": {}
- },
- {
-  "id": "vid_ah_CYH_dRPD2B4",
-  "type": "Video",
-  "label": "AH:Shopify President: How to Win in the Gol",
-  "props": {}
- },
- {
-  "id": "src_inbox_indie_ops",
-  "type": "Source",
-  "label": "inbox 独立站实操资料包",
-  "props": {
-   "files": 15,
-   "unique_contents": 14,
-   "status": "verified",
-   "boundary": "local-read-only"
-  }
- },
- {
-  "id": "con_indie_growth_loop",
-  "type": "Concept",
-  "label": "独立站全域增长闭环",
-  "props": {
-   "source": "inbox 独立站实操资料包"
-  }
- },
- {
-  "id": "con_social_first_product_research",
-  "type": "Concept",
-  "label": "社媒前置选品",
-  "props": {
-   "source": "inbox 独立站实操资料包"
-  }
- },
- {
-  "id": "con_listing_content_factory",
-  "type": "Concept",
-  "label": "Listing内容工厂",
-  "props": {
-   "source": "inbox 独立站实操资料包",
-   "doc": "03-商品上架与Listing/Listing内容工厂SOP.md"
-  }
- },
- {
-  "id": "con_offsite_traffic_stack",
-  "type": "Concept",
-  "label": "站外全域流量组合",
-  "props": {
-   "source": "inbox 独立站实操资料包"
-  }
- },
- {
-  "id": "con_ad_report_diagnosis",
-  "type": "Concept",
-  "label": "广告报告归因诊断",
-  "props": {
-   "source": "inbox 独立站实操资料包"
-  }
- },
- {
-  "id": "con_channel_risk_guardrails",
-  "type": "Concept",
-  "label": "站外渠道风控护栏",
-  "props": {
-   "source": "inbox 独立站实操资料包",
-   "doc": "91-合规与风控/站外渠道风控SOP.md"
-  }
- }
 ]

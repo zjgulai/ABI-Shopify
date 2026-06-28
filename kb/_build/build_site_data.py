@@ -64,7 +64,7 @@ for e in G["entities"]:
         caps[e["label"]]=sup
 # roadmap
 roadmap=[
-{"phase":"P0 · 已收口","when":"P0","items":["T1/T2/T3/T5 已形成本地或生产证据","页脚 9 源 + ABI,站点统计 366 chunks / 220 entities / 639 relations","代码与知识库已提交并可按 release 目录部署"]},
+{"phase":"P0 · 已收口","when":"P0","items":["T1/T2/T3/T5 已形成本地或生产证据","页脚 10 源 + ABI,站点统计随 RAG/KG 构建动态刷新","代码与知识库已提交并可按 release 目录部署"]},
 {"phase":"P1 · 继续深挖","when":"P1","items":["T6 视频字幕深度萃取:优先 Ac Hampton P0/P1 队列","抖音/小红书维持粘贴清单或字幕→离线草稿→人审入库","页面手动录入 DeepSeek API Key 后做真实 provider 问答验收"]},
 {"phase":"P2 · 受控写闭环","when":"P2","items":["T7 接 AI-Toolkit/UCP 测试店真实读写","Shopify 测试店授权 + mutation 预览 + 人审批准","按《全自动运营蓝图》把节点 skill 化、编排化"]},
 ]

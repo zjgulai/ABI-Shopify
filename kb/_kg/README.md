@@ -10,8 +10,8 @@ summary: Shopify AI 全链路经营知识图谱:实体+关系,可视化为 Merma
 把知识库结构化为**实体 + 关系**,与 [[_rag]] 的文本切块互补:RAG 管"语义召回",KG 管"结构推理/关联追溯"。
 
 ## 文件
-- `entities.json` — 220 个实体。字段:`id, type, label, props`。
-- `relations.json` — 639 条关系。字段:`source, type, target`。
+- `entities.json` — 253 个实体。字段:`id, type, label, props`。
+- `relations.json` — 776 条关系。字段:`source, type, target`。
 - `graph.json` — 实体+关系合集(一次性加载)。
 - `pipeline.mermaid` — 全流程 + 横切层 + 复购回流(可视化)。
 - `capability_map.mermaid` — Shopify 原生能力 → 支撑的流程节点。
@@ -26,7 +26,7 @@ summary: Shopify AI 全链路经营知识图谱:实体+关系,可视化为 Merma
 - `Stage -NEXT-> Stage`(流程顺序);`Stage(横切) -CROSSCUTS-> Stage`;`Stage09 -FEEDS_BACK-> Stage01/05`(复购闭环)
 - `ShopifyCapability -SUPPORTS-> Stage`;`Catalog -DISCOVERY_LAYER_OF-> UCP`;`UCP -CO_BUILT_WITH-> Google`
 - `AIStep -MAPS_TO_STAGE-> Stage`;`AIStep -USES_TOOL-> Tool`(你的 10 步图)
-- `Source -ENRICHES-> Stage`(三源溯源);`Concept -APPLIES_TO-> Stage`;`Concept -ENABLED_BY-> Capability`
+- `Source -ENRICHES-> Stage`(多源溯源,含 platform-operations-wiki);`Concept -APPLIES_TO-> Stage`;`Concept -ENABLED_BY-> Capability`
 - `Project -BELONGS_TO-> Stage`;`Project -OWNED_BY-> Team`(周报真实项目)
 
 ## 导入图库(可选)

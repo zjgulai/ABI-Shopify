@@ -1,0 +1,1450 @@
+{
+  "created_at": "2026-06-28T09:30:16+0800",
+  "method": "git clone --depth 1 --filter=blob:none --no-checkout plus git ls-tree/git show; no code execution",
+  "records": [
+    {
+      "repo": "Shopify/hydrogen",
+      "url": "https://github.com/Shopify/hydrogen",
+      "head_sha_prefix": "b4df055281f6",
+      "branch": "main",
+      "file_count": 1342,
+      "top_counts": [
+        [
+          "packages",
+          782
+        ],
+        [
+          "cookbook",
+          288
+        ],
+        [
+          "templates",
+          88
+        ],
+        [
+          "e2e",
+          68
+        ],
+        [
+          "docs",
+          39
+        ],
+        [
+          ".github",
+          19
+        ],
+        [
+          ".changeset",
+          12
+        ],
+        [
+          ".claude",
+          9
+        ],
+        [
+          "rfc",
+          7
+        ],
+        [
+          "scripts",
+          6
+        ],
+        [
+          ".cursor",
+          1
+        ],
+        [
+          ".editorconfig",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".graphqlrc.yml",
+          1
+        ],
+        [
+          ".husky",
+          1
+        ],
+        [
+          ".mcp.json",
+          1
+        ],
+        [
+          ".npmrc",
+          1
+        ],
+        [
+          ".nvmrc",
+          1
+        ]
+      ],
+      "key_files": [
+        "README.md",
+        "cookbook/CHANGELOG.md",
+        "cookbook/README.md",
+        "cookbook/package.json",
+        "cookbook/recipes/b2b/README.md",
+        "cookbook/recipes/bundles/README.md",
+        "cookbook/recipes/combined-listings/README.md",
+        "cookbook/recipes/custom-cart-method/README.md",
+        "cookbook/recipes/express/README.md",
+        "cookbook/recipes/express/patches/vite.config.ts.63904f.patch",
+        "cookbook/recipes/gtm/README.md",
+        "cookbook/recipes/infinite-scroll/README.md",
+        "cookbook/recipes/legacy-customer-account-flow/README.md",
+        "cookbook/recipes/markets/README.md",
+        "cookbook/recipes/metaobjects/README.md",
+        "cookbook/recipes/metaobjects/ingredients/templates/skeleton/guides/metaobjects/README.md",
+        "cookbook/recipes/multipass/README.md",
+        "cookbook/recipes/multipass/patches/vite.config.ts.8b5b9b.patch",
+        "cookbook/recipes/partytown/README.md",
+        "cookbook/recipes/partytown/patches/vite.config.ts.8b5b9b.patch",
+        "cookbook/recipes/subscriptions/README.md",
+        "cookbook/recipes/third-party-api/README.md",
+        "cookbook/tsconfig.json",
+        "cookbook/vitest.config.ts",
+        "docs/examples/README.md",
+        "docs/preview/README.md",
+        "docs/preview/package.json",
+        "docs/preview/tsconfig.json",
+        "docs/preview/vite.config.js",
+        "package.json",
+        "packages/cli/CHANGELOG.md",
+        "packages/cli/README.md",
+        "packages/cli/assets/tailwind/package.json",
+        "packages/cli/assets/vanilla-extract/package.json",
+        "packages/cli/assets/vite/package.json",
+        "packages/cli/assets/vite/vite.config.js",
+        "packages/cli/package.json",
+        "packages/cli/tsconfig.json",
+        "packages/cli/vitest.config.ts",
+        "packages/create-hydrogen/CHANGELOG.md",
+        "packages/create-hydrogen/README.md",
+        "packages/create-hydrogen/package.json",
+        "packages/create-hydrogen/tsconfig.json",
+        "packages/hydrogen-codegen/CHANGELOG.md",
+        "packages/hydrogen-codegen/README.md",
+        "packages/hydrogen-codegen/package.json",
+        "packages/hydrogen-codegen/tsconfig.json",
+        "packages/hydrogen-react/CHANGELOG.md",
+        "packages/hydrogen-react/README.md",
+        "packages/hydrogen-react/package.json",
+        "packages/hydrogen-react/tsconfig.examples.json",
+        "packages/hydrogen-react/tsconfig.json",
+        "packages/hydrogen-react/tsconfig.typeoutput.json",
+        "packages/hydrogen-react/vite.config.ts",
+        "packages/hydrogen/CHANGELOG.md",
+        "packages/hydrogen/README.md",
+        "packages/hydrogen/package.json",
+        "packages/hydrogen/tsconfig.json",
+        "packages/hydrogen/vitest.config.ts",
+        "packages/mini-oxygen/CHANGELOG.md",
+        "packages/mini-oxygen/README.md",
+        "packages/mini-oxygen/package.json",
+        "packages/mini-oxygen/tsconfig.json",
+        "packages/remix-oxygen/CHANGELOG.md",
+        "packages/remix-oxygen/README.md",
+        "packages/remix-oxygen/package.json",
+        "packages/remix-oxygen/tsconfig.json",
+        "playwright.config.ts",
+        "pnpm-workspace.yaml",
+        "templates/skeleton/CHANGELOG.md",
+        "templates/skeleton/README.md",
+        "templates/skeleton/package.json",
+        "templates/skeleton/tsconfig.json",
+        "templates/skeleton/vite.config.ts",
+        "tsconfig.json",
+        "turbo.json"
+      ],
+      "shopify_tomls": [],
+      "test_dirs": [
+        "e2e",
+        "docs/examples",
+        "e2e/envs",
+        "e2e/fixtures",
+        "e2e/specs",
+        "e2e/types"
+      ],
+      "examples_or_templates": [
+        "templates",
+        ".github/ISSUE_TEMPLATE",
+        "docs/examples",
+        "templates/skeleton"
+      ],
+      "shopify_related_dirs": [
+        "templates",
+        ".github/ISSUE_TEMPLATE",
+        "packages/create-hydrogen",
+        "packages/hydrogen",
+        "packages/hydrogen-codegen",
+        "packages/hydrogen-react",
+        "packages/mini-oxygen",
+        "packages/remix-oxygen",
+        "templates/skeleton"
+      ],
+      "package": {
+        "name": "hydrogen",
+        "private": true,
+        "workspaces": [
+          "cookbook",
+          "docs/preview",
+          "packages/cli",
+          "packages/create-hydrogen",
+          "packages/hydrogen-codegen",
+          "packages/hydrogen-react",
+          "packages/hydrogen",
+          "packages/mini-oxygen",
+          "packages/remix-oxygen",
+          "templates/skeleton"
+        ],
+        "scripts": {
+          "patch-cli": "node scripts/patch-cli.mjs",
+          "unpatch-cli": "node scripts/unpatch-cli.mjs",
+          "prepare": "husky && node scripts/patch-cli.mjs",
+          "build": "pnpm run build:pkg",
+          "build:pkg": "turbo build --parallel --filter=./packages/*",
+          "build:templates": "turbo build --parallel --filter=./templates/*",
+          "build:all": "pnpm run build:pkg && pnpm run build:templates",
+          "ci:checks": "turbo run lint test format:check typecheck",
+          "decrypt": "ejson decrypt secrets.ejson",
+          "dev": "pnpm run dev:pkg",
+          "dev:pkg": "turbo dev --parallel --filter=./packages/*",
+          "dev:app": "turbo dev --filter=skeleton",
+          "docs:build": "turbo run build-docs",
+          "docs:preview": "turbo run preview-docs",
+          "encrypt": "ejson encrypt secrets.ejson",
+          "lint": "eslint --no-error-on-unmatched-pattern ./packages",
+          "lint-staged": "eslint --no-error-on-unmatched-pattern",
+          "format": "prettier --write --ignore-unknown ./packages ./templates",
+          "format:check": "prettier --check --ignore-unknown ./packages ./templates",
+          "typecheck": "turbo typecheck --parallel",
+          "test": "turbo run test --parallel",
+          "test:watch": "turbo run test:watch",
+          "test:calver": "./.changeset/test-calver-comparison.sh",
+          "test:calver:dry": "node .changeset/enforce-calver-local.js --dry-run",
+          "test:calver:branch": "node .changeset/get-calver-version-branch.js",
+          "test:calver:bump": "node .changeset/calver-bump-type.test.js",
+          "version": "node .changeset/detect-calver-bump-type.js && pnpm run version:changeset && node .changeset/enforce-calver-ci.js && pnpm run version:post && pnpm run format",
+          "version:changeset": "changeset version",
+          "version:post": "pnpm run version:hydrogen && pnpm run version:cli",
+          "version:hydrogen": "node -p \"'export const LIB_VERSION = \\'' + require('./packages/hydrogen/package.json').version + '\\';'\" > packages/hydrogen/src/version.ts",
+          "version:cli": "pnpm --dir packages/cli run generate:manifest",
+          "version:next": "node scripts/changeset-version-next.mjs",
+          "changeset": "changeset",
+          "clean-all": "rimraf node_modules/.bin && rimraf node_modules/.cache && rimraf packages/*/dist && rimraf templates/*/.cache",
+          "nuke": "rimraf packages/*/node_modules templates/*/node_modules apps/*/node_modules .turbo node_modules/.cache/turbo packages/*/.turbo packages/*/dist",
+          "check": "pnpm run build && pnpm run lint && pnpm run typecheck && pnpm run test",
+          "e2e": "playwright test",
+          "e2e:old-cookies": "playwright test --project=old-cookies",
+          "e2e:new-cookies": "playwright test --project=new-cookies",
+          "e2e:smoke": "playwright test --project=smoke",
+          "pre-commit:encrypt": "bash -c 'git diff --cached --name-only | grep -q \"^secrets.ejson$\" && ejson encrypt secrets.ejson && git add secrets.ejson || true'"
+        },
+        "dependencies_sample": [
+          "@shopify/cli-hydrogen",
+          "nested-error-stacks",
+          "react",
+          "react-dom",
+          "react-intersection-observer",
+          "react-router",
+          "react-router-dom",
+          "uuid"
+        ],
+        "devDependencies_sample": [
+          "@changesets/changelog-github",
+          "@changesets/cli",
+          "@eslint/compat",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@playwright/test",
+          "@qwik.dev/partytown",
+          "@react-router/dev",
+          "@react-router/fs-routes",
+          "@shopify/cli",
+          "@total-typescript/ts-reset",
+          "@types/eslint",
+          "@types/semver",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "cross-env",
+          "eslint",
+          "eslint-import-resolver-node",
+          "eslint-import-resolver-typescript",
+          "eslint-plugin-eslint-comments"
+        ]
+      }
+    },
+    {
+      "repo": "Shopify/dawn",
+      "url": "https://github.com/Shopify/dawn",
+      "head_sha_prefix": "83d5e6b4094d",
+      "branch": "main",
+      "file_count": 375,
+      "top_counts": [
+        [
+          "assets",
+          191
+        ],
+        [
+          "sections",
+          55
+        ],
+        [
+          "locales",
+          51
+        ],
+        [
+          "snippets",
+          39
+        ],
+        [
+          "templates",
+          20
+        ],
+        [
+          ".github",
+          9
+        ],
+        [
+          "config",
+          2
+        ],
+        [
+          "layout",
+          2
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".prettierrc.json",
+          1
+        ],
+        [
+          ".theme-check.yml",
+          1
+        ],
+        [
+          "LICENSE.md",
+          1
+        ],
+        [
+          "README.md",
+          1
+        ],
+        [
+          "release-notes.md",
+          1
+        ]
+      ],
+      "key_files": [
+        "README.md",
+        "config/settings_schema.json",
+        "layout/theme.liquid"
+      ],
+      "shopify_tomls": [],
+      "test_dirs": [],
+      "examples_or_templates": [
+        "templates",
+        ".github/ISSUE_TEMPLATE",
+        "templates/customers"
+      ],
+      "shopify_related_dirs": [
+        "layout",
+        "sections",
+        "snippets",
+        "templates",
+        ".github/ISSUE_TEMPLATE",
+        "templates/customers"
+      ],
+      "package": {}
+    },
+    {
+      "repo": "Shopify/skeleton-theme",
+      "url": "https://github.com/Shopify/skeleton-theme",
+      "head_sha_prefix": "a4f32d393b9e",
+      "branch": "main",
+      "file_count": 53,
+      "top_counts": [
+        [
+          "sections",
+          16
+        ],
+        [
+          "templates",
+          12
+        ],
+        [
+          "assets",
+          4
+        ],
+        [
+          "snippets",
+          3
+        ],
+        [
+          ".github",
+          2
+        ],
+        [
+          "blocks",
+          2
+        ],
+        [
+          "config",
+          2
+        ],
+        [
+          "layout",
+          2
+        ],
+        [
+          "locales",
+          2
+        ],
+        [
+          ".gitattributes",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".shopifyignore",
+          1
+        ],
+        [
+          ".theme-check.yml",
+          1
+        ],
+        [
+          "CODE_OF_CONDUCT.md",
+          1
+        ],
+        [
+          "CONTRIBUTING.md",
+          1
+        ],
+        [
+          "LICENSE.md",
+          1
+        ],
+        [
+          "README.md",
+          1
+        ]
+      ],
+      "key_files": [
+        "README.md",
+        "config/settings_schema.json",
+        "layout/theme.liquid"
+      ],
+      "shopify_tomls": [],
+      "test_dirs": [],
+      "examples_or_templates": [
+        "templates"
+      ],
+      "shopify_related_dirs": [
+        "layout",
+        "sections",
+        "snippets",
+        "templates"
+      ],
+      "package": {}
+    },
+    {
+      "repo": "Shopify/cli",
+      "url": "https://github.com/Shopify/cli",
+      "head_sha_prefix": "53a96ee0f104",
+      "branch": "main",
+      "file_count": 2029,
+      "top_counts": [
+        [
+          "packages",
+          1735
+        ],
+        [
+          "docs-shopify.dev",
+          97
+        ],
+        [
+          "RELEASE_NOTES",
+          49
+        ],
+        [
+          "bin",
+          27
+        ],
+        [
+          "docs",
+          27
+        ],
+        [
+          ".github",
+          21
+        ],
+        [
+          ".agents",
+          9
+        ],
+        [
+          "workspace",
+          9
+        ],
+        [
+          ".changeset",
+          8
+        ],
+        [
+          ".claude",
+          3
+        ],
+        [
+          ".vscode",
+          3
+        ],
+        [
+          "configurations",
+          3
+        ],
+        [
+          ".cursor",
+          2
+        ],
+        [
+          ".spin",
+          2
+        ],
+        [
+          "packaging",
+          2
+        ],
+        [
+          ".editorconfig",
+          1
+        ],
+        [
+          ".gitattributes",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ]
+      ],
+      "key_files": [
+        ".changeset/README.md",
+        "README.md",
+        "configurations/tsconfig.json",
+        "configurations/vite.config.ts",
+        "docs/README.md",
+        "package.json",
+        "packages/app/CHANGELOG.md",
+        "packages/app/package.json",
+        "packages/app/src/cli/services/generate/template-fixtures/checkout-extension/tsconfig.json",
+        "packages/app/tsconfig.build.json",
+        "packages/app/tsconfig.json",
+        "packages/app/vite.config.ts",
+        "packages/cli-kit/CHANGELOG.md",
+        "packages/cli-kit/package.json",
+        "packages/cli-kit/tsconfig.build.json",
+        "packages/cli-kit/tsconfig.json",
+        "packages/cli-kit/vite.config.ts",
+        "packages/cli/CHANGELOG.md",
+        "packages/cli/README.md",
+        "packages/cli/package.json",
+        "packages/cli/tsconfig.build.json",
+        "packages/cli/tsconfig.json",
+        "packages/cli/vite.config.ts",
+        "packages/create-app/CHANGELOG.md",
+        "packages/create-app/package.json",
+        "packages/create-app/tsconfig.build.json",
+        "packages/create-app/tsconfig.json",
+        "packages/create-app/vite.config.ts",
+        "packages/e2e/CHANGELOG.md",
+        "packages/e2e/data/valid-app/package.json",
+        "packages/e2e/data/valid-app/shopify.app.toml",
+        "packages/e2e/package.json",
+        "packages/e2e/playwright.config.ts",
+        "packages/e2e/tsconfig.json",
+        "packages/eslint-plugin-cli/CHANGELOG.md",
+        "packages/eslint-plugin-cli/package.json",
+        "packages/organizations/CHANGELOG.md",
+        "packages/organizations/package.json",
+        "packages/organizations/tsconfig.build.json",
+        "packages/organizations/tsconfig.json",
+        "packages/organizations/vite.config.ts",
+        "packages/plugin-cloudflare/CHANGELOG.md",
+        "packages/plugin-cloudflare/package.json",
+        "packages/plugin-cloudflare/tsconfig.build.json",
+        "packages/plugin-cloudflare/tsconfig.json",
+        "packages/plugin-cloudflare/vite.config.ts",
+        "packages/plugin-did-you-mean/CHANGELOG.md",
+        "packages/plugin-did-you-mean/package.json",
+        "packages/plugin-did-you-mean/tsconfig.build.json",
+        "packages/plugin-did-you-mean/tsconfig.json",
+        "packages/plugin-did-you-mean/vite.config.ts",
+        "packages/store/CHANGELOG.md",
+        "packages/store/package.json",
+        "packages/store/tsconfig.build.json",
+        "packages/store/tsconfig.json",
+        "packages/store/vite.config.ts",
+        "packages/theme/CHANGELOG.md",
+        "packages/theme/package.json",
+        "packages/theme/src/cli/utilities/fixtures/theme-ext/shopify.extension.toml",
+        "packages/theme/src/cli/utilities/fixtures/theme/config/settings_schema.json",
+        "packages/theme/src/cli/utilities/fixtures/theme/layout/theme.liquid",
+        "packages/theme/tsconfig.build.json",
+        "packages/theme/tsconfig.json",
+        "packages/theme/vite.config.ts",
+        "packages/ui-extensions-dev-console/CHANGELOG.md",
+        "packages/ui-extensions-dev-console/README.md",
+        "packages/ui-extensions-dev-console/package.json",
+        "packages/ui-extensions-dev-console/tsconfig.base.json",
+        "packages/ui-extensions-dev-console/tsconfig.build.json",
+        "packages/ui-extensions-dev-console/tsconfig.json",
+        "packages/ui-extensions-dev-console/vite.config.mts",
+        "packages/ui-extensions-server-kit/CHANGELOG.md",
+        "packages/ui-extensions-server-kit/README.md",
+        "packages/ui-extensions-server-kit/package.json",
+        "packages/ui-extensions-server-kit/tsconfig.json",
+        "packages/ui-extensions-server-kit/vite.config.mts",
+        "packages/ui-extensions-test-utils/CHANGELOG.md",
+        "packages/ui-extensions-test-utils/package.json",
+        "packages/ui-extensions-test-utils/tsconfig.json",
+        "pnpm-workspace.yaml",
+        "tsconfig.base.json",
+        "tsconfig.json",
+        "vite.config.ts",
+        "workspace/CHANGELOG.md",
+        "workspace/package.json"
+      ],
+      "shopify_tomls": [
+        "packages/e2e/data/valid-app/shopify.app.toml",
+        "packages/theme/src/cli/utilities/fixtures/theme-ext/shopify.extension.toml"
+      ],
+      "test_dirs": [
+        "configurations/vitest",
+        "packages/e2e",
+        "packages/ui-extensions-test-utils"
+      ],
+      "examples_or_templates": [
+        ".github/ISSUE_TEMPLATE"
+      ],
+      "shopify_related_dirs": [
+        ".github/ISSUE_TEMPLATE",
+        "packages/app",
+        "packages/create-app",
+        "packages/theme",
+        "packages/ui-extensions-dev-console",
+        "packages/ui-extensions-server-kit",
+        "packages/ui-extensions-test-utils"
+      ],
+      "package": {
+        "name": null,
+        "private": true,
+        "workspaces": {
+          "packages": [
+            "packages/*",
+            "workspace"
+          ]
+        },
+        "scripts": {
+          "build-api-docs": "nx run-many --target=build-api-docs --all --skip-nx-cache",
+          "build-dev-docs": "pnpm shopify docs generate && sh ./bin/docs/build-dev-docs.sh",
+          "build:affected": "nx affected --target=build",
+          "build": "nx run-many --target=build --all --skip-nx-cache",
+          "bundle-for-release": "nx run-many --target=bundle --all --skip-nx-cache",
+          "changeset": "node bin/changeset.js",
+          "changeset-manifests": "changeset version && pnpm install --no-frozen-lockfile && pnpm refresh-manifests && pnpm refresh-readme && pnpm refresh-code-documentation && bin/update-cli-kit-version.js",
+          "clean": "nx run-many --target=clean --all --skip-nx-cache && nx reset",
+          "create-app": "nx build create-app && node packages/create-app/bin/dev.js --package-manager pnpm",
+          "deploy-experimental": "node bin/deploy-experimental.js",
+          "graph": "nx graph",
+          "graphql-codegen:get-graphql-schemas": "bin/get-graphql-schemas.js",
+          "graphql-codegen": "nx run-many --target=graphql-codegen --all",
+          "knip": "knip",
+          "lint:affected": "nx affected --target=lint",
+          "lint:fix:affected": "nx affected --target=lint:fix",
+          "lint:fix": "nx run-many --target=lint:fix --all --skip-nx-cache",
+          "lint": "nx run-many --target=lint --all --skip-nx-cache",
+          "create-homebrew-pr": "bin/create-homebrew-pr.js",
+          "refresh-code-documentation": "nx run-many --target=refresh-code-documentation --all --skip-nx-cache",
+          "refresh-manifests": "nx run-many --target=refresh-manifests --all --skip-nx-cache && bin/prettify-manifests.js && pnpm refresh-readme",
+          "refresh-readme": "nx run-many --target=refresh-readme --all --skip-nx-cache",
+          "release": "./bin/release",
+          "post-release": "./bin/post-release",
+          "update-observe": "node bin/update-observe.js",
+          "shopify:run": "node packages/cli/bin/dev.js",
+          "shopify": "nx build cli && node packages/cli/bin/dev.js",
+          "test:e2e": "nx run-many --target=build --projects=cli,create-app --skip-nx-cache && pnpm --filter e2e exec playwright test",
+          "test:e2e-cleanup": "pnpm --filter e2e exec tsx scripts/cleanup-stores.ts; pnpm --filter e2e exec tsx scripts/cleanup-apps.ts",
+          "test:e2e-cleanup-stores": "pnpm --filter e2e exec tsx scripts/cleanup-stores.ts",
+          "test:e2e-cleanup-apps": "pnpm --filter e2e exec tsx scripts/cleanup-apps.ts",
+          "test:regenerate-snapshots": "packages/e2e/scripts/regenerate-snapshots.sh",
+          "test": "pnpm vitest run",
+          "type-check:affected": "nx affected --target=type-check",
+          "type-check": "nx run-many --target=type-check --all --skip-nx-cache",
+          "update-bugsnag": "bin/update-bugsnag.js"
+        },
+        "dependencies_sample": [],
+        "devDependencies_sample": [
+          "@bugsnag/source-maps",
+          "@changesets/cli",
+          "@graphql-codegen/add",
+          "@graphql-codegen/cli",
+          "@graphql-codegen/near-operation-file-preset",
+          "@graphql-codegen/typed-document-node",
+          "@graphql-codegen/typescript-operations",
+          "@nx/eslint-plugin",
+          "@nx/workspace",
+          "@octokit/rest",
+          "@shopify/eslint-plugin-cli",
+          "@shopify/generate-docs",
+          "@types/node",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-istanbul",
+          "bugsnag-build-reporter",
+          "commander",
+          "esbuild",
+          "eslint-plugin-jsdoc",
+          "eslint"
+        ]
+      }
+    },
+    {
+      "repo": "Shopify/shopify-app-template-react-router",
+      "url": "https://github.com/Shopify/shopify-app-template-react-router",
+      "head_sha_prefix": "2d32d3fcde35",
+      "branch": "main",
+      "file_count": 58,
+      "top_counts": [
+        [
+          "app",
+          16
+        ],
+        [
+          ".github",
+          14
+        ],
+        [
+          ".claude",
+          3
+        ],
+        [
+          "prisma",
+          2
+        ],
+        [
+          ".cursor",
+          1
+        ],
+        [
+          ".dockerignore",
+          1
+        ],
+        [
+          ".editorconfig",
+          1
+        ],
+        [
+          ".eslintignore",
+          1
+        ],
+        [
+          ".eslintrc.cjs",
+          1
+        ],
+        [
+          ".gemini",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".graphqlrc.ts",
+          1
+        ],
+        [
+          ".mcp.json",
+          1
+        ],
+        [
+          ".npmrc",
+          1
+        ],
+        [
+          ".prettierignore",
+          1
+        ],
+        [
+          "CHANGELOG.md",
+          1
+        ],
+        [
+          "Dockerfile",
+          1
+        ],
+        [
+          "LICENSE.md",
+          1
+        ]
+      ],
+      "key_files": [
+        "CHANGELOG.md",
+        "Dockerfile",
+        "README.md",
+        "app/db.server.ts",
+        "app/routes/app._index.tsx",
+        "app/shopify.server.ts",
+        "package.json",
+        "prisma/schema.prisma",
+        "shopify.app.toml",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "shopify_tomls": [
+        "shopify.app.toml"
+      ],
+      "test_dirs": [],
+      "examples_or_templates": [],
+      "shopify_related_dirs": [
+        "app",
+        "extensions",
+        ".gemini/extensions",
+        "app/routes"
+      ],
+      "package": {
+        "name": "app",
+        "private": true,
+        "workspaces": {
+          "packages": [
+            "extensions/*"
+          ]
+        },
+        "scripts": {
+          "build": "react-router build",
+          "dev": "shopify app dev",
+          "config:link": "shopify app config link",
+          "generate": "shopify app generate",
+          "deploy": "shopify app deploy",
+          "config:use": "shopify app config use",
+          "env": "shopify app env",
+          "start": "react-router-serve ./build/server/index.js",
+          "docker-start": "npm run setup && npm run start",
+          "setup": "prisma generate && prisma migrate deploy",
+          "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+          "shopify": "shopify",
+          "prisma": "prisma",
+          "graphql-codegen": "graphql-codegen",
+          "vite": "vite",
+          "typecheck": "react-router typegen && tsc --noEmit"
+        },
+        "dependencies_sample": [
+          "@prisma/client",
+          "@react-router/dev",
+          "@react-router/fs-routes",
+          "@react-router/node",
+          "@react-router/serve",
+          "@shopify/app-bridge-react",
+          "@shopify/shopify-app-react-router",
+          "@shopify/shopify-app-session-storage-prisma",
+          "isbot",
+          "prisma",
+          "react",
+          "react-dom",
+          "react-router",
+          "vite-tsconfig-paths"
+        ],
+        "devDependencies_sample": [
+          "@shopify/api-codegen-preset",
+          "@shopify/polaris-types",
+          "@types/eslint",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "eslint",
+          "eslint-import-resolver-typescript",
+          "eslint-plugin-import",
+          "eslint-plugin-jsx-a11y",
+          "eslint-plugin-react",
+          "eslint-plugin-react-hooks",
+          "graphql-config",
+          "prettier",
+          "typescript",
+          "vite"
+        ]
+      }
+    },
+    {
+      "repo": "Shopify/shopify-app-template-remix",
+      "url": "https://github.com/Shopify/shopify-app-template-remix",
+      "head_sha_prefix": "e421374031a9",
+      "branch": "main",
+      "file_count": 51,
+      "top_counts": [
+        [
+          "app",
+          16
+        ],
+        [
+          ".github",
+          11
+        ],
+        [
+          ".vscode",
+          2
+        ],
+        [
+          "prisma",
+          2
+        ],
+        [
+          ".dockerignore",
+          1
+        ],
+        [
+          ".editorconfig",
+          1
+        ],
+        [
+          ".eslintignore",
+          1
+        ],
+        [
+          ".eslintrc.cjs",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".graphqlrc.ts",
+          1
+        ],
+        [
+          ".npmrc",
+          1
+        ],
+        [
+          ".prettierignore",
+          1
+        ],
+        [
+          "CHANGELOG.md",
+          1
+        ],
+        [
+          "Dockerfile",
+          1
+        ],
+        [
+          "README.md",
+          1
+        ],
+        [
+          "env.d.ts",
+          1
+        ],
+        [
+          "extensions",
+          1
+        ],
+        [
+          "package.json",
+          1
+        ]
+      ],
+      "key_files": [
+        "CHANGELOG.md",
+        "Dockerfile",
+        "README.md",
+        "app/db.server.ts",
+        "app/routes/app._index.tsx",
+        "app/shopify.server.ts",
+        "package.json",
+        "pnpm-workspace.yaml",
+        "prisma/schema.prisma",
+        "shopify.app.toml",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "shopify_tomls": [
+        "shopify.app.toml"
+      ],
+      "test_dirs": [],
+      "examples_or_templates": [],
+      "shopify_related_dirs": [
+        "app",
+        "extensions",
+        "app/routes"
+      ],
+      "package": {
+        "name": "app",
+        "private": true,
+        "workspaces": {
+          "packages": [
+            "extensions/*"
+          ]
+        },
+        "scripts": {
+          "build": "remix vite:build",
+          "dev": "shopify app dev",
+          "config:link": "shopify app config link",
+          "generate": "shopify app generate",
+          "deploy": "shopify app deploy",
+          "config:use": "shopify app config use",
+          "env": "shopify app env",
+          "start": "remix-serve ./build/server/index.js",
+          "docker-start": "npm run setup && npm run start",
+          "setup": "prisma generate && prisma migrate deploy",
+          "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+          "shopify": "shopify",
+          "prisma": "prisma",
+          "graphql-codegen": "graphql-codegen",
+          "vite": "vite"
+        },
+        "dependencies_sample": [
+          "@prisma/client",
+          "@remix-run/dev",
+          "@remix-run/fs-routes",
+          "@remix-run/node",
+          "@remix-run/react",
+          "@remix-run/serve",
+          "@shopify/app-bridge-react",
+          "@shopify/polaris",
+          "@shopify/shopify-app-remix",
+          "@shopify/shopify-app-session-storage-prisma",
+          "isbot",
+          "prisma",
+          "react",
+          "react-dom",
+          "vite-tsconfig-paths"
+        ],
+        "devDependencies_sample": [
+          "@remix-run/eslint-config",
+          "@remix-run/route-config",
+          "@shopify/api-codegen-preset",
+          "@types/eslint",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "eslint",
+          "eslint-config-prettier",
+          "prettier",
+          "typescript",
+          "vite"
+        ]
+      }
+    },
+    {
+      "repo": "Shopify/storefront-api-examples",
+      "url": "https://github.com/Shopify/storefront-api-examples",
+      "head_sha_prefix": "0b3b8e9735ca",
+      "branch": "master",
+      "file_count": 421,
+      "top_counts": [
+        [
+          "ember-graphql-client",
+          69
+        ],
+        [
+          "ember-js-buy",
+          67
+        ],
+        [
+          "ember-apollo",
+          66
+        ],
+        [
+          "angular-graphql-client",
+          61
+        ],
+        [
+          "react-graphql-client",
+          30
+        ],
+        [
+          "reactHooks-redux-js-buy",
+          24
+        ],
+        [
+          "node-graphql-client",
+          19
+        ],
+        [
+          "react-apollo",
+          18
+        ],
+        [
+          "react-hooks-apollo",
+          18
+        ],
+        [
+          "react-js-buy",
+          18
+        ],
+        [
+          "node-js-buy",
+          17
+        ],
+        [
+          "vanilla-graphql-client",
+          8
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          "CODE_OF_CONDUCT.md",
+          1
+        ],
+        [
+          "CONTRIBUTING.md",
+          1
+        ],
+        [
+          "LICENSE.txt",
+          1
+        ],
+        [
+          "README.md",
+          1
+        ],
+        [
+          "shared",
+          1
+        ]
+      ],
+      "key_files": [
+        "README.md",
+        "angular-graphql-client/README.md",
+        "angular-graphql-client/e2e/tsconfig.e2e.json",
+        "angular-graphql-client/package.json",
+        "angular-graphql-client/src/tsconfig.app.json",
+        "angular-graphql-client/src/tsconfig.spec.json",
+        "angular-graphql-client/tsconfig.json",
+        "ember-apollo/README.md",
+        "ember-apollo/package.json",
+        "ember-graphql-client/README.md",
+        "ember-graphql-client/package.json",
+        "ember-js-buy/README.md",
+        "ember-js-buy/package.json",
+        "node-graphql-client/README.md",
+        "node-graphql-client/package.json",
+        "node-js-buy/README.md",
+        "node-js-buy/package.json",
+        "react-apollo/README.md",
+        "react-apollo/package.json",
+        "react-graphql-client/README.md",
+        "react-graphql-client/package.json",
+        "react-hooks-apollo/README.md",
+        "react-hooks-apollo/package.json",
+        "react-js-buy/README.md",
+        "react-js-buy/package.json",
+        "reactHooks-redux-js-buy/README.md",
+        "reactHooks-redux-js-buy/package.json",
+        "vanilla-graphql-client/README.md",
+        "vanilla-graphql-client/package.json"
+      ],
+      "shopify_tomls": [],
+      "test_dirs": [
+        "angular-graphql-client/e2e",
+        "ember-apollo/tests",
+        "ember-graphql-client/tests",
+        "ember-js-buy/tests",
+        "node-graphql-client/test",
+        "node-js-buy/test"
+      ],
+      "examples_or_templates": [],
+      "shopify_related_dirs": [
+        "angular-graphql-client",
+        "ember-graphql-client",
+        "node-graphql-client",
+        "react-graphql-client",
+        "vanilla-graphql-client",
+        "angular-graphql-client/e2e",
+        "angular-graphql-client/src",
+        "ember-apollo/app",
+        "ember-graphql-client/app",
+        "ember-graphql-client/config",
+        "ember-graphql-client/public",
+        "ember-graphql-client/tests",
+        "ember-graphql-client/vendor",
+        "ember-js-buy/app",
+        "node-graphql-client/src",
+        "node-graphql-client/test",
+        "node-graphql-client/views",
+        "react-graphql-client/config",
+        "react-graphql-client/public",
+        "react-graphql-client/scripts",
+        "react-graphql-client/src"
+      ],
+      "package": {}
+    },
+    {
+      "repo": "Shopify/ui-extensions",
+      "url": "https://github.com/Shopify/ui-extensions",
+      "head_sha_prefix": "80040db41a35",
+      "branch": "2026-07-rc",
+      "file_count": 2237,
+      "top_counts": [
+        [
+          "packages",
+          2100
+        ],
+        [
+          "examples",
+          67
+        ],
+        [
+          ".changeset",
+          21
+        ],
+        [
+          ".github",
+          13
+        ],
+        [
+          "scripts",
+          7
+        ],
+        [
+          "documentation",
+          4
+        ],
+        [
+          ".spin",
+          2
+        ],
+        [
+          ".vscode",
+          2
+        ],
+        [
+          "config",
+          2
+        ],
+        [
+          ".eslintrc.js",
+          1
+        ],
+        [
+          ".gitignore",
+          1
+        ],
+        [
+          ".nvmrc",
+          1
+        ],
+        [
+          ".prettierignore",
+          1
+        ],
+        [
+          ".prettierrc",
+          1
+        ],
+        [
+          ".yarn",
+          1
+        ],
+        [
+          ".yarnrc",
+          1
+        ],
+        [
+          "AGENTS.md",
+          1
+        ],
+        [
+          "CODE_OF_CONDUCT.md",
+          1
+        ]
+      ],
+      "key_files": [
+        ".changeset/README.md",
+        "README.md",
+        "config/typescript/tsconfig.base.json",
+        "examples/testing/admin-testing-example/README.md",
+        "examples/testing/admin-testing-example/extensions/admin-testing-example/package.json",
+        "examples/testing/admin-testing-example/extensions/admin-testing-example/shopify.extension.toml",
+        "examples/testing/admin-testing-example/extensions/admin-testing-example/tsconfig.json",
+        "examples/testing/admin-testing-example/package.json",
+        "examples/testing/admin-testing-example/shopify.app.toml",
+        "examples/testing/admin-testing-example/vitest.config.ts",
+        "examples/testing/checkout-basic-testing-example/README.md",
+        "examples/testing/checkout-basic-testing-example/extensions/checkout-basic-testing-example/README.md",
+        "examples/testing/checkout-basic-testing-example/extensions/checkout-basic-testing-example/package.json",
+        "examples/testing/checkout-basic-testing-example/extensions/checkout-basic-testing-example/shopify.extension.toml",
+        "examples/testing/checkout-basic-testing-example/extensions/checkout-basic-testing-example/tsconfig.json",
+        "examples/testing/checkout-basic-testing-example/package.json",
+        "examples/testing/checkout-basic-testing-example/shopify.app.toml",
+        "examples/testing/checkout-basic-testing-example/tsconfig.json",
+        "examples/testing/checkout-basic-testing-example/vitest.config.ts",
+        "examples/testing/customer-account-testing-example/README.md",
+        "examples/testing/customer-account-testing-example/extensions/customer-account-testing-example/package.json",
+        "examples/testing/customer-account-testing-example/extensions/customer-account-testing-example/shopify.extension.toml",
+        "examples/testing/customer-account-testing-example/extensions/customer-account-testing-example/tsconfig.json",
+        "examples/testing/customer-account-testing-example/package.json",
+        "examples/testing/customer-account-testing-example/shopify.app.toml",
+        "examples/testing/customer-account-testing-example/vitest.config.ts",
+        "examples/testing/point-of-sale-testing-example/README.md",
+        "examples/testing/point-of-sale-testing-example/extensions/point-of-sale-testing-example/package.json",
+        "examples/testing/point-of-sale-testing-example/extensions/point-of-sale-testing-example/shopify.extension.toml",
+        "examples/testing/point-of-sale-testing-example/extensions/point-of-sale-testing-example/tsconfig.json",
+        "examples/testing/point-of-sale-testing-example/package.json",
+        "examples/testing/point-of-sale-testing-example/shopify.app.toml",
+        "examples/testing/point-of-sale-testing-example/vitest.config.ts",
+        "package-lock.json",
+        "package.json",
+        "packages/ui-extensions-tester/CHANGELOG.md",
+        "packages/ui-extensions-tester/README.md",
+        "packages/ui-extensions-tester/package.json",
+        "packages/ui-extensions-tester/src/admin/README.md",
+        "packages/ui-extensions-tester/src/checkout/README.md",
+        "packages/ui-extensions-tester/src/customer-account/README.md",
+        "packages/ui-extensions-tester/src/point-of-sale/README.md",
+        "packages/ui-extensions-tester/tsconfig.json",
+        "packages/ui-extensions-tester/tsconfig.typecheck.json",
+        "packages/ui-extensions/CHANGELOG.md",
+        "packages/ui-extensions/README.md",
+        "packages/ui-extensions/docs/surfaces/admin/README.md",
+        "packages/ui-extensions/docs/surfaces/checkout/staticPages/examples/upgrading-to-2025-10/shopify.extension-new.toml",
+        "packages/ui-extensions/docs/surfaces/customer-account/staticPages/examples/upgrading-to-2025-10/shopify.extension-new.toml",
+        "packages/ui-extensions/package.json",
+        "packages/ui-extensions/src/surfaces/admin/api/standard/README.md",
+        "packages/ui-extensions/src/surfaces/checkout/preact/tests/tsconfig.json",
+        "packages/ui-extensions/tsconfig.json",
+        "scripts/tsconfig.json",
+        "tsconfig.json",
+        "tsconfig.repo.json",
+        "yarn.lock"
+      ],
+      "shopify_tomls": [
+        "examples/testing/admin-testing-example/extensions/admin-testing-example/shopify.extension.toml",
+        "examples/testing/admin-testing-example/shopify.app.toml",
+        "examples/testing/checkout-basic-testing-example/extensions/checkout-basic-testing-example/shopify.extension.toml",
+        "examples/testing/checkout-basic-testing-example/shopify.app.toml",
+        "examples/testing/customer-account-testing-example/extensions/customer-account-testing-example/shopify.extension.toml",
+        "examples/testing/customer-account-testing-example/shopify.app.toml",
+        "examples/testing/point-of-sale-testing-example/extensions/point-of-sale-testing-example/shopify.extension.toml",
+        "examples/testing/point-of-sale-testing-example/shopify.app.toml",
+        "packages/ui-extensions/docs/surfaces/checkout/staticPages/examples/upgrading-to-2025-10/shopify.extension-new.toml",
+        "packages/ui-extensions/docs/surfaces/customer-account/staticPages/examples/upgrading-to-2025-10/shopify.extension-new.toml"
+      ],
+      "test_dirs": [
+        "examples",
+        "examples/testing",
+        "packages/ui-extensions-tester"
+      ],
+      "examples_or_templates": [
+        "examples",
+        ".github/ISSUE_TEMPLATE",
+        "examples/testing"
+      ],
+      "shopify_related_dirs": [
+        ".github/ISSUE_TEMPLATE",
+        "packages/ui-extensions",
+        "packages/ui-extensions-tester"
+      ],
+      "package": {
+        "name": "ui-extensions",
+        "private": true,
+        "workspaces": [
+          "./packages/*"
+        ],
+        "scripts": {
+          "build": "loom build",
+          "build-consumer": "loom build && ./scripts/build-consumer.sh",
+          "build-consumer-spin": "loom build && ./scripts/build-consumer-spin.sh",
+          "clean": "git clean -xdf ./packages; rm -rf ./build",
+          "predeploy": "yarn build",
+          "deploy": "changeset publish",
+          "predeploy:unstable": "yarn build",
+          "docs:admin": "yarn workspace @shopify/ui-extensions docs:admin",
+          "docs:checkout": "yarn workspace @shopify/ui-extensions docs:checkout",
+          "docs:checkout:fast": "yarn workspace @shopify/ui-extensions docs:checkout:fast",
+          "docs:checkout:dev": "yarn workspace @shopify/ui-extensions docs:checkout:dev",
+          "docs:point-of-sale": "yarn workspace @shopify/ui-extensions docs:point-of-sale",
+          "docs:customer-account": "yarn workspace @shopify/ui-extensions docs:customer-account",
+          "deploy:unstable": "changeset version --snapshot unstable && changeset publish --tag unstable --no-git-tag",
+          "predeploy:internal": "yarn build",
+          "deploy:internal": "changeset version --snapshot internal && changeset publish --tag internal --no-git-tag",
+          "lint": "loom lint",
+          "nuke": "rm -rf node_modules && yarn cache clean && rm -rf .loom && git clean -xdf ./packages; rm -rf ./build",
+          "restore-consumer": "./scripts/restore-consumer.sh",
+          "restore-consumer-spin": "./scripts/restore-consumer-spin.sh",
+          "run:ts": "babel-node --extensions .ts,.tsx,.mjs,.js,.json",
+          "run:ts:watch": "nodemon --ext .ts,.tsx,.mjs,.json,.graphql node_modules/.bin/babel-node --extensions .ts,.tsx,.mjs,.js,.json",
+          "type-check": "loom type-check",
+          "changeset:exit-pre-mode": "test -f .changeset/pre.json && jq -e '.mode == \"pre\"' .changeset/pre.json > /dev/null && yarn changeset pre exit || true",
+          "test": "loom test --no-watch",
+          "test:watch": "loom test",
+          "test:example-suites": "for dir in examples/testing/*/; do (cd \"$dir\" && npm install && npm run typecheck && npm test) || exit 1; done"
+        },
+        "dependencies_sample": [],
+        "devDependencies_sample": [
+          "@babel/node",
+          "@changesets/changelog-github",
+          "@changesets/cli",
+          "@rollup/plugin-replace",
+          "@shopify/babel-preset",
+          "@shopify/browserslist-config",
+          "@shopify/eslint-plugin",
+          "@shopify/loom",
+          "@shopify/loom-cli",
+          "@shopify/loom-plugin-build-library",
+          "@shopify/loom-plugin-eslint",
+          "@shopify/loom-plugin-prettier",
+          "@shopify/typescript-configs",
+          "eslint",
+          "nodemon",
+          "prettier",
+          "typescript"
+        ]
+      }
+    },
+    {
+      "repo": "Shopify/dev-mcp-gemini-cli",
+      "url": "https://github.com/Shopify/dev-mcp-gemini-cli",
+      "head_sha_prefix": "02c1f74db1f8",
+      "branch": "main",
+      "file_count": 7,
+      "top_counts": [
+        [
+          ".github",
+          5
+        ],
+        [
+          "LICENSE",
+          1
+        ],
+        [
+          "README.md",
+          1
+        ]
+      ],
+      "key_files": [
+        "README.md"
+      ],
+      "shopify_tomls": [],
+      "test_dirs": [],
+      "examples_or_templates": [],
+      "shopify_related_dirs": [],
+      "package": {}
+    }
+  ]
+}

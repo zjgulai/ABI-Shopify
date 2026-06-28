@@ -1,3836 +1,4963 @@
 [
- {
-  "source": "stage_00",
-  "type": "NEXT",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "stage_01",
-  "type": "NEXT",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "stage_02",
-  "type": "NEXT",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "stage_03",
-  "type": "NEXT",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "stage_04",
-  "type": "NEXT",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "stage_05",
-  "type": "NEXT",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "stage_06",
-  "type": "NEXT",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "stage_07",
-  "type": "NEXT",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "stage_08",
-  "type": "NEXT",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "stage_09",
-  "type": "NEXT",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "stage_90",
-  "type": "CROSSCUTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "stage_91",
-  "type": "CROSSCUTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "stage_92",
-  "type": "CROSSCUTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "stage_09",
-  "type": "FEEDS_BACK",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "stage_09",
-  "type": "FEEDS_BACK",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_weekly",
-  "type": "ENRICHES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_twitter",
-  "type": "ENRICHES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_shopify_docs",
-  "type": "ENRICHES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_shopify_accounts",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "cap_sidekick",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_sidekick",
-  "type": "SUPPORTS",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "cap_sidekick",
-  "type": "SUPPORTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "cap_sidekick",
-  "type": "SUPPORTS",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "cap_sidekick",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_pulse",
-  "type": "SUPPORTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "cap_pulse",
-  "type": "SUPPORTS",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "cap_magic",
-  "type": "SUPPORTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "cap_magic",
-  "type": "SUPPORTS",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "cap_magic",
-  "type": "SUPPORTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "cap_flow",
-  "type": "SUPPORTS",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "cap_flow",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_storefront_mcp",
-  "type": "SUPPORTS",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "cap_storefront_mcp",
-  "type": "SUPPORTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "cap_storefront_mcp",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_dev_mcp",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_dev_mcp",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_catalog",
-  "type": "SUPPORTS",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "cap_catalog",
-  "type": "SUPPORTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "cap_catalog",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_ai_toolkit",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_ai_toolkit",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_autopilot",
-  "type": "SUPPORTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "cap_store_ai",
-  "type": "SUPPORTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "cap_store_ai",
-  "type": "SUPPORTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "cap_ucp",
-  "type": "SUPPORTS",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "cap_ucp",
-  "type": "SUPPORTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "cap_ucp",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_hydrogen",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_hydrogen",
-  "type": "SUPPORTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "cap_oxygen",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_functions",
-  "type": "SUPPORTS",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "cap_functions",
-  "type": "SUPPORTS",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "cap_functions",
-  "type": "SUPPORTS",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "cap_sidekick_ext",
-  "type": "SUPPORTS",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "cap_sidekick_ext",
-  "type": "SUPPORTS",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "cap_sidekick_ext",
-  "type": "SUPPORTS",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "cap_ucp",
-  "type": "CO_BUILT_WITH",
-  "target": "org_google",
-  "props": {}
- },
- {
-  "source": "cap_catalog",
-  "type": "DISCOVERY_LAYER_OF",
-  "target": "cap_ucp",
-  "props": {}
- },
- {
-  "source": "step1",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "step2",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "step3",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "step4",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "step5",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "step6",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "step7",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "step8",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "step9",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "step10",
-  "type": "MAPS_TO_STAGE",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "step1",
-  "type": "USES_TOOL",
-  "target": "tool_helium10",
-  "props": {}
- },
- {
-  "source": "step1",
-  "type": "USES_TOOL",
-  "target": "tool_junglescout",
-  "props": {}
- },
- {
-  "source": "step2",
-  "type": "USES_TOOL",
-  "target": "tool_googletrends",
-  "props": {}
- },
- {
-  "source": "step2",
-  "type": "USES_TOOL",
-  "target": "tool_perplexity",
-  "props": {}
- },
- {
-  "source": "step3",
-  "type": "USES_TOOL",
-  "target": "tool_chatgpt",
-  "props": {}
- },
- {
-  "source": "step4",
-  "type": "USES_TOOL",
-  "target": "tool_chatgpt",
-  "props": {}
- },
- {
-  "source": "step3",
-  "type": "USES_TOOL",
-  "target": "tool_claude",
-  "props": {}
- },
- {
-  "source": "step10",
-  "type": "USES_TOOL",
-  "target": "tool_claude",
-  "props": {}
- },
- {
-  "source": "step4",
-  "type": "USES_TOOL",
-  "target": "tool_deepseek",
-  "props": {}
- },
- {
-  "source": "step5",
-  "type": "USES_TOOL",
-  "target": "tool_deepl",
-  "props": {}
- },
- {
-  "source": "step5",
-  "type": "USES_TOOL",
-  "target": "tool_gemini",
-  "props": {}
- },
- {
-  "source": "step6",
-  "type": "USES_TOOL",
-  "target": "tool_midjourney",
-  "props": {}
- },
- {
-  "source": "step6",
-  "type": "USES_TOOL",
-  "target": "tool_imini",
-  "props": {}
- },
- {
-  "source": "step6",
-  "type": "USES_TOOL",
-  "target": "tool_canva",
-  "props": {}
- },
- {
-  "source": "step6",
-  "type": "USES_TOOL",
-  "target": "tool_photoshop",
-  "props": {}
- },
- {
-  "source": "step7",
-  "type": "USES_TOOL",
-  "target": "tool_capcut",
-  "props": {}
- },
- {
-  "source": "step7",
-  "type": "USES_TOOL",
-  "target": "tool_jianying",
-  "props": {}
- },
- {
-  "source": "step7",
-  "type": "USES_TOOL",
-  "target": "tool_runway",
-  "props": {}
- },
- {
-  "source": "step7",
-  "type": "USES_TOOL",
-  "target": "tool_kling",
-  "props": {}
- },
- {
-  "source": "step8",
-  "type": "USES_TOOL",
-  "target": "tool_elevenlabs",
-  "props": {}
- },
- {
-  "source": "step9",
-  "type": "USES_TOOL",
-  "target": "tool_suno",
-  "props": {}
- },
- {
-  "source": "step10",
-  "type": "USES_TOOL",
-  "target": "tool_zapier",
-  "props": {}
- },
- {
-  "source": "step10",
-  "type": "USES_TOOL",
-  "target": "tool_make",
-  "props": {}
- },
- {
-  "source": "stage_07",
-  "type": "USES_TOOL",
-  "target": "tool_ga4",
-  "props": {}
- },
- {
-  "source": "stage_07",
-  "type": "USES_TOOL",
-  "target": "tool_gtm",
-  "props": {}
- },
- {
-  "source": "stage_07",
-  "type": "USES_TOOL",
-  "target": "tool_bigquery",
-  "props": {}
- },
- {
-  "source": "stage_05",
-  "type": "USES_TOOL",
-  "target": "tool_klaviyo",
-  "props": {}
- },
- {
-  "source": "stage_05",
-  "type": "USES_TOOL",
-  "target": "tool_omnisend",
-  "props": {}
- },
- {
-  "source": "stage_09",
-  "type": "USES_TOOL",
-  "target": "tool_loop",
-  "props": {}
- },
- {
-  "source": "stage_04",
-  "type": "USES_TOOL",
-  "target": "tool_nanobanana",
-  "props": {}
- },
- {
-  "source": "stage_04",
-  "type": "USES_TOOL",
-  "target": "tool_seedream",
-  "props": {}
- },
- {
-  "source": "cap_sidekick_ext",
-  "type": "INTEGRATES",
-  "target": "tool_klaviyo",
-  "props": {}
- },
- {
-  "source": "cap_sidekick_ext",
-  "type": "INTEGRATES",
-  "target": "tool_loop",
-  "props": {}
- },
- {
-  "source": "con_agentic_commerce",
-  "type": "APPLIES_TO",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "con_agentic_commerce",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_mcp",
-  "type": "APPLIES_TO",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "con_mcp",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_agent",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_rag",
-  "type": "APPLIES_TO",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "con_kg",
-  "type": "APPLIES_TO",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "con_claudemd",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_claudemd",
-  "type": "APPLIES_TO",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "con_trellis",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_trellis",
-  "type": "APPLIES_TO",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "con_skillopt",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_datalayer",
-  "type": "APPLIES_TO",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "con_datalayer",
-  "type": "APPLIES_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "con_emotion",
-  "type": "APPLIES_TO",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "con_human_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_human_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "con_attribution",
-  "type": "APPLIES_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "con_attribution",
-  "type": "APPLIES_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "con_agentic_commerce",
-  "type": "ENABLED_BY",
-  "target": "cap_ucp",
-  "props": {}
- },
- {
-  "source": "con_agentic_commerce",
-  "type": "ENABLED_BY",
-  "target": "cap_catalog",
-  "props": {}
- },
- {
-  "source": "proj_invsync",
-  "type": "BELONGS_TO",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "proj_invsync",
-  "type": "OWNED_BY",
-  "target": "team_test",
-  "props": {}
- },
- {
-  "source": "proj_help",
-  "type": "BELONGS_TO",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "proj_help",
-  "type": "OWNED_BY",
-  "target": "team_site",
-  "props": {}
- },
- {
-  "source": "proj_member",
-  "type": "BELONGS_TO",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "proj_member",
-  "type": "OWNED_BY",
-  "target": "team_platform",
-  "props": {}
- },
- {
-  "source": "proj_sea",
-  "type": "BELONGS_TO",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "proj_sea",
-  "type": "OWNED_BY",
-  "target": "team_platform",
-  "props": {}
- },
- {
-  "source": "proj_mday",
-  "type": "BELONGS_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "proj_mday",
-  "type": "OWNED_BY",
-  "target": "team_platform",
-  "props": {}
- },
- {
-  "source": "proj_admid",
-  "type": "BELONGS_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "proj_admid",
-  "type": "OWNED_BY",
-  "target": "team_platform",
-  "props": {}
- },
- {
-  "source": "proj_attr",
-  "type": "BELONGS_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "proj_attr",
-  "type": "OWNED_BY",
-  "target": "team_data",
-  "props": {}
- },
- {
-  "source": "proj_senti",
-  "type": "BELONGS_TO",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "proj_senti",
-  "type": "OWNED_BY",
-  "target": "team_mai",
-  "props": {}
- },
- {
-  "source": "proj_cainiao",
-  "type": "BELONGS_TO",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "proj_cainiao",
-  "type": "OWNED_BY",
-  "target": "team_supply",
-  "props": {}
- },
- {
-  "source": "proj_video",
-  "type": "BELONGS_TO",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "proj_video",
-  "type": "OWNED_BY",
-  "target": "team_mai",
-  "props": {}
- },
- {
-  "source": "proj_imggen",
-  "type": "BELONGS_TO",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "proj_imggen",
-  "type": "OWNED_BY",
-  "target": "team_mai",
-  "props": {}
- },
- {
-  "source": "proj_agentops",
-  "type": "BELONGS_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "proj_agentops",
-  "type": "OWNED_BY",
-  "target": "team_agent",
-  "props": {}
- },
- {
-  "source": "repo_ai_toolkit",
-  "type": "SERVES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "repo_ai_toolkit",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_hydrogen",
-  "type": "SERVES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "repo_ucp",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_ucp",
-  "type": "SERVES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "repo_awesome_ucp",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_mcp_hydrogen",
-  "type": "SERVES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "repo_sf_mcp_comm",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_agent_reach",
-  "type": "SERVES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "repo_agent_reach",
-  "type": "SERVES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "repo_horizon",
-  "type": "SERVES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "repo_horizon",
-  "type": "SERVES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "repo_claude_md",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_claude_md",
-  "type": "SERVES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "repo_trellis",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_autohedge",
-  "type": "SERVES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "repo_one_person",
-  "type": "SERVES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "repo_universaldl",
-  "type": "SERVES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_github",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "skill_admin",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_admin",
-  "type": "ENABLES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "skill_admin",
-  "type": "ENABLES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "skill_admin",
-  "type": "ENABLES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "skill_admin_exec",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_admin_exec",
-  "type": "ENABLES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "skill_admin_exec",
-  "type": "ENABLES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "skill_admin_exec",
-  "type": "ENABLES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "skill_admin_exec",
-  "type": "ENABLES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "skill_storefront_gql",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_storefront_gql",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_storefront_gql",
-  "type": "ENABLES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "skill_dev",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_dev",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_dev",
-  "type": "ENABLES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "skill_liquid",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_liquid",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_hydrogen",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_hydrogen",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_custom_data",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_custom_data",
-  "type": "ENABLES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "skill_functions",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_functions",
-  "type": "ENABLES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "skill_functions",
-  "type": "ENABLES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "skill_functions",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_ui_ext",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_ui_ext",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_ui_ext",
-  "type": "ENABLES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "skill_ui_ext",
-  "type": "ENABLES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "skill_customer",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_customer",
-  "type": "ENABLES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "skill_payments_apps",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_payments_apps",
-  "type": "ENABLES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "skill_partner",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_partner",
-  "type": "ENABLES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "skill_appstore_review",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_appstore_review",
-  "type": "ENABLES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "skill_onb_dev",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_onb_dev",
-  "type": "ENABLES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "skill_onb_dev",
-  "type": "ENABLES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "skill_onb_merchant",
-  "type": "PART_OF",
-  "target": "repo_ai_toolkit",
-  "props": {}
- },
- {
-  "source": "skill_onb_merchant",
-  "type": "ENABLES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "skill_onb_merchant",
-  "type": "ENABLES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_beg2026",
-  "props": {}
- },
- {
-  "source": "vid_ks_beg2026",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ks_beg2026",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_crash",
-  "props": {}
- },
- {
-  "source": "vid_ks_crash",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ks_crash",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_ks_crash",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_design",
-  "props": {}
- },
- {
-  "source": "vid_ks_design",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ks_design",
-  "type": "TEACHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_cs1",
-  "props": {}
- },
- {
-  "source": "vid_ks_cs1",
-  "type": "TEACHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "vid_ks_cs1",
-  "type": "TEACHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_cs2",
-  "props": {}
- },
- {
-  "source": "vid_ks_cs2",
-  "type": "TEACHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "vid_ks_cs2",
-  "type": "TEACHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "INCLUDES",
-  "target": "vid_ks_15min",
-  "props": {}
- },
- {
-  "source": "vid_ks_15min",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ks_15min",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_ks",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_fQZntbd5QGI",
-  "props": {}
- },
- {
-  "source": "vid_mm_fQZntbd5QGI",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_fQZntbd5QGI",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_uorQJ_ucDhg",
-  "props": {}
- },
- {
-  "source": "vid_mm_uorQJ_ucDhg",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_uorQJ_ucDhg",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_nJMqRgKkkBg",
-  "props": {}
- },
- {
-  "source": "vid_mm_nJMqRgKkkBg",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_nJMqRgKkkBg",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_zTmFF58HRsE",
-  "props": {}
- },
- {
-  "source": "vid_mm_zTmFF58HRsE",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_zTmFF58HRsE",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_mm_zTmFF58HRsE",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_lCkrcxsm95Q",
-  "props": {}
- },
- {
-  "source": "vid_mm_lCkrcxsm95Q",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_lCkrcxsm95Q",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_YtbaxJFb9zE",
-  "props": {}
- },
- {
-  "source": "vid_mm_YtbaxJFb9zE",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_wQGabloRalM",
-  "props": {}
- },
- {
-  "source": "vid_mm_wQGabloRalM",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_wQGabloRalM",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_BKFBxoU9vUk",
-  "props": {}
- },
- {
-  "source": "vid_mm_BKFBxoU9vUk",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_istNOWqKKQk",
-  "props": {}
- },
- {
-  "source": "vid_mm_istNOWqKKQk",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_istNOWqKKQk",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_istNOWqKKQk",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_sbDOdXi4nXk",
-  "props": {}
- },
- {
-  "source": "vid_mm_sbDOdXi4nXk",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_UebgVScwFto",
-  "props": {}
- },
- {
-  "source": "vid_mm_UebgVScwFto",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm__p7hoAdVv3g",
-  "props": {}
- },
- {
-  "source": "vid_mm__p7hoAdVv3g",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm__p7hoAdVv3g",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_zgUbeJnlXfw",
-  "props": {}
- },
- {
-  "source": "vid_mm_zgUbeJnlXfw",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_mm_zgUbeJnlXfw",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_zgUbeJnlXfw",
-  "type": "TEACHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_OPkVbIy7bxs",
-  "props": {}
- },
- {
-  "source": "vid_mm_OPkVbIy7bxs",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_OPkVbIy7bxs",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_27foEj8ujSI",
-  "props": {}
- },
- {
-  "source": "vid_mm_27foEj8ujSI",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_27foEj8ujSI",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_mm_27foEj8ujSI",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_8nxk8FARDTw",
-  "props": {}
- },
- {
-  "source": "vid_mm_8nxk8FARDTw",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_8nxk8FARDTw",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_1FgCo5-222M",
-  "props": {}
- },
- {
-  "source": "vid_mm_1FgCo5-222M",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_TYYgCXNwTtQ",
-  "props": {}
- },
- {
-  "source": "vid_mm_TYYgCXNwTtQ",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_wDBcYlt_DZU",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_XMLjZB1ASUM",
-  "props": {}
- },
- {
-  "source": "vid_mm_XMLjZB1ASUM",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_XMLjZB1ASUM",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_RWI59fC7Z48",
-  "props": {}
- },
- {
-  "source": "vid_mm_RWI59fC7Z48",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_RWI59fC7Z48",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_UKs338dQzbY",
-  "props": {}
- },
- {
-  "source": "vid_mm_UKs338dQzbY",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_UKs338dQzbY",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_NjogxU1oRaE",
-  "props": {}
- },
- {
-  "source": "vid_mm_NjogxU1oRaE",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_NjogxU1oRaE",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_xfOT2elC2Ok",
-  "props": {}
- },
- {
-  "source": "vid_mm_xfOT2elC2Ok",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_xfOT2elC2Ok",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_xfOT2elC2Ok",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_rgZU5pDf6mw",
-  "props": {}
- },
- {
-  "source": "vid_mm_rgZU5pDf6mw",
-  "type": "TEACHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_YImqGsOPqU8",
-  "props": {}
- },
- {
-  "source": "vid_mm_YImqGsOPqU8",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_YImqGsOPqU8",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_rhuYy9LP72M",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_roM3wlSqk1c",
-  "props": {}
- },
- {
-  "source": "vid_mm_roM3wlSqk1c",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_roM3wlSqk1c",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_iwmz1sL5r9g",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_hoIzMTdSe5w",
-  "props": {}
- },
- {
-  "source": "vid_mm_hoIzMTdSe5w",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "INCLUDES",
-  "target": "vid_mm_YatPsQlGM3g",
-  "props": {}
- },
- {
-  "source": "vid_mm_YatPsQlGM3g",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "vid_mm_YatPsQlGM3g",
-  "type": "TEACHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_metics",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "vid_mm_YatPsQlGM3g",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_wDBcYlt_DZU",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_wDBcYlt_DZU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_YImqGsOPqU8",
-  "props": {}
- },
- {
-  "source": "vid_mm_YImqGsOPqU8",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_YImqGsOPqU8",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_mm_YImqGsOPqU8",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_zJj3KjQJU_E",
-  "props": {}
- },
- {
-  "source": "vid_ah_zJj3KjQJU_E",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_zJj3KjQJU_E",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_zJj3KjQJU_E",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_Tt1UzjlEunc",
-  "props": {}
- },
- {
-  "source": "vid_ah_Tt1UzjlEunc",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_Tt1UzjlEunc",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_Tt1UzjlEunc",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_4eVGNBVJos8",
-  "props": {}
- },
- {
-  "source": "vid_ah_4eVGNBVJos8",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_4eVGNBVJos8",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_4eVGNBVJos8",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_6WpY-5LvBO8",
-  "props": {}
- },
- {
-  "source": "vid_ah_6WpY-5LvBO8",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_6WpY-5LvBO8",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_6WpY-5LvBO8",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_5FYIA-hKh6w",
-  "props": {}
- },
- {
-  "source": "vid_ah_5FYIA-hKh6w",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_5FYIA-hKh6w",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_5FYIA-hKh6w",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_KSP0JxWEC4Q",
-  "props": {}
- },
- {
-  "source": "vid_ah_KSP0JxWEC4Q",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_KSP0JxWEC4Q",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_KSP0JxWEC4Q",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_QnQ5tOGDWVw",
-  "props": {}
- },
- {
-  "source": "vid_ah_QnQ5tOGDWVw",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_QnQ5tOGDWVw",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_fMt3kv1vc_A",
-  "props": {}
- },
- {
-  "source": "vid_ah_fMt3kv1vc_A",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_fMt3kv1vc_A",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_fMt3kv1vc_A",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_e7oiWBn7KwU",
-  "props": {}
- },
- {
-  "source": "vid_ah_e7oiWBn7KwU",
-  "type": "TEACHES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "vid_ah_e7oiWBn7KwU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_vXmF10ZNmoo",
-  "props": {}
- },
- {
-  "source": "vid_ah_vXmF10ZNmoo",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_vXmF10ZNmoo",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_-3H6CW5FgLY",
-  "props": {}
- },
- {
-  "source": "vid_ah_-3H6CW5FgLY",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_-3H6CW5FgLY",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_-3H6CW5FgLY",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_r-akYidsTHU",
-  "props": {}
- },
- {
-  "source": "vid_ah_r-akYidsTHU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_r-akYidsTHU",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_r-akYidsTHU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_OjwWTPck2d0",
-  "props": {}
- },
- {
-  "source": "vid_ah_OjwWTPck2d0",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_OjwWTPck2d0",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_1EgjCxk0-kM",
-  "props": {}
- },
- {
-  "source": "vid_ah_1EgjCxk0-kM",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_1EgjCxk0-kM",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_xZjkLrHJheE",
-  "props": {}
- },
- {
-  "source": "vid_ah_xZjkLrHJheE",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "vid_ah_xZjkLrHJheE",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_G0ixSNfa0vk",
-  "props": {}
- },
- {
-  "source": "vid_ah_G0ixSNfa0vk",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_G0ixSNfa0vk",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_m-8yOo_F6CY",
-  "props": {}
- },
- {
-  "source": "vid_ah_m-8yOo_F6CY",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_m-8yOo_F6CY",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_m-8yOo_F6CY",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_F97pwb80QIE",
-  "props": {}
- },
- {
-  "source": "vid_ah_F97pwb80QIE",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_F97pwb80QIE",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_F97pwb80QIE",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_Y3iXtMjE4bw",
-  "props": {}
- },
- {
-  "source": "vid_ah_Y3iXtMjE4bw",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "vid_ah_Y3iXtMjE4bw",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_Y3iXtMjE4bw",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_k13zZ6hdXOw",
-  "props": {}
- },
- {
-  "source": "vid_ah_k13zZ6hdXOw",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_k13zZ6hdXOw",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_k13zZ6hdXOw",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_lx0wQb3FBQU",
-  "props": {}
- },
- {
-  "source": "vid_ah_lx0wQb3FBQU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_lx0wQb3FBQU",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_lx0wQb3FBQU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_NX-5ChIZBRQ",
-  "props": {}
- },
- {
-  "source": "vid_ah_NX-5ChIZBRQ",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_xrfZshDuPBU",
-  "props": {}
- },
- {
-  "source": "vid_ah_xrfZshDuPBU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_xrfZshDuPBU",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_xrfZshDuPBU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_WkUkzdMnRHo",
-  "props": {}
- },
- {
-  "source": "vid_ah_WkUkzdMnRHo",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_GGwXtC4WXvc",
-  "props": {}
- },
- {
-  "source": "vid_ah_GGwXtC4WXvc",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_GGwXtC4WXvc",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_7jC2H8Nf-7M",
-  "props": {}
- },
- {
-  "source": "vid_ah_7jC2H8Nf-7M",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_ah_7jC2H8Nf-7M",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "vid_ah_7jC2H8Nf-7M",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_aKIHLrdsv8o",
-  "props": {}
- },
- {
-  "source": "vid_ah_aKIHLrdsv8o",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "vid_ah_aKIHLrdsv8o",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_uorQJ_ucDhg",
-  "props": {}
- },
- {
-  "source": "vid_mm_uorQJ_ucDhg",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_uorQJ_ucDhg",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_wQGabloRalM",
-  "props": {}
- },
- {
-  "source": "vid_mm_wQGabloRalM",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_wQGabloRalM",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_iwmz1sL5r9g",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "vid_mm_iwmz1sL5r9g",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_UKs338dQzbY",
-  "props": {}
- },
- {
-  "source": "vid_mm_UKs338dQzbY",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_mm_UKs338dQzbY",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_mjry59gEteM",
-  "props": {}
- },
- {
-  "source": "vid_ah_mjry59gEteM",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_mjry59gEteM",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_tUu7W4oAlmw",
-  "props": {}
- },
- {
-  "source": "vid_ah_tUu7W4oAlmw",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_tUu7W4oAlmw",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_rhuYy9LP72M",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "vid_mm_rhuYy9LP72M",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_mm_sbDOdXi4nXk",
-  "props": {}
- },
- {
-  "source": "vid_mm_sbDOdXi4nXk",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah__1caEZ7t3UY",
-  "props": {}
- },
- {
-  "source": "vid_ah__1caEZ7t3UY",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah__1caEZ7t3UY",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "vid_ah__1caEZ7t3UY",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "vid_ah__1caEZ7t3UY",
-  "type": "TEACHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_okSKWf8PBNY",
-  "props": {}
- },
- {
-  "source": "vid_ah_okSKWf8PBNY",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_AX0eHDslSEc",
-  "props": {}
- },
- {
-  "source": "vid_ah_AX0eHDslSEc",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_AX0eHDslSEc",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_8O_69fP_WZc",
-  "props": {}
- },
- {
-  "source": "vid_ah_8O_69fP_WZc",
-  "type": "TEACHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "vid_ah_8O_69fP_WZc",
-  "type": "TEACHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "vid_ah_8O_69fP_WZc",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_1o6cKeK24Mw",
-  "props": {}
- },
- {
-  "source": "vid_ah_1o6cKeK24Mw",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_1o6cKeK24Mw",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_9coOU5ea3nk",
-  "props": {}
- },
- {
-  "source": "vid_ah_9coOU5ea3nk",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_9coOU5ea3nk",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_uRHm5WpPJyU",
-  "props": {}
- },
- {
-  "source": "vid_ah_uRHm5WpPJyU",
-  "type": "TEACHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "vid_ah_uRHm5WpPJyU",
-  "type": "TEACHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_2y71Lc3bB1k",
-  "props": {}
- },
- {
-  "source": "vid_ah_2y71Lc3bB1k",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_2y71Lc3bB1k",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_w9tLiCLEIrg",
-  "props": {}
- },
- {
-  "source": "vid_ah_w9tLiCLEIrg",
-  "type": "TEACHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "vid_ah_w9tLiCLEIrg",
-  "type": "TEACHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "INCLUDES",
-  "target": "vid_ah_CYH_dRPD2B4",
-  "props": {}
- },
- {
-  "source": "vid_ah_CYH_dRPD2B4",
-  "type": "TEACHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_youtube_achampton",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "con_indie_growth_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "con_indie_growth_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "con_indie_growth_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "con_indie_growth_loop",
-  "type": "APPLIES_TO",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_indie_growth_loop",
-  "props": {}
- },
- {
-  "source": "con_social_first_product_research",
-  "type": "APPLIES_TO",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "con_social_first_product_research",
-  "type": "APPLIES_TO",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "con_social_first_product_research",
-  "type": "APPLIES_TO",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_social_first_product_research",
-  "props": {}
- },
- {
-  "source": "con_listing_content_factory",
-  "type": "APPLIES_TO",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "con_listing_content_factory",
-  "type": "APPLIES_TO",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "con_listing_content_factory",
-  "type": "APPLIES_TO",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "con_listing_content_factory",
-  "type": "APPLIES_TO",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_listing_content_factory",
-  "props": {}
- },
- {
-  "source": "con_offsite_traffic_stack",
-  "type": "APPLIES_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "con_offsite_traffic_stack",
-  "type": "APPLIES_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "con_offsite_traffic_stack",
-  "type": "APPLIES_TO",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_offsite_traffic_stack",
-  "props": {}
- },
- {
-  "source": "con_ad_report_diagnosis",
-  "type": "APPLIES_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "con_ad_report_diagnosis",
-  "type": "APPLIES_TO",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "con_ad_report_diagnosis",
-  "type": "APPLIES_TO",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "con_ad_report_diagnosis",
-  "type": "APPLIES_TO",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_ad_report_diagnosis",
-  "props": {}
- },
- {
-  "source": "con_channel_risk_guardrails",
-  "type": "APPLIES_TO",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "con_channel_risk_guardrails",
-  "type": "APPLIES_TO",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "con_channel_risk_guardrails",
-  "type": "APPLIES_TO",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "con_channel_risk_guardrails",
-  "type": "APPLIES_TO",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "INCLUDES",
-  "target": "con_channel_risk_guardrails",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_00",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_01",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_02",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_03",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_04",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_05",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_06",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_07",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_08",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_09",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_10",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_90",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_91",
-  "props": {}
- },
- {
-  "source": "src_inbox_indie_ops",
-  "type": "ENRICHES",
-  "target": "stage_92",
-  "props": {}
- },
- {
-  "source": "con_social_first_product_research",
-  "type": "ENABLED_BY",
-  "target": "con_agent",
-  "props": {}
- },
- {
-  "source": "con_listing_content_factory",
-  "type": "ENABLED_BY",
-  "target": "con_agent",
-  "props": {}
- },
- {
-  "source": "con_ad_report_diagnosis",
-  "type": "ENABLED_BY",
-  "target": "con_agent",
-  "props": {}
- },
- {
-  "source": "con_channel_risk_guardrails",
-  "type": "ENABLED_BY",
-  "target": "con_agent",
-  "props": {}
- }
+  {
+    "source": "stage_00",
+    "type": "NEXT",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "stage_01",
+    "type": "NEXT",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "stage_02",
+    "type": "NEXT",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "stage_03",
+    "type": "NEXT",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "stage_04",
+    "type": "NEXT",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "stage_05",
+    "type": "NEXT",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "stage_06",
+    "type": "NEXT",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "stage_07",
+    "type": "NEXT",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "stage_08",
+    "type": "NEXT",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "stage_09",
+    "type": "NEXT",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "stage_90",
+    "type": "CROSSCUTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "stage_91",
+    "type": "CROSSCUTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "stage_92",
+    "type": "CROSSCUTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "stage_09",
+    "type": "FEEDS_BACK",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "stage_09",
+    "type": "FEEDS_BACK",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_weekly",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_twitter",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_docs",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_shopify_accounts",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick",
+    "type": "SUPPORTS",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick",
+    "type": "SUPPORTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick",
+    "type": "SUPPORTS",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_pulse",
+    "type": "SUPPORTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "cap_pulse",
+    "type": "SUPPORTS",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "cap_magic",
+    "type": "SUPPORTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "cap_magic",
+    "type": "SUPPORTS",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "cap_magic",
+    "type": "SUPPORTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "cap_flow",
+    "type": "SUPPORTS",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "cap_flow",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_storefront_mcp",
+    "type": "SUPPORTS",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "cap_storefront_mcp",
+    "type": "SUPPORTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "cap_storefront_mcp",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_dev_mcp",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_dev_mcp",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_catalog",
+    "type": "SUPPORTS",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "cap_catalog",
+    "type": "SUPPORTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "cap_catalog",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_ai_toolkit",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_ai_toolkit",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_autopilot",
+    "type": "SUPPORTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "cap_store_ai",
+    "type": "SUPPORTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "cap_store_ai",
+    "type": "SUPPORTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "cap_ucp",
+    "type": "SUPPORTS",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "cap_ucp",
+    "type": "SUPPORTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "cap_ucp",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_hydrogen",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_hydrogen",
+    "type": "SUPPORTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "cap_oxygen",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_functions",
+    "type": "SUPPORTS",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "cap_functions",
+    "type": "SUPPORTS",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "cap_functions",
+    "type": "SUPPORTS",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick_ext",
+    "type": "SUPPORTS",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick_ext",
+    "type": "SUPPORTS",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick_ext",
+    "type": "SUPPORTS",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "cap_ucp",
+    "type": "CO_BUILT_WITH",
+    "target": "org_google",
+    "props": {}
+  },
+  {
+    "source": "cap_catalog",
+    "type": "DISCOVERY_LAYER_OF",
+    "target": "cap_ucp",
+    "props": {}
+  },
+  {
+    "source": "step1",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "step2",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "step3",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "step4",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "step5",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "step6",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "step7",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "step8",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "step9",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "step10",
+    "type": "MAPS_TO_STAGE",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "step1",
+    "type": "USES_TOOL",
+    "target": "tool_helium10",
+    "props": {}
+  },
+  {
+    "source": "step1",
+    "type": "USES_TOOL",
+    "target": "tool_junglescout",
+    "props": {}
+  },
+  {
+    "source": "step2",
+    "type": "USES_TOOL",
+    "target": "tool_googletrends",
+    "props": {}
+  },
+  {
+    "source": "step2",
+    "type": "USES_TOOL",
+    "target": "tool_perplexity",
+    "props": {}
+  },
+  {
+    "source": "step3",
+    "type": "USES_TOOL",
+    "target": "tool_chatgpt",
+    "props": {}
+  },
+  {
+    "source": "step4",
+    "type": "USES_TOOL",
+    "target": "tool_chatgpt",
+    "props": {}
+  },
+  {
+    "source": "step3",
+    "type": "USES_TOOL",
+    "target": "tool_claude",
+    "props": {}
+  },
+  {
+    "source": "step10",
+    "type": "USES_TOOL",
+    "target": "tool_claude",
+    "props": {}
+  },
+  {
+    "source": "step4",
+    "type": "USES_TOOL",
+    "target": "tool_deepseek",
+    "props": {}
+  },
+  {
+    "source": "step5",
+    "type": "USES_TOOL",
+    "target": "tool_deepl",
+    "props": {}
+  },
+  {
+    "source": "step5",
+    "type": "USES_TOOL",
+    "target": "tool_gemini",
+    "props": {}
+  },
+  {
+    "source": "step6",
+    "type": "USES_TOOL",
+    "target": "tool_midjourney",
+    "props": {}
+  },
+  {
+    "source": "step6",
+    "type": "USES_TOOL",
+    "target": "tool_imini",
+    "props": {}
+  },
+  {
+    "source": "step6",
+    "type": "USES_TOOL",
+    "target": "tool_canva",
+    "props": {}
+  },
+  {
+    "source": "step6",
+    "type": "USES_TOOL",
+    "target": "tool_photoshop",
+    "props": {}
+  },
+  {
+    "source": "step7",
+    "type": "USES_TOOL",
+    "target": "tool_capcut",
+    "props": {}
+  },
+  {
+    "source": "step7",
+    "type": "USES_TOOL",
+    "target": "tool_jianying",
+    "props": {}
+  },
+  {
+    "source": "step7",
+    "type": "USES_TOOL",
+    "target": "tool_runway",
+    "props": {}
+  },
+  {
+    "source": "step7",
+    "type": "USES_TOOL",
+    "target": "tool_kling",
+    "props": {}
+  },
+  {
+    "source": "step8",
+    "type": "USES_TOOL",
+    "target": "tool_elevenlabs",
+    "props": {}
+  },
+  {
+    "source": "step9",
+    "type": "USES_TOOL",
+    "target": "tool_suno",
+    "props": {}
+  },
+  {
+    "source": "step10",
+    "type": "USES_TOOL",
+    "target": "tool_zapier",
+    "props": {}
+  },
+  {
+    "source": "step10",
+    "type": "USES_TOOL",
+    "target": "tool_make",
+    "props": {}
+  },
+  {
+    "source": "stage_07",
+    "type": "USES_TOOL",
+    "target": "tool_ga4",
+    "props": {}
+  },
+  {
+    "source": "stage_07",
+    "type": "USES_TOOL",
+    "target": "tool_gtm",
+    "props": {}
+  },
+  {
+    "source": "stage_07",
+    "type": "USES_TOOL",
+    "target": "tool_bigquery",
+    "props": {}
+  },
+  {
+    "source": "stage_05",
+    "type": "USES_TOOL",
+    "target": "tool_klaviyo",
+    "props": {}
+  },
+  {
+    "source": "stage_05",
+    "type": "USES_TOOL",
+    "target": "tool_omnisend",
+    "props": {}
+  },
+  {
+    "source": "stage_09",
+    "type": "USES_TOOL",
+    "target": "tool_loop",
+    "props": {}
+  },
+  {
+    "source": "stage_04",
+    "type": "USES_TOOL",
+    "target": "tool_nanobanana",
+    "props": {}
+  },
+  {
+    "source": "stage_04",
+    "type": "USES_TOOL",
+    "target": "tool_seedream",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick_ext",
+    "type": "INTEGRATES",
+    "target": "tool_klaviyo",
+    "props": {}
+  },
+  {
+    "source": "cap_sidekick_ext",
+    "type": "INTEGRATES",
+    "target": "tool_loop",
+    "props": {}
+  },
+  {
+    "source": "con_agentic_commerce",
+    "type": "APPLIES_TO",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "con_agentic_commerce",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_mcp",
+    "type": "APPLIES_TO",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "con_mcp",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_agent",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_rag",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "con_kg",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "con_claudemd",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_claudemd",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "con_trellis",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_trellis",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "con_skillopt",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_datalayer",
+    "type": "APPLIES_TO",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "con_datalayer",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "con_emotion",
+    "type": "APPLIES_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "con_human_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_human_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "con_attribution",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "con_attribution",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "con_agentic_commerce",
+    "type": "ENABLED_BY",
+    "target": "cap_ucp",
+    "props": {}
+  },
+  {
+    "source": "con_agentic_commerce",
+    "type": "ENABLED_BY",
+    "target": "cap_catalog",
+    "props": {}
+  },
+  {
+    "source": "proj_invsync",
+    "type": "BELONGS_TO",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "proj_invsync",
+    "type": "OWNED_BY",
+    "target": "team_test",
+    "props": {}
+  },
+  {
+    "source": "proj_help",
+    "type": "BELONGS_TO",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "proj_help",
+    "type": "OWNED_BY",
+    "target": "team_site",
+    "props": {}
+  },
+  {
+    "source": "proj_member",
+    "type": "BELONGS_TO",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "proj_member",
+    "type": "OWNED_BY",
+    "target": "team_platform",
+    "props": {}
+  },
+  {
+    "source": "proj_sea",
+    "type": "BELONGS_TO",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "proj_sea",
+    "type": "OWNED_BY",
+    "target": "team_platform",
+    "props": {}
+  },
+  {
+    "source": "proj_mday",
+    "type": "BELONGS_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "proj_mday",
+    "type": "OWNED_BY",
+    "target": "team_platform",
+    "props": {}
+  },
+  {
+    "source": "proj_admid",
+    "type": "BELONGS_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "proj_admid",
+    "type": "OWNED_BY",
+    "target": "team_platform",
+    "props": {}
+  },
+  {
+    "source": "proj_attr",
+    "type": "BELONGS_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "proj_attr",
+    "type": "OWNED_BY",
+    "target": "team_data",
+    "props": {}
+  },
+  {
+    "source": "proj_senti",
+    "type": "BELONGS_TO",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "proj_senti",
+    "type": "OWNED_BY",
+    "target": "team_mai",
+    "props": {}
+  },
+  {
+    "source": "proj_cainiao",
+    "type": "BELONGS_TO",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "proj_cainiao",
+    "type": "OWNED_BY",
+    "target": "team_supply",
+    "props": {}
+  },
+  {
+    "source": "proj_video",
+    "type": "BELONGS_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "proj_video",
+    "type": "OWNED_BY",
+    "target": "team_mai",
+    "props": {}
+  },
+  {
+    "source": "proj_imggen",
+    "type": "BELONGS_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "proj_imggen",
+    "type": "OWNED_BY",
+    "target": "team_mai",
+    "props": {}
+  },
+  {
+    "source": "proj_agentops",
+    "type": "BELONGS_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "proj_agentops",
+    "type": "OWNED_BY",
+    "target": "team_agent",
+    "props": {}
+  },
+  {
+    "source": "repo_ai_toolkit",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "repo_ai_toolkit",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_hydrogen",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "repo_ucp",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_ucp",
+    "type": "SERVES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "repo_awesome_ucp",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_mcp_hydrogen",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "repo_sf_mcp_comm",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_agent_reach",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "repo_agent_reach",
+    "type": "SERVES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "repo_horizon",
+    "type": "SERVES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "repo_horizon",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "repo_claude_md",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_claude_md",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "repo_trellis",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_autohedge",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "repo_one_person",
+    "type": "SERVES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "repo_universaldl",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "skill_admin",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_admin",
+    "type": "ENABLES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "skill_admin",
+    "type": "ENABLES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "skill_admin",
+    "type": "ENABLES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "skill_admin_exec",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_admin_exec",
+    "type": "ENABLES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "skill_admin_exec",
+    "type": "ENABLES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "skill_admin_exec",
+    "type": "ENABLES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "skill_admin_exec",
+    "type": "ENABLES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "skill_storefront_gql",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_storefront_gql",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_storefront_gql",
+    "type": "ENABLES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "skill_dev",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_dev",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_dev",
+    "type": "ENABLES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "skill_liquid",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_liquid",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_hydrogen",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_hydrogen",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_custom_data",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_custom_data",
+    "type": "ENABLES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "skill_functions",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_functions",
+    "type": "ENABLES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "skill_functions",
+    "type": "ENABLES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "skill_functions",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_ui_ext",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_ui_ext",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_ui_ext",
+    "type": "ENABLES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "skill_ui_ext",
+    "type": "ENABLES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "skill_customer",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_customer",
+    "type": "ENABLES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "skill_payments_apps",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_payments_apps",
+    "type": "ENABLES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "skill_partner",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_partner",
+    "type": "ENABLES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "skill_appstore_review",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_appstore_review",
+    "type": "ENABLES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_dev",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_dev",
+    "type": "ENABLES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_dev",
+    "type": "ENABLES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_merchant",
+    "type": "PART_OF",
+    "target": "repo_ai_toolkit",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_merchant",
+    "type": "ENABLES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "skill_onb_merchant",
+    "type": "ENABLES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_beg2026",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_beg2026",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_beg2026",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_crash",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_crash",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_crash",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_crash",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_design",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_design",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_design",
+    "type": "TEACHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_cs1",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_cs1",
+    "type": "TEACHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_cs1",
+    "type": "TEACHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_cs2",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_cs2",
+    "type": "TEACHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_cs2",
+    "type": "TEACHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "INCLUDES",
+    "target": "vid_ks_15min",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_15min",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ks_15min",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_ks",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_fQZntbd5QGI",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_fQZntbd5QGI",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_fQZntbd5QGI",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_uorQJ_ucDhg",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_uorQJ_ucDhg",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_uorQJ_ucDhg",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_nJMqRgKkkBg",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_nJMqRgKkkBg",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_nJMqRgKkkBg",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_zTmFF58HRsE",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zTmFF58HRsE",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zTmFF58HRsE",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zTmFF58HRsE",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_lCkrcxsm95Q",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_lCkrcxsm95Q",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_lCkrcxsm95Q",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_YtbaxJFb9zE",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YtbaxJFb9zE",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_wQGabloRalM",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wQGabloRalM",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wQGabloRalM",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_BKFBxoU9vUk",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_BKFBxoU9vUk",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_istNOWqKKQk",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_istNOWqKKQk",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_istNOWqKKQk",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_istNOWqKKQk",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_sbDOdXi4nXk",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_sbDOdXi4nXk",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_UebgVScwFto",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_UebgVScwFto",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm__p7hoAdVv3g",
+    "props": {}
+  },
+  {
+    "source": "vid_mm__p7hoAdVv3g",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm__p7hoAdVv3g",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_zgUbeJnlXfw",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zgUbeJnlXfw",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zgUbeJnlXfw",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_zgUbeJnlXfw",
+    "type": "TEACHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_OPkVbIy7bxs",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_OPkVbIy7bxs",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_OPkVbIy7bxs",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_27foEj8ujSI",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_27foEj8ujSI",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_27foEj8ujSI",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_27foEj8ujSI",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_8nxk8FARDTw",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_8nxk8FARDTw",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_8nxk8FARDTw",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_1FgCo5-222M",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_1FgCo5-222M",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_TYYgCXNwTtQ",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_TYYgCXNwTtQ",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_wDBcYlt_DZU",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_XMLjZB1ASUM",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_XMLjZB1ASUM",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_XMLjZB1ASUM",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_RWI59fC7Z48",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_RWI59fC7Z48",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_RWI59fC7Z48",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_UKs338dQzbY",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_UKs338dQzbY",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_UKs338dQzbY",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_NjogxU1oRaE",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_NjogxU1oRaE",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_NjogxU1oRaE",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_xfOT2elC2Ok",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_xfOT2elC2Ok",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_xfOT2elC2Ok",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_xfOT2elC2Ok",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_rgZU5pDf6mw",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rgZU5pDf6mw",
+    "type": "TEACHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_YImqGsOPqU8",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YImqGsOPqU8",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YImqGsOPqU8",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_rhuYy9LP72M",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_roM3wlSqk1c",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_roM3wlSqk1c",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_roM3wlSqk1c",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_iwmz1sL5r9g",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_hoIzMTdSe5w",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_hoIzMTdSe5w",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "INCLUDES",
+    "target": "vid_mm_YatPsQlGM3g",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YatPsQlGM3g",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YatPsQlGM3g",
+    "type": "TEACHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_metics",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YatPsQlGM3g",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_wDBcYlt_DZU",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wDBcYlt_DZU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_YImqGsOPqU8",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YImqGsOPqU8",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YImqGsOPqU8",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_YImqGsOPqU8",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_zJj3KjQJU_E",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_zJj3KjQJU_E",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_zJj3KjQJU_E",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_zJj3KjQJU_E",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_Tt1UzjlEunc",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Tt1UzjlEunc",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Tt1UzjlEunc",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Tt1UzjlEunc",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_4eVGNBVJos8",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_4eVGNBVJos8",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_4eVGNBVJos8",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_4eVGNBVJos8",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_6WpY-5LvBO8",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_6WpY-5LvBO8",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_6WpY-5LvBO8",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_6WpY-5LvBO8",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_5FYIA-hKh6w",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_5FYIA-hKh6w",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_5FYIA-hKh6w",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_5FYIA-hKh6w",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_KSP0JxWEC4Q",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_KSP0JxWEC4Q",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_KSP0JxWEC4Q",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_KSP0JxWEC4Q",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_QnQ5tOGDWVw",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_QnQ5tOGDWVw",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_QnQ5tOGDWVw",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_fMt3kv1vc_A",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_fMt3kv1vc_A",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_fMt3kv1vc_A",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_fMt3kv1vc_A",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_e7oiWBn7KwU",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_e7oiWBn7KwU",
+    "type": "TEACHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_e7oiWBn7KwU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_vXmF10ZNmoo",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_vXmF10ZNmoo",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_vXmF10ZNmoo",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_-3H6CW5FgLY",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_-3H6CW5FgLY",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_-3H6CW5FgLY",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_-3H6CW5FgLY",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_r-akYidsTHU",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_r-akYidsTHU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_r-akYidsTHU",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_r-akYidsTHU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_OjwWTPck2d0",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_OjwWTPck2d0",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_OjwWTPck2d0",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_1EgjCxk0-kM",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_1EgjCxk0-kM",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_1EgjCxk0-kM",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_xZjkLrHJheE",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_xZjkLrHJheE",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_xZjkLrHJheE",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_G0ixSNfa0vk",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_G0ixSNfa0vk",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_G0ixSNfa0vk",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_m-8yOo_F6CY",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_m-8yOo_F6CY",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_m-8yOo_F6CY",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_m-8yOo_F6CY",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_F97pwb80QIE",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_F97pwb80QIE",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_F97pwb80QIE",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_F97pwb80QIE",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_Y3iXtMjE4bw",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Y3iXtMjE4bw",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Y3iXtMjE4bw",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_Y3iXtMjE4bw",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_k13zZ6hdXOw",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_k13zZ6hdXOw",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_k13zZ6hdXOw",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_k13zZ6hdXOw",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_lx0wQb3FBQU",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_lx0wQb3FBQU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_lx0wQb3FBQU",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_lx0wQb3FBQU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_NX-5ChIZBRQ",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_NX-5ChIZBRQ",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_xrfZshDuPBU",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_xrfZshDuPBU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_xrfZshDuPBU",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_xrfZshDuPBU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_WkUkzdMnRHo",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_WkUkzdMnRHo",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_GGwXtC4WXvc",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_GGwXtC4WXvc",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_GGwXtC4WXvc",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_7jC2H8Nf-7M",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_7jC2H8Nf-7M",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_7jC2H8Nf-7M",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_7jC2H8Nf-7M",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_aKIHLrdsv8o",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_aKIHLrdsv8o",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_aKIHLrdsv8o",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_uorQJ_ucDhg",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_uorQJ_ucDhg",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_uorQJ_ucDhg",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_wQGabloRalM",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wQGabloRalM",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_wQGabloRalM",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_iwmz1sL5r9g",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_iwmz1sL5r9g",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_UKs338dQzbY",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_UKs338dQzbY",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_UKs338dQzbY",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_mjry59gEteM",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_mjry59gEteM",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_mjry59gEteM",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_tUu7W4oAlmw",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_tUu7W4oAlmw",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_tUu7W4oAlmw",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_rhuYy9LP72M",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_rhuYy9LP72M",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_mm_sbDOdXi4nXk",
+    "props": {}
+  },
+  {
+    "source": "vid_mm_sbDOdXi4nXk",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah__1caEZ7t3UY",
+    "props": {}
+  },
+  {
+    "source": "vid_ah__1caEZ7t3UY",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah__1caEZ7t3UY",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "vid_ah__1caEZ7t3UY",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "vid_ah__1caEZ7t3UY",
+    "type": "TEACHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_okSKWf8PBNY",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_okSKWf8PBNY",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_AX0eHDslSEc",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_AX0eHDslSEc",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_AX0eHDslSEc",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_8O_69fP_WZc",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_8O_69fP_WZc",
+    "type": "TEACHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_8O_69fP_WZc",
+    "type": "TEACHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_8O_69fP_WZc",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_1o6cKeK24Mw",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_1o6cKeK24Mw",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_1o6cKeK24Mw",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_9coOU5ea3nk",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_9coOU5ea3nk",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_9coOU5ea3nk",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_uRHm5WpPJyU",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_uRHm5WpPJyU",
+    "type": "TEACHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_uRHm5WpPJyU",
+    "type": "TEACHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_2y71Lc3bB1k",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_2y71Lc3bB1k",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_2y71Lc3bB1k",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_w9tLiCLEIrg",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_w9tLiCLEIrg",
+    "type": "TEACHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_w9tLiCLEIrg",
+    "type": "TEACHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "INCLUDES",
+    "target": "vid_ah_CYH_dRPD2B4",
+    "props": {}
+  },
+  {
+    "source": "vid_ah_CYH_dRPD2B4",
+    "type": "TEACHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_youtube_achampton",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "con_indie_growth_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "con_indie_growth_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "con_indie_growth_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "con_indie_growth_loop",
+    "type": "APPLIES_TO",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_indie_growth_loop",
+    "props": {}
+  },
+  {
+    "source": "con_social_first_product_research",
+    "type": "APPLIES_TO",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "con_social_first_product_research",
+    "type": "APPLIES_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "con_social_first_product_research",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_social_first_product_research",
+    "props": {}
+  },
+  {
+    "source": "con_listing_content_factory",
+    "type": "APPLIES_TO",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "con_listing_content_factory",
+    "type": "APPLIES_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "con_listing_content_factory",
+    "type": "APPLIES_TO",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "con_listing_content_factory",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_listing_content_factory",
+    "props": {}
+  },
+  {
+    "source": "con_offsite_traffic_stack",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "con_offsite_traffic_stack",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "con_offsite_traffic_stack",
+    "type": "APPLIES_TO",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_offsite_traffic_stack",
+    "props": {}
+  },
+  {
+    "source": "con_ad_report_diagnosis",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "con_ad_report_diagnosis",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "con_ad_report_diagnosis",
+    "type": "APPLIES_TO",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "con_ad_report_diagnosis",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_ad_report_diagnosis",
+    "props": {}
+  },
+  {
+    "source": "con_channel_risk_guardrails",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "con_channel_risk_guardrails",
+    "type": "APPLIES_TO",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "con_channel_risk_guardrails",
+    "type": "APPLIES_TO",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "con_channel_risk_guardrails",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "INCLUDES",
+    "target": "con_channel_risk_guardrails",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "src_inbox_indie_ops",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "con_social_first_product_research",
+    "type": "ENABLED_BY",
+    "target": "con_agent",
+    "props": {}
+  },
+  {
+    "source": "con_listing_content_factory",
+    "type": "ENABLED_BY",
+    "target": "con_agent",
+    "props": {}
+  },
+  {
+    "source": "con_ad_report_diagnosis",
+    "type": "ENABLED_BY",
+    "target": "con_agent",
+    "props": {}
+  },
+  {
+    "source": "con_channel_risk_guardrails",
+    "type": "ENABLED_BY",
+    "target": "con_agent",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_01",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_08",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_10",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "source_platform_operations_wiki",
+    "type": "ENRICHES",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "concept_dtc_full_domain_growth",
+    "type": "APPLIES_TO",
+    "target": "stage_00",
+    "props": {}
+  },
+  {
+    "source": "concept_dtc_full_domain_growth",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "concept_dtc_full_domain_growth",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "concept_creator_storefront_affiliate",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "concept_creator_storefront_affiliate",
+    "type": "APPLIES_TO",
+    "target": "stage_09",
+    "props": {}
+  },
+  {
+    "source": "concept_creator_storefront_affiliate",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "concept_reddit_geo_ai_citation",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "concept_reddit_geo_ai_citation",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "concept_reddit_geo_ai_citation",
+    "type": "APPLIES_TO",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "concept_meta_andromeda_creative_semantics",
+    "type": "APPLIES_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "concept_meta_andromeda_creative_semantics",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "concept_meta_andromeda_creative_semantics",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "concept_meta_andromeda_creative_semantics",
+    "type": "APPLIES_TO",
+    "target": "stage_91",
+    "props": {}
+  },
+  {
+    "source": "concept_home_page_seo_cro",
+    "type": "APPLIES_TO",
+    "target": "stage_02",
+    "props": {}
+  },
+  {
+    "source": "concept_home_page_seo_cro",
+    "type": "APPLIES_TO",
+    "target": "stage_06",
+    "props": {}
+  },
+  {
+    "source": "concept_home_page_seo_cro",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "concept_offsite_ai_workflow_agents",
+    "type": "APPLIES_TO",
+    "target": "stage_04",
+    "props": {}
+  },
+  {
+    "source": "concept_offsite_ai_workflow_agents",
+    "type": "APPLIES_TO",
+    "target": "stage_05",
+    "props": {}
+  },
+  {
+    "source": "concept_offsite_ai_workflow_agents",
+    "type": "APPLIES_TO",
+    "target": "stage_07",
+    "props": {}
+  },
+  {
+    "source": "concept_offsite_ai_workflow_agents",
+    "type": "APPLIES_TO",
+    "target": "stage_90",
+    "props": {}
+  },
+  {
+    "source": "concept_offsite_ai_workflow_agents",
+    "type": "APPLIES_TO",
+    "target": "stage_92",
+    "props": {}
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_03",
+    "props": {
+      "batch": "2026-06-28"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_06",
+    "props": {
+      "batch": "2026-06-28"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_90",
+    "props": {
+      "batch": "2026-06-28"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "ENRICHES",
+    "target": "stage_91",
+    "props": {
+      "batch": "2026-06-28"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_hydrogen",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_hydrogen",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_hydrogen",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_hydrogen",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_dawn",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dawn",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dawn",
+    "type": "SERVES",
+    "target": "stage_03",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dawn",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_skeleton_theme",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_skeleton_theme",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_skeleton_theme",
+    "type": "SERVES",
+    "target": "stage_03",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_skeleton_theme",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_cli",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_cli",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_cli",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_cli",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_shopify_app_template_remix",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_remix",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_remix",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_remix",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_shopify_app_template_react_router",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_react_router",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_react_router",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_react_router",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_shopify_app_template_node",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_node",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_node",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_app_template_node",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_shopify_api_js",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_api_js",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_api_js",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {
+      "priority": "P0",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_api_js",
+    "type": "SERVES",
+    "target": "stage_91",
+    "props": {
+      "priority": "P0",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_storefront_api_examples",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_examples",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_examples",
+    "type": "SERVES",
+    "target": "stage_09",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_examples",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_storefront_api_learning_kit",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_learning_kit",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_learning_kit",
+    "type": "SERVES",
+    "target": "stage_09",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_storefront_api_learning_kit",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P1",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_ui_extensions",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_ui_extensions",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_ui_extensions",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_ui_extensions",
+    "type": "SERVES",
+    "target": "stage_91",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_polaris_tokens",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_polaris_tokens",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_polaris_tokens",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_polaris_viz",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_polaris_viz",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_polaris_viz",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_shopify_python_api",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_python_api",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_python_api",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_shopify_shopify_python_api",
+    "type": "SERVES",
+    "target": "stage_91",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_frontvibe_fluid",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_frontvibe_fluid",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_frontvibe_fluid",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_frontvibe_fluid",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_weaverse_pilot",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_pilot",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_pilot",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_pilot",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_weaverse_weaverse",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_weaverse",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_weaverse",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_weaverse_weaverse",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_sanity_io_hydrogen_sanity",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_sanity_io_hydrogen_sanity",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_sanity_io_hydrogen_sanity",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_sanity_io_hydrogen_sanity",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_packdigital_pack_hydrogen_theme_blueprint",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_packdigital_pack_hydrogen_theme_blueprint",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_packdigital_pack_hydrogen_theme_blueprint",
+    "type": "SERVES",
+    "target": "stage_04",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_packdigital_pack_hydrogen_theme_blueprint",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_uicrooks_shopify_theme_lab",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_uicrooks_shopify_theme_lab",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_uicrooks_shopify_theme_lab",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_geli2001_shopify_mcp",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_geli2001_shopify_mcp",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_geli2001_shopify_mcp",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {
+      "priority": "P1",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_geli2001_shopify_mcp",
+    "type": "SERVES",
+    "target": "stage_91",
+    "props": {
+      "priority": "P1",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_shopify_dev_mcp_gemini_cli",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dev_mcp_gemini_cli",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dev_mcp_gemini_cli",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "repo_shopify_dev_mcp_gemini_cli",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P0",
+      "status": "imported"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_ctrlaltdylan_mock_bridge",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_ctrlaltdylan_mock_bridge",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_ctrlaltdylan_mock_bridge",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "repo_ctrlaltdylan_mock_bridge",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P1",
+      "status": "merged"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_colbymchenry_shopify_graphql_admin_mcp",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_colbymchenry_shopify_graphql_admin_mcp",
+    "type": "SERVES",
+    "target": "stage_10",
+    "props": {
+      "priority": "P2",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_colbymchenry_shopify_graphql_admin_mcp",
+    "type": "SERVES",
+    "target": "stage_07",
+    "props": {
+      "priority": "P2",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "repo_colbymchenry_shopify_graphql_admin_mcp",
+    "type": "SERVES",
+    "target": "stage_91",
+    "props": {
+      "priority": "P2",
+      "status": "needs_external_verification"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_julionc_awesome_shopify",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "copied_only"
+    }
+  },
+  {
+    "source": "repo_julionc_awesome_shopify",
+    "type": "SERVES",
+    "target": "stage_90",
+    "props": {
+      "priority": "P2",
+      "status": "copied_only"
+    }
+  },
+  {
+    "source": "repo_julionc_awesome_shopify",
+    "type": "SERVES",
+    "target": "stage_92",
+    "props": {
+      "priority": "P2",
+      "status": "copied_only"
+    }
+  },
+  {
+    "source": "src_github",
+    "type": "INCLUDES",
+    "target": "repo_vercel_commerce",
+    "props": {
+      "batch": "2026-06-28",
+      "status": "copied_only"
+    }
+  },
+  {
+    "source": "repo_vercel_commerce",
+    "type": "SERVES",
+    "target": "stage_02",
+    "props": {
+      "priority": "P2",
+      "status": "copied_only"
+    }
+  },
+  {
+    "source": "repo_vercel_commerce",
+    "type": "SERVES",
+    "target": "stage_06",
+    "props": {
+      "priority": "P2",
+      "status": "copied_only"
+    }
+  }
 ]
