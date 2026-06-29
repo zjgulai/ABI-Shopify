@@ -54,6 +54,7 @@ nav .wrap{display:flex;align-items:center;gap:20px;height:62px}
 	.status-pill.local_ready,.status-pill.ready{background:var(--mint);color:var(--green)}
 	.status-pill.requires_user_input,.status-pill.manual_review_required,.status-pill.partial,.status-pill.local_material_needs_external_verification{background:var(--amberbg);color:#8a5d00}
 	.status-pill.blocked_auth,.status-pill.needs_external_verification,.status-pill.content_debt{background:var(--dangerbg);color:var(--danger)}
+	.status-pill.blocked_auth_preflight_ready{background:#fff4dd;color:#8a5a00}
 	.guardrails{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
 	.guardrails span{font-size:11px;font-weight:800;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 8px}
 /* sections */
@@ -438,7 +439,7 @@ footer a{color:#9ad9bf}
 <script>
 const K=window.KB;const GMAP={"00":"g-b","01":"g-b","02":"g-g","03":"g-g","04":"g-g","05":"g-i","06":"g-i","07":"g-t","08":"g-t","09":"g-t","10":"g-a","90":"g-n","91":"g-n","92":"g-n"};
 const HDC={"g-b":"#2D6CDF","g-g":"#008060","g-i":"#5C6AC4","g-t":"#0E7C86","g-a":"#C98A00","g-n":"#13294B"};
-const STATUS_LABELS={local_ready:'本地可用',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
+const STATUS_LABELS={local_ready:'本地可用',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',blocked_auth_preflight_ready:'前置已就绪',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function statusPill(s){return `<span class="status-pill ${esc(s)}">${esc(STATUS_LABELS[s]||s||'—')}</span>`}
 function listItems(items){return (items||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>—</li>'}

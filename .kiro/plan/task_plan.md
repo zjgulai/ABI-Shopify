@@ -1,7 +1,7 @@
 ---
 title: Shopify KB 经营作战台 2.0 P1 执行计划
-updated: 2026-06-28
-status: complete
+updated: 2026-06-30
+status: active
 ---
 
 # Shopify KB 网站增量设计执行计划
@@ -41,3 +41,24 @@ status: complete
 - 页面能看到 12 个 SOP、Evidence 筛选器、增长复盘指标、Agent 任务模板和 P1 内容债空态。
 - RAG 能召回 `AI 素材生产与授权 SOP`、`订单履约与库存同步 SOP`、`客户会员与 VOC 闭环 SOP`。
 - 默认 RAG 构建和检索评估保持稳定。
+
+## T7 前置批次
+
+目标:在用户尚未提供 Shopify 测试店前,先把 T7 授权前置、官方口径、本地环境检查和人审文本补齐。
+
+范围:
+- 新增 `10-自动化编排/T7测试店授权前置包.md`。
+- 新增 `tools/t7_test_store_preflight.py`,只做本地检查。
+- 同步 Runbook、经营作战台数据、README、TODO 和交接手册。
+
+非目标:
+- 不登录 Shopify。
+- 不创建店铺。
+- 不读取或写入任何店铺。
+- 不调用 provider。
+- 不保存或输出任何密钥值。
+
+验收:
+- preflight 脚本可运行并清晰输出 `local_pass_auth_required` 或人工动作项。
+- RAG/site 可重建。
+- T7 前置关键词能被本地检索召回。

@@ -37,3 +37,5 @@ updated: 2026-06-28
 - 2026-06-29: 已确认 `okSKWf8PBNY` / `1o6cKeK24Mw` 播放页作者分别为 Code with Chris the Freelancer / 梧桐小讲堂,按跨频道 Theme 工程和中文建站教程入库。
 - 2026-06-29: 已新增 `05-营销与引流/中文社媒独立站案例入库SOP.md`,抖音/小红书真实案例仍待帖子正文、截图文字或评论摘要。
 - 2026-06-29: 本批重建通过: chunks=631, docs=118, KG entities=260/relations=785, site data=963KB。
+- 2026-06-30: 进入 T7 前置批次,新增 `T7测试店授权前置包.md` 与 `tools/t7_test_store_preflight.py`;边界为本地只读 preflight,不登录 Shopify、不读写店铺、不输出密钥值。
+- 2026-06-30: T7 前置批次重建通过: chunks=640, docs=119, KG entities=260/relations=785, site data=983KB;检索评测 5/5(pass_rate=1.00, top1=0.60, MRR=0.68)。

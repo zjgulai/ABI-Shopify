@@ -3,16 +3,17 @@ title: AI-Toolkit / UCP 测试店受控写验收 Runbook
 stage: 10-自动化编排
 layer: 流程阶段
 tags: [ai-toolkit, ucp, shopify-dev-mcp, test-store, controlled-write, approval]
-sources: [shopify官方, 执行说明]
-status: blocked_auth
-updated: 2026-06-27
+sources: [shopify官方, 执行说明, T7测试店授权前置包]
+status: blocked_auth_preflight_ready
+updated: 2026-06-30
 summary: 在测试店验证 Claude/AI Toolkit/UCP 的读店铺与受控写能力;定义授权、人审、回滚和证据台账,禁止直接改生产店。
 ---
 
 # AI-Toolkit / UCP 测试店受控写验收 Runbook
 
 ## 1. 当前状态
-- 已准备:本知识库已提供 `shopify-ai-kb` 本地插件、UCP 接入 SOP、AI Toolkit 技能 SOP。
+- 已准备:本知识库已提供 `shopify-ai-kb` 本地插件、UCP 接入 SOP、AI Toolkit 技能 SOP、[`T7 测试店授权前置包`](T7测试店授权前置包.md) 与本地 preflight 脚本。
+- 已验证:2026-06-30 核对 Shopify 官方资料后,本地前置要求按 Node.js 22.12+、Git 2.28+、npm/npx、development store/test store 和 AI Toolkit/Dev MCP 入口处理。
 - 未执行:尚未登录用户 Shopify 测试店,未读取真实店铺数据,未执行任何写操作。
 - 阻塞项:需要用户提供或现场完成测试店授权,并明确批准一次低风险 mutation。
 
@@ -23,6 +24,14 @@ summary: 在测试店验证 Claude/AI Toolkit/UCP 的读店铺与受控写能力
 - 每次写操作必须有人审批准、可回滚、可复查。
 
 ## 3. 环境准备
+先做本地只读 preflight:
+
+```bash
+python3 kb/tools/t7_test_store_preflight.py --store-domain your-dev-store.myshopify.com
+```
+
+脚本不会登录 Shopify、不会访问网络、不会读取或写入店铺、不会输出密钥值。通过后再进入以下人工授权步骤:
+
 ```bash
 /plugin marketplace add /Users/pray/project/shopify/kb/marketplace
 /plugin install shopify-ai-kb@shopify-ai-kb-marketplace
@@ -31,6 +40,8 @@ shopify auth login
 ```
 
 登录时必须选择测试店或 development store。若 CLI 展示多个 store,先停止并由用户确认目标店铺域名。
+
+测试店尚未创建时,先由用户在 Shopify Partner / Dev Dashboard 创建 development store,建议启用测试数据,命名为 `abi-t7-smoke-YYYYMMDD` 一类可回溯名称。
 
 ## 4. 验收流程
 | 步骤 | 动作 | 证据 | 通过条件 |

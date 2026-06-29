@@ -26,13 +26,13 @@ python server.py                                 # 3) 打开 http://localhost:80
 
 ## 经营作战台模块
 - Command Center:首屏展示当前资产、执行状态、授权边界和三条主入口。
-- 路径选择:新店冷启动、已有店诊断、Theme 快速上线、Hydrogen 改造、站外增长、联盟红人和 T7 测试店准备 7 条 Journey。
+- 路径选择:新店冷启动、已有店诊断、Theme 快速上线、Hydrogen 改造、站外增长、联盟红人和 T7 测试店准备 7 条 Journey;T7 Journey 现在包含本地 preflight、development store 域名确认和人审文本。
 - 技术选型中心:区分 Theme、Hydrogen、Shopify App、Checkout/UI Extension、CLI/MCP、Storefront MCP/UCP 的场景、输出和风险。
 - SOP 库:把建站、Listing、SEO/CRO、增长、中文社媒入库、归因、素材授权、履约库存、客户 VOC、风控、Creator Store Front、UCP 和 T7 Runbook 变成可检索 playbook。
 - 工程仓库地图:基于 GitHub P0 官方仓库结构快照,展示 Theme、Hydrogen、App Template、UI Extension、CLI/MCP 的适用场景、输出和边界。
 - 增长作战室:把 SEO/GEO、Meta/Google Ads、Reddit、YouTube/PR、KOL/UGC、Affiliate/Creator Store Front、Deal/大促统一到渠道角色、承接、归因指标和复盘节奏。
 - Agent 工作流库:市场洞察、内容素材、红人联盟、SEO/GEO、广告诊断、经营复盘 6 类 Agent,并展示任务模板和移交物。
-- 执行准备度:T6 多源入库、DeepSeek 问答、测试店只读、T7 受控写、外部规则核验等能力状态。
+- 执行准备度:T6 多源入库、DeepSeek 问答、T7 测试店本地前置检查、测试店只读、T7 受控写、外部规则核验等能力状态。
 - 风控与人审闸:真实店铺写入、Admin API/MCP token、Checkout/UI Extension、社区发帖、UGC 授权、广告预算和折扣佣金。
 - 信息源可信度与覆盖:10 信息源 × 14 节点覆盖矩阵,区分本地只读快照、官方资料、本地资料和待外部核验,支持按验证状态筛选证据卡。
 - 工具包入口:从站点直接看到本知识库 7 个 skill 的适用节点和文件位置。
@@ -50,3 +50,7 @@ python server.py                                 # 3) 打开 http://localhost:80
 - `../90-AI能力地图/视频深度萃取_AppsTheme与中文建站教程.md`:Ac Hampton #16/#29 Apps 页面说明级 v0.1 + Code with Chris Theme 长课 + 梧桐小讲堂中文建站教程,覆盖 App 审计卡、Theme 工程路径和中文新人 onboarding。
 - `../05-营销与引流/中文社媒独立站案例入库SOP.md`:抖音/小红书真实案例入库协议,当前只定义证据字段、分类规则和风控闸,不编写无正文案例。
 - `rhuYy9LP72M` 已按 browser-harness 页面元数据标为 Mark Tilbury 跨频道候选,不计入 Ac Hampton 覆盖。
+
+## T7 前置补充
+- `../10-自动化编排/T7测试店授权前置包.md`:测试店创建、CLI/AI Toolkit/Dev MCP 本地前置、人审文本和低风险测试写入建议。
+- `../tools/t7_test_store_preflight.py`:本地只读检查脚本,不登录 Shopify、不访问网络、不读取或写入店铺、不输出密钥值。

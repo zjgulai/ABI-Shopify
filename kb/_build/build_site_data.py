@@ -96,12 +96,12 @@ for e in G["entities"]:
 roadmap=[
 {"phase":"P0 · 已收口","when":"P0","items":["T1/T2/T3/T5 已形成本地或生产证据","页脚 10 源 + ABI,站点统计随 RAG/KG 构建动态刷新","代码与知识库已提交并可按 release 目录部署"]},
 {"phase":"P1 · 继续深挖","when":"P1","items":["04/08/09 已补 P1 最小专题 SOP,站点 SOP 库扩展到 12 条","T6 已完成 Ac Hampton #11/#16/#17/#21/#24/#26/#29、跨频道长课/战略访谈/Theme/中文建站/高收入话术识别","中文社媒案例入库 SOP 已就绪,真实抖音/小红书案例仍需帖子正文或截图文字","页面手动录入 DeepSeek API Key 后做真实 provider 问答验收"]},
-{"phase":"P2 · 受控写闭环","when":"P2","items":["T7 接 AI-Toolkit/UCP 测试店真实读写","Shopify 测试店授权 + mutation 预览 + 人审批准","按《全自动运营蓝图》把节点 skill 化、编排化"]},
+{"phase":"P2 · 受控写闭环","when":"P2","items":["T7 测试店授权前置包已落地:本地 preflight + 测试店创建清单 + 人审文本","T7 接 AI-Toolkit/UCP 测试店真实读写仍需用户授权","Shopify 测试店授权 + mutation 预览 + 人审批准","按《全自动运营蓝图》把节点 skill 化、编排化"]},
 ]
 nextplan=[
 {"t":"P0 · 发布收口","d":"本地 KB/RAG/KG/site 已重建;线上使用 BAAI/bge-small-zh-v1.5 + Chroma + Neo4j,服务器不保存 DeepSeek Key。"},
 {"t":"P1 · 内容扩充","d":"04/08/09 最小专题 SOP 已入库;T6 已形成 7 组精选视频萃取,覆盖 AI 建店、履约、长课、CRO、Apps、Theme 和中文建站;中文社媒入库协议已就绪,下一步等真实帖子正文或截图文字。"},
-{"t":"P2 · 自动化闭环","d":"T7 等测试店授权后接 AI-Toolkit/UCP,先只读,再经人审做低风险测试写入。"},
+{"t":"P2 · 自动化闭环","d":"T7 前置包已补:本地 preflight、development store 创建清单、授权文本和低风险写入建议;真实读写仍等测试店授权与逐次人审。"},
 ]
 
 # source registry + coverage
@@ -237,11 +237,11 @@ journeys=[
      "ask":"Creator Store Front 和联盟红人如何落地并控制素材授权风险?"},
     {"id":"t7-readiness","title":"T7 测试店自动化准备","stage":"P2","audience":"开发执行者 / 审批人",
      "complexity":"高","readiness":"blocked_auth","nodes":["10","90","91","92"],
-     "inputs":["测试店","shopify auth login","mutation 预案","审批文本"],
-     "outputs":["只读连接证据","低风险写入预案","审批台账","回滚记录"],
-     "sops":["AI-Toolkit / UCP 测试店受控写验收 Runbook","UCP 接入 SOP"],
+     "inputs":["development store 域名","本地 preflight 输出","shopify auth login","mutation 预案","审批文本"],
+     "outputs":["preflight_report","只读连接证据","低风险写入预案","审批台账","回滚记录"],
+     "sops":["T7 测试店授权前置包","AI-Toolkit / UCP 测试店受控写验收 Runbook","UCP 接入 SOP"],
      "riskGates":["test_store_only","manual_review_required","no_production_write"],
-     "ask":"T7 当前为什么不能直接写店铺,需要哪些授权和人审步骤?"},
+     "ask":"T7 测试店授权前置要检查什么,为什么不能直接写店铺?"},
 ]
 
 technical_routes=[
@@ -304,19 +304,23 @@ sop_playbooks=[
      "inputs":["Developer Dashboard","Catalog 数据","政策/FAQ","Shop Pay 状态"],"outputs":["agent_profile_plan","catalog_readiness"],"source":"kb/10-自动化编排/UCP接入SOP.md","verification":"needs_external_verification"},
     {"id":"t7-runbook","title":"AI-Toolkit / UCP 测试店受控写验收 Runbook","nodes":["10","91","92"],"scenario":"测试店读写能力的授权、人审、回滚和证据台账。",
      "inputs":["测试店授权","mutation 预案","审批文本"],"outputs":["pre_read","approval_log","post_read","rollback_record"],"source":"kb/10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md","verification":"blocked_auth"},
+    {"id":"t7-preflight","title":"T7 测试店授权前置包","nodes":["10","90","91","92"],"scenario":"在 Shopify 登录和 Dev MCP 连接前,先做本地 CLI/插件/目标店/人审文本准备。",
+     "inputs":["development store domain","node/npm/npx/git","shopify-ai-kb marketplace","approval boundary"],"outputs":["preflight_report","manual_auth_checklist","low_risk_mutation_plan"],"source":"kb/10-自动化编排/T7测试店授权前置包.md","verification":"blocked_auth_preflight_ready"},
 ]
 
 execution_readiness=[
     {"id":"local-kb","label":"本地 KB / RAG / KG / site","status":"local_ready","detail":"可本地重建、检索和静态预览。","requires":["repo files"],"forbidden":[],"runbook":"kb/site/README.md"},
     {"id":"deepseek-rag","label":"DeepSeek RAG 问答","status":"requires_user_input","detail":"页面手动录入 API Key;默认不写服务器环境。","requires":["页面 API Key"],"forbidden":["把 Key 写入 Git","把 Key 写入前端静态文件"],"runbook":"kb/site/README.md"},
     {"id":"t6-intake","label":"T6 多源深挖入库","status":"requires_user_input","detail":"已完成 7 组视频深度萃取和中文社媒案例入库 SOP;真实抖音/小红书案例仍需要正文、截图文字或评论摘要。","requires":["字幕/清单/帖子","browser-harness 可读转写","截图文字或评论摘要"],"forbidden":["绕过平台限制","编写无证据案例"],"runbook":"kb/90-AI能力地图/T6多源深挖执行队列.md"},
-    {"id":"test-store-read","label":"Shopify 测试店只读连接","status":"blocked_auth","detail":"待用户完成测试店授权。","requires":["shopify auth login","测试店确认"],"forbidden":["读取生产敏感数据"],"runbook":"kb/10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md"},
+    {"id":"test-store-preflight","label":"T7 测试店本地前置检查","status":"blocked_auth_preflight_ready","detail":"已补本地只读 preflight 脚本;下一步等用户提供 development store 域名并现场授权。","requires":["python3 kb/tools/t7_test_store_preflight.py --store-domain your-dev-store.myshopify.com","Node.js 22.12+","Git 2.28+","测试店域名确认"],"forbidden":["shopify auth login without user","secret values in logs"],"runbook":"kb/10-自动化编排/T7测试店授权前置包.md"},
+    {"id":"test-store-read","label":"Shopify 测试店只读连接","status":"blocked_auth","detail":"待用户完成测试店授权。","requires":["preflight_report","shopify auth login","测试店确认"],"forbidden":["读取生产敏感数据"],"runbook":"kb/10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md"},
     {"id":"t7-controlled-write","label":"T7 测试店受控写入","status":"blocked_auth","detail":"必须先只读、再 mutation preview、再明确人审。","requires":["test_store","mutation preview","explicit approval"],"forbidden":["production store write","payment","refund","real ad spend"],"runbook":"kb/10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md"},
     {"id":"external-rules","label":"SEO/GEO/社区/广告规则","status":"needs_external_verification","detail":"时效规则执行前需官方或一手材料复核。","requires":["最新官方/平台规则"],"forbidden":["把本地资料包装成官方事实"],"runbook":"kb/91-合规与风控/站外渠道风控SOP.md"},
 ]
 
 evidence_items=[
     {"claim":"当前网站采用静态优先单页和 kb_data.js 数据驱动。","source":"kb/site/index.html + kb/_build/build_site_data.py","status":"local_ready","nodes":["90","92"]},
+    {"claim":"T7 测试店本地前置包已落地,真实读写仍待测试店授权和人审批准。","source":"kb/10-自动化编排/T7测试店授权前置包.md","status":"blocked_auth_preflight_ready","nodes":["10","91","92"]},
     {"claim":"T7 真实读写待测试店授权和人审批准。","source":"kb/10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md","status":"blocked_auth","nodes":["10","91","92"]},
     {"claim":"GitHub P0 工程地图覆盖 Theme、Hydrogen、App、UI Extension、CLI/MCP。","source":"kb/_build/build_site_data.py repo_groups","status":"local_ready","nodes":["02","06","10"]},
     {"claim":"SEO/GEO、Reddit、广告算法等时效规则需要外部核验。","source":"kb/_meta/信息源清单.md + platform-operations-wiki 萃取","status":"needs_external_verification","nodes":["05","06","91"]},
@@ -330,6 +334,7 @@ query_presets=[
     {"label":"Theme vs Hydrogen","query":"Theme 与 Hydrogen 在 Shopify 独立站建站中如何选择?分别适合什么场景和风险边界?","context":["02","10","91"]},
     {"label":"App 接入怎么审?","query":"Shopify App 接入前应该检查哪些权限、数据、脚本注入、指标和回滚边界?","context":["02","06","07","91"]},
     {"label":"中文社媒怎么入库?","query":"抖音和小红书独立站案例应该用哪些字段入库,如何区分选品信号、素材角度和风控?","context":["01","04","05","91"]},
+    {"label":"T7 前置检查","query":"T7 测试店授权前置要检查什么,为什么不能直接写店铺?","context":["10","90","91","92"]},
     {"label":"T7 为什么不能直接写?","query":"T7 当前为什么不能直接写店铺,需要哪些授权和人审步骤?","context":["10","91","92"]},
     {"label":"Creator Store Front","query":"Creator Store Front 和联盟红人如何落地并控制素材授权风险?","context":["05","07","91"]},
     {"label":"素材授权怎么做?","query":"AI 素材生产与 UGC/KOL 素材授权应该怎么做 SOP 和验收?","context":["04","05","91"]},
@@ -405,6 +410,7 @@ command_center={
         {"label":"本地知识库","status":"local_ready","detail":"14 节点已入站点"},
         {"label":"RAG / KG / Site","status":"local_ready","detail":"可本地重建与检索"},
         {"label":"DeepSeek 问答","status":"requires_user_input","detail":"页面手动录入 API Key"},
+        {"label":"T7 测试店前置","status":"blocked_auth_preflight_ready","detail":"本地 preflight 已落地"},
         {"label":"T7 测试店写入","status":"blocked_auth","detail":"待测试店授权与人审"},
     ],
     "guardrails":["不保存 API Key","测试店先行","写操作需人审","时效规则待核验"]
