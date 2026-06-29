@@ -5,13 +5,13 @@ layer: 横切层
 tags: [youtube, 教程, metics-media, dropshipping, ai建站, 学习资源]
 sources: [youtube, 用户提供]
 status: verified
-updated: 2026-06-26
-summary: Metics Media 频道 Shopify 搜索页近2年共31个视频(用户提供清单),按流程节点归类;含大量建站入门、AI建站、无货源(dropshipping)与 Claude×Shopify。
+updated: 2026-06-28
+summary: Metics Media 频道 Shopify 搜索页近2年共31个视频(用户提供清单),按流程节点归类;含大量建站入门、AI建站、无货源(dropshipping)与 Claude×Shopify;2026-06-28 复核 rhuYy9LP72M 真实频道为 Mark Tilbury,iwmz1sL5r9g 真实频道为 Rihab Seb。
 ---
 
 # 🎬 外部教程萃取 · Metics Media(YouTube · Shopify · 近2年 31 个)
 
-> 来源:用户从 `Metics Media` 频道搜索「Shopify」页提供(已排除 3 年前及更早,保留近 2 年共 31 个)。仅萃取标题/链接/归类,未提取逐字稿。第 17、18 条相关性较弱(通用建站/平台对比),按页面范围保留。第 22 条与 Kevin 表同一视频 ID(UKs338dQzbY),去重对待。
+> 来源:用户从 `Metics Media` 频道搜索「Shopify」页提供(已排除 3 年前及更早,保留近 2 年共 31 个)。第 17、18 条相关性较弱(通用建站/平台对比),按页面范围保留。第 22 条与 Kevin 表同一视频 ID(UKs338dQzbY),去重对待。第 29 条已用 browser-harness 打开播放页,页面作者为 `Rihab Seb - eCommerce Coach`,按跨频道长课资料处理。
 
 ## 主题分布(→ 节点)
 - **建站入门**(最多):多条「新手/分步/X 分钟建站」→ [[02-建站与基础设施]] · [[03-商品上架与Listing]]
@@ -51,14 +51,15 @@ summary: Metics Media 频道 Shopify 搜索页近2年共31个视频(用户提供
 | 24 | I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me | 1年前 | [xfOT2elC2Ok](https://www.youtube.com/watch?v=xfOT2elC2Ok) | [[01-选品与市场调研]] · [[08-订单履约与供应链]] · [[90-AI能力地图]] | AI无货源实测 |
 | 25 | The Shopify Story | 2年前 | [rgZU5pDf6mw](https://www.youtube.com/watch?v=rgZU5pDf6mw) | [[00-战略与定位]] | 品牌背景 |
 | 26 | How to Actually Start Shopify Dropshipping (FOR BEGINNERS) | 1年前 | [YImqGsOPqU8](https://www.youtube.com/watch?v=YImqGsOPqU8) | [[01-选品与市场调研]] · [[08-订单履约与供应链]] | 无货源 |
-| 27 | I Tried AI Dropshipping For a Week (RAW RESULTS) | 1个月前 | [rhuYy9LP72M](https://www.youtube.com/watch?v=rhuYy9LP72M) | [[01-选品与市场调研]] · [[08-订单履约与供应链]] · [[90-AI能力地图]] | AI无货源实测 |
+| 27 | I Tried AI Dropshipping For a Week (RAW RESULTS) | 1个月前 | [rhuYy9LP72M](https://www.youtube.com/watch?v=rhuYy9LP72M) | [[01-选品与市场调研]] · [[08-订单履约与供应链]] · [[90-AI能力地图]] | browser-harness 复核真实频道为 Mark Tilbury,保留为跨频道候选 |
 | 28 | The OFFICIAL Shopify Tutorial For Beginners | 1年前 | [roM3wlSqk1c](https://www.youtube.com/watch?v=roM3wlSqk1c) | [[02-建站与基础设施]] · [[03-商品上架与Listing]] |  |
-| 29 | Shopify Tutorial for Beginners 2026 (Full 7-Hour Free Course) | 4个月前 | [iwmz1sL5r9g](https://www.youtube.com/watch?v=iwmz1sL5r9g) | [[02-建站与基础设施]] · [[03-商品上架与Listing]] · [[05-营销与引流]] · [[08-订单履约与供应链]] | 7小时全课 |
+| 29 | Shopify Tutorial for Beginners 2026 (Full 7-Hour Free Course) | 4个月前 | [iwmz1sL5r9g](https://www.youtube.com/watch?v=iwmz1sL5r9g) | [[02-建站与基础设施]] · [[03-商品上架与Listing]] · [[05-营销与引流]] · [[08-订单履约与供应链]] | browser-harness 复核真实频道为 Rihab Seb - eCommerce Coach;已完成 UI 转写级萃取,按跨频道长课入库 |
 | 30 | Shopify 2026 Review · Tips and tricks for beginners | 2周前 | [hoIzMTdSe5w](https://www.youtube.com/watch?v=hoIzMTdSe5w) | [[02-建站与基础设施]] | 评测/技巧/选型 |
 | 31 | Claude Just Changed Shopify Forever | 2个月前 | [YatPsQlGM3g](https://www.youtube.com/watch?v=YatPsQlGM3g) | [[90-AI能力地图]] · [[10-自动化编排]] · [[02-建站与基础设施]] | Claude×Shopify·重点 |
 
 ## 节点融合要点
-- **无货源/AI 无货源**:这些视频补强了 [[01-选品与市场调研]](选品)与 [[08-订单履约与供应链]](代发履约)的"轻库存"打法;AI 无货源实测(24/27)可作为"AI 选品→建站→投放"端到端参考(配合 [[10-自动化编排]] 人审)。
+- **无货源/AI 无货源**:这些视频补强了 [[01-选品与市场调研]](选品)与 [[08-订单履约与供应链]](代发履约)的"轻库存"打法;AI 无货源实测(24)可作为"AI 选品→建站→投放"端到端参考(配合 [[10-自动化编排]] 人审);27 已标为 Mark Tilbury 跨频道候选。
 - **Claude × Shopify(31)**:与本库 [[02-建站与基础设施/Shopify代理式商务技术栈2026]]、AI Toolkit 技能 SOP 直接呼应,作为"用 Claude 跑店铺"的外部佐证。
+- **7 小时长课(29)**:播放页真实频道为 Rihab Seb - eCommerce Coach,已做 UI 转写级萃取并转入全流程长课覆盖矩阵,不计入 Metics Media 深度内容覆盖。
 - **AI 建站(5/14/15)**:对照 [[90-AI能力地图/AI工具选型_每节点]] 的"AI 建站走 Shopify 原生"结论,注意辨别营销夸大。
 - 入门建站/设计类:作为团队新人上手与 SOP 人工基线。

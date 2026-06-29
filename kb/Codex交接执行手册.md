@@ -1,13 +1,13 @@
 ---
 title: Codex 交接执行手册 · ABI 智能化独立站
 type: handoff
-updated: 2026-06-27
+updated: 2026-06-29
 summary: ABI 智能化独立站 Codex 执行手册:仓库结构、可移植构建脚本、T1–T7 状态、命令、验收与红线。
 ---
 
 # 🤝 Codex 交接执行手册 · ABI 智能化独立站
 
-> 当前事实层:整套知识库+产品已落地,CodeGraph 已初始化,腾讯云站点已上线到 `platform.shopify.lute-tlz-dddd.top`。T1/T2/T3/T4/T5 已有本地或生产证据;T4b 线上实际模型为 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,`bge-m3` 因轻量 CPU 资源限制未作为生产模型;T6 已补执行队列与离线入库工具但内容级扩充仍待用户提供字幕/清单;T7 已补测试店受控写 Runbook,真实读写必须测试店与人审授权。
+> 当前事实层:整套知识库+产品已落地,CodeGraph 已初始化,腾讯云站点已上线到 `platform.shopify.lute-tlz-dddd.top`。T1/T2/T3/T4/T5 已有本地或生产证据;T4b 线上实际模型为 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,`bge-m3` 因轻量 CPU 资源限制未作为生产模型;T6 已补执行队列、离线入库工具、中文社媒入库 SOP 与 7 组视频深度萃取,后续中文平台真实案例仍待用户提供帖子正文/清单/截图文字;T7 已补测试店受控写 Runbook,真实读写必须测试店与人审授权。
 
 ## 0. 环境与一键重建
 - 仓库根:`<repo>/kb`(本机为 `/Users/pray/project/shopify/kb`)。
@@ -45,7 +45,7 @@ kb/
 - 验收:重跑 `diag_*.py` 后检查 `_diagrams/*.png` 无明显重叠/出血。
 
 ### ✅ T2 网站迭代(P0)
-状态:节点专题文档渲染、`openDoc`、P0/P1/P2 路线图、页脚 9 源 + ABI、页面手动录入 DeepSeek API Key 已落地。保留实现参考:
+状态:节点专题文档渲染、`openDoc`、P0/P1/P2 路线图、页脚 10 源 + ABI、页面手动录入 DeepSeek API Key 已落地。保留实现参考:
 1. **前端渲染专题文档**(`site/index.html`,`showNode(i)` 函数内):
    ```js
    if(n.docs&&n.docs.length){h+=`<h3>本节点专题文档</h3><div class="chips">`+
@@ -56,10 +56,10 @@ kb/
    function openDoc(i,j){document.getElementById('mbody').innerHTML=md(K.nodes[i].docs[j].md);document.getElementById('modal').style.display='block';window.scrollTo(0,0)}
    ```
 2. **下一步 P0/P1/P2**:`_build/build_site_data.py` 的 `roadmap` / `nextplan` 已同步。
-3. **页脚 9 源 + ABI**:`index.html` 已写入 9 信息源说明;`kb_data.js` 包含 `sources`。
+3. **页脚 10 源 + ABI**:`index.html` 已写入 10 信息源说明;`kb_data.js` 包含 `sources`。
 4. 重建:`cd kb/_build && python build_site_data.py`。
 - **测试**:`awk '/<script>$/{f=1;next}/<\/script>/{f=0}f' site/index.html|node --check -` JS 无误。
-- **验收**:浏览器开 `site/index.html` → 点节点 02 能看到并打开「Shopify 代理式商务技术栈2026 / Hydrogen脚手架SOP」;下一步显示 P0/P1/P2;页脚显示 9 源 + ABI。
+- **验收**:浏览器开 `site/index.html` → 点节点 02 能看到并打开「Shopify 代理式商务技术栈2026 / Hydrogen脚手架SOP」;下一步显示 P0/P1/P2;页脚显示 10 源 + ABI。
 
 ### ✅ T3 完整 PRD(P0)
 - 文件:`kb/PRD_ABI智能化独立站.md`。
@@ -87,7 +87,7 @@ kb/
   cd kb/site/deploy
   docker compose -p shopify-kb -f docker-compose.yml -f docker-compose.behind-proxy.yml -f docker-compose.vector.yml up -d --build
   ```
-- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本地 compose config 已确认 vector args、Neo4j 服务和回环端口;本地当前图谱为 220 实体 / 639 关系(0 悬挂)。上一版线上 T4b 证据:`eval_retrieval.py` 为 `pass_rate=1.00(5/5), top1_rate=0.60, mrr=0.73`;A/B smoke 相比 LSA pass/top1 持平、MRR 略低;Neo4j 导入日志 213 实体 / 593 关系。新增 inbox SOP 上线后需重跑线上导入与 eval 复核。
+- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本地 compose config 已确认 vector args、Neo4j 服务和回环端口;本地当前图谱为 260 实体 / 785 关系(0 悬挂)。上一版线上 T4b 证据:`eval_retrieval.py` 为 `pass_rate=1.00(5/5), top1_rate=0.60, mrr=0.73`;A/B smoke 相比 LSA pass/top1 持平、MRR 略低;Neo4j 线上导入证据仍是上一版 213 实体 / 593 关系。新增 T6/SOP 本地内容上线后需重跑线上导入与 eval 复核。
 - 线上公开检查:`/api/health` 返回 `client_key_supported=true`,`server_key_set=false`;页面仍为手动录入 DeepSeek API Key。
 
 ### ✅ T5 网站上线(P1)
@@ -103,7 +103,7 @@ kb/
   ```bash
   python3 kb/tools/t6_multisource_intake.py /path/to/t6_sources.jsonl --out kb/drafts/t6_multisource --index
   ```
-- 当前状态:已有 `视频深度萃取_精选.md` 三条内容级萃取,其中 Ac Hampton `vXmF10ZNmoo` 为 browser-harness 真实 Chrome 页面/章节/采样帧 v0.1;其余高价值视频完整逐字稿仍需稳定转写或用户提供字幕/清单。
+- 当前状态:已有 `视频深度萃取_精选.md` 7 组精选入口;Ac Hampton `vXmF10ZNmoo` 为 browser-harness 真实 Chrome 页面/章节/采样帧 v0.1;Ac Hampton `e7oiWBn7KwU`/`xZjkLrHJheE`/`Y3iXtMjE4bw`/`NX-5ChIZBRQ`/`WkUkzdMnRHo` 已完成 UI 转写级摘要,`1EgjCxk0-kM`/`aKIHLrdsv8o` 为 Apps 页面说明级 v0.1;`iwmz1sL5r9g`/`_1caEZ7t3UY`/`CYH_dRPD2B4`/`uRHm5WpPJyU`/`okSKWf8PBNY`/`1o6cKeK24Mw` 已按播放页作者归为 Rihab Seb / Learn With Shopify / Emma Grede / Austin Rabin / Code with Chris / 梧桐小讲堂跨频道资料;后续高价值视频仍需稳定转写或用户提供字幕/清单,抖音/小红书真实案例仍需正文/截图文字/评论摘要。
 - **验收**:高价值视频有内容级萃取(非仅标题);新源进图谱与检索。
 
 ### ▶ T7 接 AI-Toolkit / UCP(P2,Runbook 已落地/真实读写待授权)

@@ -1,16 +1,21 @@
 # -*- coding: utf-8 -*-
+import json
 import os
 import diag_common as d
 from diag_common import txt,box,arrow
 KB=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHUNKS=sum(1 for _ in open(os.path.join(KB,"_rag","chunks.jsonl"),encoding="utf-8"))
+GRAPH=json.load(open(os.path.join(KB,"_kg","graph.json"),encoding="utf-8"))
+ENTITIES=len(GRAPH["entities"])
+RELATIONS=len(GRAPH["relations"])
+INFO_SOURCES=10
 f,ax=d.fig(16,10)  # 160 x 100
 
 # ---- Title ----
 txt(ax,8,95.5,"ABI 智能化独立站",size=25,color=d.INK,bold=True,ha="left")
 txt(ax,8,91,"全景图 · 知识库 + 产品 · 建站 → 全自动运营",size=13,color=d.GREEN,ha="left",bold=True)
 txt(ax,157,95,"momcozy 独立站 · 2026",size=10,color=d.GREY,ha="right")
-txt(ax,157,91.5,f"14 节点 · 8 源 · {CHUNKS} RAG块 · 213 实体/593 关系",size=9,color=d.GREY,ha="right")
+txt(ax,157,91.5,f"14 节点 · {INFO_SOURCES} 源 · {CHUNKS} RAG块 · {ENTITIES} 实体/{RELATIONS} 关系",size=9,color=d.GREY,ha="right")
 
 def band(y,h,fc,ec,title,tcolor):
     box(ax,4,y,152,h,fc=fc,ec=ec,lw=1.6,r=0.6,z=2)
@@ -71,8 +76,8 @@ for i,c in enumerate(["库存 / 海外仓 / 退款","会员 / 礼品卡","素材
     chip(37+i*23.6,32.4,22.6,4.0,c,"#FFFFFF","#5FA9B0",sz=8.4)
 
 # ---- sources (left) ----
-txt(ax,4,29.4,"信息源(8 源)",size=10.5,color=d.INK,bold=True,ha="left")
-src=[("数字化中心周报","真实业务 · SOP"),("Twitter 书签 + 官方账号","发力点 · @ShopifyDevs"),("官方文档·GitHub·YouTube·社区","平台/开源/教程/痛点 +Accio")]
+txt(ax,4,29.4,f"信息源({INFO_SOURCES} 源)",size=10.5,color=d.INK,bold=True,ha="left")
+src=[("内部/本地资料","周报 · inbox · platform-wiki"),("平台/开源资料","Shopify 官方 · 账号 · GitHub"),("视频/社区信号","YouTube · Twitter · 社区痛点")]
 for i,(s,sub) in enumerate(src):
     chip(4,13+(2-i)*5.0,46,4.4,s,"#FFFFFF",d.LINE,sz=7.9,sub=sub)
     arrow(ax,50,15.2+(2-i)*5.0,56,21,color=d.GREY,lw=1.2,mut=8,rad=0.12,z=3)
@@ -89,7 +94,7 @@ arrow(ax,104,20.2,108,20.2,color=d.GREY,lw=1.4,mut=9,z=3)
 
 # ---- outputs (right) ----
 txt(ax,108,26.5,"产出 / 消费",size=11,color=d.INK,bold=True,ha="left")
-outs=[("RAG 检索",f"chunks.jsonl · {CHUNKS} 块"),("知识图谱","213 实体 · 593 关系"),("商业图 ×4 + 网站","DeepSeek 问答"),("插件 + 数据桥","运营 Agent")]
+outs=[("RAG 检索",f"chunks.jsonl · {CHUNKS} 块"),("知识图谱",f"{ENTITIES} 实体 · {RELATIONS} 关系"),("商业图 ×4 + 网站","DeepSeek 问答"),("插件 + 数据桥","运营 Agent")]
 for i,(s,sub) in enumerate(outs):
     cx=108+(i%2)*26; cy=15+(1-i//2)*5.6
     chip(cx,cy,24.5,4.8,s,"#FFFFFF",d.LINE,sz=9,sub=sub,)

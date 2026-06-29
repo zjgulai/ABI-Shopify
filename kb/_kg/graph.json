@@ -1045,8 +1045,13 @@
     {
       "id": "vid_mm_rhuYy9LP72M",
       "type": "Video",
-      "label": "MM:I Tried AI Dropshipping For a Week (RAW ",
-      "props": {}
+      "label": "MT:I Tried AI Dropshipping For a Week (RAW RESULTS)",
+      "props": {
+        "video_id": "rhuYy9LP72M",
+        "verified_channel": "Mark Tilbury",
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-28",
+        "verification_status": "browser_harness_metadata_verified"
+      }
     },
     {
       "id": "vid_mm_roM3wlSqk1c",
@@ -1057,8 +1062,15 @@
     {
       "id": "vid_mm_iwmz1sL5r9g",
       "type": "Video",
-      "label": "MM:Shopify Tutorial for Beginners 2026 (Ful",
-      "props": {}
+      "label": "RS:Shopify Tutorial for Beginners 2026 (Full 7-Hour Free Course)",
+      "props": {
+        "video_id": "iwmz1sL5r9g",
+        "verified_channel": "Rihab Seb - eCommerce Coach",
+        "verification_status": "ui_transcript_verified",
+        "verified_at": "2026-06-28",
+        "transcript_chars": 469908,
+        "source_correction": "removed_from_ac_hampton_and_metics_queue_2026-06-28"
+      }
     },
     {
       "id": "vid_mm_hoIzMTdSe5w",
@@ -1130,7 +1142,15 @@
       "id": "vid_ah_e7oiWBn7KwU",
       "type": "Video",
       "label": "AH:The TRUTH To Why You Aren't Making Sales",
-      "props": {}
+      "props": {
+        "video_id": "e7oiWBn7KwU",
+        "verified_channel": "Ac Hampton",
+        "verification_status": "ui_transcript_verified",
+        "verified_at": "2026-06-29",
+        "transcript_segments": 111,
+        "transcript_chars": 18694,
+        "use_case": "cro_no_sales_diagnostic_tree"
+      }
     },
     {
       "id": "vid_ah_vXmF10ZNmoo",
@@ -1159,14 +1179,28 @@
     {
       "id": "vid_ah_1EgjCxk0-kM",
       "type": "Video",
-      "label": "AH:Best Apps For Shopify Dropshipping as a ",
-      "props": {}
+      "label": "AH:Best Apps For Shopify Dropshipping as a Beginner!",
+      "props": {
+        "verified_channel": "Ac Hampton",
+        "verified_at": "2026-06-29",
+        "verification_status": "page_metadata_visible_caption_v0_1",
+        "length_seconds": 10,
+        "view_count": 148427,
+        "use_case": "shopify_app_intake_card",
+        "evidence_path": "tmp/t6_apps_theme_batch_20260629/raw/16_1EgjCxk0-kM_Best_Apps_For_Shopify_Dropshipping_as_a_Beginner_metadata.json"
+      }
     },
     {
       "id": "vid_ah_xZjkLrHJheE",
       "type": "Video",
-      "label": "AH:AI Built My Shopify Store in Minutes… He",
-      "props": {}
+      "label": "AH:AI Built My Shopify Store in Minutes",
+      "props": {
+        "video_id": "xZjkLrHJheE",
+        "verified_channel": "Ac Hampton",
+        "verification_status": "ui_transcript_verified",
+        "verified_at": "2026-06-28",
+        "transcript_chars": 1464
+      }
     },
     {
       "id": "vid_ah_G0ixSNfa0vk",
@@ -1237,8 +1271,16 @@
     {
       "id": "vid_ah_aKIHLrdsv8o",
       "type": "Video",
-      "label": "AH:Top Shopify Apps You NEED for More Sales",
-      "props": {}
+      "label": "AH:Top Shopify Apps You NEED for More Sales in 2025",
+      "props": {
+        "verified_channel": "Ac Hampton",
+        "verified_at": "2026-06-29",
+        "verification_status": "page_metadata_visible_caption_v0_1",
+        "length_seconds": 60,
+        "view_count": 73122,
+        "use_case": "shopify_app_intake_card",
+        "evidence_path": "tmp/t6_apps_theme_batch_20260629/raw/29_aKIHLrdsv8o_Top_Shopify_Apps_You_NEED_for_More_Sales_in_2025_metadata.json"
+      }
     },
     {
       "id": "vid_ah_mjry59gEteM",
@@ -1255,14 +1297,30 @@
     {
       "id": "vid_ah__1caEZ7t3UY",
       "type": "Video",
-      "label": "AH:The COMPLETE Shopify Tutorial 2026",
-      "props": {}
+      "label": "LWS:The COMPLETE Shopify Tutorial 2026",
+      "props": {
+        "video_id": "_1caEZ7t3UY",
+        "verified_channel": "Learn With Shopify",
+        "verification_status": "ui_transcript_verified",
+        "verified_at": "2026-06-28",
+        "transcript_chars": 113172,
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-28"
+      }
     },
     {
       "id": "vid_ah_okSKWf8PBNY",
       "type": "Video",
-      "label": "AH:Shopify Theme Development - Build a them",
-      "props": {}
+      "label": "CWC:Shopify Theme Development - Build a theme from scratch",
+      "props": {
+        "verified_channel": "Code with Chris the Freelancer",
+        "verified_at": "2026-06-29",
+        "verification_status": "page_metadata_chapters_v0_1",
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-29",
+        "length_seconds": 13934,
+        "view_count": 65173,
+        "use_case": "theme_engineering_path",
+        "evidence_path": "tmp/t6_apps_theme_batch_20260629/raw/39_okSKWf8PBNY_Shopify_Theme_Development_-_Build_a_theme_from_scratch_metadata.json"
+      }
     },
     {
       "id": "vid_ah_AX0eHDslSEc",
@@ -1279,8 +1337,17 @@
     {
       "id": "vid_ah_1o6cKeK24Mw",
       "type": "Video",
-      "label": "AH:Shopify 零基础建站新手教程【2026最新版】",
-      "props": {}
+      "label": "WT:Shopify 零基础建站新手教程【2026最新版】",
+      "props": {
+        "verified_channel": "梧桐小讲堂",
+        "verified_at": "2026-06-29",
+        "verification_status": "page_metadata_chapters_v0_1",
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-29",
+        "length_seconds": 4948,
+        "view_count": 11365,
+        "use_case": "chinese_shopify_onboarding",
+        "evidence_path": "tmp/t6_apps_theme_batch_20260629/raw/42_1o6cKeK24Mw_Shopify_2026_metadata.json"
+      }
     },
     {
       "id": "vid_ah_9coOU5ea3nk",
@@ -1291,8 +1358,15 @@
     {
       "id": "vid_ah_uRHm5WpPJyU",
       "type": "Video",
-      "label": "AH:$278K in 30 days on shopify (with proof)",
-      "props": {}
+      "label": "AR:$278K in 30 days on shopify (with proof)",
+      "props": {
+        "video_id": "uRHm5WpPJyU",
+        "verified_channel": "Austin Rabin",
+        "verification_status": "page_metadata_chapters_v0_1",
+        "verified_at": "2026-06-29",
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-29",
+        "use_case": "high_income_claim_review"
+      }
     },
     {
       "id": "vid_ah_2y71Lc3bB1k",
@@ -1309,8 +1383,15 @@
     {
       "id": "vid_ah_CYH_dRPD2B4",
       "type": "Video",
-      "label": "AH:Shopify President: How to Win in the Gol",
-      "props": {}
+      "label": "EG:Shopify President: How to Win in the Golden Age of Entrepreneurship",
+      "props": {
+        "video_id": "CYH_dRPD2B4",
+        "verified_channel": "Emma Grede",
+        "verification_status": "ui_transcript_verified",
+        "verified_at": "2026-06-28",
+        "transcript_chars": 145245,
+        "source_correction": "removed_from_ac_hampton_queue_2026-06-28"
+      }
     },
     {
       "id": "src_inbox_indie_ops",
@@ -1846,6 +1927,76 @@
         "license_hint": "unknown",
         "risk_note": "high quality but not Shopify-native; use only as architecture reference",
         "source_batch": "github-shopify-repos-2026-06-28"
+      }
+    },
+    {
+      "id": "src_youtube_marktilbury",
+      "type": "Source",
+      "label": "YouTube · Mark Tilbury",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-28",
+        "evidence": "browser-harness page metadata for rhuYy9LP72M"
+      }
+    },
+    {
+      "id": "src_youtube_rihabseb",
+      "type": "Source",
+      "label": "YouTube · Rihab Seb - eCommerce Coach",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-28",
+        "evidence": "browser-harness page metadata for iwmz1sL5r9g"
+      }
+    },
+    {
+      "id": "src_youtube_learnwithshopify",
+      "type": "Source",
+      "label": "YouTube · Learn With Shopify",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-28",
+        "evidence": "browser-harness page metadata for _1caEZ7t3UY"
+      }
+    },
+    {
+      "id": "src_youtube_emmagrede",
+      "type": "Source",
+      "label": "YouTube · Emma Grede",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-28",
+        "evidence": "browser-harness page metadata for CYH_dRPD2B4"
+      }
+    },
+    {
+      "id": "src_youtube_austinrabin",
+      "type": "Source",
+      "label": "YouTube · Austin Rabin",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-29",
+        "evidence": "browser-harness page metadata for uRHm5WpPJyU"
+      }
+    },
+    {
+      "id": "src_youtube_codewithchris",
+      "type": "Source",
+      "label": "YouTube · Code with Chris the Freelancer",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-29",
+        "evidence": "browser-harness page metadata for okSKWf8PBNY"
+      }
+    },
+    {
+      "id": "src_youtube_wutong",
+      "type": "Source",
+      "label": "YouTube · 梧桐小讲堂",
+      "props": {
+        "status": "cross_channel_verified",
+        "verified_at": "2026-06-29",
+        "evidence": "browser-harness page metadata for 1o6cKeK24Mw"
       }
     }
   ],
@@ -3621,20 +3772,8 @@
       "props": {}
     },
     {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
       "source": "vid_ks_crash",
       "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
       "target": "stage_03",
       "props": {}
     },
@@ -3659,12 +3798,6 @@
     {
       "source": "vid_ks_design",
       "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
       "target": "stage_02",
       "props": {}
     },
@@ -3723,20 +3856,8 @@
       "props": {}
     },
     {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
-      "target": "stage_09",
-      "props": {}
-    },
-    {
       "source": "vid_ks_cs2",
       "type": "TEACHES",
-      "target": "stage_10",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
       "target": "stage_10",
       "props": {}
     },
@@ -3753,20 +3874,8 @@
       "props": {}
     },
     {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
       "source": "vid_ks_15min",
       "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_ks",
-      "type": "ENRICHES",
       "target": "stage_03",
       "props": {}
     },
@@ -4283,30 +4392,6 @@
     {
       "source": "src_youtube_metics",
       "type": "INCLUDES",
-      "target": "vid_mm_rhuYy9LP72M",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_01",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_08",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_90",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_metics",
-      "type": "INCLUDES",
       "target": "vid_mm_roM3wlSqk1c",
       "props": {}
     },
@@ -4320,36 +4405,6 @@
       "source": "vid_mm_roM3wlSqk1c",
       "type": "TEACHES",
       "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_metics",
-      "type": "INCLUDES",
-      "target": "vid_mm_iwmz1sL5r9g",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_05",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_08",
       "props": {}
     },
     {
@@ -4401,33 +4456,15 @@
       "props": {}
     },
     {
-      "source": "vid_mm_wDBcYlt_DZU",
-      "type": "TEACHES",
-      "target": "stage_01",
-      "props": {}
-    },
-    {
       "source": "src_youtube_achampton",
       "type": "ENRICHES",
       "target": "stage_01",
       "props": {}
     },
     {
-      "source": "vid_mm_wDBcYlt_DZU",
-      "type": "TEACHES",
-      "target": "stage_08",
-      "props": {}
-    },
-    {
       "source": "src_youtube_achampton",
       "type": "ENRICHES",
       "target": "stage_08",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_wDBcYlt_DZU",
-      "type": "TEACHES",
-      "target": "stage_05",
       "props": {}
     },
     {
@@ -4440,18 +4477,6 @@
       "source": "src_youtube_achampton",
       "type": "INCLUDES",
       "target": "vid_mm_YImqGsOPqU8",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_YImqGsOPqU8",
-      "type": "TEACHES",
-      "target": "stage_01",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_YImqGsOPqU8",
-      "type": "TEACHES",
-      "target": "stage_08",
       "props": {}
     },
     {
@@ -5061,81 +5086,15 @@
       "props": {}
     },
     {
-      "source": "vid_mm_uorQJ_ucDhg",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_uorQJ_ucDhg",
-      "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
       "source": "src_youtube_achampton",
       "type": "INCLUDES",
       "target": "vid_mm_wQGabloRalM",
       "props": {}
     },
     {
-      "source": "vid_mm_wQGabloRalM",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_wQGabloRalM",
-      "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_mm_iwmz1sL5r9g",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_05",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_iwmz1sL5r9g",
-      "type": "TEACHES",
-      "target": "stage_08",
-      "props": {}
-    },
-    {
       "source": "src_youtube_achampton",
       "type": "INCLUDES",
       "target": "vid_mm_UKs338dQzbY",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_UKs338dQzbY",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_UKs338dQzbY",
-      "type": "TEACHES",
-      "target": "stage_03",
       "props": {}
     },
     {
@@ -5177,43 +5136,7 @@
     {
       "source": "src_youtube_achampton",
       "type": "INCLUDES",
-      "target": "vid_mm_rhuYy9LP72M",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_90",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_01",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_rhuYy9LP72M",
-      "type": "TEACHES",
-      "target": "stage_08",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
       "target": "vid_mm_sbDOdXi4nXk",
-      "props": {}
-    },
-    {
-      "source": "vid_mm_sbDOdXi4nXk",
-      "type": "TEACHES",
-      "target": "stage_02",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_ah__1caEZ7t3UY",
       "props": {}
     },
     {
@@ -5238,12 +5161,6 @@
       "source": "vid_ah__1caEZ7t3UY",
       "type": "TEACHES",
       "target": "stage_08",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_ah_okSKWf8PBNY",
       "props": {}
     },
     {
@@ -5301,12 +5218,6 @@
       "props": {}
     },
     {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_ah_1o6cKeK24Mw",
-      "props": {}
-    },
-    {
       "source": "vid_ah_1o6cKeK24Mw",
       "type": "TEACHES",
       "target": "stage_02",
@@ -5334,12 +5245,6 @@
       "source": "vid_ah_9coOU5ea3nk",
       "type": "TEACHES",
       "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_ah_uRHm5WpPJyU",
       "props": {}
     },
     {
@@ -5388,12 +5293,6 @@
       "source": "vid_ah_w9tLiCLEIrg",
       "type": "TEACHES",
       "target": "stage_03",
-      "props": {}
-    },
-    {
-      "source": "src_youtube_achampton",
-      "type": "INCLUDES",
-      "target": "vid_ah_CYH_dRPD2B4",
       "props": {}
     },
     {
@@ -6810,6 +6709,312 @@
         "priority": "P2",
         "status": "copied_only"
       }
+    },
+    {
+      "source": "src_youtube_marktilbury",
+      "type": "INCLUDES",
+      "target": "vid_mm_rhuYy9LP72M",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_rhuYy9LP72M",
+      "type": "TEACHES",
+      "target": "stage_90",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_rhuYy9LP72M",
+      "type": "TEACHES",
+      "target": "stage_01",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_rhuYy9LP72M",
+      "type": "TEACHES",
+      "target": "stage_08",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_rihabseb",
+      "type": "INCLUDES",
+      "target": "vid_mm_iwmz1sL5r9g",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_02",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_03",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_05",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_08",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_09",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_90",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "vid_mm_iwmz1sL5r9g",
+      "type": "TEACHES",
+      "target": "stage_92",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_learnwithshopify",
+      "type": "INCLUDES",
+      "target": "vid_ah__1caEZ7t3UY",
+      "props": {}
+    },
+    {
+      "source": "vid_ah__1caEZ7t3UY",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah__1caEZ7t3UY",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_ah__1caEZ7t3UY",
+      "type": "TEACHES",
+      "target": "stage_09",
+      "props": {}
+    },
+    {
+      "source": "vid_ah__1caEZ7t3UY",
+      "type": "TEACHES",
+      "target": "stage_90",
+      "props": {}
+    },
+    {
+      "source": "vid_ah__1caEZ7t3UY",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_emmagrede",
+      "type": "INCLUDES",
+      "target": "vid_ah_CYH_dRPD2B4",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_CYH_dRPD2B4",
+      "type": "TEACHES",
+      "target": "stage_05",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_CYH_dRPD2B4",
+      "type": "TEACHES",
+      "target": "stage_90",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_CYH_dRPD2B4",
+      "type": "TEACHES",
+      "target": "stage_92",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_xZjkLrHJheE",
+      "type": "TEACHES",
+      "target": "stage_03",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_xZjkLrHJheE",
+      "type": "TEACHES",
+      "target": "stage_08",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_xZjkLrHJheE",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_e7oiWBn7KwU",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_e7oiWBn7KwU",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_austinrabin",
+      "type": "INCLUDES",
+      "target": "vid_ah_uRHm5WpPJyU",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_uRHm5WpPJyU",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_uRHm5WpPJyU",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_uRHm5WpPJyU",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_codewithchris",
+      "type": "INCLUDES",
+      "target": "vid_ah_okSKWf8PBNY",
+      "props": {}
+    },
+    {
+      "source": "src_youtube_wutong",
+      "type": "INCLUDES",
+      "target": "vid_ah_1o6cKeK24Mw",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1EgjCxk0-kM",
+      "type": "TEACHES",
+      "target": "stage_05",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1EgjCxk0-kM",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1EgjCxk0-kM",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1EgjCxk0-kM",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_aKIHLrdsv8o",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_aKIHLrdsv8o",
+      "type": "TEACHES",
+      "target": "stage_07",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_aKIHLrdsv8o",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_okSKWf8PBNY",
+      "type": "TEACHES",
+      "target": "stage_03",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_okSKWf8PBNY",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_okSKWf8PBNY",
+      "type": "TEACHES",
+      "target": "stage_10",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_okSKWf8PBNY",
+      "type": "TEACHES",
+      "target": "stage_92",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1o6cKeK24Mw",
+      "type": "TEACHES",
+      "target": "stage_06",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1o6cKeK24Mw",
+      "type": "TEACHES",
+      "target": "stage_08",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1o6cKeK24Mw",
+      "type": "TEACHES",
+      "target": "stage_91",
+      "props": {}
+    },
+    {
+      "source": "vid_ah_1o6cKeK24Mw",
+      "type": "TEACHES",
+      "target": "stage_92",
+      "props": {}
     }
   ]
 }

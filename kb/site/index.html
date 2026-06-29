@@ -9,36 +9,53 @@
 :root{
   --ink:#0B1F3A;--navy:#13294B;--green:#008060;--green2:#0a9b78;--lime:#95BF47;--mint:#E4F4EC;
   --indigo:#5C6AC4;--lav:#ECEEFB;--teal:#0E7C86;--tealbg:#E0F1F3;--blue:#2D6CDF;--bluebg:#E7F0FD;
-  --amber:#C98A00;--amberbg:#FBF1D6;--bg:#F4F7FB;--card:#fff;--grey:#62718A;--line:#E1E8F0;
+	  --amber:#C98A00;--amberbg:#FBF1D6;--danger:#A51C30;--dangerbg:#FDEBED;--bg:#F4F7FB;--card:#fff;--grey:#62718A;--line:#E1E8F0;
   --sh:0 6px 24px rgba(16,42,77,.08);--sh2:0 2px 10px rgba(16,42,77,.06);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",Segoe UI,Roboto,sans-serif;
   color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:var(--green);text-decoration:none}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+	a{color:var(--green);text-decoration:none}
+	a:focus-visible,button:focus-visible,input:focus-visible,.node:focus-visible,.journey-card:focus-visible,.tech-card:focus-visible{outline:3px solid rgba(0,128,96,.28);outline-offset:3px}
+	.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:20px;height:62px}
 .logo{font-weight:800;font-size:17px;display:flex;align-items:center;gap:8px}
 .logo .dot{width:24px;height:24px;border-radius:7px;background:linear-gradient(135deg,var(--green),var(--lime));display:inline-block}
-nav .links{display:flex;gap:18px;margin-left:auto;font-size:14px}
-nav .links a{color:var(--grey);font-weight:600}
-nav .links a:hover{color:var(--ink)}
-.btn{background:var(--green);color:#fff;padding:9px 16px;border-radius:10px;font-weight:700;font-size:14px;border:none;cursor:pointer;transition:.15s}
-.btn:hover{background:var(--green2)}
-.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+	nav .links{display:flex;gap:18px;margin-left:auto;font-size:14px}
+	nav .links a{color:var(--grey);font-weight:600}
+	nav .links a:hover{color:var(--ink)}
+	.btn{background:var(--green);color:#fff;padding:9px 16px;border-radius:10px;font-weight:700;font-size:14px;border:none;cursor:pointer;transition:.15s}
+	.btn:hover{background:var(--green2)}
+	.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+	.menu-btn{display:none;margin-left:auto;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;font-size:22px;line-height:1;cursor:pointer}
+	.mobile-menu{display:none;border-top:1px solid var(--line);background:#fff}
+	.mobile-menu .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding-top:12px;padding-bottom:14px}
+	.mobile-menu a{font-size:14px;font-weight:800;color:var(--ink);padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#f8fbff}
 /* hero */
 .hero{padding:64px 0 40px;background:radial-gradient(1100px 400px at 75% -10%,rgba(92,106,196,.10),transparent),radial-gradient(900px 360px at 10% 0%,rgba(0,128,96,.10),transparent)}
 .hero h1{font-size:42px;line-height:1.18;font-weight:850;letter-spacing:-.5px}
 .hero h1 .g{background:linear-gradient(90deg,var(--green),var(--indigo));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.sub{font-size:17px;color:var(--grey);margin:16px 0 24px;max-width:680px}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
-.stats{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+	.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+	.stats{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px;box-shadow:var(--sh2)}
-.stat b{font-size:26px;display:block;color:var(--green)}
-.stat span{font-size:13px;color:var(--grey)}
+	.stat b{font-size:26px;display:block;color:var(--green)}
+	.stat span{font-size:13px;color:var(--grey)}
+	.command-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:20px;align-items:stretch}
+	.command-copy{padding-right:16px}
+	.snapshot{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--sh)}
+	.snapshot h3{font-size:18px;margin-bottom:12px}
+	.snap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+	.snap{border:1px solid var(--line);border-radius:8px;padding:11px;background:#fbfdff}
+	.snap b{font-size:13px}.snap p{font-size:12px;color:var(--grey);margin-top:4px}
+	.status-pill.local_ready,.status-pill.ready{background:var(--mint);color:var(--green)}
+	.status-pill.requires_user_input,.status-pill.manual_review_required,.status-pill.partial,.status-pill.local_material_needs_external_verification{background:var(--amberbg);color:#8a5d00}
+	.status-pill.blocked_auth,.status-pill.needs_external_verification,.status-pill.content_debt{background:var(--dangerbg);color:var(--danger)}
+	.guardrails{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
+	.guardrails span{font-size:11px;font-weight:800;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 8px}
 /* sections */
 section{padding:54px 0}
 section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -60,8 +77,9 @@ h2.t{font-size:30px;font-weight:820;margin:8px 0 6px;letter-spacing:-.3px}
 .nodes{grid-template-columns:repeat(6,1fr)}
 .node{border-radius:13px;padding:13px;cursor:pointer;border:1.5px solid;transition:.15s;background:#fff}
 .node:hover{transform:translateY(-3px);box-shadow:var(--sh)}
-.node .num{font-weight:850;font-size:18px}
-.node .nm{font-size:12.5px;margin-top:2px;font-weight:600}
+	.node .num{font-weight:850;font-size:18px}
+	.node .nm{font-size:12.5px;margin-top:2px;font-weight:600}
+	.node .mini-status{font-size:10.5px;margin-top:7px;display:inline-block;border-radius:999px;padding:2px 7px;background:#fff;border:1px solid rgba(255,255,255,.8);font-weight:850}
 .g-b{border-color:var(--blue);background:var(--bluebg)}.g-b .num{color:var(--blue)}
 .g-g{border-color:var(--green);background:var(--mint)}.g-g .num{color:var(--green)}
 .g-i{border-color:var(--indigo);background:var(--lav)}.g-i .num{color:var(--indigo)}
@@ -85,6 +103,77 @@ h2.t{font-size:30px;font-weight:820;margin:8px 0 6px;letter-spacing:-.3px}
 .caps{grid-template-columns:repeat(3,1fr)}
 .cap{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:var(--sh2)}
 .cap b{font-size:14.5px}.cap .st{margin-top:8px;font-size:12px;color:var(--grey)}
+/* workbench */
+.ops{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
+.ops-main{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh2)}
+.ops-main h3{font-size:18px;margin-bottom:10px}
+.ops-main p{font-size:13.5px;color:#3a4a60;margin-bottom:13px}
+.ops-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.ops-kpi{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdff}
+.ops-kpi b{display:block;font-size:24px;color:var(--green);line-height:1.15}.ops-kpi span{font-size:12px;color:var(--grey)}
+.lane-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.lane{background:#fff;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:12px;padding:14px;box-shadow:var(--sh2)}
+	.lane b{font-size:14px}.lane p{font-size:12.5px;color:var(--grey);margin-top:5px}
+	.journey-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+	.filter-chip{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800;cursor:pointer}
+	.filter-chip.active{background:var(--green);border-color:var(--green);color:#fff}
+	.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+	.journey-card,.tech-card,.sop-card,.ready-card,.debt-card,.evidence-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:var(--sh2)}
+	.journey-card{cursor:pointer;display:flex;flex-direction:column;gap:8px}
+	.journey-card h3,.tech-card h3,.sop-card h3,.ready-card h3,.debt-card h3,.evidence-card h3{font-size:15px;line-height:1.35}
+	.journey-card p,.tech-card p,.sop-card p,.ready-card p,.debt-card p,.evidence-card p{font-size:12.5px;color:#3a4a60}
+	.card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+	.btn.small{padding:7px 10px;font-size:12px;border-radius:8px}
+	.journey-detail,.tech-detail{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--sh2)}
+	.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+	.detail-box{border:1px solid var(--line);border-radius:8px;background:#fbfdff;padding:10px}
+	.detail-box b{font-size:12px}.detail-box ul{list-style:none;margin-top:6px;font-size:12px;color:var(--grey)}
+	.detail-box li{padding:2px 0}
+	.tech-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px}
+	.decision-panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:var(--sh2)}
+	.decision-panel label{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#3a4a60;padding:7px 0;border-bottom:1px solid #eef3f7}
+	.decision-panel label:last-child{border-bottom:none}
+	.tech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+	.tech-card{cursor:pointer}
+	.sop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+	.ready-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+	.ready-card ul,.debt-card ul{font-size:12px;color:var(--grey);margin:8px 0 0 18px}
+	.evidence-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+	.preset-row{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 16px}
+	.preset-row button{font-size:12px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;font-weight:800;color:var(--ink);cursor:pointer}
+	.debt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+	.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px}
+.section-head .lead{margin-bottom:0}
+.mini-link{font-size:12px;font-weight:800;color:var(--green);cursor:pointer}
+.repo-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.repo-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px;box-shadow:var(--sh2);display:flex;flex-direction:column;min-height:250px}
+.repo-card h3{font-size:15px;margin-bottom:4px}.repo-card .kind{font-size:11px;color:#fff;background:var(--navy);border-radius:999px;padding:3px 9px;display:inline-block;width:max-content;margin-bottom:9px}
+.repo-card p{font-size:12.5px;color:#3a4a60;margin:4px 0}
+.repo-card ul{list-style:none;margin-top:8px;font-size:11.5px;color:var(--grey)}
+.repo-card li{padding:3px 0;border-top:1px solid #eef3f7}
+.repo-card .head{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--green);font-size:11.5px}
+.play-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.play{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:var(--sh2)}
+.play .tag{font-size:11px;font-weight:800;color:var(--indigo);background:var(--lav);border-radius:999px;padding:3px 9px;display:inline-block}
+.play h3{font-size:15px;margin:9px 0 6px}.play p{font-size:12.5px;color:#3a4a60;margin:6px 0}.play .risk{color:#7a5600;background:var(--amberbg);border-radius:8px;padding:6px 8px;margin-top:9px}
+.agent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.agent{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:var(--sh2)}
+.agent h3{font-size:15px;margin-bottom:8px}.agent dl{font-size:12.5px}.agent dt{font-weight:800;color:var(--ink);margin-top:8px}.agent dd{color:#3a4a60;margin-top:2px}
+.node-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.node-tags span{font-size:11px;border-radius:6px;background:var(--bluebg);color:var(--blue);font-weight:800;padding:2px 6px}
+.gate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gate-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:var(--sh2)}
+.gate-card h3{font-size:15px;margin:8px 0}.gate-card p{font-size:12.5px;color:#3a4a60;margin:6px 0}
+.status-pill{font-size:11px;font-weight:850;border-radius:999px;padding:3px 9px;background:var(--mint);color:var(--green);display:inline-block}
+.status-pill.warn{background:var(--amberbg);color:#8a5d00}.status-pill.stop{background:#fdebed;color:#a51c30}
+.source-table,.cov-table{width:100%;border-collapse:collapse;font-size:12px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh2)}
+.source-table th,.source-table td,.cov-table th,.cov-table td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.source-table th,.cov-table th{background:#f7faff;color:var(--ink)}
+.cov-table td:not(:first-child),.cov-table th:not(:first-child){text-align:center}
+.cover-ok{color:var(--green);font-weight:850}.cover-mid{color:var(--amber);font-weight:850}.cover-none{color:#9aa5b1;font-weight:850}
+.tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tool-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:var(--sh2)}
+.tool-card h3{font-size:15px;margin-bottom:7px}.tool-card p{font-size:12.5px;color:#3a4a60}.tool-card .file{font-size:11px;color:var(--grey);margin-top:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 /* search + chat */
 .tool{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);overflow:hidden}
 .searchbar{display:flex;gap:10px;padding:16px}
@@ -135,29 +224,78 @@ footer a{color:#9ad9bf}
 #modal .x{float:right;cursor:pointer;font-size:22px;color:var(--grey)}
 #lightbox{position:fixed;inset:0;background:rgba(11,31,58,.88);display:none;z-index:120;cursor:zoom-out}
 #lightbox img{max-width:96%;max-height:96%;margin:2% auto;display:block;border-radius:8px}
-@media(max-width:860px){.steps,.nodes,.caps,.road,.np,.tsel{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}nav .links{display:none}}
+	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout{grid-template-columns:1fr}}
+	@media(max-width:860px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.tech-grid,.sop-grid,.debt-grid,.evidence-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}nav .links{display:none}.menu-btn{display:block}nav .btn{display:none}}
+	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
 </style>
 </head>
 <body>
 <nav><div class="wrap">
   <div class="logo"><span class="dot"></span> ABI 智能化独立站</div>
   <div class="links">
-    <a href="#arch">总架构</a><a href="#panorama">全景图</a><a href="#flow">全流程</a><a href="#caps">AI 能力</a>
-    <a href="#kb">知识库</a><a href="#chat">问答</a><a href="#road">下一步</a>
+    <a href="#command">作战台</a><a href="#journeys">路径</a><a href="#tech">技术</a><a href="#flow">节点</a><a href="#sop">SOP</a>
+    <a href="#growth">增长</a><a href="#agents">Agent</a><a href="#readiness">准备度</a><a href="#evidence">证据</a><a href="#chat">问答</a>
   </div>
+  <button class="menu-btn" aria-label="打开导航" onclick="toggleMenu()">≡</button>
   <button class="btn" onclick="document.getElementById('chat').scrollIntoView()">DeepSeek 问答</button>
 </div></nav>
+<div class="mobile-menu" id="mobileMenu"><div class="wrap">
+  <a href="#command" onclick="toggleMenu(false)">作战台</a><a href="#journeys" onclick="toggleMenu(false)">路径</a>
+  <a href="#tech" onclick="toggleMenu(false)">技术选型</a><a href="#flow" onclick="toggleMenu(false)">节点</a>
+  <a href="#sop" onclick="toggleMenu(false)">SOP</a><a href="#growth" onclick="toggleMenu(false)">增长</a>
+  <a href="#agents" onclick="toggleMenu(false)">Agent</a><a href="#readiness" onclick="toggleMenu(false)">准备度</a>
+  <a href="#evidence" onclick="toggleMenu(false)">证据</a><a href="#chat" onclick="toggleMenu(false)">问答</a>
+</div></div>
 
-<header class="hero"><div class="wrap">
-  <div class="eyebrow">ABI 智能化独立站 · RAG + 知识图谱</div>
-  <h1>用 AI 把 Shopify 独立站<br/>从 <span class="g">一键开店</span> 做到 <span class="g">全自动运营</span></h1>
-  <p class="sub">把一家 Shopify 独立站从「人肉运营」升级为「AI 自动化经营」——降本(少人多店)、提效(对话式建站/上架/投放)、可复制(SOP + 插件 + 数据桥)、可治理(人审 + 合规 + 图谱溯源)。内置 DeepSeek RAG 问答。</p>
-  <div class="cta">
-    <button class="btn" onclick="document.getElementById('flow').scrollIntoView()">查看全流程</button>
-    <button class="btn ghost" onclick="document.getElementById('panorama').scrollIntoView()">打开全景图</button>
+<header class="hero" id="command"><div class="wrap">
+  <div class="command-grid">
+    <div class="command-copy">
+      <div class="eyebrow">Operating Command Center · RAG + 知识图谱</div>
+      <h1><span class="g">ABI 智能化独立站</span><br/>经营作战台</h1>
+      <p class="sub" id="commandSub">把 Shopify/DTC 知识、工程选型、增长 SOP、Agent 工作流和风险闸口组织成可执行经营路径。</p>
+      <div class="cta">
+        <button class="btn" onclick="document.getElementById('journeys').scrollIntoView()">选择经营路径</button>
+        <button class="btn ghost" onclick="document.getElementById('tech').scrollIntoView()">查看技术选型</button>
+        <button class="btn ghost" onclick="document.getElementById('readiness').scrollIntoView()">检查执行准备度</button>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="snapshot">
+      <h3>执行状态快照</h3>
+      <div class="snap-grid" id="snapshotGrid"></div>
+      <div class="guardrails" id="guardrails"></div>
+    </div>
   </div>
-  <div class="stats" id="stats"></div>
 </div></header>
+
+<section id="journeys" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Use-case Journeys</div><h2 class="t">按目标选择作战路径</h2>
+  <p class="lead">先选经营目标,再进入推荐节点、SOP、技术依赖和风险闸口。T7 等待授权的能力只展示准备清单。</p></div>
+  <span class="mini-link" onclick="document.getElementById('readiness').scrollIntoView()">查看授权状态 →</span></div>
+  <div class="journey-toolbar" id="journeyFilters"></div>
+  <div class="journey-grid" id="journeyGrid"></div>
+  <div class="journey-detail" id="journeyDetail" style="display:none"></div>
+</div></section>
+
+<section id="tech"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Technical Decision Center</div><h2 class="t">Shopify 技术选型中心</h2>
+  <p class="lead">把 Theme、Hydrogen、App、Checkout/UI Extension、CLI/MCP 和 Storefront MCP/UCP 的边界讲清楚,避免把未来能力误当当前执行能力。</p></div></div>
+  <div class="tech-layout">
+    <div class="decision-panel">
+      <h3 style="font-size:16px;margin-bottom:8px">选择当前问题</h3>
+      <label><input type="checkbox" data-tech="theme"/> 快速上线标准 Shopify 店铺</label>
+      <label><input type="checkbox" data-tech="hydrogen"/> 需要 Headless / React 前端</label>
+      <label><input type="checkbox" data-tech="app"/> 需要 Admin API 或业务服务</label>
+      <label><input type="checkbox" data-tech="extension"/> 涉及 Checkout / Account surface</label>
+      <label><input type="checkbox" data-tech="cli-mcp"/> 需要 CLI / Dev MCP 工程入口</label>
+      <label><input type="checkbox" data-tech="storefront-mcp-ucp"/> 准备 Storefront MCP / UCP</label>
+    </div>
+    <div>
+      <div class="tech-grid" id="techGrid"></div>
+      <div class="tech-detail" id="techDetail"></div>
+    </div>
+  </div>
+</div></section>
 
 <section id="arch"><div class="wrap">
   <div class="eyebrow">一图看懂 · 产品 + 知识库</div><h2 class="t">ABI 总架构</h2>
@@ -190,22 +328,89 @@ footer a{color:#9ad9bf}
   <div class="grid caps" id="capgrid"></div>
 </div></section>
 
+<section id="ops" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Operating Workbench</div><h2 class="t">经营作战台</h2>
+  <p class="lead">把新增知识从文档沉淀转换为可决策模块:工程选型、增长打法、Agent 分工、风险闸、来源可信度和工具入口。</p></div>
+	  <span class="mini-link" onclick="document.getElementById('evidence').scrollIntoView()">查看来源覆盖 →</span></div>
+  <div class="ops" id="opsboard"></div>
+  <div class="lane-grid" id="lanes" style="margin-top:14px"></div>
+</div></section>
+
+<section id="sop"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">SOP Playbook Library</div><h2 class="t">可执行 SOP 库</h2>
+  <p class="lead">把节点专题文档整理成输入、步骤、输出、验收和风险都明确的 playbook。需要外部核验的内容会保留状态标签。</p></div>
+  <span class="mini-link" onclick="doSearchWith('SOP Runbook 独立站 建站 Listing 增长 归因 风控 UCP')">检索 SOP →</span></div>
+  <div class="sop-grid" id="sopGrid"></div>
+</div></section>
+
+<section id="repos"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">GitHub P0 · 工程结构</div><h2 class="t">工程仓库地图</h2>
+  <p class="lead">从官方 P0 仓库结构快照提炼 Theme、Hydrogen、App、UI Extension、CLI/MCP 的工程落点和边界。</p></div>
+  <span class="mini-link" onclick="doSearchWith('P0 官方仓库工程结构 Hydrogen Theme App UI Extension')">检索证据 →</span></div>
+  <div class="repo-grid" id="repoGrid"></div>
+</div></section>
+
+<section id="growth" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">DTC Growth</div><h2 class="t">增长作战室</h2>
+  <p class="lead">把 SEO、Meta、Reddit GEO、YouTube/PR、KOL、联盟和大促统一到渠道角色、承接页、归因字段和风控闭环。</p></div>
+  <span class="mini-link" onclick="doSearchWith('站外全域流量增长 SOP Creator Store Front Reddit GEO HOME 页 SEO')">检索证据 →</span></div>
+  <div class="play-grid" id="growthGrid"></div>
+</div></section>
+
+<section id="agents"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Agent Workflow</div><h2 class="t">Agent 工作流库</h2>
+  <p class="lead">把 AI 工作流拆成可分工、可审计、可移交的 6 类运营 Agent。</p></div>
+  <span class="mini-link" onclick="document.getElementById('toolkit').scrollIntoView()">查看工具包 →</span></div>
+  <div class="agent-grid" id="agentGrid"></div>
+</div></section>
+
+<section id="risk" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Governance</div><h2 class="t">风控与人审闸</h2>
+  <p class="lead">把店铺写入、Admin API、Checkout、社区、UGC、预算和佣金动作放进明确的证据层和审批链。</p></div>
+  <span class="mini-link" onclick="doSearchWith('manual_review_required dry_run preview approval audit_log Shopify MCP 风控')">检索证据 →</span></div>
+	  <div class="gate-grid" id="gateGrid"></div>
+	</div></section>
+
+<section id="readiness"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Execution Readiness</div><h2 class="t">执行准备度</h2>
+  <p class="lead">这里是授权与证据状态台,不是生产执行台。真实店铺、测试店写入、预算、退款和外部发布都必须先过人审。</p></div>
+  <span class="mini-link" onclick="doSearchWith('T7 测试店 受控写 验收 Runbook 人审 回滚')">检索 T7 Runbook →</span></div>
+  <div class="ready-grid" id="readyGrid"></div>
+</div></section>
+
+<section id="evidence" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Evidence Map</div><h2 class="t">信息源可信度与覆盖</h2>
+  <p class="lead">10 个信息源与 14 个节点的覆盖状态,帮助判断哪些结论来自官方、开源快照、本地资料或待外部核验。</p></div></div>
+  <div class="journey-toolbar" id="evidenceFilters"></div>
+  <div style="overflow:auto;margin-bottom:18px"><table class="source-table" id="sourceTable"></table></div>
+  <div style="overflow:auto"><table class="cov-table" id="coverageTable"></table></div>
+  <div class="evidence-grid" id="evidenceGrid"></div>
+</div></section>
+
+<section id="toolkit" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Execution Toolkit</div><h2 class="t">可执行工具包入口</h2>
+  <p class="lead">把知识库里的 skill 变成行动入口:检索、建站、Hydrogen、Listing、CRO、履约和 UCP。</p></div></div>
+  <div class="tool-grid" id="toolGrid"></div>
+</div></section>
+
 <section id="kb" class="alt"><div class="wrap">
   <div class="eyebrow">语义检索</div><h2 class="t">知识库浏览</h2>
   <p class="lead">在本知识库知识块里检索(客户端本地检索,带来源;最新数量见顶部统计卡)。</p>
-  <div class="tool">
-    <div class="searchbar"><input id="q" placeholder="例如:库存同步 / Campaign Autopilot / 母亲节活动" onkeydown="if(event.key==='Enter')doSearch()"/><button class="btn" onclick="doSearch()">检索</button></div>
-    <div id="sres"></div>
-  </div>
+	  <div class="tool">
+	    <div class="searchbar"><input id="q" placeholder="例如:库存同步 / Campaign Autopilot / 母亲节活动" onkeydown="if(event.key==='Enter')doSearch()"/><button class="btn" onclick="doSearch()">检索</button></div>
+	    <div class="preset-row" id="searchPresets"></div>
+	    <div id="sres"></div>
+	  </div>
 </div></section>
 
 <section id="chat"><div class="wrap">
   <div class="eyebrow">DeepSeek RAG</div><h2 class="t">问答助手</h2>
   <p class="lead">基于知识库检索 + DeepSeek 大模型回答,并给出引用来源。API Key 在本页面手动录入。</p>
   <div class="tool">
-    <div id="chatlog"></div>
-    <div class="chatin"><input id="cq" placeholder="问问:怎么用 AI 自动建站?Accio Work 怎么和 Shopify 配合?" onkeydown="if(event.key==='Enter')send()"/><button class="btn" onclick="send()">发送</button></div>
-    <div class="note" id="cnote"></div>
+	    <div id="chatlog"></div>
+	    <div class="chatin"><input id="cq" placeholder="问问:怎么用 AI 自动建站?Accio Work 怎么和 Shopify 配合?" onkeydown="if(event.key==='Enter')send()"/><button class="btn" onclick="send()">发送</button></div>
+	    <div class="preset-row" id="chatPresets"></div>
+	    <div class="note" id="cnote"></div>
     <div id="keybox"><input id="dskey" type="password" autocomplete="off" placeholder="DeepSeek API Key(页面手动录入,不写入服务器)"/><label><input id="rememberKey" type="checkbox"/>记住到本浏览器</label><button class="btn ghost" onclick="saveKey()">保存</button><button class="btn ghost" onclick="clearKey()">清除</button></div>
   </div>
 </div></section>
@@ -213,8 +418,10 @@ footer a{color:#9ad9bf}
 <section id="road" class="alt"><div class="wrap">
   <div class="eyebrow">落地路线图</div><h2 class="t">下一步计划</h2>
   <p class="lead">分阶段把知识库变成「全自动运营」,以及当前可推进的动作。</p>
-  <div class="grid road" id="roadmap"></div>
-  <h3 style="margin:28px 0 12px;font-size:17px">近期可推进</h3>
+	  <div class="grid road" id="roadmap"></div>
+	  <h3 style="margin:28px 0 12px;font-size:17px">内容债</h3>
+	  <div class="debt-grid" id="debtGrid"></div>
+	  <h3 style="margin:28px 0 12px;font-size:17px">近期可推进</h3>
   <div class="grid np" id="nextplan"></div>
 </div></section>
 
@@ -231,16 +438,27 @@ footer a{color:#9ad9bf}
 <script>
 const K=window.KB;const GMAP={"00":"g-b","01":"g-b","02":"g-g","03":"g-g","04":"g-g","05":"g-i","06":"g-i","07":"g-t","08":"g-t","09":"g-t","10":"g-a","90":"g-n","91":"g-n","92":"g-n"};
 const HDC={"g-b":"#2D6CDF","g-g":"#008060","g-i":"#5C6AC4","g-t":"#0E7C86","g-a":"#C98A00","g-n":"#13294B"};
+const STATUS_LABELS={local_ready:'本地可用',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function statusPill(s){return `<span class="status-pill ${esc(s)}">${esc(STATUS_LABELS[s]||s||'—')}</span>`}
+function listItems(items){return (items||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>—</li>'}
+function toggleMenu(force){const m=document.getElementById('mobileMenu');const show=typeof force==='boolean'?force:m.style.display!=='block';m.style.display=show?'block':'none'}
+const readinessByNum=Object.fromEntries((K.nodeReadiness||[]).map(x=>[x.num,x]));
 // stats
-document.getElementById('stats').innerHTML=[["nodes","流程节点"],["chunks","知识块"],["entities","图谱实体"],["relations","图谱关系"]].map(([k,l])=>`<div class="stat"><b>${K.stats[k]}</b><span>${l}</span></div>`).join('');
+document.getElementById('commandSub').textContent=K.commandCenter.subtitle;
+document.getElementById('stats').innerHTML=(K.commandCenter.kpis||[]).map(k=>`<div class="stat"><b>${k.value}</b><span>${esc(k.label)}</span></div>`).join('');
+document.getElementById('snapshotGrid').innerHTML=(K.commandCenter.snapshots||[]).map(s=>`<div class="snap">${statusPill(s.status)}<p><b>${esc(s.label)}</b></p><p>${esc(s.detail)}</p></div>`).join('');
+document.getElementById('guardrails').innerHTML=(K.commandCenter.guardrails||[]).map(x=>`<span>${esc(x)}</span>`).join('');
 // steps
 document.getElementById('steps').innerHTML=K.steps.map(s=>`<div class="step"><div class="n">${s[0]}</div><h4>${s[1]}</h4><p>${s[2]}</p></div>`).join('');
 // nodes
-document.getElementById('nodes').innerHTML=K.nodes.map((n,i)=>`<div class="node ${GMAP[n.num]||'g-n'}" onclick="showNode(${i})"><div class="num">${n.num}</div><div class="nm">${n.name}</div></div>`).join('');
-function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+document.getElementById('nodes').innerHTML=K.nodes.map((n,i)=>{const r=readinessByNum[n.num]||{};return `<div class="node ${GMAP[n.num]||'g-n'}" tabindex="0" onclick="showNode(${i})" onkeydown="if(event.key==='Enter')showNode(${i})"><div class="num">${n.num}</div><div class="nm">${n.name}</div><span class="mini-status">${esc(STATUS_LABELS[r.status]||r.status||'—')}</span></div>`}).join('');
 function showNode(i){const n=K.nodes[i];const g=GMAP[n.num]||'g-n';const ts=K.toolsel[n.num];
+  const r=readinessByNum[n.num]||{};
   let h=`<div class="hd" style="background:${HDC[g]}"><div class="num">${n.num}</div><div><div style="font-size:18px;font-weight:800">${n.name}</div><div style="opacity:.85;font-size:13px">${esc(n.summary)}</div></div></div><div class="bd">`;
   h+=`<h3>本节点要解决什么</h3><p style="font-size:14px;color:#3a4a60">${esc(n.goal)||'—'}</p>`;
+  if(r.status){h+=`<h3>节点状态</h3><p>${statusPill(r.status)} <span style="font-size:13px;color:#3a4a60">${esc(r.reason)}</span></p>`}
+  if(r.recommendedDocs&&r.recommendedDocs.length){h+=`<h3>建议补齐</h3><div class="chips">${r.recommendedDocs.map(s=>`<span class="chip">${esc(s)}</span>`).join('')}</div>`}
   if(n.subtopics.length){h+=`<h3>核心子主题</h3><div class="chips">${n.subtopics.map(s=>`<span class="chip">${esc(s)}</span>`).join('')}</div>`}
   if(ts){h+=`<h3>AI 工具选型</h3><div class="tsel">
     <div class="c"><div class="k">原生/自建首选</div><div class="v">${esc(ts.native)}</div></div>
@@ -251,11 +469,68 @@ function showNode(i){const n=K.nodes[i];const g=GMAP[n.num]||'g-n';const ts=K.to
   if(n.docs&&n.docs.length){h+=`<h3>本节点专题文档(${n.docs.length})</h3><div class="chips">`+n.docs.map((dd,j)=>`<span class="chip" style="cursor:pointer;border-color:var(--green);color:var(--green)" onclick="openDoc(${i},${j})">📄 ${esc(dd.title)}</span>`).join('')+`</div>`;}
   h+=`<div style="margin-top:18px"><button class="btn ghost" onclick="openMD(${i})">查看完整文档(README) →</button></div></div>`;
   const d=document.getElementById('detail');d.innerHTML=h;d.style.display='block';d.scrollIntoView({behavior:'smooth',block:'center'});}
+// journeys
+const journeyStages=['全部','P0','P1','P2'];
+let activeJourneyStage='全部';
+document.getElementById('journeyFilters').innerHTML=journeyStages.map(s=>`<button class="filter-chip ${s==='全部'?'active':''}" onclick="setJourneyStage('${s}',this)">${s}</button>`).join('');
+function setJourneyStage(stage,el){activeJourneyStage=stage;document.querySelectorAll('#journeyFilters .filter-chip').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderJourneys()}
+function renderJourneys(){const rows=(K.journeys||[]).filter(j=>activeJourneyStage==='全部'||j.stage===activeJourneyStage);
+  document.getElementById('journeyGrid').innerHTML=rows.map(j=>`<div class="journey-card" tabindex="0" onclick="showJourney('${j.id}')" onkeydown="if(event.key==='Enter')showJourney('${j.id}')">${statusPill(j.readiness)}<h3>${esc(j.title)}</h3><p>${esc(j.audience)}</p><div class="node-tags">${(j.nodes||[]).map(n=>`<span>${esc(n)}</span>`).join('')}</div><p><b>输出:</b> ${esc((j.outputs||[]).slice(0,3).join(' / '))}</p><div class="card-actions"><button class="btn small" onclick="event.stopPropagation();showJourney('${j.id}')">进入路径</button><button class="btn ghost small" onclick="event.stopPropagation();askQuery('${esc(j.ask)}','chat')">询问此路径</button></div></div>`).join('')}
+function showJourney(id){const j=(K.journeys||[]).find(x=>x.id===id);if(!j)return;
+  document.getElementById('journeyDetail').innerHTML=`<h3>${esc(j.title)}</h3><p style="font-size:13px;color:#3a4a60;margin:4px 0 12px">${statusPill(j.readiness)} 复杂度:${esc(j.complexity)} · 阶段:${esc(j.stage)}</p><div class="detail-grid"><div class="detail-box"><b>输入资料</b><ul>${listItems(j.inputs)}</ul></div><div class="detail-box"><b>预期输出</b><ul>${listItems(j.outputs)}</ul></div><div class="detail-box"><b>推荐 SOP</b><ul>${listItems(j.sops)}</ul></div><div class="detail-box"><b>风险闸口</b><ul>${listItems(j.riskGates)}</ul></div></div>`;document.getElementById('journeyDetail').style.display='block';document.getElementById('journeyDetail').scrollIntoView({behavior:'smooth',block:'nearest'})}
+renderJourneys();showJourney((K.journeys&&K.journeys[0]||{}).id);
+// technical routes
+function renderTech(){const selected=[...document.querySelectorAll('[data-tech]:checked')].map(x=>x.dataset.tech);const rows=(K.technicalRoutes||[]).filter(r=>!selected.length||selected.includes(r.id));
+  document.getElementById('techGrid').innerHTML=rows.map(r=>`<div class="tech-card" tabindex="0" onclick="showTech('${r.id}')" onkeydown="if(event.key==='Enter')showTech('${r.id}')">${statusPill(r.readiness)}<h3>${esc(r.label)}</h3><p>${esc(r.bestFor)}</p><div class="node-tags">${(r.nodes||[]).map(n=>`<span>${esc(n)}</span>`).join('')}</div></div>`).join('');
+  showTech((rows[0]||K.technicalRoutes[0]||{}).id)}
+function showTech(id){const r=(K.technicalRoutes||[]).find(x=>x.id===id);if(!r)return;
+  document.getElementById('techDetail').innerHTML=`<h3>${esc(r.label)}</h3><p>${esc(r.decisionHint)}</p><div class="detail-grid" style="margin-top:10px"><div class="detail-box"><b>参考仓库/能力</b><ul>${listItems(r.repoRefs)}</ul></div><div class="detail-box"><b>输出物</b><ul>${listItems(r.outputs)}</ul></div><div class="detail-box"><b>风险闸口</b><ul>${listItems(r.riskGates)}</ul></div><div class="detail-box"><b>关联节点</b><ul>${listItems(r.nodes)}</ul></div></div>`}
+document.querySelectorAll('[data-tech]').forEach(x=>x.addEventListener('change',renderTech));renderTech();
 // caps
 document.getElementById('capgrid').innerHTML=Object.entries(K.caps).map(([c,st])=>`<div class="cap"><b>${esc(c)}</b><div class="st">支撑:${st.map(x=>x.replace(/^\d+\s*/,'')).join(' · ')||'—'}</div></div>`).join('');
+// workbench modules
+function statusClass(s){s=s||'';if(s.includes('test_store')||s.includes('manual'))return 'warn';if(s.includes('needs'))return 'stop';return ''}
+function coverClass(v){if((v||'').includes('✅'))return 'cover-ok';if((v||'').includes('🟡'))return 'cover-mid';return 'cover-none'}
+function shortList(a,n){return (a||[]).slice(0,n).map(x=>esc(x)).join(' · ')||'—'}
+function doSearchWith(q){document.getElementById('q').value=q;document.getElementById('kb').scrollIntoView({behavior:'smooth'});setTimeout(doSearch,260)}
+document.getElementById('opsboard').innerHTML=`<div class="ops-main"><h3>本轮增量设计焦点</h3><p>新增资料已经进入 RAG/KG,本页把它们升级为可操作的决策界面:先选工程路线,再定增长渠道,再拆 Agent,最后过风控闸。</p><div class="ops-kpis">
+  <div class="ops-kpi"><b>${K.repoPlaybooks.length}</b><span>工程路线</span></div>
+  <div class="ops-kpi"><b>${K.growthPlaybooks.length}</b><span>增长打法</span></div>
+  <div class="ops-kpi"><b>${K.agentWorkflows.length}</b><span>Agent 工作流</span></div>
+  <div class="ops-kpi"><b>${K.riskGates.length}</b><span>人审/风控闸</span></div>
+</div></div><div class="ops-main"><h3>当前证据层</h3><p>GitHub P0 为本地只读 git tree 快照;platform-operations-wiki 为本地资料萃取;平台规则、广告算法、SEO/GEO 内容执行前仍需外部核验。</p><div class="chips"><span class="chip">no provider call</span><span class="chip">no live store write</span><span class="chip">test store first</span><span class="chip">manual review gate</span></div></div>`;
+document.getElementById('lanes').innerHTML=[
+  ['工程选型','Theme / Hydrogen / App / UI Extension / MCP 的适用场景和最小验收。','#repos'],
+  ['增长打法','SEO、广告、社区、红人、联盟和大促的渠道角色与归因。','#growth'],
+  ['Agent 协作','洞察、素材、红人、SEO、广告诊断和经营复盘的分工边界。','#agents'],
+  ['风控闸','店铺写入、Admin API、Checkout、社区和素材授权的人审链。','#risk'],
+  ['来源覆盖','10 信息源 × 14 节点的覆盖状态和验证边界。','#evidence'],
+  ['工具入口','知识库 skill 入口,连接检索、建站、Listing、CRO、履约和 UCP。','#toolkit'],
+].map(x=>`<div class="lane" onclick="document.querySelector('${x[2]}').scrollIntoView({behavior:'smooth'})"><b>${x[0]}</b><p>${x[1]}</p></div>`).join('');
+document.getElementById('repoGrid').innerHTML=K.repoPlaybooks.map(p=>`<div class="repo-card"><span class="kind">${esc(p.kind)}</span><h3>${esc(p.title)}</h3><p>${esc(p.fit)}</p><p><b>输出:</b> ${esc(p.output)}</p><p><b>边界:</b> ${esc(p.boundary)}</p><ul>${p.records.map(r=>`<li><b>${esc(r.repo)}</b><br/><span class="head">${esc(r.head||'snapshot')}</span> · ${r.files||0} files<br/>${shortList(r.topDirs,3)}</li>`).join('')}</ul></div>`).join('');
+document.getElementById('growthGrid').innerHTML=K.growthPlaybooks.map(p=>`<div class="play"><span class="tag">${esc(p.stage)}</span><h3>${esc(p.channel)}</h3><p><b>动作:</b> ${esc(p.action)}</p><p><b>输出:</b> ${esc(p.output)}</p><p><b>承接:</b> ${esc(p.handoff)}</p><p><b>复盘指标:</b> ${esc((p.metrics||[]).join(' / ')||'—')}</p><p><b>节奏:</b> ${esc(p.cadence||'—')}</p><p class="risk">${esc(p.risk)}</p></div>`).join('');
+document.getElementById('agentGrid').innerHTML=K.agentWorkflows.map(a=>`<div class="agent"><h3>${esc(a.agent)}</h3><dl><dt>输入</dt><dd>${esc(a.input)}</dd><dt>输出</dt><dd>${esc(a.output)}</dd><dt>任务模板</dt><dd>${esc(a.taskTemplate||'—')}</dd><dt>移交物</dt><dd>${esc(a.handoff||'—')}</dd><dt>人审点</dt><dd>${esc(a.review)}</dd></dl><div class="node-tags">${(a.nodes||[]).map(n=>`<span>${n}</span>`).join('')}</div></div>`).join('');
+document.getElementById('gateGrid').innerHTML=K.riskGates.map(g=>`<div class="gate-card"><span class="status-pill ${statusClass(g.status)}">${esc(g.status)}</span><h3>${esc(g.gate)}</h3><p><b>触发:</b> ${esc(g.trigger)}</p><p><b>审查:</b> ${esc(g.review)}</p><p><b>来源:</b> ${esc(g.source)}</p></div>`).join('');
+document.getElementById('sopGrid').innerHTML=(K.sopPlaybooks||[]).map(s=>`<div class="sop-card">${statusPill(s.verification)}<h3>${esc(s.title)}</h3><p>${esc(s.scenario)}</p><p><b>输出:</b> ${esc((s.outputs||[]).join(' / '))}</p><div class="node-tags">${(s.nodes||[]).map(n=>`<span>${esc(n)}</span>`).join('')}</div><div class="card-actions"><button class="btn ghost small" onclick="doSearchWith('${esc(s.title)}')">检索</button><button class="btn ghost small" onclick="askQuery('${esc(s.title+' 怎么执行?')}','chat')">询问</button></div></div>`).join('');
+document.getElementById('readyGrid').innerHTML=(K.executionReadiness||[]).map(r=>`<div class="ready-card">${statusPill(r.status)}<h3>${esc(r.label)}</h3><p>${esc(r.detail)}</p><p><b>需要:</b></p><ul>${listItems(r.requires)}</ul>${(r.forbidden||[]).length?`<p><b>禁止:</b></p><ul>${listItems(r.forbidden)}</ul>`:''}<p style="margin-top:8px"><b>Runbook:</b> ${esc(r.runbook)}</p></div>`).join('');
+document.getElementById('sourceTable').innerHTML=`<tr><th>#</th><th>信息源</th><th>类型</th><th>状态</th><th>落点</th></tr>`+K.sourceRegistry.map(s=>`<tr><td>${esc(s.id)}</td><td>${esc(s.name)}</td><td>${esc(s.type)}</td><td>${esc(s.status)}</td><td>${esc(s.landing)}</td></tr>`).join('');
+document.getElementById('coverageTable').innerHTML=`<tr><th>节点</th>${K.coverageMatrix.headers.map(h=>`<th>${esc(h)}</th>`).join('')}</tr>`+K.coverageMatrix.rows.map(r=>`<tr><td>${esc(r.node)}</td>${r.values.map(v=>`<td class="${coverClass(v)}">${esc(v)}</td>`).join('')}</tr>`).join('');
+const evidenceStatuses=['全部',...[...new Set((K.evidenceItems||[]).map(e=>e.status))]];
+let activeEvidenceStatus='全部';
+document.getElementById('evidenceFilters').innerHTML=evidenceStatuses.map(s=>`<button class="filter-chip ${s==='全部'?'active':''}" onclick="setEvidenceStatus('${esc(s)}',this)">${esc(STATUS_LABELS[s]||s)}</button>`).join('');
+function setEvidenceStatus(s,el){activeEvidenceStatus=s;document.querySelectorAll('#evidenceFilters .filter-chip').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderEvidence()}
+function renderEvidence(){const rows=(K.evidenceItems||[]).filter(e=>activeEvidenceStatus==='全部'||e.status===activeEvidenceStatus);
+  document.getElementById('evidenceGrid').innerHTML=rows.map(e=>`<div class="evidence-card">${statusPill(e.status)}<h3>${esc(e.claim)}</h3><p><b>来源:</b> ${esc(e.source)}</p><div class="node-tags">${(e.nodes||[]).map(n=>`<span>${esc(n)}</span>`).join('')}</div></div>`).join('')||'<div class="evidence-card"><h3>当前筛选无记录</h3><p>请选择其他验证状态。</p></div>'}
+renderEvidence();
+document.getElementById('toolGrid').innerHTML=K.skillCatalog.map(s=>`<div class="tool-card"><h3>${esc(s.name)}</h3><p>${esc(s.description)}</p><div class="node-tags"><span>节点 ${esc(s.node)}</span></div><div class="file">${esc(s.file)}</div></div>`).join('');
 // roadmap
 document.getElementById('roadmap').innerHTML=K.roadmap.map(p=>`<div class="ph"><span class="w">${p.when}</span><h4>${p.phase}</h4><ul>${p.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+document.getElementById('debtGrid').innerHTML=(K.contentDebt||[]).length?(K.contentDebt||[]).map(d=>`<div class="debt-card">${statusPill(d.status)}<h3>${esc(d.node)}</h3><p>${esc(d.reason)}</p><p><b>当前:</b> ${d.docCount} 篇专题 · ${d.chunkCount} chunks</p><ul>${listItems(d.recommendedDocs)}</ul></div>`).join(''):`<div class="debt-card">${statusPill('partial')}<h3>P1 已补齐当前内容债</h3><p>04/08/09 已各有一篇专题 SOP。后续仍可继续补 UGC 授权、3PL/WMS 数据边界、复购生命周期运营等深水区文档。</p></div>`;
 document.getElementById('nextplan').innerHTML=K.nextplan.map(p=>`<div class="npc"><b>${esc(p.t)}</b><p>${esc(p.d)}</p></div>`).join('');
+// contextual ask
+function askQuery(q,target){if(target==='chat'){document.getElementById('cq').value=q;document.getElementById('chat').scrollIntoView({behavior:'smooth'});return}document.getElementById('q').value=q;document.getElementById('kb').scrollIntoView({behavior:'smooth'});setTimeout(doSearch,180)}
+document.getElementById('searchPresets').innerHTML=(K.queryPresets||[]).map(p=>`<button onclick="askQuery('${esc(p.query)}','search')">${esc(p.label)}</button>`).join('');
+document.getElementById('chatPresets').innerHTML=(K.queryPresets||[]).map(p=>`<button onclick="askQuery('${esc(p.query)}','chat')">${esc(p.label)}</button>`).join('');
 // mini markdown
 function md(t){let s=esc(t);
   const rows=[];s=s.split('\n').map(l=>{const m=l.match(/^\|(.+)\|\s*$/);if(m){rows.push(m[1].split('|'));return 'ROW'}return l}).join('\n');

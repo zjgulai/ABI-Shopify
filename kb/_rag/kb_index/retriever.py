@@ -7,6 +7,8 @@
 - KB_VECTOR_STORE=chroma / --store chroma: Chroma 文件级持久向量库
 - KB_GRAPH_BACKEND=neo4j: Neo4j 图谱查询(默认 JSON)
 """
+from __future__ import annotations
+
 import json
 import math
 import os

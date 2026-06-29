@@ -1,16 +1,23 @@
 # -*- coding: utf-8 -*-
+import glob
+import json
 import os
 import diag_common as d
 from diag_common import txt,box,arrow
 KB=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHUNKS=sum(1 for _ in open(os.path.join(KB,"_rag","chunks.jsonl"),encoding="utf-8"))
+DOCS=len(glob.glob(os.path.join(KB,"**","*.md"),recursive=True))
+GRAPH=json.load(open(os.path.join(KB,"_kg","graph.json"),encoding="utf-8"))
+ENTITIES=len(GRAPH["entities"])
+RELATIONS=len(GRAPH["relations"])
+INFO_SOURCES=10
 f,ax=d.fig(16,12)  # 160 x 120
 H=120
 # ---- Title ----
 txt(ax,7,H-6,"ABI 智能化独立站",size=29,color=d.INK,bold=True,ha="left")
 txt(ax,7,H-10.3,"知识库 + 产品 总架构 · 让 Shopify 独立站从「人肉运营」升级为「AI 自动化经营」",size=12.5,color=d.GREEN,ha="left",bold=True)
 txt(ax,153,H-6,"momcozy · 2026",size=10,color=d.GREY,ha="right")
-txt(ax,153,H-11.3,f"60+ 文档 · {CHUNKS} RAG块 · 213 实体/593 关系 · 8 信息源",size=9,color=d.GREY,ha="right")
+txt(ax,153,H-11.3,f"{DOCS} 文档 · {CHUNKS} RAG块 · {ENTITIES} 实体/{RELATIONS} 关系 · {INFO_SOURCES} 信息源",size=9,color=d.GREY,ha="right")
 
 # ---- 商业价值 ribbon ----
 box(ax,4,99,140,8.5,fc=d.NAVY,ec=d.NAVY,r=0.5,z=2)
@@ -44,7 +51,7 @@ for i,(t,s) in enumerate([("网站+server.py","RAG+DeepSeek"),("腾讯云 Docker
 # L3 机器层
 band(59,11,"#D7EEF0","#0E7C86","机器可用层","RAG + 知识图谱")
 chip(33,61.2,52,6.4,"RAG 检索","#5FA9B0",sz=9.3,sub=f"chunks.jsonl · {CHUNKS} 块 · 生产检索包(LSA→bge/OpenAI)")
-chip(88,61.2,52,6.4,"知识图谱","#5FA9B0",sz=9.3,sub="213 实体 / 593 关系(0 悬挂)· Mermaid")
+chip(88,61.2,52,6.4,"知识图谱","#5FA9B0",sz=9.3,sub=f"{ENTITIES} 实体 / {RELATIONS} 关系(0 悬挂)· Mermaid")
 # L4 内容层
 band(37,19,"#DCF0E6","#008060","知识内容层","14 节点 + 深度专题")
 nodes=["00 战略","01 选品","02 建站","03 上架","04 素材","05 营销","06 转化","07 数据","08 履约","09 会员","10 自动化"]
@@ -53,12 +60,13 @@ for i,n in enumerate(["90 AI能力地图","91 合规与风控","92 组织与SOP"
     chip(33+i*12.5,42.8,11.8,4.6,n,"#13294B",sz=7.2,fc="#EAEEF4")
 txt(ax,33,40.0,"深度专题:代理式商务技术栈 · AI-Toolkit技能SOP · UCP接入 · Hydrogen脚手架 · 工具选型 · 全自动运营蓝图",size=7.0,color=d.GREEN,ha="left",bold=True)
 # L5 信息源
-band(17,18,"#E7F0FD","#2D6CDF","信息源层","8 源 · 萃取")
-src=[("数字化中心周报","真实业务·SOP"),("Twitter 书签","行业发力点"),("Shopify 官方文档","平台能力"),("官方账号","@ShopifyDevs/Eng"),
-("GitHub 开源","AI-Toolkit/UCP"),("YouTube ×3","Kevin/Metics/AcH"),("运营社区痛点","r/shopify 同类"),("Accio Work","选品/采购")]
+band(17,18,"#E7F0FD","#2D6CDF","信息源层",f"{INFO_SOURCES} 源 · 萃取")
+src=[("数字化中心周报","真实业务·SOP"),("Twitter 书签","行业发力点"),("Shopify 官方文档","平台能力"),("官方账号","Devs/Eng"),
+("GitHub 开源","AI-Toolkit/UCP"),("YouTube Kevin","入门教程"),("YouTube Metics/AcH","实操视频"),("社区痛点","r/shopify 同类"),
+("inbox 资料包","独立站实操"),("platform wiki","DTC/站外/AI")]
 for i,(t,s) in enumerate(src):
-    cx=33+(i%4)*27.3; cy=24.0 if i<4 else 18.2
-    chip(cx,cy,26,5.2,t,"#9CC0F0",sz=7.4,sub=s)
+    cx=33+(i%5)*21.6; cy=24.0 if i<5 else 18.2
+    chip(cx,cy,20.4,5.2,t,"#9CC0F0",sz=6.8,sub=s)
 # 人审 rail
 box(ax,147,17,11,79.5,fc="#FFF4E8",ec=d.AMBER,lw=2,r=0.2,z=2)
 txt(ax,152.5,91,"人审 /\n合规闸",size=10,color="#9A6A00",bold=True,z=5)

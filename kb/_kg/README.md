@@ -1,7 +1,7 @@
 ---
 title: 知识图谱(_kg)说明
 type: meta
-updated: 2026-06-27
+updated: 2026-06-29
 summary: Shopify AI 全链路经营知识图谱:实体+关系,可视化为 Mermaid,可导入图库做检索/推理。
 ---
 
@@ -10,8 +10,8 @@ summary: Shopify AI 全链路经营知识图谱:实体+关系,可视化为 Merma
 把知识库结构化为**实体 + 关系**,与 [[_rag]] 的文本切块互补:RAG 管"语义召回",KG 管"结构推理/关联追溯"。
 
 ## 文件
-- `entities.json` — 253 个实体。字段:`id, type, label, props`。
-- `relations.json` — 776 条关系。字段:`source, type, target`。
+- `entities.json` — 260 个实体。字段:`id, type, label, props`。
+- `relations.json` — 785 条关系。字段:`source, type, target`。
 - `graph.json` — 实体+关系合集(一次性加载)。
 - `pipeline.mermaid` — 全流程 + 横切层 + 复购回流(可视化)。
 - `capability_map.mermaid` — Shopify 原生能力 → 支撑的流程节点。
