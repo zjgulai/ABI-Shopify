@@ -318,6 +318,37 @@ execution_readiness=[
     {"id":"external-rules","label":"SEO/GEO/社区/广告规则","status":"needs_external_verification","detail":"时效规则执行前需官方或一手材料复核。","requires":["最新官方/平台规则"],"forbidden":["把本地资料包装成官方事实"],"runbook":"kb/91-合规与风控/站外渠道风控SOP.md"},
 ]
 
+configuration_center={
+    "storageKey":"abi.shopify.config.v1",
+    "statuses":[
+        {"id":"deepseek-key","label":"DeepSeek RAG Key","status":"requires_user_input","detail":"页面手动录入;服务器不保存。"},
+        {"id":"shopify-store-domain","label":"Shopify 测试店域名","status":"requires_user_input","detail":"仅保存 name.myshopify.com 格式域名,不保存 token。"},
+        {"id":"t7-preflight","label":"T7 本地前置检查","status":"blocked_auth_preflight_ready","detail":"复制命令到本机终端执行;线上站点不代跑。"},
+        {"id":"shopify-read-write","label":"Shopify 读写","status":"blocked_auth","detail":"未登录、未读取、未写入;需用户现场授权。"},
+    ],
+    "commandTemplates":{
+        "preflight":"python3 kb/tools/t7_test_store_preflight.py --store-domain {store_domain}",
+        "authLogin":"shopify auth login",
+        "readOnlyCheck":"shopify auth whoami",
+    },
+    "approvalTemplates":{
+        "readOnly":"同意在 {store_domain} 测试店执行 T7 只读连接检查。",
+        "controlledWrite":"同意仅在 {store_domain} 测试店,对 {target} 执行本次 mutation: {planned_change};禁止生产店写入和资金动作。",
+    },
+    "forbidden":[
+        "不要在页面输入 Shopify password/token/private key。",
+        "不要把 Shopify token 写入 Git、kb_data.js 或前端静态文件。",
+        "不要从线上服务器执行本机 preflight 或 Shopify auth login。",
+        "不要在未生成 mutation preview 和未逐次人审前写店铺。",
+    ],
+    "officialLinks":[
+        {"label":"Shopify CLI","url":"https://shopify.dev/docs/api/shopify-cli"},
+        {"label":"Development stores","url":"https://shopify.dev/docs/apps/build/dev-dashboard/stores/development-stores"},
+        {"label":"Generated test data","url":"https://shopify.dev/docs/api/development-stores/generated-test-data"},
+        {"label":"Shopify AI Toolkit","url":"https://shopify.dev/docs/apps/build/ai-toolkit"},
+    ],
+}
+
 evidence_items=[
     {"claim":"当前网站采用静态优先单页和 kb_data.js 数据驱动。","source":"kb/site/index.html + kb/_build/build_site_data.py","status":"local_ready","nodes":["90","92"]},
     {"claim":"T7 测试店本地前置包已落地,真实读写仍待测试店授权和人审批准。","source":"kb/10-自动化编排/T7测试店授权前置包.md","status":"blocked_auth_preflight_ready","nodes":["10","91","92"]},
@@ -424,6 +455,7 @@ data={"nodes":nodes,"toolsel":toolsel,"steps":steps,"caps":caps,"roadmap":roadma
       "nodeReadiness":node_readiness,"sopPlaybooks":sop_playbooks,
       "executionReadiness":execution_readiness,"evidenceItems":evidence_items,
       "queryPresets":query_presets,"contentDebt":content_debt,
+      "configurationCenter":configuration_center,
       "chunks":chunks,"stats":{"nodes":len(nodes),"chunks":len(chunks),
       "entities":len(G["entities"]),"relations":len(G["relations"])}}
 out=KB+"site/kb_data.js"

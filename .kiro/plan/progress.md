@@ -1,6 +1,6 @@
 ---
 title: Shopify KB 网站增量设计进度
-updated: 2026-06-28
+updated: 2026-06-30
 ---
 
 # 进度
@@ -39,3 +39,4 @@ updated: 2026-06-28
 - 2026-06-29: 本批重建通过: chunks=631, docs=118, KG entities=260/relations=785, site data=963KB。
 - 2026-06-30: 进入 T7 前置批次,新增 `T7测试店授权前置包.md` 与 `tools/t7_test_store_preflight.py`;边界为本地只读 preflight,不登录 Shopify、不读写店铺、不输出密钥值。
 - 2026-06-30: T7 前置批次重建通过: chunks=640, docs=119, KG entities=260/relations=785, site data=983KB;检索评测 5/5(pass_rate=1.00, top1=0.60, MRR=0.68)。
+- 2026-06-30: T7 网站配置中心批次完成: site data=987KB, chunks=640/docs=119, KG entities=260/relations=785/dangling=0,检索评测 5/5(pass_rate=1.00, top1=0.60, MRR=0.68),Playwright 桌面/移动端配置页 smoke 通过;边界仍为不登录 Shopify、不读写店铺、不保存 Shopify token/password/private key。

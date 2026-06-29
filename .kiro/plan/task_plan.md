@@ -62,3 +62,26 @@ status: active
 - preflight 脚本可运行并清晰输出 `local_pass_auth_required` 或人工动作项。
 - RAG/site 可重建。
 - T7 前置关键词能被本地检索召回。
+
+## T7 配置中心批次
+
+目标:把 DeepSeek Key、Shopify 测试店域名、T7 preflight、授权文本和本地证据台账统一进网站配置页。
+
+范围:
+- 在 `kb/_build/build_site_data.py` 新增 `configurationCenter` 数据契约。
+- 在 `kb/site/index.html` 新增 `#config` 配置与授权中心、导航入口、状态卡、命令/审批文本生成和浏览器本地证据台账。
+- 更新站点 README、T7 前置包、Runbook 和 TODO。
+
+非目标:
+- 不实现 Shopify OAuth callback。
+- 不保存 Shopify token/password/private key。
+- 不从网站直接读写店铺。
+- 不从线上服务器执行本机 preflight。
+- 不把本地配置视为真实授权完成。
+
+验收:
+- 页面能保存测试店域名到当前浏览器并生成 preflight 命令。
+- 页面能生成只读连接和低风险写入审批文本。
+- 页面能维护本地 evidence log,且不上传服务器。
+- RAG/site 可重建,默认检索评测保持 5/5。
+- 桌面和移动端配置页无明显溢出。

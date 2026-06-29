@@ -24,6 +24,8 @@ summary: 在测试店验证 Claude/AI Toolkit/UCP 的读店铺与受控写能力
 - 每次写操作必须有人审批准、可回滚、可复查。
 
 ## 3. 环境准备
+建议先打开网站 `#config` 配置与授权中心,确认测试店域名、人审文本和本地 preflight 输出。配置中心生成的文本只是执行前准备,不代表 Shopify 已授权。
+
 先做本地只读 preflight:
 
 ```bash
