@@ -1,8 +1,8 @@
 ---
 title: ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
 type: plan
-updated: 2026-06-29
-summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 7 组精选视频萃取,T7 已补测试店授权前置包。
+updated: 2026-06-30
+summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 7 组精选视频萃取,T7 已补测试店授权前置包和网站配置中心。
 ---
 
 # 🧭 ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
@@ -16,7 +16,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 | T4 | 检索生产化 | T4a/T4b 已完成;线上启用 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,A/B smoke 通过 pass/top1 无退化;`bge-m3` 在轻量 CPU 上未上线 |
 | T5 | 网站上线 | 已上线到 `platform.shopify.lute-tlz-dddd.top`;服务器不保存 API Key;真实 provider 问答需用户页面录入 Key |
 | T6 | 多源深挖 | 已有 7 组精选内容级/UI 转写级萃取;Ac Hampton `vXmF10ZNmoo` 为页面/章节/采样帧 v0.1,`e7oiWBn7KwU`/`xZjkLrHJheE`/`Y3iXtMjE4bw`/`NX-5ChIZBRQ`/`WkUkzdMnRHo` 为 UI 转写级,`1EgjCxk0-kM`/`aKIHLrdsv8o` 为 Apps 页面说明级 v0.1;Rihab Seb / Learn With Shopify / Emma Grede / Austin Rabin / Code with Chris / 梧桐小讲堂跨频道资料已入库;T6 执行队列、中文社媒入库 SOP 与离线入库工具已落地 |
-| T7 | 接 AI-Toolkit/UCP | 测试店受控写验收 Runbook 与测试店授权前置包已落地;本地 preflight 可运行;真实读写仍待测试店授权与人审批准 |
+| T7 | 接 AI-Toolkit/UCP | 测试店受控写验收 Runbook、测试店授权前置包与网站配置中心已落地;本地 preflight 可运行;真实读写仍待测试店授权与人审批准 |
 
 ## B. 各项执行方案
 **T1 · 图堆叠修复(P0,0.5 天)**
@@ -48,8 +48,8 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 - 验收:高价值视频有内容级或 UI 转写级萃取(非仅标题);新增源进图谱与检索。
 
 **T7 · 接 AI-Toolkit/UCP(P2,1–2 周,用户侧+陪跑)**
-- 已补:新增 `10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md` 与 `10-自动化编排/T7测试店授权前置包.md`,明确测试店、人审批准、回滚、证据台账和本地 preflight。
-- 做法:先运行 `python3 kb/tools/t7_test_store_preflight.py --store-domain your-dev-store.myshopify.com`;再装 `shopify-ai-kb` 插件 + `claude mcp add ... @shopify/dev-mcp` + `shopify auth login`(测试店);跑「读店铺→受控写(人审)」;注册 UCP Agent profile 进 AI 渠道。
+- 已补:新增 `10-自动化编排/AI-Toolkit_UCP测试店受控写验收Runbook.md`、`10-自动化编排/T7测试店授权前置包.md` 和网站 `#config` 配置与授权中心,明确测试店、人审批准、回滚、证据台账、本地 preflight 和页面生成审批文本。
+- 做法:先在网站配置中心保存测试店域名并生成命令,或运行 `python3 kb/tools/t7_test_store_preflight.py --store-domain your-dev-store.myshopify.com`;再装 `shopify-ai-kb` 插件 + `claude mcp add ... @shopify/dev-mcp` + `shopify auth login`(测试店);跑「读店铺→受控写(人审)」;注册 UCP Agent profile 进 AI 渠道。
 - 验收:测试店完成一次 AI 受控上架/改价(人审通过)。
 
 ## C. PRD 核心 · 每节点「主-副工具 × 实现方法」
@@ -87,6 +87,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 - [x] T6 抖音/小红书入库 SOP(待真实帖子正文/清单/截图文字后写具体案例)
 - [x] T7 测试店受控写验收 Runbook
 - [x] T7 测试店授权前置包 + 本地 preflight 脚本
+- [x] T7 网站配置与授权中心(测试店域名、preflight 命令、人审文本、本地证据台账)
 - [ ] T7 接 AI-Toolkit/UCP 测试店真实读写(待授权+人审)
 
 ## F. 风险与对策

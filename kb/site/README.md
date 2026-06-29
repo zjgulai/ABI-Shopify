@@ -3,7 +3,7 @@
 ## 两种打开方式
 
 ### A. 直接看(静态,双击即可)
-双击 `index.html` 即可浏览:Command Center、经营路径选择、技术选型中心、全景图、AI 开店 10 步、全流程节点(点击展开 + 完整文档)、能力地图、SOP 库、工程仓库地图、增长作战室、Agent 工作流库、执行准备度、风控闸、信息源覆盖与筛选、工具包入口、知识库本地检索、下一步路线图与内容债。
+双击 `index.html` 即可浏览:Command Center、经营路径选择、技术选型中心、全景图、AI 开店 10 步、全流程节点(点击展开 + 完整文档)、能力地图、SOP 库、工程仓库地图、增长作战室、Agent 工作流库、配置与授权中心、执行准备度、风控闸、信息源覆盖与筛选、工具包入口、知识库本地检索、下一步路线图与内容债。
 > 此模式下「DeepSeek 问答」使用页面手动录入的 API Key 从浏览器直连 DeepSeek;若浏览器拦截跨域请求,请用 B 模式。
 
 ### B. 完整版(含 RAG 代理,推荐)
@@ -19,6 +19,7 @@ python server.py                                 # 3) 打开 http://localhost:80
 - **Key 不写进任何文件**,部署默认不需要在服务器 `.env` 中配置 `DEEPSEEK_API_KEY`。
 - B 模式下 Key 由页面随单次请求发给本服务端,服务端只用于转发 DeepSeek 请求,不落盘、不写日志。
 - 勾选“记住到本浏览器”时,Key 仅保存在当前浏览器 localStorage;不勾选则只保留在当前页面内存中。
+- Shopify 配置中心只保存测试店域名、审批人、计划变更和证据摘要等非敏感字段到当前浏览器;不要在其中写入 Shopify token、password、private key。
 
 ## 文件
 - `index.html` 单文件前端 · `kb_data.js` 站点数据(由 `../_build/build_site_data.py` 生成)
@@ -32,6 +33,7 @@ python server.py                                 # 3) 打开 http://localhost:80
 - 工程仓库地图:基于 GitHub P0 官方仓库结构快照,展示 Theme、Hydrogen、App Template、UI Extension、CLI/MCP 的适用场景、输出和边界。
 - 增长作战室:把 SEO/GEO、Meta/Google Ads、Reddit、YouTube/PR、KOL/UGC、Affiliate/Creator Store Front、Deal/大促统一到渠道角色、承接、归因指标和复盘节奏。
 - Agent 工作流库:市场洞察、内容素材、红人联盟、SEO/GEO、广告诊断、经营复盘 6 类 Agent,并展示任务模板和移交物。
+- 配置与授权中心:统一录入测试店域名,生成 T7 preflight 命令、CLI 登录指引、只读/受控写审批文本,并维护浏览器本地证据台账;页面不登录 Shopify、不读写店铺、不保存 Shopify 凭据。
 - 执行准备度:T6 多源入库、DeepSeek 问答、T7 测试店本地前置检查、测试店只读、T7 受控写、外部规则核验等能力状态。
 - 风控与人审闸:真实店铺写入、Admin API/MCP token、Checkout/UI Extension、社区发帖、UGC 授权、广告预算和折扣佣金。
 - 信息源可信度与覆盖:10 信息源 × 14 节点覆盖矩阵,区分本地只读快照、官方资料、本地资料和待外部核验,支持按验证状态筛选证据卡。
@@ -54,3 +56,4 @@ python server.py                                 # 3) 打开 http://localhost:80
 ## T7 前置补充
 - `../10-自动化编排/T7测试店授权前置包.md`:测试店创建、CLI/AI Toolkit/Dev MCP 本地前置、人审文本和低风险测试写入建议。
 - `../tools/t7_test_store_preflight.py`:本地只读检查脚本,不登录 Shopify、不访问网络、不读取或写入店铺、不输出密钥值。
+- 网站 `#config` 配置与授权中心:把测试店域名、preflight 命令、人审文本和本地证据台账统一到页面内;真实 `shopify auth login`、测试店读取和 mutation 执行仍必须由用户现场确认。

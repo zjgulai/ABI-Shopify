@@ -51,7 +51,7 @@ nav .wrap{display:flex;align-items:center;gap:20px;height:62px}
 	.snap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 	.snap{border:1px solid var(--line);border-radius:8px;padding:11px;background:#fbfdff}
 	.snap b{font-size:13px}.snap p{font-size:12px;color:var(--grey);margin-top:4px}
-	.status-pill.local_ready,.status-pill.ready{background:var(--mint);color:var(--green)}
+	.status-pill.local_ready,.status-pill.ready,.status-pill.local_browser_saved{background:var(--mint);color:var(--green)}
 	.status-pill.requires_user_input,.status-pill.manual_review_required,.status-pill.partial,.status-pill.local_material_needs_external_verification{background:var(--amberbg);color:#8a5d00}
 	.status-pill.blocked_auth,.status-pill.needs_external_verification,.status-pill.content_debt{background:var(--dangerbg);color:var(--danger)}
 	.status-pill.blocked_auth_preflight_ready{background:#fff4dd;color:#8a5a00}
@@ -200,6 +200,25 @@ h2.t{font-size:30px;font-weight:820;margin:8px 0 6px;letter-spacing:-.3px}
 #keybox input{flex:1;border:1px solid var(--line);border-radius:8px;padding:9px 12px}
 #keybox label{font-size:12.5px;color:var(--grey);display:flex;align-items:center;gap:5px}
 #keybox label input{flex:0;width:auto}
+/* configuration center */
+.config-summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.config-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:16px;align-items:start}
+.config-card,.config-panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--sh2)}
+.config-card h3,.config-panel h3{font-size:15px;margin:8px 0 6px}
+.config-card p,.config-panel p{font-size:12.5px;color:#3a4a60}
+.config-form{display:grid;gap:10px}
+.config-form label{font-size:12px;font-weight:800;color:var(--ink)}
+.config-form input,.config-form textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px}
+.config-form textarea{min-height:74px;resize:vertical}
+.config-check{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:#3a4a60}
+.config-check input{width:auto;flex:0;margin-top:2px}
+.command-box{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0b1f3a;color:#e9f4ff;border-radius:8px;padding:10px;font-size:12px;white-space:pre-wrap;overflow:auto}
+.config-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.evidence-log{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px;background:#fff}
+.evidence-log th,.evidence-log td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.evidence-log th{background:#f7faff}
+.link-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.link-list a{font-size:12px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:#fbfdff}
 /* roadmap */
 .road{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .ph{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--sh2);position:relative}
@@ -225,9 +244,9 @@ footer a{color:#9ad9bf}
 #modal .x{float:right;cursor:pointer;font-size:22px;color:var(--grey)}
 #lightbox{position:fixed;inset:0;background:rgba(11,31,58,.88);display:none;z-index:120;cursor:zoom-out}
 #lightbox img{max-width:96%;max-height:96%;margin:2% auto;display:block;border-radius:8px}
-	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout{grid-template-columns:1fr}}
+	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid,.config-summary-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout,.config-layout{grid-template-columns:1fr}}
 	@media(max-width:860px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.tech-grid,.sop-grid,.debt-grid,.evidence-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}nav .links{display:none}.menu-btn{display:block}nav .btn{display:none}}
-	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
+	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid,.config-summary-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
 </style>
 </head>
 <body>
@@ -235,7 +254,7 @@ footer a{color:#9ad9bf}
   <div class="logo"><span class="dot"></span> ABI 智能化独立站</div>
   <div class="links">
     <a href="#command">作战台</a><a href="#journeys">路径</a><a href="#tech">技术</a><a href="#flow">节点</a><a href="#sop">SOP</a>
-    <a href="#growth">增长</a><a href="#agents">Agent</a><a href="#readiness">准备度</a><a href="#evidence">证据</a><a href="#chat">问答</a>
+    <a href="#growth">增长</a><a href="#agents">Agent</a><a href="#config">配置</a><a href="#readiness">准备度</a><a href="#evidence">证据</a><a href="#chat">问答</a>
   </div>
   <button class="menu-btn" aria-label="打开导航" onclick="toggleMenu()">≡</button>
   <button class="btn" onclick="document.getElementById('chat').scrollIntoView()">DeepSeek 问答</button>
@@ -244,7 +263,7 @@ footer a{color:#9ad9bf}
   <a href="#command" onclick="toggleMenu(false)">作战台</a><a href="#journeys" onclick="toggleMenu(false)">路径</a>
   <a href="#tech" onclick="toggleMenu(false)">技术选型</a><a href="#flow" onclick="toggleMenu(false)">节点</a>
   <a href="#sop" onclick="toggleMenu(false)">SOP</a><a href="#growth" onclick="toggleMenu(false)">增长</a>
-  <a href="#agents" onclick="toggleMenu(false)">Agent</a><a href="#readiness" onclick="toggleMenu(false)">准备度</a>
+  <a href="#agents" onclick="toggleMenu(false)">Agent</a><a href="#config" onclick="toggleMenu(false)">配置</a><a href="#readiness" onclick="toggleMenu(false)">准备度</a>
   <a href="#evidence" onclick="toggleMenu(false)">证据</a><a href="#chat" onclick="toggleMenu(false)">问答</a>
 </div></div>
 
@@ -258,6 +277,7 @@ footer a{color:#9ad9bf}
         <button class="btn" onclick="document.getElementById('journeys').scrollIntoView()">选择经营路径</button>
         <button class="btn ghost" onclick="document.getElementById('tech').scrollIntoView()">查看技术选型</button>
         <button class="btn ghost" onclick="document.getElementById('readiness').scrollIntoView()">检查执行准备度</button>
+        <button class="btn ghost" onclick="document.getElementById('config').scrollIntoView()">配置授权中心</button>
       </div>
       <div class="stats" id="stats"></div>
     </div>
@@ -372,6 +392,54 @@ footer a{color:#9ad9bf}
 	  <div class="gate-grid" id="gateGrid"></div>
 	</div></section>
 
+<section id="config" class="alt"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Configuration Center</div><h2 class="t">配置与授权中心</h2>
+  <p class="lead">统一管理 DeepSeek Key、Shopify 测试店域名、T7 前置检查、人审文本和证据台账。这里不登录 Shopify,不保存 Shopify token,不直接写店铺。</p></div>
+  <span class="mini-link" onclick="document.getElementById('chat').scrollIntoView()">管理 DeepSeek Key →</span></div>
+  <div class="config-summary-grid" id="configSummary"></div>
+  <div class="config-layout">
+    <div class="config-panel">
+      <h3>本地配置</h3>
+      <div class="config-form">
+        <label for="shopifyStoreDomain">Shopify 测试店域名</label>
+        <input id="shopifyStoreDomain" autocomplete="off" placeholder="abi-t7-smoke-20260630.myshopify.com"/>
+        <label for="approvalOwner">审批人</label>
+        <input id="approvalOwner" autocomplete="off" placeholder="例如: Pray"/>
+        <label for="mutationTarget">低风险写入目标</label>
+        <input id="mutationTarget" autocomplete="off" placeholder="例如: 测试商品 gid 或 handle"/>
+        <label for="plannedChange">计划变更</label>
+        <textarea id="plannedChange" placeholder="例如: 给测试商品追加 tag ai-toolkit-controlled-write-smoke"></textarea>
+        <label class="config-check"><input id="confirmDevStore" type="checkbox"/> 我确认目标是测试店 / development store。</label>
+        <label class="config-check"><input id="confirmNoSecrets" type="checkbox"/> 我不会在此页面输入 Shopify token/password/private key。</label>
+        <label class="config-check"><input id="confirmManualLogin" type="checkbox"/> 我确认真实 shopify auth login 只由我现场执行。</label>
+      </div>
+      <div class="config-actions">
+        <button class="btn" onclick="saveShopifyConfig()">保存到本浏览器</button>
+        <button class="btn ghost" onclick="clearShopifyConfig()">清除</button>
+        <button class="btn ghost" onclick="renderConfigOutputs()">生成文本</button>
+      </div>
+    </div>
+    <div class="config-panel">
+      <h3>命令与审批文本</h3>
+      <p>复制到本机终端或审批记录中使用。线上网站不代跑这些命令。</p>
+      <div id="configOutputs"></div>
+    </div>
+  </div>
+  <div class="config-panel" style="margin-top:16px">
+    <h3>本地证据台账</h3>
+    <p>只写入当前浏览器 localStorage,不上传服务器,不提交 Git。不要在摘要中写 token、password、private key。</p>
+    <div class="config-form">
+      <label for="evidenceNote">新增证据摘要</label>
+      <textarea id="evidenceNote" placeholder="例如: preflight 输出 status=local_pass_auth_required,未登录 Shopify,未读写店铺。"></textarea>
+    </div>
+    <div class="config-actions">
+      <button class="btn" onclick="addConfigEvidence()">追加证据</button>
+      <button class="btn ghost" onclick="clearConfigEvidence()">清空本地台账</button>
+    </div>
+    <div style="overflow:auto"><table class="evidence-log" id="configEvidenceLog"></table></div>
+  </div>
+</div></section>
+
 <section id="readiness"><div class="wrap">
   <div class="section-head"><div><div class="eyebrow">Execution Readiness</div><h2 class="t">执行准备度</h2>
   <p class="lead">这里是授权与证据状态台,不是生产执行台。真实店铺、测试店写入、预算、退款和外部发布都必须先过人审。</p></div>
@@ -439,7 +507,7 @@ footer a{color:#9ad9bf}
 <script>
 const K=window.KB;const GMAP={"00":"g-b","01":"g-b","02":"g-g","03":"g-g","04":"g-g","05":"g-i","06":"g-i","07":"g-t","08":"g-t","09":"g-t","10":"g-a","90":"g-n","91":"g-n","92":"g-n"};
 const HDC={"g-b":"#2D6CDF","g-g":"#008060","g-i":"#5C6AC4","g-t":"#0E7C86","g-a":"#C98A00","g-n":"#13294B"};
-const STATUS_LABELS={local_ready:'本地可用',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',blocked_auth_preflight_ready:'前置已就绪',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
+const STATUS_LABELS={local_ready:'本地可用',local_browser_saved:'本浏览器已保存',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',blocked_auth_preflight_ready:'前置已就绪',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function statusPill(s){return `<span class="status-pill ${esc(s)}">${esc(STATUS_LABELS[s]||s||'—')}</span>`}
 function listItems(items){return (items||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>—</li>'}
@@ -548,6 +616,117 @@ function openMD(i){document.getElementById('mbody').innerHTML=md(K.nodes[i].md);
 function openDoc(i,j){document.getElementById('mbody').innerHTML=md(K.nodes[i].docs[j].md);document.getElementById('modal').style.display='block';window.scrollTo(0,0)}
 function closeM(){document.getElementById('modal').style.display='none'}
 function lb(src){document.getElementById('lbimg').src=src;document.getElementById('lightbox').style.display='block'}
+// ---- configuration center ----
+const CONFIG=K.configurationCenter||{};
+const CFG_KEY=CONFIG.storageKey||'abi.shopify.config.v1';
+const EVIDENCE_KEY=CFG_KEY+'.evidence';
+let CONFIG_COPY=[];
+function loadShopifyConfig(){try{return JSON.parse(localStorage.getItem(CFG_KEY)||'{}')}catch(e){return {}}}
+function validShopifyDomain(s){return /^[a-z0-9][a-z0-9-]*\.myshopify\.com$/.test((s||'').trim().toLowerCase())}
+function containsSecretLikeText(s){return /(shpat_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)/.test(s||'')}
+function saveShopifyConfig(){
+  const storeDomain=document.getElementById('shopifyStoreDomain').value.trim().toLowerCase().replace(/^https?:\/\//,'').replace(/\/$/,'');
+  if(storeDomain&&!validShopifyDomain(storeDomain)){bubble('a','测试店域名格式应为 name.myshopify.com。');return}
+  const cfg={
+    storeDomain,
+    approvalOwner:document.getElementById('approvalOwner').value.trim(),
+    mutationTarget:document.getElementById('mutationTarget').value.trim(),
+    plannedChange:document.getElementById('plannedChange').value.trim(),
+    confirmDevStore:document.getElementById('confirmDevStore').checked,
+    confirmNoSecrets:document.getElementById('confirmNoSecrets').checked,
+    confirmManualLogin:document.getElementById('confirmManualLogin').checked,
+    savedAt:new Date().toISOString()
+  };
+  localStorage.setItem(CFG_KEY,JSON.stringify(cfg));
+  renderConfigCenter();
+  bubble('a','Shopify 配置已保存到本浏览器;未保存 Shopify token/password/private key。');
+}
+function clearShopifyConfig(){
+  localStorage.removeItem(CFG_KEY);
+  ['shopifyStoreDomain','approvalOwner','mutationTarget','plannedChange'].forEach(id=>document.getElementById(id).value='');
+  ['confirmDevStore','confirmNoSecrets','confirmManualLogin'].forEach(id=>document.getElementById(id).checked=false);
+  renderConfigCenter();
+}
+function fillTemplate(t,cfg){
+  return (t||'').replaceAll('{store_domain}',cfg.storeDomain||'your-dev-store.myshopify.com')
+    .replaceAll('{target}',cfg.mutationTarget||'{target}')
+    .replaceAll('{planned_change}',cfg.plannedChange||'{planned_change}');
+}
+function commandBlock(label,text){
+  const idx=CONFIG_COPY.push(text)-1;
+  return `<p style="margin-top:10px"><b>${esc(label)}</b></p><div class="command-box">${esc(text)}</div><div class="config-actions"><button class="btn ghost small" onclick="copyConfigText(${idx})">复制</button></div>`;
+}
+function copyConfigText(idx){
+  const text=CONFIG_COPY[idx]||'';
+  if(navigator.clipboard&&text){navigator.clipboard.writeText(text).then(()=>bubble('a','已复制。')).catch(()=>bubble('a','当前浏览器不允许直接复制,请手动选中文本。'))}
+  else{bubble('a','当前浏览器不允许直接复制,请手动选中文本。')}
+}
+function renderConfigOutputs(){
+  const cfg=loadShopifyConfig();
+  const tpl=CONFIG.commandTemplates||{};
+  const approvals=CONFIG.approvalTemplates||{};
+  const preflight=fillTemplate(tpl.preflight,cfg);
+  const authLogin=tpl.authLogin||'shopify auth login';
+  const readOnlyCheck=tpl.readOnlyCheck||'shopify auth whoami';
+  const readOnly=fillTemplate(approvals.readOnly,cfg);
+  const controlledWrite=fillTemplate(approvals.controlledWrite,cfg);
+  CONFIG_COPY=[];
+  const links=(CONFIG.officialLinks||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noreferrer">${esc(x.label)}</a>`).join('');
+  document.getElementById('configOutputs').innerHTML=[
+    commandBlock('本地 preflight',preflight),
+    commandBlock('Shopify CLI 登录指引',authLogin),
+    commandBlock('只读连接核对',readOnlyCheck),
+    commandBlock('只读连接审批文本',readOnly),
+    commandBlock('低风险写入审批文本',controlledWrite),
+    `<p style="margin-top:10px"><b>禁止项</b></p><ul>${listItems(CONFIG.forbidden||[])}</ul>`,
+    `<p style="margin-top:10px"><b>官方资料入口</b></p><div class="link-list">${links}</div>`
+  ].join('');
+}
+function renderConfigSummary(){
+  const cfg=loadShopifyConfig();
+  const statuses=(CONFIG.statuses||[]).map(x=>({...x}));
+  const keyItem=statuses.find(x=>x.id==='deepseek-key');
+  if(keyItem&&localStorage.getItem('dskey')){keyItem.status='local_browser_saved';keyItem.detail='DeepSeek Key 已保存到当前浏览器;服务器不保存。'}
+  const domainItem=statuses.find(x=>x.id==='shopify-store-domain');
+  if(domainItem&&validShopifyDomain(cfg.storeDomain)){
+    domainItem.status='local_ready';
+    domainItem.detail='测试店域名格式已保存到本浏览器;仍未登录 Shopify。';
+  }
+  document.getElementById('configSummary').innerHTML=statuses.map(s=>`<div class="config-card">${statusPill(s.status)}<h3>${esc(s.label)}</h3><p>${esc(s.detail)}</p></div>`).join('');
+}
+function renderConfigEvidence(){
+  let rows=[];try{rows=JSON.parse(localStorage.getItem(EVIDENCE_KEY)||'[]')}catch(e){}
+  document.getElementById('configEvidenceLog').innerHTML='<tr><th>时间</th><th>店铺</th><th>动作</th><th>状态</th><th>边界</th><th>摘要</th></tr>'+
+    rows.map(r=>`<tr><td>${esc(r.time)}</td><td>${esc(r.storeDomain)}</td><td>${esc(r.action)}</td><td>${esc(r.status)}</td><td>${esc(r.boundary)}</td><td>${esc(r.note)}</td></tr>`).join('');
+}
+function addConfigEvidence(){
+  const cfg=loadShopifyConfig();
+  const note=document.getElementById('evidenceNote').value.trim();
+  if(!note){bubble('a','请先填写证据摘要。');return}
+  if(containsSecretLikeText(note)){bubble('a','证据摘要看起来包含真实密钥格式,没有写入本地台账。');return}
+  let rows=[];try{rows=JSON.parse(localStorage.getItem(EVIDENCE_KEY)||'[]')}catch(e){}
+  rows.unshift({time:new Date().toISOString(),storeDomain:cfg.storeDomain||'',action:'manual_evidence_note',status:'local_note',boundary:'no Shopify login/read/write by this page',note});
+  localStorage.setItem(EVIDENCE_KEY,JSON.stringify(rows.slice(0,20)));
+  document.getElementById('evidenceNote').value='';
+  renderConfigEvidence();
+}
+function clearConfigEvidence(){localStorage.removeItem(EVIDENCE_KEY);renderConfigEvidence()}
+function renderConfigCenter(){
+  const cfg=loadShopifyConfig();
+  if(document.getElementById('shopifyStoreDomain')){
+    document.getElementById('shopifyStoreDomain').value=cfg.storeDomain||'';
+    document.getElementById('approvalOwner').value=cfg.approvalOwner||'';
+    document.getElementById('mutationTarget').value=cfg.mutationTarget||'';
+    document.getElementById('plannedChange').value=cfg.plannedChange||'';
+    document.getElementById('confirmDevStore').checked=!!cfg.confirmDevStore;
+    document.getElementById('confirmNoSecrets').checked=!!cfg.confirmNoSecrets;
+    document.getElementById('confirmManualLogin').checked=!!cfg.confirmManualLogin;
+  }
+  renderConfigSummary();
+  renderConfigOutputs();
+  renderConfigEvidence();
+}
+renderConfigCenter();
 // ---- retrieval (client-side) ----
 function toks(s){s=(s||'').toLowerCase();let o=(s.match(/[a-z0-9]+/g)||[]);const h=s.match(/[一-鿿]/g)||[];o=o.concat(h);for(let i=0;i<h.length-1;i++)o.push(h[i]+h[i+1]);return o}
 const DF={};K.chunks.forEach(c=>{const seen=new Set(toks(c.text+' '+c.doc));seen.forEach(t=>DF[t]=(DF[t]||0)+1)});
@@ -568,8 +747,9 @@ function setNote(){const n=document.getElementById('cnote');
 function pageKey(){return document.getElementById('dskey').value.trim()||localStorage.getItem('dskey')||''}
 function saveKey(){const key=document.getElementById('dskey').value.trim();if(!key){bubble('a','请先填入 DeepSeek API Key。');return}
   if(document.getElementById('rememberKey').checked){localStorage.setItem('dskey',key);bubble('a','已保存到本浏览器。')}
-  else{localStorage.removeItem('dskey');bubble('a','已用于当前页面,未保存到本浏览器。')}}
-function clearKey(){localStorage.removeItem('dskey');document.getElementById('dskey').value='';document.getElementById('rememberKey').checked=false;bubble('a','已清除本浏览器保存的 Key。')}
+  else{localStorage.removeItem('dskey');bubble('a','已用于当前页面,未保存到本浏览器。')}
+  renderConfigSummary()}
+function clearKey(){localStorage.removeItem('dskey');document.getElementById('dskey').value='';document.getElementById('rememberKey').checked=false;renderConfigSummary();bubble('a','已清除本浏览器保存的 Key。')}
 const savedKey=localStorage.getItem('dskey');if(savedKey){document.getElementById('dskey').value=savedKey;document.getElementById('rememberKey').checked=true}
 function bubble(role,txt,cites){const l=document.getElementById('chatlog');const d=document.createElement('div');d.className='msg '+role;d.textContent=txt;if(cites){const c=document.createElement('div');c.className='cite';c.textContent='来源:'+cites;d.appendChild(c)}l.appendChild(d);l.scrollTop=l.scrollHeight;return d}
 async function send(){const inp=document.getElementById('cq');const q=inp.value.trim();if(!q)return;inp.value='';bubble('u',q);
