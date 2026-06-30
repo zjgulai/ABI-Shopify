@@ -61,13 +61,13 @@ with open(os.path.join(OUT,"chunks.jsonl"),"w",encoding="utf-8") as f:
 
 # stats
 docs=len(set(c["source_file"] for c in allc))
-import statistics
 lens=[c["char_len"] for c in allc]
+avg_len=sum(lens)//len(lens) if lens else 0
 stages=sorted(set(c["stage"] for c in allc if c["stage"]))
 readme=f"""---
 title: RAG 切块层说明
 type: meta
-updated: 2026-06-25
+updated: 2026-06-30
 summary: 知识库的 RAG 就绪切块。chunks.jsonl 每行一个块,含 stage/tags/sources/summary 元数据,可直接做向量化与按节点路由。
 ---
 
@@ -77,18 +77,15 @@ summary: 知识库的 RAG 就绪切块。chunks.jsonl 每行一个块,含 stage/
 - 切块粒度:按 Markdown 的 `## 一级小节`,每块尽量自洽。
 - 字段:`id, doc_title, section, stage, layer, tags[], sources[], summary, source_file, text, char_len`。
 - 用法:对 `text` 做 embedding;用 `stage/tags/sources` 做过滤与按节点路由;`summary` 可作卡片/重排序信号。
-- 平均块长 ≈ {int(statistics.mean(lens))} 字符(min {min(lens)} / max {max(lens)})。
+- 平均块长 ≈ {avg_len} 字符(min {min(lens)} / max {max(lens)})。
 
 > 重建命令:见 `_build/build_rag.py`(本仓库脚本,解析 frontmatter + 按小节切块)。
 """
 open(os.path.join(OUT,"README.md"),"w",encoding="utf-8").write(readme)
 
 print("chunks:",len(allc),"| docs:",docs)
-print("avg_len:",int(statistics.mean(lens)),"min:",min(lens),"max:",max(lens))
+print("avg_len:",avg_len,"min:",min(lens),"max:",max(lens))
 print("stages covered:",len(stages))
-# sample
-print("\nSAMPLE CHUNK:")
-print(json.dumps({k:(v[:90] if k=='text' else v) for k,v in allc[12].items()},ensure_ascii=False,indent=1))
 # validate jsonl
 ok=sum(1 for _ in open(os.path.join(OUT,"chunks.jsonl"),encoding="utf-8"))
 print("\njsonl lines:",ok,"= chunks:",ok==len(allc))

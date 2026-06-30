@@ -1,0 +1,370 @@
+{
+  "keyword_sheet": "5.关键词库",
+  "keyword_rows": 801,
+  "source_sha256": "6a39b95bb34d315b315c18facec56494f745a29dcfa6d768cd05412b6b80932a",
+  "source_sha256_12": "6a39b95bb34d",
+  "field_count": 42,
+  "row_layout_summary": {
+    "rich_top_asin_col33": 218,
+    "compact_metric_col6_top_asin_col25": 228,
+    "compact_type_col6_top_asin_col25": 355
+  },
+  "traffic_type_summary": [
+    {
+      "traffic_word_type": "自然搜索词",
+      "keyword_count": 389
+    },
+    {
+      "traffic_word_type": "SP广告词",
+      "keyword_count": 262
+    },
+    {
+      "traffic_word_type": "视频广告词",
+      "keyword_count": 242
+    },
+    {
+      "traffic_word_type": "品牌广告词",
+      "keyword_count": 217
+    },
+    {
+      "traffic_word_type": "HR推荐词",
+      "keyword_count": 89
+    }
+  ],
+  "keyword_tier_summary": {
+    "mid": 80,
+    "head": 12,
+    "long_tail": 709
+  },
+  "missing_core_field_counts": {
+    "traffic_word_type_raw": 228,
+    "ppc_bid": 43,
+    "monthly_purchase_volume": 3,
+    "monthly_search_volume": 1
+  },
+  "duplicate_keyword_count": 155,
+  "top_by_monthly_search_volume": [
+    {
+      "keyword_asset_id": "kw_0007",
+      "keyword": "battery charger",
+      "monthly_search_volume": 213615,
+      "monthly_purchase_volume": 7113,
+      "traffic_word_type_raw": "自然搜索词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0014",
+      "keyword": "air compressor",
+      "monthly_search_volume": 211547,
+      "monthly_purchase_volume": 2771,
+      "traffic_word_type_raw": "自然搜索词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0010",
+      "keyword": "jump starter",
+      "monthly_search_volume": 170466,
+      "monthly_purchase_volume": 5011,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0002",
+      "keyword": "car battery charger",
+      "monthly_search_volume": 146343,
+      "monthly_purchase_volume": 9219,
+      "traffic_word_type_raw": "自然搜索词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0008",
+      "keyword": "battery jumper starter portable",
+      "monthly_search_volume": 144059,
+      "monthly_purchase_volume": 5301,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0338",
+      "keyword": "travel accessories",
+      "monthly_search_volume": 136525,
+      "monthly_purchase_volume": 232,
+      "traffic_word_type_raw": "自然搜索词",
+      "row_layout": "compact_type_col6_top_asin_col25"
+    },
+    {
+      "keyword_asset_id": "kw_0011",
+      "keyword": "car battery jump starter",
+      "monthly_search_volume": 119585,
+      "monthly_purchase_volume": 7055,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0232",
+      "keyword": "quick connect jumper cables",
+      "monthly_search_volume": 95525,
+      "monthly_purchase_volume": 334,
+      "traffic_word_type_raw": "",
+      "row_layout": "compact_metric_col6_top_asin_col25"
+    },
+    {
+      "keyword_asset_id": "kw_0251",
+      "keyword": "car battery",
+      "monthly_search_volume": 95525,
+      "monthly_purchase_volume": 334,
+      "traffic_word_type_raw": "",
+      "row_layout": "compact_metric_col6_top_asin_col25"
+    },
+    {
+      "keyword_asset_id": "kw_0013",
+      "keyword": "car jumper starter portable",
+      "monthly_search_volume": 85863,
+      "monthly_purchase_volume": 3443,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0452",
+      "keyword": "camping accessories",
+      "monthly_search_volume": 71236,
+      "monthly_purchase_volume": 163,
+      "traffic_word_type_raw": "自然搜索词",
+      "row_layout": "compact_type_col6_top_asin_col25"
+    },
+    {
+      "keyword_asset_id": "kw_0031",
+      "keyword": "jump box",
+      "monthly_search_volume": 67088,
+      "monthly_purchase_volume": 1663,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0017",
+      "keyword": "jump start battery pack",
+      "monthly_search_volume": 65629,
+      "monthly_purchase_volume": 6037,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0004",
+      "keyword": "portable air pump for car tires",
+      "monthly_search_volume": 61608,
+      "monthly_purchase_volume": 6271,
+      "traffic_word_type_raw": "SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0009",
+      "keyword": "booster pack jump starter",
+      "monthly_search_volume": 56130,
+      "monthly_purchase_volume": 5298,
+      "traffic_word_type_raw": "自然搜索词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0005",
+      "keyword": "portable car jump starter",
+      "monthly_search_volume": 51703,
+      "monthly_purchase_volume": 2166,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0003",
+      "keyword": "jumper cables with battery pack",
+      "monthly_search_volume": 50017,
+      "monthly_purchase_volume": 6667,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0006",
+      "keyword": "trickle charger for car battery 12v",
+      "monthly_search_volume": 50009,
+      "monthly_purchase_volume": 7546,
+      "traffic_word_type_raw": "SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0018",
+      "keyword": "trickle charger",
+      "monthly_search_volume": 43244,
+      "monthly_purchase_volume": 2914,
+      "traffic_word_type_raw": "SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0029",
+      "keyword": "car jump starter",
+      "monthly_search_volume": 42665,
+      "monthly_purchase_volume": 1681,
+      "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+      "row_layout": "rich_top_asin_col33"
+    }
+  ],
+  "top_by_monthly_purchase_volume": [
+    {
+      "keyword_asset_id": "kw_0002",
+      "keyword": "car battery charger",
+      "monthly_search_volume": 146343,
+      "monthly_purchase_volume": 9219,
+      "purchase_rate": 0.063,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0006",
+      "keyword": "trickle charger for car battery 12v",
+      "monthly_search_volume": 50009,
+      "monthly_purchase_volume": 7546,
+      "purchase_rate": 0.1509,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0007",
+      "keyword": "battery charger",
+      "monthly_search_volume": 213615,
+      "monthly_purchase_volume": 7113,
+      "purchase_rate": 0.0333,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0011",
+      "keyword": "car battery jump starter",
+      "monthly_search_volume": 119585,
+      "monthly_purchase_volume": 7055,
+      "purchase_rate": 0.059,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0003",
+      "keyword": "jumper cables with battery pack",
+      "monthly_search_volume": 50017,
+      "monthly_purchase_volume": 6667,
+      "purchase_rate": 0.1334,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0004",
+      "keyword": "portable air pump for car tires",
+      "monthly_search_volume": 61608,
+      "monthly_purchase_volume": 6271,
+      "purchase_rate": 0.1018,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0017",
+      "keyword": "jump start battery pack",
+      "monthly_search_volume": 65629,
+      "monthly_purchase_volume": 6037,
+      "purchase_rate": 0.092,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0008",
+      "keyword": "battery jumper starter portable",
+      "monthly_search_volume": 144059,
+      "monthly_purchase_volume": 5301,
+      "purchase_rate": 0.0368,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0009",
+      "keyword": "booster pack jump starter",
+      "monthly_search_volume": 56130,
+      "monthly_purchase_volume": 5298,
+      "purchase_rate": 0.0944,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0010",
+      "keyword": "jump starter",
+      "monthly_search_volume": 170466,
+      "monthly_purchase_volume": 5011,
+      "purchase_rate": 0.0294,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0001",
+      "keyword": "portable jump starter for car",
+      "monthly_search_volume": 34699,
+      "monthly_purchase_volume": 3792,
+      "purchase_rate": 0.1093,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0013",
+      "keyword": "car jumper starter portable",
+      "monthly_search_volume": 85863,
+      "monthly_purchase_volume": 3443,
+      "purchase_rate": 0.0401,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0018",
+      "keyword": "trickle charger",
+      "monthly_search_volume": 43244,
+      "monthly_purchase_volume": 2914,
+      "purchase_rate": 0.0674,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0020",
+      "keyword": "car battery charger portable",
+      "monthly_search_volume": 22877,
+      "monthly_purchase_volume": 2859,
+      "purchase_rate": 0.125,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0014",
+      "keyword": "air compressor",
+      "monthly_search_volume": 211547,
+      "monthly_purchase_volume": 2771,
+      "purchase_rate": 0.0131,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0021",
+      "keyword": "car jumper",
+      "monthly_search_volume": 17992,
+      "monthly_purchase_volume": 2425,
+      "purchase_rate": 0.1348,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0005",
+      "keyword": "portable car jump starter",
+      "monthly_search_volume": 51703,
+      "monthly_purchase_volume": 2166,
+      "purchase_rate": 0.0419,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0019",
+      "keyword": "car air compressor",
+      "monthly_search_volume": 15179,
+      "monthly_purchase_volume": 2088,
+      "purchase_rate": 0.1376,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0025",
+      "keyword": "portable car battery charger",
+      "monthly_search_volume": 15323,
+      "monthly_purchase_volume": 1829,
+      "purchase_rate": 0.1194,
+      "row_layout": "rich_top_asin_col33"
+    },
+    {
+      "keyword_asset_id": "kw_0029",
+      "keyword": "car jump starter",
+      "monthly_search_volume": 42665,
+      "monthly_purchase_volume": 1681,
+      "purchase_rate": 0.0394,
+      "row_layout": "rich_top_asin_col33"
+    }
+  ]
+}

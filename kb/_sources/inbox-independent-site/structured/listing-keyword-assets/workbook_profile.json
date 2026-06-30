@@ -1,0 +1,628 @@
+{
+  "created_at": "2026-06-30T09:09:47.359008+00:00",
+  "source_file": "kb/_sources/inbox-independent-site/originals/listing优化模板.xlsx",
+  "source_id": "inbox:S05",
+  "source_sha256": "6a39b95bb34d315b315c18facec56494f745a29dcfa6d768cd05412b6b80932a",
+  "source_sha256_12": "6a39b95bb34d",
+  "file_size_bytes": 91735884,
+  "sheet_count": 20,
+  "sheet_inventory": [
+    {
+      "sheet_name": "链接框架",
+      "max_row": 57,
+      "max_column": 10,
+      "used_row_count": 57,
+      "used_column_count": 9,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "1.竞品库",
+      "max_row": 101,
+      "max_column": 49,
+      "used_row_count": 101,
+      "used_column_count": 49,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "2.卖点库",
+      "max_row": 54,
+      "max_column": 13,
+      "used_row_count": 43,
+      "used_column_count": 2,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "4.竞品卖点汇总分析",
+      "max_row": 46,
+      "max_column": 11,
+      "used_row_count": 46,
+      "used_column_count": 11,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "3.评价分析",
+      "max_row": 108,
+      "max_column": 3,
+      "used_row_count": 108,
+      "used_column_count": 3,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "4.竞品QA分析",
+      "max_row": 15,
+      "max_column": 7,
+      "used_row_count": 15,
+      "used_column_count": 7,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "5.文案",
+      "max_row": 1,
+      "max_column": 1,
+      "used_row_count": 0,
+      "used_column_count": 0,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "5.自己卖点框架",
+      "max_row": 16,
+      "max_column": 27,
+      "used_row_count": 16,
+      "used_column_count": 27,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "5点",
+      "max_row": 9,
+      "max_column": 15,
+      "used_row_count": 9,
+      "used_column_count": 15,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "6.作图框架",
+      "max_row": 27,
+      "max_column": 8,
+      "used_row_count": 26,
+      "used_column_count": 7,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "3.竞品图库",
+      "max_row": 13,
+      "max_column": 49,
+      "used_row_count": 13,
+      "used_column_count": 49,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "7.作图需求",
+      "max_row": 156,
+      "max_column": 7,
+      "used_row_count": 136,
+      "used_column_count": 7,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "8.视频框架",
+      "max_row": 1,
+      "max_column": 1,
+      "used_row_count": 0,
+      "used_column_count": 0,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "9.视频需求",
+      "max_row": 1,
+      "max_column": 1,
+      "used_row_count": 0,
+      "used_column_count": 0,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "销量计划",
+      "max_row": 33,
+      "max_column": 16384,
+      "used_row_count": 30,
+      "used_column_count": 83,
+      "is_keyword_asset_context": false
+    },
+    {
+      "sheet_name": "竞品5点库",
+      "max_row": 11,
+      "max_column": 37,
+      "used_row_count": 11,
+      "used_column_count": 37,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "竞品标题库",
+      "max_row": 43,
+      "max_column": 1,
+      "used_row_count": 41,
+      "used_column_count": 1,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "5.关键词库",
+      "max_row": 803,
+      "max_column": 42,
+      "used_row_count": 802,
+      "used_column_count": 42,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "标题框架",
+      "max_row": 43,
+      "max_column": 11,
+      "used_row_count": 19,
+      "used_column_count": 11,
+      "is_keyword_asset_context": true
+    },
+    {
+      "sheet_name": "新主图优化",
+      "max_row": 1,
+      "max_column": 1,
+      "used_row_count": 1,
+      "used_column_count": 1,
+      "is_keyword_asset_context": false
+    }
+  ],
+  "keyword_summary": {
+    "keyword_sheet": "5.关键词库",
+    "keyword_rows": 801,
+    "source_sha256": "6a39b95bb34d315b315c18facec56494f745a29dcfa6d768cd05412b6b80932a",
+    "source_sha256_12": "6a39b95bb34d",
+    "field_count": 42,
+    "row_layout_summary": {
+      "rich_top_asin_col33": 218,
+      "compact_metric_col6_top_asin_col25": 228,
+      "compact_type_col6_top_asin_col25": 355
+    },
+    "traffic_type_summary": [
+      {
+        "traffic_word_type": "自然搜索词",
+        "keyword_count": 389
+      },
+      {
+        "traffic_word_type": "SP广告词",
+        "keyword_count": 262
+      },
+      {
+        "traffic_word_type": "视频广告词",
+        "keyword_count": 242
+      },
+      {
+        "traffic_word_type": "品牌广告词",
+        "keyword_count": 217
+      },
+      {
+        "traffic_word_type": "HR推荐词",
+        "keyword_count": 89
+      }
+    ],
+    "keyword_tier_summary": {
+      "mid": 80,
+      "head": 12,
+      "long_tail": 709
+    },
+    "missing_core_field_counts": {
+      "traffic_word_type_raw": 228,
+      "ppc_bid": 43,
+      "monthly_purchase_volume": 3,
+      "monthly_search_volume": 1
+    },
+    "duplicate_keyword_count": 155,
+    "top_by_monthly_search_volume": [
+      {
+        "keyword_asset_id": "kw_0007",
+        "keyword": "battery charger",
+        "monthly_search_volume": 213615,
+        "monthly_purchase_volume": 7113,
+        "traffic_word_type_raw": "自然搜索词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0014",
+        "keyword": "air compressor",
+        "monthly_search_volume": 211547,
+        "monthly_purchase_volume": 2771,
+        "traffic_word_type_raw": "自然搜索词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0010",
+        "keyword": "jump starter",
+        "monthly_search_volume": 170466,
+        "monthly_purchase_volume": 5011,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0002",
+        "keyword": "car battery charger",
+        "monthly_search_volume": 146343,
+        "monthly_purchase_volume": 9219,
+        "traffic_word_type_raw": "自然搜索词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0008",
+        "keyword": "battery jumper starter portable",
+        "monthly_search_volume": 144059,
+        "monthly_purchase_volume": 5301,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0338",
+        "keyword": "travel accessories",
+        "monthly_search_volume": 136525,
+        "monthly_purchase_volume": 232,
+        "traffic_word_type_raw": "自然搜索词",
+        "row_layout": "compact_type_col6_top_asin_col25"
+      },
+      {
+        "keyword_asset_id": "kw_0011",
+        "keyword": "car battery jump starter",
+        "monthly_search_volume": 119585,
+        "monthly_purchase_volume": 7055,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0232",
+        "keyword": "quick connect jumper cables",
+        "monthly_search_volume": 95525,
+        "monthly_purchase_volume": 334,
+        "traffic_word_type_raw": "",
+        "row_layout": "compact_metric_col6_top_asin_col25"
+      },
+      {
+        "keyword_asset_id": "kw_0251",
+        "keyword": "car battery",
+        "monthly_search_volume": 95525,
+        "monthly_purchase_volume": 334,
+        "traffic_word_type_raw": "",
+        "row_layout": "compact_metric_col6_top_asin_col25"
+      },
+      {
+        "keyword_asset_id": "kw_0013",
+        "keyword": "car jumper starter portable",
+        "monthly_search_volume": 85863,
+        "monthly_purchase_volume": 3443,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0452",
+        "keyword": "camping accessories",
+        "monthly_search_volume": 71236,
+        "monthly_purchase_volume": 163,
+        "traffic_word_type_raw": "自然搜索词",
+        "row_layout": "compact_type_col6_top_asin_col25"
+      },
+      {
+        "keyword_asset_id": "kw_0031",
+        "keyword": "jump box",
+        "monthly_search_volume": 67088,
+        "monthly_purchase_volume": 1663,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0017",
+        "keyword": "jump start battery pack",
+        "monthly_search_volume": 65629,
+        "monthly_purchase_volume": 6037,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0004",
+        "keyword": "portable air pump for car tires",
+        "monthly_search_volume": 61608,
+        "monthly_purchase_volume": 6271,
+        "traffic_word_type_raw": "SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0009",
+        "keyword": "booster pack jump starter",
+        "monthly_search_volume": 56130,
+        "monthly_purchase_volume": 5298,
+        "traffic_word_type_raw": "自然搜索词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0005",
+        "keyword": "portable car jump starter",
+        "monthly_search_volume": 51703,
+        "monthly_purchase_volume": 2166,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0003",
+        "keyword": "jumper cables with battery pack",
+        "monthly_search_volume": 50017,
+        "monthly_purchase_volume": 6667,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0006",
+        "keyword": "trickle charger for car battery 12v",
+        "monthly_search_volume": 50009,
+        "monthly_purchase_volume": 7546,
+        "traffic_word_type_raw": "SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0018",
+        "keyword": "trickle charger",
+        "monthly_search_volume": 43244,
+        "monthly_purchase_volume": 2914,
+        "traffic_word_type_raw": "SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0029",
+        "keyword": "car jump starter",
+        "monthly_search_volume": 42665,
+        "monthly_purchase_volume": 1681,
+        "traffic_word_type_raw": "自然搜索词/HR推荐词/品牌广告词/视频广告词/SP广告词",
+        "row_layout": "rich_top_asin_col33"
+      }
+    ],
+    "top_by_monthly_purchase_volume": [
+      {
+        "keyword_asset_id": "kw_0002",
+        "keyword": "car battery charger",
+        "monthly_search_volume": 146343,
+        "monthly_purchase_volume": 9219,
+        "purchase_rate": 0.063,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0006",
+        "keyword": "trickle charger for car battery 12v",
+        "monthly_search_volume": 50009,
+        "monthly_purchase_volume": 7546,
+        "purchase_rate": 0.1509,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0007",
+        "keyword": "battery charger",
+        "monthly_search_volume": 213615,
+        "monthly_purchase_volume": 7113,
+        "purchase_rate": 0.0333,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0011",
+        "keyword": "car battery jump starter",
+        "monthly_search_volume": 119585,
+        "monthly_purchase_volume": 7055,
+        "purchase_rate": 0.059,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0003",
+        "keyword": "jumper cables with battery pack",
+        "monthly_search_volume": 50017,
+        "monthly_purchase_volume": 6667,
+        "purchase_rate": 0.1334,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0004",
+        "keyword": "portable air pump for car tires",
+        "monthly_search_volume": 61608,
+        "monthly_purchase_volume": 6271,
+        "purchase_rate": 0.1018,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0017",
+        "keyword": "jump start battery pack",
+        "monthly_search_volume": 65629,
+        "monthly_purchase_volume": 6037,
+        "purchase_rate": 0.092,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0008",
+        "keyword": "battery jumper starter portable",
+        "monthly_search_volume": 144059,
+        "monthly_purchase_volume": 5301,
+        "purchase_rate": 0.0368,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0009",
+        "keyword": "booster pack jump starter",
+        "monthly_search_volume": 56130,
+        "monthly_purchase_volume": 5298,
+        "purchase_rate": 0.0944,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0010",
+        "keyword": "jump starter",
+        "monthly_search_volume": 170466,
+        "monthly_purchase_volume": 5011,
+        "purchase_rate": 0.0294,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0001",
+        "keyword": "portable jump starter for car",
+        "monthly_search_volume": 34699,
+        "monthly_purchase_volume": 3792,
+        "purchase_rate": 0.1093,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0013",
+        "keyword": "car jumper starter portable",
+        "monthly_search_volume": 85863,
+        "monthly_purchase_volume": 3443,
+        "purchase_rate": 0.0401,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0018",
+        "keyword": "trickle charger",
+        "monthly_search_volume": 43244,
+        "monthly_purchase_volume": 2914,
+        "purchase_rate": 0.0674,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0020",
+        "keyword": "car battery charger portable",
+        "monthly_search_volume": 22877,
+        "monthly_purchase_volume": 2859,
+        "purchase_rate": 0.125,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0014",
+        "keyword": "air compressor",
+        "monthly_search_volume": 211547,
+        "monthly_purchase_volume": 2771,
+        "purchase_rate": 0.0131,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0021",
+        "keyword": "car jumper",
+        "monthly_search_volume": 17992,
+        "monthly_purchase_volume": 2425,
+        "purchase_rate": 0.1348,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0005",
+        "keyword": "portable car jump starter",
+        "monthly_search_volume": 51703,
+        "monthly_purchase_volume": 2166,
+        "purchase_rate": 0.0419,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0019",
+        "keyword": "car air compressor",
+        "monthly_search_volume": 15179,
+        "monthly_purchase_volume": 2088,
+        "purchase_rate": 0.1376,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0025",
+        "keyword": "portable car battery charger",
+        "monthly_search_volume": 15323,
+        "monthly_purchase_volume": 1829,
+        "purchase_rate": 0.1194,
+        "row_layout": "rich_top_asin_col33"
+      },
+      {
+        "keyword_asset_id": "kw_0029",
+        "keyword": "car jump starter",
+        "monthly_search_volume": 42665,
+        "monthly_purchase_volume": 1681,
+        "purchase_rate": 0.0394,
+        "row_layout": "rich_top_asin_col33"
+      }
+    ]
+  },
+  "export_summaries": [
+    {
+      "sheet_name": "5.关键词库",
+      "header_row": 1,
+      "data_row_count": 801,
+      "column_count": 42,
+      "export_path": "sheet_exports/5.关键词库.csv"
+    },
+    {
+      "sheet_name": "1.竞品库",
+      "header_row": 1,
+      "data_row_count": 100,
+      "column_count": 49,
+      "export_path": "sheet_exports/1.竞品库.csv"
+    },
+    {
+      "sheet_name": "2.卖点库",
+      "header_row": 1,
+      "data_row_count": 42,
+      "column_count": 2,
+      "export_path": "sheet_exports/2.卖点库.csv"
+    },
+    {
+      "sheet_name": "3.评价分析",
+      "header_row": 1,
+      "data_row_count": 107,
+      "column_count": 3,
+      "export_path": "sheet_exports/3.评价分析.csv"
+    },
+    {
+      "sheet_name": "4.竞品QA分析",
+      "header_row": 1,
+      "data_row_count": 14,
+      "column_count": 7,
+      "export_path": "sheet_exports/4.竞品QA分析.csv"
+    },
+    {
+      "sheet_name": "3.竞品图库",
+      "header_row": 1,
+      "data_row_count": 12,
+      "column_count": 49,
+      "export_path": "sheet_exports/3.竞品图库.csv"
+    },
+    {
+      "sheet_name": "竞品5点库",
+      "header_row": 1,
+      "data_row_count": 10,
+      "column_count": 37,
+      "export_path": "sheet_exports/竞品5点库.csv"
+    },
+    {
+      "sheet_name": "竞品标题库",
+      "header_row": 1,
+      "data_row_count": 40,
+      "column_count": 1,
+      "export_path": "sheet_exports/竞品标题库.csv"
+    },
+    {
+      "sheet_name": "标题框架",
+      "header_row": 1,
+      "data_row_count": 18,
+      "column_count": 11,
+      "export_path": "sheet_exports/标题框架.csv"
+    },
+    {
+      "sheet_name": "5.自己卖点框架",
+      "header_row": 1,
+      "data_row_count": 15,
+      "column_count": 27,
+      "export_path": "sheet_exports/5.自己卖点框架.csv"
+    },
+    {
+      "sheet_name": "6.作图框架",
+      "header_row": 1,
+      "data_row_count": 25,
+      "column_count": 7,
+      "export_path": "sheet_exports/6.作图框架.csv"
+    },
+    {
+      "sheet_name": "7.作图需求",
+      "header_row": 1,
+      "data_row_count": 135,
+      "column_count": 7,
+      "export_path": "sheet_exports/7.作图需求.csv"
+    }
+  ],
+  "boundary": "local_source_only; no provider call; no Shopify store read/write"
+}

@@ -15,6 +15,7 @@ verification_status: local_source_only
 本轮动作:
 - 复制原件到 `originals/`。
 - 抽取可检索文本到 `extracts/`。
+- 结构化导出 `listing优化模板.xlsx` 的全量关键词资产到 `structured/listing-keyword-assets/`。
 - 生成 `manifest.json` 与 `source_inventory.csv`。
 - 去重后把高价值内容归类到 `03/05/07/90/91` 等节点。
 
@@ -31,7 +32,7 @@ verification_status: local_source_only
 | inbox:S02 | `KOL+联盟营销组合打法.pptx` | `262ecc8c80c8` | merged_duplicate | `05-营销与引流` | 与 S01 完全重复,仅作别名 |
 | inbox:S03 | `独立站从0-1搭建高流量店铺.pptx` | `657f8e6924bb` | imported | `02-建站与基础设施`,`05-营销与引流` | 工具取舍和广告规则需外部核验 |
 | inbox:S04 | `独立站网红+全域社媒流量增长.pptx` | `f935785aec01` | imported | `05-营销与引流` | Reddit/社媒运营规则需外部核验 |
-| inbox:S05 | `listing优化模板.xlsx` | `6a39b95bb34d` | imported | `03-商品上架与Listing`,`07-数据与归因` | 大体积表格为结构与样本级抽取 |
+| inbox:S05 | `listing优化模板.xlsx` | `6a39b95bb34d` | imported + structured_export | `03-商品上架与Listing`,`07-数据与归因` | 已导出 801 行关键词资产;搜索量/竞价/ASIN 仍需生产前刷新 |
 | inbox:S06 | `【06产品开发】亚马逊选品干货：社交媒体掘金选品.docx` | `e5928be71ac2` | imported | `01-选品与市场调研` | Amazon 专属规则不改写成 Shopify 规则 |
 | inbox:S07 | `产品力提升x爆品创新，单SKU年销破2000W.pptx` | `d1f9ad1e079f` | imported | `01-选品与市场调研`,`04-内容与素材生产` | 年销数字为资料标题/课程宣称,不作事实背书 |
 | inbox:S08 | `【0718站外】Slickdeals使用指南..docx` | `bd708e217253` | imported | `05-营销与引流`,`91-合规与风控` | Deal 站规则和发帖路径需执行前复核 |
@@ -49,6 +50,7 @@ verification_status: local_source_only
 
 - [`内部资料萃取_独立站实操资料包`](../../90-AI能力地图/内部资料萃取_独立站实操资料包.md)
 - [`Listing内容工厂SOP`](../../03-商品上架与Listing/Listing内容工厂SOP.md)
+- [`Listing关键词资产库_全量导出`](../../03-商品上架与Listing/Listing关键词资产库_全量导出.md)
 - [`站外渠道风控SOP`](../../91-合规与风控/站外渠道风控SOP.md)
 - [`站外全域增长组合SOP`](../../05-营销与引流/站外全域增长组合SOP.md)
 - [`广告诊断SOP`](../../07-数据与归因/广告诊断SOP.md)
@@ -59,3 +61,4 @@ verification_status: local_source_only
 - `source_inventory.csv`:表格化来源清单,便于人工审查。
 - `originals/`:原件复制件。
 - `extracts/`:本地抽取文本快照。
+- `structured/listing-keyword-assets/`:801 行关键词资产 CSV/JSONL、流量词桥表、工作表清单和上下文 CSV 导出。
