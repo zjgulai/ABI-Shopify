@@ -25,6 +25,26 @@ dig +short platform.shopify.lute-tlz-dddd.top   # 应返回 101.34.52.232
 ---
 
 ## 2. 打包并上传(在你的 Mac 上)
+### 2.0 推荐:一键发布脚本
+当前项目已固化 release 目录发布流程,推荐从仓库根目录执行:
+```bash
+cd /Users/pray/project/shopify
+scripts/deploy_shopify_kb.sh --dry-run   # 本地重建 + 预演
+scripts/deploy_shopify_kb.sh             # 发布到 /opt/shopify-kb/releases/<timestamp>-<commit>
+```
+
+脚本会自动执行:
+- 重建 `_rag/chunks.jsonl` 与 `site/kb_data.js`。
+- 构建本地检索索引并执行 `eval_retrieval.py --min-pass-rate 1.0`。
+- 检查 tracked 工作区是否干净;若生成产物变更,先提交再发布。
+- rsync `kb/` 到新的 release 目录,不复制 `.env`。
+- 软链 `/opt/shopify-kb/shared/.env`,写 `DEPLOY_MANIFEST.txt`。
+- 用 `docker-compose.behind-proxy.yml + docker-compose.vector.yml` 重建 `shopify-kb` 独立 project。
+- 等待 `shopifykb-app` healthy,再做公网 `/api/health`、静态哈希和 Playwright 配置中心 smoke。
+
+手动命令保留如下,用于首次建站、排障或脚本不可用时。
+
+## 2.1 手动打包并上传(在你的 Mac 上)
 ```bash
 cd /Users/pray/project/shopify
 tar czf kb.tgz kb                       # 打包整个知识库(含 site / _rag / _kg)
