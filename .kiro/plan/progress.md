@@ -40,3 +40,4 @@ updated: 2026-06-30
 - 2026-06-30: 进入 T7 前置批次,新增 `T7测试店授权前置包.md` 与 `tools/t7_test_store_preflight.py`;边界为本地只读 preflight,不登录 Shopify、不读写店铺、不输出密钥值。
 - 2026-06-30: T7 前置批次重建通过: chunks=640, docs=119, KG entities=260/relations=785, site data=983KB;检索评测 5/5(pass_rate=1.00, top1=0.60, MRR=0.68)。
 - 2026-06-30: T7 网站配置中心批次完成: site data=987KB, chunks=640/docs=119, KG entities=260/relations=785/dangling=0,检索评测 5/5(pass_rate=1.00, top1=0.60, MRR=0.68),Playwright 桌面/移动端配置页 smoke 通过;边界仍为不登录 Shopify、不读写店铺、不保存 Shopify token/password/private key。
+- 2026-06-30: 配置中心版本已部署到腾讯云 `platform.shopify.lute-tlz-dddd.top`:release=`20260630T0815-84bde79`,远端分支 SHA=`cf23e76a0646ea6605153b51d9e43b2a2dfed48b`;线上 `/api/health` ok=true/retriever=true/server_key_set=false,生产检索日志显示 `BAAI/bge-small-zh-v1.5 + Chroma` indexed 640 chunks、Neo4j import 260 entities/785 relations;Playwright 线上配置页桌面/移动端 smoke 通过,未填 Key 的 `/api/chat` 仅返回需页面填入 DeepSeek API Key。
