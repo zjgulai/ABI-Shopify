@@ -880,12 +880,13 @@ function renderDeployStatus(data,mode){
   const rstatus=runtime.retriever_status||{};
   const manifest=rstatus.manifest||{};
   const runtimeChunks=rstatus.chunks_loaded||rstatus.chunks||manifest.chunks||K.stats.chunks;
+  const ragModel=manifest.model||rstatus.model||runtime.model;
   const release=data.release||mode||'local-preview';
   const rows=[
     {k:'Release',v:release,d:data.deployed_at||'status_file='+fmt(data.status_file,false)},
     {k:'Commit',v:shortHash(data.local_commit),d:'remote '+shortHash(data.remote_branch_sha)},
     {k:'Static Hash',v:'index '+shortHash(data.index_sha256),d:'kb_data '+shortHash(data.kb_data_sha256)},
-    {k:'RAG Runtime',v:fmt(runtimeChunks)+' chunks',d:'retriever='+fmt(runtime.retriever,false)+' · model='+fmt(runtime.model||manifest.model,'browser')}
+    {k:'RAG Runtime',v:fmt(runtimeChunks)+' chunks',d:'retriever='+fmt(runtime.retriever,false)+' · model='+fmt(ragModel,'browser')}
   ];
   const boundary=data.boundary||'no-provider-call-no-shopify-store-access-no-secret-output';
   const serverKey='server_key_set='+fmt(runtime.server_key_set,false);
