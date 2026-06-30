@@ -6,6 +6,7 @@
 import os,sys,json,urllib.request
 from flask import Flask,request,jsonify,send_from_directory
 HERE=os.path.dirname(os.path.abspath(__file__))
+DEPLOY_STATUS_PATH=os.path.join(HERE,"deploy_status.json")
 sys.path.insert(0,os.path.join(HERE,"..","_rag","kb_index"))
 KEY=os.environ.get("DEEPSEEK_API_KEY"); MODEL=os.environ.get("DEEPSEEK_MODEL","deepseek-v4-flash")
 try:
@@ -15,6 +16,40 @@ except Exception as e:
 app=Flask(__name__,static_folder=None)
 @app.get("/api/health")
 def health(): return jsonify(ok=True,retriever=_r is not None,model=MODEL,server_key_set=bool(KEY),client_key_supported=True)
+
+def _deploy_status_file():
+    allow={
+        "release","local_commit","remote_branch_sha","deployed_at",
+        "index_sha256","kb_data_sha256","chunks_sha256",
+        "compose_project","compose_files","source","boundary"
+    }
+    try:
+        with open(DEPLOY_STATUS_PATH,encoding="utf-8") as f:
+            data=json.load(f)
+        if not isinstance(data,dict):
+            return {}
+        return {k:data[k] for k in allow if k in data}
+    except Exception:
+        return {}
+
+@app.get("/api/deploy-status")
+def deploy_status():
+    data=_deploy_status_file()
+    runtime={"retriever":_r is not None,"model":MODEL,"server_key_set":bool(KEY),"client_key_supported":True}
+    if _r:
+        try:
+            status=_r.status()
+            if isinstance(status,dict):
+                safe={k:status[k] for k in status if k in {"backend","chunks","chunks_loaded","embedder","store","model","vector_dim","graph_backend"}}
+                manifest=status.get("manifest")
+                if isinstance(manifest,dict):
+                    safe["manifest"]={k:manifest[k] for k in manifest if k in {"index_version","embedder","store","model","chunks","graph_backend_default"}}
+                runtime["retriever_status"]=safe
+        except Exception:
+            runtime["retriever_status_unavailable"]=True
+    data.update(ok=True,status_file=bool(data),runtime=runtime)
+    return jsonify(data)
+
 @app.post("/api/chat")
 def chat():
     b=request.get_json(force=True); q=b.get("question","")

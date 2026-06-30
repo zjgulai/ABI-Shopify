@@ -38,9 +38,9 @@ scripts/deploy_shopify_kb.sh             # 发布到 /opt/shopify-kb/releases/<t
 - 构建本地检索索引并执行 `eval_retrieval.py --min-pass-rate 1.0`。
 - 检查 tracked 工作区是否干净;若生成产物变更,先提交再发布。
 - rsync `kb/` 到新的 release 目录,不复制 `.env`。
-- 软链 `/opt/shopify-kb/shared/.env`,写 `DEPLOY_MANIFEST.txt`。
+- 软链 `/opt/shopify-kb/shared/.env`,写 `DEPLOY_MANIFEST.txt` 与页面可读的 `kb/site/deploy_status.json`。
 - 用 `docker-compose.behind-proxy.yml + docker-compose.vector.yml` 重建 `shopify-kb` 独立 project。
-- 等待 `shopifykb-app` healthy,再做公网 `/api/health`、静态哈希和 Playwright 配置中心 smoke。
+- 等待 `shopifykb-app` healthy,再做公网 `/api/health`、`/api/deploy-status`、静态哈希和 Playwright 配置中心 smoke。
 
 手动命令保留如下,用于首次建站、排障或脚本不可用时。
 
@@ -121,10 +121,11 @@ docker compose -p shopify-kb logs -f app        # 看 gunicorn 启动、retrieve
 # 方案A:
 curl -sI https://platform.shopify.lute-tlz-dddd.top | head -1
 curl -s https://platform.shopify.lute-tlz-dddd.top/api/health      # {"ok":true,"client_key_supported":true,...}
+curl -s https://platform.shopify.lute-tlz-dddd.top/api/deploy-status # release / commit / hash / runtime 只读状态
 # 方案B:
 curl -sI http://127.0.0.1:8088 | head -1
 ```
-浏览器打开 `https://platform.shopify.lute-tlz-dddd.top` → 在页面填入 DeepSeek API Key → 试问答(应返回答案 + 来源)。
+浏览器打开 `https://platform.shopify.lute-tlz-dddd.top/#config` → 核对“线上发布状态”中的 release、commit、关键 hash 和 RAG runtime;再在问答区域填入 DeepSeek API Key 试问答(应返回答案 + 来源)。
 
 ---
 

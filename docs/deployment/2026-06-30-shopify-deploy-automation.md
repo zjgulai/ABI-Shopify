@@ -19,7 +19,7 @@ boundary: no-provider-call-no-shopify-store-access-no-secret-output
 - 新 release 目录上传与 manifest 写入。
 - `shopify-kb` 独立 compose project 重建。
 - 容器 health 轮询。
-- 服务器文件哈希、公网静态哈希和 `/api/health` 验收。
+- 服务器文件哈希、公网静态哈希、`/api/health` 和 `/api/deploy-status` 验收。
 - 可用时执行 Playwright 配置中心 smoke。
 
 ## 2. 第一性原理边界
@@ -32,8 +32,8 @@ boundary: no-provider-call-no-shopify-store-access-no-secret-output
 | Generated data | `kb/site/kb_data.js` 与 `kb/_rag/chunks.jsonl` 已由当前 source 重建并提交 |
 | Release | `/opt/shopify-kb/current` 指向当前 release |
 | Runtime | `shopifykb-app` healthy,检索后端已加载 |
-| Public | 公网 `/api/health` 与静态文件哈希匹配 |
-| Browser | `#config` 配置中心桌面/移动端 smoke 通过 |
+| Public | 公网 `/api/health`、`/api/deploy-status` 与静态文件哈希匹配 |
+| Browser | `#config` 配置中心和“线上发布状态”桌面/移动端 smoke 通过 |
 
 ## 3. TODO
 
@@ -43,6 +43,7 @@ boundary: no-provider-call-no-shopify-store-access-no-secret-output
 - [x] 默认要求 tracked 工作区洁净,避免 manifest 指向无法复现的工作区状态。
 - [x] 默认重建 `build_rag.py`、`build_site_data.py`、`cli.py build` 和 `eval_retrieval.py --min-pass-rate 1.0`。
 - [x] 上传后写 `DEPLOY_MANIFEST.txt`,记录 release、commit、远端分支 SHA、三个关键 sha256。
+- [x] 同步写 `kb/site/deploy_status.json`,由 `/api/deploy-status` 只读暴露 release、commit、hash、runtime 和边界。
 - [x] 健康检查到 `shopifykb-app=healthy` 后再跑公网验收。
 - [x] 可用时运行 Playwright 配置中心 smoke。
 
@@ -83,5 +84,6 @@ scripts/deploy_shopify_kb.sh --dry-run --skip-rebuild --skip-git-clean-check --s
 - Git commit 和远端分支 SHA。
 - `index.html` / `kb_data.js` / `chunks.jsonl` sha256。
 - `/api/health` 关键字段。
+- `/api/deploy-status` 的 `release`、`local_commit`、三个 sha256、`runtime.retriever`、`server_key_set`。
 - `shopifykb-app` / `shopifykb-neo4j` health。
 - Playwright smoke 结论。

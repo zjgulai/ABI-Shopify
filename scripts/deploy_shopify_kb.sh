@@ -166,16 +166,33 @@ mkdir -p "${release_dir}/kb/site/deploy"
 ln -sfn "${remote_root}/shared/.env" "${release_dir}/kb/site/deploy/.env"
 test -f "${release_dir}/kb/site/deploy/.env"
 
+deployed_at="$(date -Iseconds)"
 cat >"${release_dir}/DEPLOY_MANIFEST.txt" <<EOF
 release=${release}
 local_commit=${local_commit}
 remote_branch_sha=${remote_branch_sha}
-deployed_at=$(date -Iseconds)
+deployed_at=${deployed_at}
 index_sha256=${index_sha}
 kb_data_sha256=${kb_data_sha}
 chunks_sha256=${chunks_sha}
 compose_project=${compose_project}
 compose_files=docker-compose.yml,docker-compose.behind-proxy.yml,docker-compose.vector.yml
+EOF
+
+cat >"${release_dir}/kb/site/deploy_status.json" <<EOF
+{
+  "release": "${release}",
+  "local_commit": "${local_commit}",
+  "remote_branch_sha": "${remote_branch_sha}",
+  "deployed_at": "${deployed_at}",
+  "index_sha256": "${index_sha}",
+  "kb_data_sha256": "${kb_data_sha}",
+  "chunks_sha256": "${chunks_sha}",
+  "compose_project": "${compose_project}",
+  "compose_files": ["docker-compose.yml", "docker-compose.behind-proxy.yml", "docker-compose.vector.yml"],
+  "source": "DEPLOY_MANIFEST.txt",
+  "boundary": "no-provider-call-no-shopify-store-access-no-secret-output"
+}
 EOF
 
 cd "${release_dir}/kb/site/deploy"
@@ -251,6 +268,23 @@ assert data.get("retriever") is True, data
 assert data.get("client_key_supported") is True, data
 assert data.get("server_key_set") is False, data
 PY
+  curl -fsS --max-time 30 "${DOMAIN}/api/deploy-status" -o "${TMP_PUBLIC_DIR}/deploy-status.json"
+  python3 - "${TMP_PUBLIC_DIR}/deploy-status.json" "$RELEASE" "$FULL_SHA" "$INDEX_SHA" "$KB_DATA_SHA" "$CHUNKS_SHA" <<'PY'
+import json
+import sys
+
+data = json.load(open(sys.argv[1]))
+assert data.get("ok") is True, data
+assert data.get("status_file") is True, data
+assert data.get("release") == sys.argv[2], data
+assert data.get("local_commit") == sys.argv[3], data
+assert data.get("index_sha256") == sys.argv[4], data
+assert data.get("kb_data_sha256") == sys.argv[5], data
+assert data.get("chunks_sha256") == sys.argv[6], data
+runtime = data.get("runtime") or {}
+assert runtime.get("retriever") is True, data
+assert runtime.get("server_key_set") is False, data
+PY
   curl -fsSL --max-time 30 "${DOMAIN}/" -o "${TMP_PUBLIC_DIR}/index.html"
   curl -fsSL --max-time 30 "${DOMAIN}/kb_data.js" -o "${TMP_PUBLIC_DIR}/kb_data.js"
   [ "$(sha256_file "${TMP_PUBLIC_DIR}/index.html")" = "$INDEX_SHA" ] || die "public index hash mismatch"
@@ -262,7 +296,7 @@ if [ "$SKIP_PLAYWRIGHT" -eq 0 ]; then
   if command -v npx >/dev/null 2>&1 && [ -x "$PWCLI" ]; then
     log "run Playwright config center smoke"
     "$PWCLI" open "${DOMAIN}/#config" --browser chromium >/dev/null
-    "$PWCLI" eval "(() => { const text = document.body.innerText; const ok = text.includes('配置') && text.includes('授权') && (text.includes('DeepSeek API Key') || text.includes('页面手动录入')) && text.includes('测试店') && text.includes('人审'); if (!ok) throw new Error('config center smoke did not find required text'); return {title: document.title, url: location.href, bodyChars: text.length}; })()" >/dev/null
+    "$PWCLI" eval "(() => { const text = document.body.innerText; const ok = text.includes('配置') && text.includes('授权') && (text.includes('DeepSeek API Key') || text.includes('页面手动录入')) && text.includes('测试店') && text.includes('人审') && text.includes('线上发布状态') && text.includes('Release'); if (!ok) throw new Error('config center smoke did not find required text'); return {title: document.title, url: location.href, bodyChars: text.length}; })()" >/dev/null
     "$PWCLI" resize 390 844 >/dev/null
     "$PWCLI" eval "(() => { const overflowX = document.documentElement.scrollWidth > innerWidth + 1; if (overflowX) throw new Error('mobile horizontal overflow'); return {width: innerWidth, scrollWidth: document.documentElement.scrollWidth}; })()" >/dev/null
     "$PWCLI" console

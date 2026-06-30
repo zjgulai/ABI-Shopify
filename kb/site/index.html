@@ -207,6 +207,13 @@ h2.t{font-size:30px;font-weight:820;margin:8px 0 6px;letter-spacing:-.3px}
 .config-card,.config-panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--sh2)}
 .config-card h3,.config-panel h3{font-size:15px;margin:8px 0 6px}
 .config-card p,.config-panel p{font-size:12.5px;color:#3a4a60}
+.deploy-status-panel{margin-bottom:16px}
+.deploy-status-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.deploy-status-card{border:1px solid var(--line);border-radius:10px;background:#fbfdff;padding:12px;min-width:0}
+.deploy-status-card .k{font-size:11px;font-weight:850;color:var(--grey);text-transform:uppercase}
+.deploy-status-card .v{font-size:14px;font-weight:850;margin-top:4px;overflow-wrap:anywhere}
+.deploy-status-card .d{font-size:11.5px;color:#3a4a60;margin-top:4px;overflow-wrap:anywhere}
+.deploy-status-card code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;background:#fff;border:1px solid var(--line);border-radius:5px;padding:1px 5px;overflow-wrap:anywhere}
 .auth-stage-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0 16px}
 .auth-stage{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;box-shadow:var(--sh2);min-height:154px}
 .auth-stage h3{font-size:13.5px;margin:8px 0 5px}.auth-stage p{font-size:12px;color:#3a4a60}.auth-stage .next{margin-top:8px;color:var(--grey);font-size:11.5px;font-weight:800}
@@ -253,9 +260,9 @@ footer a{color:#9ad9bf}
 #modal .x{float:right;cursor:pointer;font-size:22px;color:var(--grey)}
 #lightbox{position:fixed;inset:0;background:rgba(11,31,58,.88);display:none;z-index:120;cursor:zoom-out}
 #lightbox img{max-width:96%;max-height:96%;margin:2% auto;display:block;border-radius:8px}
-	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid,.config-summary-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout,.config-layout{grid-template-columns:1fr}}
+	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid,.config-summary-grid,.deploy-status-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout,.config-layout{grid-template-columns:1fr}}
 	@media(max-width:860px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.tech-grid,.sop-grid,.debt-grid,.evidence-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}nav .links{display:none}.menu-btn{display:block}nav .btn{display:none}}
-	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid,.config-summary-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
+	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid,.config-summary-grid,.deploy-status-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
 </style>
 </head>
 <body>
@@ -406,6 +413,11 @@ footer a{color:#9ad9bf}
   <p class="lead">统一管理测试店域名、本地 preflight、现场授权、只读复核、mutation preview、人审文本和证据台账。这里不登录 Shopify,不保存 Shopify token,不直接写店铺。</p></div>
   <span class="mini-link" onclick="document.getElementById('chat').scrollIntoView()">管理 DeepSeek Key →</span></div>
   <div class="config-summary-grid" id="configSummary"></div>
+  <div class="config-panel deploy-status-panel">
+    <h3>线上发布状态</h3>
+    <p>展示当前页面对应的 release、commit、关键文件 hash 与 RAG runtime。该状态只读,不包含密钥,不代表 Shopify 已授权。</p>
+    <div class="deploy-status-grid" id="deployStatusGrid"></div>
+  </div>
   <div class="auth-stage-grid" id="authStageGrid"></div>
   <div class="config-layout">
     <div class="config-panel">
@@ -860,6 +872,37 @@ function renderConfigCenter(){
   renderConfigEvidence();
 }
 renderConfigCenter();
+// ---- deploy status ----
+function fmt(v,fallback){return String((v===undefined||v===null||v==='')?(fallback||'—'):v)}
+function shortHash(v){v=fmt(v,'');return v?v.slice(0,12):'—'}
+function renderDeployStatus(data,mode){
+  const runtime=data.runtime||{};
+  const rstatus=runtime.retriever_status||{};
+  const manifest=rstatus.manifest||{};
+  const runtimeChunks=rstatus.chunks_loaded||rstatus.chunks||manifest.chunks||K.stats.chunks;
+  const release=data.release||mode||'local-preview';
+  const rows=[
+    {k:'Release',v:release,d:data.deployed_at||'status_file='+fmt(data.status_file,false)},
+    {k:'Commit',v:shortHash(data.local_commit),d:'remote '+shortHash(data.remote_branch_sha)},
+    {k:'Static Hash',v:'index '+shortHash(data.index_sha256),d:'kb_data '+shortHash(data.kb_data_sha256)},
+    {k:'RAG Runtime',v:fmt(runtimeChunks)+' chunks',d:'retriever='+fmt(runtime.retriever,false)+' · model='+fmt(runtime.model||manifest.model,'browser')}
+  ];
+  const boundary=data.boundary||'no-provider-call-no-shopify-store-access-no-secret-output';
+  const serverKey='server_key_set='+fmt(runtime.server_key_set,false);
+  const html=rows.map(x=>`<div class="deploy-status-card"><div class="k">${esc(x.k)}</div><div class="v">${esc(x.v)}</div><div class="d">${esc(x.d)}</div></div>`).join('')+
+    `<div class="deploy-status-card"><div class="k">Runtime Boundary</div><div class="v">${statusPill(data.ok?'ready':'partial')}</div><div class="d"><code>${esc(serverKey)}</code><br/><code>${esc(boundary)}</code></div></div>`;
+  const el=document.getElementById('deployStatusGrid');if(el)el.innerHTML=html;
+}
+function loadDeployStatus(){
+  if(STATIC_PREVIEW){
+    renderDeployStatus({ok:true,status_file:false,release:'local-static-preview',runtime:{retriever:false,model:'browser',server_key_set:false},boundary:'static-preview-no-provider-call-no-shopify-store-access'},'static preview');
+    return;
+  }
+  fetch('/api/deploy-status')
+    .then(r=>r.ok?r.json():Promise.reject())
+    .then(data=>renderDeployStatus(data,'backend'))
+    .catch(()=>renderDeployStatus({ok:false,status_file:false,release:'status-unavailable',runtime:{retriever:false,model:'unknown',server_key_set:false},boundary:'deploy-status-api-unavailable'},'unavailable'));
+}
 // ---- retrieval (client-side) ----
 function toks(s){s=(s||'').toLowerCase();let o=(s.match(/[a-z0-9]+/g)||[]);const h=s.match(/[一-鿿]/g)||[];o=o.concat(h);for(let i=0;i<h.length-1;i++)o.push(h[i]+h[i+1]);return o}
 const DF={};K.chunks.forEach(c=>{const seen=new Set(toks(c.text+' '+c.doc));seen.forEach(t=>DF[t]=(DF[t]||0)+1)});
@@ -874,6 +917,7 @@ function doSearch(){const q=document.getElementById('q').value.trim();if(!q)retu
 let BACKEND=false;
 const STATIC_PREVIEW=(['127.0.0.1','localhost'].includes(location.hostname)&&location.port&&location.port!=='8000');
 if(STATIC_PREVIEW){setNote()}else{fetch('/api/health').then(r=>r.ok?r.json():Promise.reject()).then(()=>{BACKEND=true;setNote()}).catch(()=>setNote())}
+loadDeployStatus();
 function setNote(){const n=document.getElementById('cnote');
   if(BACKEND){n.innerHTML='已连接后端代理。API Key 由页面手动录入,随本次问题转发,服务器不保存。';n.style.background='var(--mint)'}
   else{n.innerHTML='静态模式:API Key 由页面手动录入并从浏览器直连 DeepSeek;若浏览器拦截跨域请求,请通过 server.py 或线上后端访问。'}}
