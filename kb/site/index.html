@@ -52,8 +52,9 @@ nav .wrap{display:flex;align-items:center;gap:20px;height:62px}
 	.snap{border:1px solid var(--line);border-radius:8px;padding:11px;background:#fbfdff}
 	.snap b{font-size:13px}.snap p{font-size:12px;color:var(--grey);margin-top:4px}
 	.status-pill.local_ready,.status-pill.ready,.status-pill.local_browser_saved{background:var(--mint);color:var(--green)}
-	.status-pill.requires_user_input,.status-pill.manual_review_required,.status-pill.partial,.status-pill.local_material_needs_external_verification{background:var(--amberbg);color:#8a5d00}
-	.status-pill.blocked_auth,.status-pill.needs_external_verification,.status-pill.content_debt{background:var(--dangerbg);color:var(--danger)}
+	.status-pill.local_config_ready,.status-pill.local_evidence_ready,.status-pill.read_ready,.status-pill.executed_test_store{background:var(--mint);color:var(--green)}
+	.status-pill.requires_user_input,.status-pill.manual_review_required,.status-pill.partial,.status-pill.local_material_needs_external_verification,.status-pill.auth_required,.status-pill.approval_required,.status-pill.preview_ready{background:var(--amberbg);color:#8a5d00}
+	.status-pill.blocked_auth,.status-pill.blocked_manual_auth,.status-pill.needs_external_verification,.status-pill.content_debt{background:var(--dangerbg);color:var(--danger)}
 	.status-pill.blocked_auth_preflight_ready{background:#fff4dd;color:#8a5a00}
 	.guardrails{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
 	.guardrails span{font-size:11px;font-weight:800;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 8px}
@@ -206,14 +207,22 @@ h2.t{font-size:30px;font-weight:820;margin:8px 0 6px;letter-spacing:-.3px}
 .config-card,.config-panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:var(--sh2)}
 .config-card h3,.config-panel h3{font-size:15px;margin:8px 0 6px}
 .config-card p,.config-panel p{font-size:12.5px;color:#3a4a60}
+.auth-stage-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0 16px}
+.auth-stage{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;box-shadow:var(--sh2);min-height:154px}
+.auth-stage h3{font-size:13.5px;margin:8px 0 5px}.auth-stage p{font-size:12px;color:#3a4a60}.auth-stage .next{margin-top:8px;color:var(--grey);font-size:11.5px;font-weight:800}
 .config-form{display:grid;gap:10px}
 .config-form label{font-size:12px;font-weight:800;color:var(--ink)}
-.config-form input,.config-form textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px}
+.config-form input,.config-form textarea,.config-form select{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px;background:#fff}
 .config-form textarea{min-height:74px;resize:vertical}
 .config-check{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:#3a4a60}
 .config-check input{width:auto;flex:0;margin-top:2px}
 .command-box{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0b1f3a;color:#e9f4ff;border-radius:8px;padding:10px;font-size:12px;white-space:pre-wrap;overflow:auto}
 .config-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.auth-check-grid,.runbook-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.auth-check,.runbook-card{border:1px solid var(--line);border-radius:10px;background:#fbfdff;padding:12px}
+.auth-check label{display:flex;align-items:flex-start;gap:8px;font-weight:850;font-size:12.5px}
+.auth-check input{width:auto;flex:0;margin-top:3px}.auth-check p,.runbook-card p{font-size:12px;color:#3a4a60;margin-top:6px}
+.runbook-card h4{font-size:14px;margin:8px 0 6px}.runbook-card ul{font-size:12px;color:#3a4a60;margin-left:18px}
 .evidence-log{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px;background:#fff}
 .evidence-log th,.evidence-log td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
 .evidence-log th{background:#f7faff}
@@ -244,9 +253,9 @@ footer a{color:#9ad9bf}
 #modal .x{float:right;cursor:pointer;font-size:22px;color:var(--grey)}
 #lightbox{position:fixed;inset:0;background:rgba(11,31,58,.88);display:none;z-index:120;cursor:zoom-out}
 #lightbox img{max-width:96%;max-height:96%;margin:2% auto;display:block;border-radius:8px}
-	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid,.config-summary-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout,.config-layout{grid-template-columns:1fr}}
+	@media(max-width:1060px){.repo-grid{grid-template-columns:repeat(2,1fr)}.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.ready-grid,.config-summary-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:repeat(2,1fr)}.ops,.command-grid,.tech-layout,.config-layout{grid-template-columns:1fr}}
 	@media(max-width:860px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.journey-grid,.tech-grid,.sop-grid,.debt-grid,.evidence-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:32px}nav .links{display:none}.menu-btn{display:block}nav .btn{display:none}}
-	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid,.config-summary-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
+	@media(max-width:560px){.steps,.nodes,.caps,.road,.np,.tsel,.repo-grid,.play-grid,.agent-grid,.gate-grid,.tool-grid,.lane-grid,.ops-kpis,.journey-grid,.tech-grid,.sop-grid,.ready-grid,.debt-grid,.evidence-grid,.snap-grid,.detail-grid,.config-summary-grid,.auth-stage-grid,.auth-check-grid,.runbook-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.section-head{display:block}.mobile-menu .wrap{grid-template-columns:1fr}.hero{padding-top:34px}}
 </style>
 </head>
 <body>
@@ -393,13 +402,14 @@ footer a{color:#9ad9bf}
 	</div></section>
 
 <section id="config" class="alt"><div class="wrap">
-  <div class="section-head"><div><div class="eyebrow">Configuration Center</div><h2 class="t">配置与授权中心</h2>
-  <p class="lead">统一管理 DeepSeek Key、Shopify 测试店域名、T7 前置检查、人审文本和证据台账。这里不登录 Shopify,不保存 Shopify token,不直接写店铺。</p></div>
+  <div class="section-head"><div><div class="eyebrow">T7 Authorization Workbench</div><h2 class="t">T7 授权作战台</h2>
+  <p class="lead">统一管理测试店域名、本地 preflight、现场授权、只读复核、mutation preview、人审文本和证据台账。这里不登录 Shopify,不保存 Shopify token,不直接写店铺。</p></div>
   <span class="mini-link" onclick="document.getElementById('chat').scrollIntoView()">管理 DeepSeek Key →</span></div>
   <div class="config-summary-grid" id="configSummary"></div>
+  <div class="auth-stage-grid" id="authStageGrid"></div>
   <div class="config-layout">
     <div class="config-panel">
-      <h3>本地配置</h3>
+      <h3>本地授权包配置</h3>
       <div class="config-form">
         <label for="shopifyStoreDomain">Shopify 测试店域名</label>
         <input id="shopifyStoreDomain" autocomplete="off" placeholder="abi-t7-smoke-20260630.myshopify.com"/>
@@ -409,6 +419,8 @@ footer a{color:#9ad9bf}
         <input id="mutationTarget" autocomplete="off" placeholder="例如: 测试商品 gid 或 handle"/>
         <label for="plannedChange">计划变更</label>
         <textarea id="plannedChange" placeholder="例如: 给测试商品追加 tag ai-toolkit-controlled-write-smoke"></textarea>
+        <label for="rollbackPlan">复查 / 回滚方案</label>
+        <textarea id="rollbackPlan" placeholder="例如: 写后读取商品 tags,如需回滚则移除本次测试 tag。"></textarea>
         <label class="config-check"><input id="confirmDevStore" type="checkbox"/> 我确认目标是测试店 / development store。</label>
         <label class="config-check"><input id="confirmNoSecrets" type="checkbox"/> 我不会在此页面输入 Shopify token/password/private key。</label>
         <label class="config-check"><input id="confirmManualLogin" type="checkbox"/> 我确认真实 shopify auth login 只由我现场执行。</label>
@@ -426,14 +438,30 @@ footer a{color:#9ad9bf}
     </div>
   </div>
   <div class="config-panel" style="margin-top:16px">
+    <h3>授权前置清单</h3>
+    <p>勾选状态只保存在当前浏览器,用于帮助推进 T7,不代表 Shopify 已授权。</p>
+    <div class="auth-check-grid" id="authChecklist"></div>
+  </div>
+  <div class="config-panel" style="margin-top:16px">
+    <h3>操作剧本</h3>
+    <p>真实读写必须沿着只读 → preview → 人审 → 测试店执行 → 写后复查推进。</p>
+    <div class="runbook-grid" id="operationRunbooks"></div>
+  </div>
+  <div class="config-panel" style="margin-top:16px">
     <h3>本地证据台账</h3>
     <p>只写入当前浏览器 localStorage,不上传服务器,不提交 Git。不要在摘要中写 token、password、private key。</p>
     <div class="config-form">
+      <label for="evidenceAction">证据类型</label>
+      <select id="evidenceAction"></select>
+      <label for="evidenceStatus">状态标签</label>
+      <input id="evidenceStatus" autocomplete="off" placeholder="例如: local_pass_auth_required / read_only_verified"/>
       <label for="evidenceNote">新增证据摘要</label>
       <textarea id="evidenceNote" placeholder="例如: preflight 输出 status=local_pass_auth_required,未登录 Shopify,未读写店铺。"></textarea>
     </div>
     <div class="config-actions">
       <button class="btn" onclick="addConfigEvidence()">追加证据</button>
+      <button class="btn ghost" onclick="exportConfigEvidence()">导出台账 JSON</button>
+      <button class="btn ghost" onclick="copyAuthorizationPacket()">复制授权包 JSON</button>
       <button class="btn ghost" onclick="clearConfigEvidence()">清空本地台账</button>
     </div>
     <div style="overflow:auto"><table class="evidence-log" id="configEvidenceLog"></table></div>
@@ -507,7 +535,7 @@ footer a{color:#9ad9bf}
 <script>
 const K=window.KB;const GMAP={"00":"g-b","01":"g-b","02":"g-g","03":"g-g","04":"g-g","05":"g-i","06":"g-i","07":"g-t","08":"g-t","09":"g-t","10":"g-a","90":"g-n","91":"g-n","92":"g-n"};
 const HDC={"g-b":"#2D6CDF","g-g":"#008060","g-i":"#5C6AC4","g-t":"#0E7C86","g-a":"#C98A00","g-n":"#13294B"};
-const STATUS_LABELS={local_ready:'本地可用',local_browser_saved:'本浏览器已保存',requires_user_input:'待用户输入',manual_review_required:'需人审',blocked_auth:'授权前置',blocked_auth_preflight_ready:'前置已就绪',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
+const STATUS_LABELS={local_ready:'本地可用',local_browser_saved:'本浏览器已保存',local_config_ready:'本地配置就绪',local_evidence_ready:'本地证据就绪',read_ready:'只读可复核',executed_test_store:'测试店记录',requires_user_input:'待用户输入',manual_review_required:'需人审',auth_required:'待现场授权',approval_required:'待人审批准',preview_ready:'预览就绪',blocked_auth:'授权前置',blocked_manual_auth:'需现场授权',blocked_auth_preflight_ready:'前置已就绪',needs_external_verification:'待外部核验',local_material_needs_external_verification:'本地资料·待核验',content_debt:'内容债',partial:'部分覆盖',ready:'已覆盖'};
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function statusPill(s){return `<span class="status-pill ${esc(s)}">${esc(STATUS_LABELS[s]||s||'—')}</span>`}
 function listItems(items){return (items||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>—</li>'}
@@ -620,10 +648,28 @@ function lb(src){document.getElementById('lbimg').src=src;document.getElementByI
 const CONFIG=K.configurationCenter||{};
 const CFG_KEY=CONFIG.storageKey||'abi.shopify.config.v1';
 const EVIDENCE_KEY=CFG_KEY+'.evidence';
+const CHECKLIST_KEY=CFG_KEY+'.checklist';
 let CONFIG_COPY=[];
-function loadShopifyConfig(){try{return JSON.parse(localStorage.getItem(CFG_KEY)||'{}')}catch(e){return {}}}
+function loadJson(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch(e){return fallback}}
+function loadShopifyConfig(){return loadJson(CFG_KEY,{})}
+function loadChecklistState(){return loadJson(CHECKLIST_KEY,{})}
+function loadEvidenceRows(){return loadJson(EVIDENCE_KEY,[])}
 function validShopifyDomain(s){return /^[a-z0-9][a-z0-9-]*\.myshopify\.com$/.test((s||'').trim().toLowerCase())}
-function containsSecretLikeText(s){return /(shpat_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)/.test(s||'')}
+function containsSecretLikeText(s){return /(shpat_[A-Za-z0-9]{20,}|shpua_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|password\s*[:=]|token\s*[:=]|-----BEGIN [A-Z ]*PRIVATE KEY-----)/i.test(s||'')}
+function safeConfig(cfg){return {
+  storeDomain:cfg.storeDomain||'',approvalOwner:cfg.approvalOwner||'',mutationTarget:cfg.mutationTarget||'',
+  plannedChange:cfg.plannedChange||'',rollbackPlan:cfg.rollbackPlan||'',
+  confirmDevStore:!!cfg.confirmDevStore,confirmNoSecrets:!!cfg.confirmNoSecrets,confirmManualLogin:!!cfg.confirmManualLogin,savedAt:cfg.savedAt||''
+}}
+function authorizationPacket(){return {
+  generatedAt:new Date().toISOString(),
+  boundary:'local browser packet only; no Shopify login/read/write by this page',
+  config:safeConfig(loadShopifyConfig()),
+  checklist:loadChecklistState(),
+  evidence:loadEvidenceRows().slice(0,20),
+  commands:CONFIG.commandTemplates||{},
+  approvals:CONFIG.approvalTemplates||{}
+}}
 function saveShopifyConfig(){
   const storeDomain=document.getElementById('shopifyStoreDomain').value.trim().toLowerCase().replace(/^https?:\/\//,'').replace(/\/$/,'');
   if(storeDomain&&!validShopifyDomain(storeDomain)){bubble('a','测试店域名格式应为 name.myshopify.com。');return}
@@ -632,6 +678,7 @@ function saveShopifyConfig(){
     approvalOwner:document.getElementById('approvalOwner').value.trim(),
     mutationTarget:document.getElementById('mutationTarget').value.trim(),
     plannedChange:document.getElementById('plannedChange').value.trim(),
+    rollbackPlan:document.getElementById('rollbackPlan').value.trim(),
     confirmDevStore:document.getElementById('confirmDevStore').checked,
     confirmNoSecrets:document.getElementById('confirmNoSecrets').checked,
     confirmManualLogin:document.getElementById('confirmManualLogin').checked,
@@ -643,14 +690,15 @@ function saveShopifyConfig(){
 }
 function clearShopifyConfig(){
   localStorage.removeItem(CFG_KEY);
-  ['shopifyStoreDomain','approvalOwner','mutationTarget','plannedChange'].forEach(id=>document.getElementById(id).value='');
+  ['shopifyStoreDomain','approvalOwner','mutationTarget','plannedChange','rollbackPlan'].forEach(id=>document.getElementById(id).value='');
   ['confirmDevStore','confirmNoSecrets','confirmManualLogin'].forEach(id=>document.getElementById(id).checked=false);
   renderConfigCenter();
 }
 function fillTemplate(t,cfg){
   return (t||'').replaceAll('{store_domain}',cfg.storeDomain||'your-dev-store.myshopify.com')
     .replaceAll('{target}',cfg.mutationTarget||'{target}')
-    .replaceAll('{planned_change}',cfg.plannedChange||'{planned_change}');
+    .replaceAll('{planned_change}',cfg.plannedChange||'{planned_change}')
+    .replaceAll('{rollback_plan}',cfg.rollbackPlan||'{rollback_plan}');
 }
 function commandBlock(label,text){
   const idx=CONFIG_COPY.push(text)-1;
@@ -668,49 +716,129 @@ function renderConfigOutputs(){
   const preflight=fillTemplate(tpl.preflight,cfg);
   const authLogin=tpl.authLogin||'shopify auth login';
   const readOnlyCheck=tpl.readOnlyCheck||'shopify auth whoami';
+  const devMcp=tpl.devMcp||'claude mcp add shopify-dev-mcp -- npx -y @shopify/dev-mcp@latest';
+  const plugin=tpl.marketplacePlugin||'claude plugin install ./kb/marketplace/plugins/shopify-ai-kb';
   const readOnly=fillTemplate(approvals.readOnly,cfg);
+  const preview=fillTemplate(approvals.preview,cfg);
   const controlledWrite=fillTemplate(approvals.controlledWrite,cfg);
+  const rollback=fillTemplate(approvals.rollback,cfg);
+  const packet=JSON.stringify(authorizationPacket(),null,2);
   CONFIG_COPY=[];
   const links=(CONFIG.officialLinks||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noreferrer">${esc(x.label)}</a>`).join('');
   document.getElementById('configOutputs').innerHTML=[
     commandBlock('本地 preflight',preflight),
+    commandBlock('安装/刷新本地插件',plugin),
+    commandBlock('添加 Shopify Dev MCP',devMcp),
     commandBlock('Shopify CLI 登录指引',authLogin),
     commandBlock('只读连接核对',readOnlyCheck),
     commandBlock('只读连接审批文本',readOnly),
+    commandBlock('Mutation preview 审批文本',preview),
     commandBlock('低风险写入审批文本',controlledWrite),
+    commandBlock('写后复查 / 回滚文本',rollback),
+    commandBlock('授权包 JSON(本地/审批用)',packet),
     `<p style="margin-top:10px"><b>禁止项</b></p><ul>${listItems(CONFIG.forbidden||[])}</ul>`,
     `<p style="margin-top:10px"><b>官方资料入口</b></p><div class="link-list">${links}</div>`
   ].join('');
 }
+function evidenceText(rows){return rows.map(r=>[r.action,r.status,r.note].join(' ')).join(' ').toLowerCase()}
+function hasEvidence(rows,needles){const t=evidenceText(rows);return needles.some(n=>t.includes(n))}
+function computeAuthState(){
+  const cfg=loadShopifyConfig(),checks=loadChecklistState(),rows=loadEvidenceRows();
+  return {
+    cfg,checks,rows,
+    localReady:validShopifyDomain(cfg.storeDomain)&&cfg.confirmDevStore&&cfg.confirmNoSecrets&&cfg.confirmManualLogin,
+    preflight:checks['preflight-run']||hasEvidence(rows,['preflight','local_pass_auth_required']),
+    auth:checks['auth-user-present']||hasEvidence(rows,['auth_whoami','whoami','auth_user_present']),
+    read:checks['readonly-recorded']||hasEvidence(rows,['read_only','read_only_verified','只读']),
+    preview:checks['preview-ready']||hasEvidence(rows,['mutation_preview','preview_ready','preview']),
+    approval:checks['approval-text']||hasEvidence(rows,['approval','approval_recorded','审批']),
+    executed:hasEvidence(rows,['execute','executed_test_store','测试店执行']),
+    rollback:checks['rollback-plan']||hasEvidence(rows,['rollback','post_check_recorded','回滚','复查'])
+  }
+}
+function renderAuthStages(){
+  const s=computeAuthState();
+  const ready={'local-config':s.localReady,preflight:s.preflight,'manual-auth':s.auth,'read-only':s.read,'preview-approval':s.preview&&s.approval,'post-check':s.executed||s.rollback};
+  const evidence={'local-config':s.localReady?'store_domain + confirmations':'等待测试店域名和三条确认',preflight:s.preflight?'preflight evidence recorded':'等待本机 preflight 摘要','manual-auth':s.auth?'whoami/auth summary recorded':'等待用户现场授权','read-only':s.read?'read-only evidence recorded':'等待只读摘要','preview-approval':s.preview&&s.approval?'preview + approval recorded':'等待 preview 和单次审批','post-check':s.executed||s.rollback?'post-check evidence recorded':'等待执行/复查/回滚记录'};
+  document.getElementById('authStageGrid').innerHTML=(CONFIG.stageFlow||[]).map(x=>{const ok=!!ready[x.id],status=ok?(x.readyStatus||'local_ready'):x.status;return `<div class="auth-stage">${statusPill(status)}<h3>${esc(x.label)}</h3><p>${esc(x.detail)}</p><p class="next">证据:${esc(evidence[x.id]||x.evidence||'—')}</p><p class="next">下一步:${esc(ok?'进入下一阶段':x.nextAction)}</p></div>`}).join('');
+}
 function renderConfigSummary(){
   const cfg=loadShopifyConfig();
+  const state=computeAuthState();
   const statuses=(CONFIG.statuses||[]).map(x=>({...x}));
   const keyItem=statuses.find(x=>x.id==='deepseek-key');
   if(keyItem&&localStorage.getItem('dskey')){keyItem.status='local_browser_saved';keyItem.detail='DeepSeek Key 已保存到当前浏览器;服务器不保存。'}
   const domainItem=statuses.find(x=>x.id==='shopify-store-domain');
   if(domainItem&&validShopifyDomain(cfg.storeDomain)){
-    domainItem.status='local_ready';
-    domainItem.detail='测试店域名格式已保存到本浏览器;仍未登录 Shopify。';
+    domainItem.status=state.localReady?'local_config_ready':'local_ready';
+    domainItem.detail=state.localReady?'测试店域名和本地边界确认已保存;仍未登录 Shopify。':'测试店域名格式已保存到本浏览器;仍需三条边界确认。';
+  }
+  const preflightItem=statuses.find(x=>x.id==='t7-preflight');
+  if(preflightItem&&state.preflight){preflightItem.status='local_evidence_ready';preflightItem.detail='本地 preflight 摘要已进入浏览器证据台账。'}
+  const rwItem=statuses.find(x=>x.id==='shopify-read-write');
+  if(rwItem){
+    if(state.executed){rwItem.status='executed_test_store';rwItem.detail='已有测试店执行记录;继续做写后复查/回滚记录。'}
+    else if(state.preview&&state.approval){rwItem.status='preview_ready';rwItem.detail='已有 preview + 审批记录;仍需现场确认后才可执行。'}
+    else if(state.read){rwItem.status='read_ready';rwItem.detail='已有只读连接证据;写入仍需 preview 和人审。'}
+    else if(state.auth){rwItem.status='auth_required';rwItem.detail='已有现场授权摘要;下一步只读复核。'}
   }
   document.getElementById('configSummary').innerHTML=statuses.map(s=>`<div class="config-card">${statusPill(s.status)}<h3>${esc(s.label)}</h3><p>${esc(s.detail)}</p></div>`).join('');
 }
+function renderChecklist(){
+  const checks=loadChecklistState();
+  document.getElementById('authChecklist').innerHTML=(CONFIG.checklist||[]).map(x=>`<div class="auth-check"><label><input type="checkbox" ${checks[x.id]?'checked':''} onchange="toggleChecklist('${esc(x.id)}',this.checked)"/> ${esc(x.label)}</label><p>${esc(x.detail)}</p><div class="node-tags"><span>${esc(x.stage)}</span></div></div>`).join('');
+}
+function toggleChecklist(id,checked){const checks=loadChecklistState();checks[id]=!!checked;localStorage.setItem(CHECKLIST_KEY,JSON.stringify(checks));renderConfigCenter()}
+function renderOperationRunbooks(){
+  document.getElementById('operationRunbooks').innerHTML=(CONFIG.operationPlaybooks||[]).map(x=>`<div class="runbook-card">${statusPill(x.status)}<h4>${esc(x.title)}</h4><p><b>输入:</b> ${esc((x.inputs||[]).join(' / '))}</p><ul>${listItems(x.steps)}</ul><p><b>输出:</b> ${esc((x.outputs||[]).join(' / '))}</p><p><b>边界:</b> ${esc(x.boundary)}</p></div>`).join('');
+}
+function renderEvidenceActionOptions(){
+  const select=document.getElementById('evidenceAction');if(!select)return;
+  const current=select.value;
+  select.innerHTML=(CONFIG.evidenceActions||[]).map(x=>`<option value="${esc(x.id)}">${esc(x.label)}</option>`).join('');
+  if(current)select.value=current;
+  select.onchange=syncEvidenceStatus;
+  syncEvidenceStatus();
+}
+function syncEvidenceStatus(){
+  const actionId=document.getElementById('evidenceAction')?.value;
+  const action=(CONFIG.evidenceActions||[]).find(x=>x.id===actionId);
+  const status=document.getElementById('evidenceStatus');
+  if(action&&status&&!status.value.trim())status.value=action.status||'local_note';
+}
 function renderConfigEvidence(){
-  let rows=[];try{rows=JSON.parse(localStorage.getItem(EVIDENCE_KEY)||'[]')}catch(e){}
+  const rows=loadEvidenceRows();
   document.getElementById('configEvidenceLog').innerHTML='<tr><th>时间</th><th>店铺</th><th>动作</th><th>状态</th><th>边界</th><th>摘要</th></tr>'+
-    rows.map(r=>`<tr><td>${esc(r.time)}</td><td>${esc(r.storeDomain)}</td><td>${esc(r.action)}</td><td>${esc(r.status)}</td><td>${esc(r.boundary)}</td><td>${esc(r.note)}</td></tr>`).join('');
+    rows.map(r=>`<tr><td>${esc(r.time)}</td><td>${esc(r.storeDomain)}</td><td>${esc(r.actionLabel||r.action)}</td><td>${esc(r.status)}</td><td>${esc(r.boundary)}</td><td>${esc(r.note)}</td></tr>`).join('');
 }
 function addConfigEvidence(){
   const cfg=loadShopifyConfig();
+  const actionId=document.getElementById('evidenceAction').value;
+  const action=(CONFIG.evidenceActions||[]).find(x=>x.id===actionId)||{};
+  const status=document.getElementById('evidenceStatus').value.trim()||action.status||'local_note';
   const note=document.getElementById('evidenceNote').value.trim();
   if(!note){bubble('a','请先填写证据摘要。');return}
   if(containsSecretLikeText(note)){bubble('a','证据摘要看起来包含真实密钥格式,没有写入本地台账。');return}
-  let rows=[];try{rows=JSON.parse(localStorage.getItem(EVIDENCE_KEY)||'[]')}catch(e){}
-  rows.unshift({time:new Date().toISOString(),storeDomain:cfg.storeDomain||'',action:'manual_evidence_note',status:'local_note',boundary:'no Shopify login/read/write by this page',note});
+  const rows=loadEvidenceRows();
+  rows.unshift({time:new Date().toISOString(),storeDomain:cfg.storeDomain||'',action:actionId||'manual_evidence_note',actionLabel:action.label||actionId||'manual_evidence_note',status,boundary:action.boundary||'no Shopify login/read/write by this page',note});
   localStorage.setItem(EVIDENCE_KEY,JSON.stringify(rows.slice(0,20)));
   document.getElementById('evidenceNote').value='';
-  renderConfigEvidence();
+  document.getElementById('evidenceStatus').value='';
+  syncEvidenceStatus();
+  renderConfigCenter();
 }
-function clearConfigEvidence(){localStorage.removeItem(EVIDENCE_KEY);renderConfigEvidence()}
+function exportConfigEvidence(){
+  const packet=JSON.stringify(authorizationPacket(),null,2);
+  const blob=new Blob([packet],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='abi-t7-authorization-evidence.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);
+  bubble('a','已生成本地台账 JSON 下载。');
+}
+function copyAuthorizationPacket(){
+  const packet=JSON.stringify(authorizationPacket(),null,2);
+  if(navigator.clipboard){navigator.clipboard.writeText(packet).then(()=>bubble('a','已复制授权包 JSON。')).catch(()=>bubble('a','当前浏览器不允许直接复制,请使用导出按钮。'))}
+  else{bubble('a','当前浏览器不允许直接复制,请使用导出按钮。')}
+}
+function clearConfigEvidence(){localStorage.removeItem(EVIDENCE_KEY);renderConfigCenter()}
 function renderConfigCenter(){
   const cfg=loadShopifyConfig();
   if(document.getElementById('shopifyStoreDomain')){
@@ -718,11 +846,16 @@ function renderConfigCenter(){
     document.getElementById('approvalOwner').value=cfg.approvalOwner||'';
     document.getElementById('mutationTarget').value=cfg.mutationTarget||'';
     document.getElementById('plannedChange').value=cfg.plannedChange||'';
+    document.getElementById('rollbackPlan').value=cfg.rollbackPlan||'';
     document.getElementById('confirmDevStore').checked=!!cfg.confirmDevStore;
     document.getElementById('confirmNoSecrets').checked=!!cfg.confirmNoSecrets;
     document.getElementById('confirmManualLogin').checked=!!cfg.confirmManualLogin;
   }
+  renderEvidenceActionOptions();
   renderConfigSummary();
+  renderAuthStages();
+  renderChecklist();
+  renderOperationRunbooks();
   renderConfigOutputs();
   renderConfigEvidence();
 }
@@ -739,7 +872,7 @@ function doSearch(){const q=document.getElementById('q').value.trim();if(!q)retu
   const r=retrieve(q,8);document.getElementById('sres').innerHTML=r.length?r.map(({c})=>`<div class="res"><div class="m">${esc(c.doc)} › ${esc(c.sec)} · 来源 ${(c.src||[]).join('/')||'—'}</div><div class="tt">${esc(c.sec)}</div><div class="sn">${esc(c.text.replace(/\n/g,' ').slice(0,180))}…</div></div>`).join(''):'<div class="res">无匹配</div>'}
 // ---- chat ----
 let BACKEND=false;
-const STATIC_PREVIEW=(['127.0.0.1','localhost'].includes(location.hostname)&&location.port==='8765');
+const STATIC_PREVIEW=(['127.0.0.1','localhost'].includes(location.hostname)&&location.port&&location.port!=='8000');
 if(STATIC_PREVIEW){setNote()}else{fetch('/api/health').then(r=>r.ok?r.json():Promise.reject()).then(()=>{BACKEND=true;setNote()}).catch(()=>setNote())}
 function setNote(){const n=document.getElementById('cnote');
   if(BACKEND){n.innerHTML='已连接后端代理。API Key 由页面手动录入,随本次问题转发,服务器不保存。';n.style.background='var(--mint)'}
