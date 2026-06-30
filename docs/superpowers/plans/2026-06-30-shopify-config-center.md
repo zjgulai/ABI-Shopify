@@ -29,7 +29,7 @@ boundary: static-local-config-only
 | T7 测试店真实只读 | blocked_auth,待测试店域名和现场授权 | 用户创建/提供 development store 后,按配置中心生成命令和审批文本执行 |
 | T7 受控写 | blocked_auth,需先只读、再 mutation preview、再人审 | 仅在测试店、低风险对象、逐次审批后执行 |
 | UCP/Catalog 接入 | needs_external_verification | T7 测试店链路跑通后再推进 Agent profile、Catalog readiness |
-| 线上重部署 | 上一版已推送;本计划尚未实现 | 配置中心开发验收后再选择是否部署到 Tencent Cloud |
+| 线上重部署 | 已完成 | 2026-06-30 部署到 Tencent Cloud release `20260630T0815-84bde79`,线上配置中心 smoke 通过 |
 
 ## Product Decision
 
