@@ -1,13 +1,13 @@
 ---
 title: Codex 交接执行手册 · ABI 智能化独立站
 type: handoff
-updated: 2026-06-29
-summary: ABI 智能化独立站 Codex 执行手册:仓库结构、可移植构建脚本、T1–T7 状态、命令、验收与红线。
+updated: 2026-06-30
+summary: ABI 智能化独立站 Codex 执行手册:仓库结构、可移植构建脚本、T1–T7 状态、命令、验收与红线;已补线上发布状态 API/页面面板。
 ---
 
 # 🤝 Codex 交接执行手册 · ABI 智能化独立站
 
-> 当前事实层:整套知识库+产品已落地,CodeGraph 已初始化,腾讯云站点已上线到 `platform.shopify.lute-tlz-dddd.top`。T1/T2/T3/T4/T5 已有本地或生产证据;T4b 线上实际模型为 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,`bge-m3` 因轻量 CPU 资源限制未作为生产模型;T6 已补执行队列、离线入库工具、中文社媒入库 SOP 与 7 组视频深度萃取,后续中文平台真实案例仍待用户提供帖子正文/清单/截图文字;T7 已补测试店受控写 Runbook、授权前置包和本地 preflight 脚本,真实读写必须测试店与人审授权。
+> 当前事实层:整套知识库+产品已落地,CodeGraph 已初始化,腾讯云站点已上线到 `platform.shopify.lute-tlz-dddd.top`。线上 release/commit/hash 以公网 `/api/deploy-status` 为准;本轮盘点时为 `20260630T1148-8043768`。T1/T2/T3/T4/T5 已有本地或生产证据;T4b 线上实际模型为 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4jGraphStore`,`bge-m3` 因轻量 CPU 资源限制未作为生产模型;T6 已补执行队列、离线入库工具、中文社媒入库 SOP 与 7 组视频深度萃取,后续中文平台真实案例仍待用户提供帖子正文/清单/截图文字;T7 已补测试店受控写 Runbook、授权前置包、本地 preflight 脚本和网站配置中心,真实读写必须测试店与人审授权。
 
 ## 0. 环境与一键重建
 - 仓库根:`<repo>/kb`(本机为 `/Users/pray/project/shopify/kb`)。
@@ -87,13 +87,13 @@ kb/
   cd kb/site/deploy
   docker compose -p shopify-kb -f docker-compose.yml -f docker-compose.behind-proxy.yml -f docker-compose.vector.yml up -d --build
   ```
-- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本地 compose config 已确认 vector args、Neo4j 服务和回环端口;本地当前图谱为 260 实体 / 785 关系(0 悬挂)。上一版线上 T4b 证据:`eval_retrieval.py` 为 `pass_rate=1.00(5/5), top1_rate=0.60, mrr=0.73`;A/B smoke 相比 LSA pass/top1 持平、MRR 略低;Neo4j 线上导入证据仍是上一版 213 实体 / 593 关系。新增 T6/SOP 本地内容上线后需重跑线上导入与 eval 复核。
-- 线上公开检查:`/api/health` 返回 `client_key_supported=true`,`server_key_set=false`;页面仍为手动录入 DeepSeek API Key。
+- 已验收:默认 LSA 评测 `pass_rate=1.00(5/5)`;本地 compose config 已确认 vector args、Neo4j 服务和回环端口;本地当前图谱为 260 实体 / 785 关系(0 悬挂)。线上 `/api/deploy-status` 返回 `chunks_loaded=647`,`embedder=st`,`store=chroma`,`model=BAAI/bge-small-zh-v1.5`,`vector_dim=512`,`graph_backend=Neo4jGraphStore`;`shopifykb-app` / `shopifykb-neo4j` 均 healthy。
+- 线上公开检查:`/api/health` 返回 `client_key_supported=true`,`retriever=true`,`server_key_set=false`;页面仍为手动录入 DeepSeek API Key。
 
 ### ✅ T5 网站上线(P1)
 - 已执行:腾讯云轻量服务器独立 Docker project `shopify-kb`;共享 nginx 反代 `platform.shopify.lute-tlz-dddd.top`;HTTPS 证书独立签发。
 - 运行边界:服务器 `.env` 仅模型配置,不保存 `DEEPSEEK_API_KEY`;API Key 在网站页面手动录入。
-- **验收**:`https://platform.shopify.lute-tlz-dddd.top/api/health` 返回 ok;无 key 调用 `/api/chat` 返回页面填 key 提示。真实 provider 问答需用户在页面输入 Key 后授权验证。
+- 生产验收以 `/api/deploy-status` 为准;本轮盘点时 release 为 `20260630T1148-8043768`。`/api/health` 返回 ok;`/api/deploy-status` 返回 release/commit/hash/runtime;`#config` 页面“线上发布状态”显示 647 chunks、`BAAI/bge-small-zh-v1.5` 和 `server_key_set=false`;无 key 调用 `/api/chat` 返回页面填 key 提示。真实 provider 问答需用户在页面输入 Key 后授权验证。
 
 ### ▶ T6 多源深挖(P1,持续/工具已落地)
 - 已补:`kb/90-AI能力地图/T6多源深挖执行队列.md` 与 `kb/tools/t6_multisource_intake.py`。

@@ -2,7 +2,7 @@
 title: ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
 type: plan
 updated: 2026-06-30
-summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 7 组精选视频萃取,T7 已补测试店授权前置包和网站配置中心。
+summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 7 组精选视频萃取,T7 已补测试店授权前置包和网站配置中心;线上发布状态 API/面板已部署。
 ---
 
 # 🧭 ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
@@ -14,7 +14,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 | T2 | 网站迭代 | 已完成节点专题文档 modal、P0/P1/P2 路线图、页脚 10 源、页面手动录入 API Key;本轮修正旧知识块数量文案 |
 | T3 | 完整 PRD | 本轮新增 `PRD_ABI智能化独立站.md`,覆盖 14 节点与横切层 |
 | T4 | 检索生产化 | T4a/T4b 已完成;线上启用 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,A/B smoke 通过 pass/top1 无退化;`bge-m3` 在轻量 CPU 上未上线 |
-| T5 | 网站上线 | 已上线到 `platform.shopify.lute-tlz-dddd.top`;2026-06-30 已重部署配置中心版本 release `20260630T0815-84bde79`;服务器不保存 API Key;真实 provider 问答需用户页面录入 Key |
+| T5 | 网站上线 | 已上线到 `platform.shopify.lute-tlz-dddd.top`;线上 release/commit/hash 以 `/api/deploy-status` 与配置页“线上发布状态”为准;本轮盘点时 release 为 `20260630T1148-8043768`;服务器不保存 API Key;真实 provider 问答需用户页面录入 Key |
 | T6 | 多源深挖 | 已有 7 组精选内容级/UI 转写级萃取;Ac Hampton `vXmF10ZNmoo` 为页面/章节/采样帧 v0.1,`e7oiWBn7KwU`/`xZjkLrHJheE`/`Y3iXtMjE4bw`/`NX-5ChIZBRQ`/`WkUkzdMnRHo` 为 UI 转写级,`1EgjCxk0-kM`/`aKIHLrdsv8o` 为 Apps 页面说明级 v0.1;Rihab Seb / Learn With Shopify / Emma Grede / Austin Rabin / Code with Chris / 梧桐小讲堂跨频道资料已入库;T6 执行队列、中文社媒入库 SOP 与离线入库工具已落地 |
 | T7 | 接 AI-Toolkit/UCP | 测试店受控写验收 Runbook、测试店授权前置包与网站配置中心已落地;本地 preflight 可运行;真实读写仍待测试店授权与人审批准 |
 
@@ -25,7 +25,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 
 **T2 · 网站迭代(P0,0.5 天)**
 - 做法:`build_site_data.py` 已加 `node.docs`(各节点专题文档);再(a)前端节点详情渲染「专题文档」可点开 modal;(b)路线图换 P0/P1/P2;(c)页脚改「10 源 + ABI」;(d)`sources` 注入页脚。重建 `kb_data.js` + `node --check` JS。
-- 验收:点节点能看到并打开其专题文档;下一步/页脚为最新;本地站点统计 640 chunks / 260 entities / 785 relations。
+- 验收:点节点能看到并打开其专题文档;下一步/页脚为最新;本地站点统计 647 chunks / 260 entities / 785 relations。
 
 **T3 · 完整 PRD(P0,0.5 天)**
 - 做法:基于 §C 的「每节点主-副工具×实现方法」核心表,补全 PRD 文档(背景/定位/用户/范围/架构/各节点功能需求/非功能需求/验收/里程碑/风险)。
@@ -35,7 +35,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 - 已做:`retriever.py` 可选 `LSA/ST/OpenAI` 嵌入、`numpy/Chroma` store、`JSON/Neo4j` graph backend;`mcp_server` 暴露 `kb_status/kb_search/kb_ask`;新增 `eval_retrieval.py` 和 `neo4j_export.py`。
 - T4b 已补:`docker-compose.vector.yml`、`requirements.vector.txt`、`entrypoint.sh`、`compare_retrieval.py` 与 `T4b生产检索启用TODO.md`。
 - 本地验收:默认 LSA `eval_retrieval.py` 5/5;vector compose config 已确认;当前图谱 260 实体 / 785 关系(0 悬挂)并可导出 Cypher。
-- 线上验收:腾讯云启用 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`;manifest 为 `embedder=st/store=chroma/vector_dim=512/graph_backend=Neo4jGraphStore`;上一版 eval `pass_rate=1.00(5/5)`;A/B smoke 与 LSA baseline 的 pass/top1 持平、MRR 略低,因此只记录“生产后端已启用且关键 smoke 无 pass/top1 退化”。`bge-m3` 因轻量 CPU 前台构建超过 7 分钟未上线;新增 inbox SOP 上线后需重跑线上导入与 eval。
+- 线上验收:腾讯云启用 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`;最新 `/api/deploy-status` 显示 `chunks_loaded=647`,`embedder=st`,`store=chroma`,`vector_dim=512`,`graph_backend=Neo4jGraphStore`;上一版 eval `pass_rate=1.00(5/5)`;A/B smoke 与 LSA baseline 的 pass/top1 持平、MRR 略低,因此只记录“生产后端已启用且关键 smoke 无 pass/top1 退化”。`bge-m3` 因轻量 CPU 前台构建超过 7 分钟未上线。
 
 **T5 · 网站上线(P1,0.5 天,用户侧)**
 - 做法:DNS A 记录 → 防火墙 80/443 → `cp .env.example .env`(仅模型配置,不填 Key)→ `docker compose -p shopify-kb up -d --build` → 浏览器页面手动录入 DeepSeek API Key → 验证 https 问答(详见 `site/部署SOP.md`)。
@@ -89,6 +89,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 - [x] T7 测试店授权前置包 + 本地 preflight 脚本
 - [x] T7 网站配置与授权中心(测试店域名、preflight 命令、人审文本、本地证据台账)
 - [x] 配置中心版本部署到腾讯云并完成线上只读 smoke(HTTPS、health、Playwright 桌面/移动端)
+- [x] 线上发布状态 API/页面面板(`/api/deploy-status`,release/hash/runtime 可视化)
 - [ ] T7 接 AI-Toolkit/UCP 测试店真实读写(待授权+人审)
 
 ## F. 风险与对策

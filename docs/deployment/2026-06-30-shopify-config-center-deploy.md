@@ -3,11 +3,13 @@ title: Shopify 配置中心版本腾讯云部署验收记录
 type: deployment_evidence
 date: 2026-06-30
 target: platform.shopify.lute-tlz-dddd.top
-release: 20260630T0815-84bde79
+release: 20260630T1148-8043768
 boundary: production-readonly-smoke-no-provider-call-no-shopify-store-access
 ---
 
 # Shopify 配置中心版本腾讯云部署验收记录
+
+> 发布状态追加验收 release: `20260630T1148-8043768`。原 `20260630T0815-84bde79` 为配置中心首个线上验证版本,本文件保留历史记录并追加发布状态批次证据。当前生产 release 仍以 `/api/deploy-status` 为准。
 
 ## 1. 部署范围
 
@@ -78,3 +80,29 @@ boundary: production-readonly-smoke-no-provider-call-no-shopify-store-access
 
 - T5 真实 provider 问答仍需用户在页面手动录入 DeepSeek API Key 后执行。
 - T7 真实读店铺/写测试商品仍需用户创建或提供 Shopify development store,并现场执行 `shopify auth login` 与逐次人审授权。
+
+## 7. 发布状态批次追加验收
+
+- Release:`/opt/shopify-kb/releases/20260630T1148-8043768`。
+- `current` 指向:`/opt/shopify-kb/releases/20260630T1148-8043768`。
+- 本地提交与远端分支 SHA:`8043768f39c7924a56317d62eb9b6ed0ead4c3a5`。
+- 部署时间:`2026-06-30T11:53:52+08:00`。
+- `index.html` sha256:`7bde6d9e36b457f1e601810bfa93da862b74cd19a15cf8284c75b1999b9030b6`。
+- `kb_data.js` sha256:`36d4a1c743e86996c8d5ea51fdfcca402dd0ae3a7bc5d8ba6cd7041241716e32`。
+- `chunks.jsonl` sha256:`b9ad51af710df5aa99055e90093d246859b1eedeafdfc97595fa2d8fda5f15a8`。
+- `/api/deploy-status`:
+  - ok=true
+  - status_file=true
+  - release=`20260630T1148-8043768`
+  - runtime.retriever=true
+  - runtime.retriever_status.manifest.model=`BAAI/bge-small-zh-v1.5`
+  - runtime.retriever_status.manifest.store=`chroma`
+  - runtime.retriever_status.graph_backend=`Neo4jGraphStore`
+  - runtime.retriever_status.chunks_loaded=647
+  - server_key_set=false
+- Playwright 线上 smoke:
+  - `#config` 页面“线上发布状态”有 5 张卡。
+  - 页面显示 release `20260630T1148-8043768`、commit 前缀、`647 chunks`、`BAAI/bge-small-zh-v1.5` 和 `server_key_set=false`。
+  - 390px 移动视口无横向溢出。
+
+边界不变:本批只做生产只读发布状态验收,未调用 provider,未登录 Shopify,未读取店铺,未写店铺,未输出密钥值。
