@@ -43,6 +43,7 @@ Options:
 Boundaries:
   - Only rsyncs kb/ into a new release directory.
   - Does not copy .env, API keys, or root-level private keys.
+  - Does not copy ignored Excel originals (*.xlsx); structured CSV/JSONL assets are deployed.
   - Keeps runtime .env as a symlink to /opt/shopify-kb/shared/.env.
   - Uses compose project shopify-kb with behind-proxy + vector files.
 USAGE
@@ -236,6 +237,7 @@ rsync -az --delete \
   --exclude '/site/deploy/.env' \
   --exclude '__pycache__/' \
   --exclude '.DS_Store' \
+  --exclude '*.xlsx' \
   -e "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=accept-new" \
   kb/ "${SSH_TARGET}:${REMOTE_ROOT}/releases/${RELEASE}/kb/"
 
