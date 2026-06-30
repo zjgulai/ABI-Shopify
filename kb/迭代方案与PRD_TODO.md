@@ -2,7 +2,7 @@
 title: ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
 type: plan
 updated: 2026-06-30
-summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 7 组精选视频萃取,T7 已补测试店授权前置包和网站配置中心;线上发布状态 API/面板已部署。
+summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节点主-副工具 × 实现方法 PRD 核心表与 TODO。T6 已完成 inbox 来源包受控复制、站外全域增长组合 SOP、广告诊断 SOP,T7 已补测试店授权前置包和网站配置中心;线上发布状态 API/面板已部署。
 ---
 
 # 🧭 ABI 智能化独立站 · 迭代方案 / PRD 核心 / TODO
@@ -15,7 +15,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 | T3 | 完整 PRD | 本轮新增 `PRD_ABI智能化独立站.md`,覆盖 14 节点与横切层 |
 | T4 | 检索生产化 | T4a/T4b 已完成;线上启用 `BAAI/bge-small-zh-v1.5 + Chroma + Neo4j`,A/B smoke 通过 pass/top1 无退化;`bge-m3` 在轻量 CPU 上未上线 |
 | T5 | 网站上线 | 已上线到 `platform.shopify.lute-tlz-dddd.top`;线上 release/commit/hash 以 `/api/deploy-status` 与配置页“线上发布状态”为准;本轮盘点时 release 为 `20260630T1148-8043768`;服务器不保存 API Key;真实 provider 问答需用户页面录入 Key |
-| T6 | 多源深挖 | 已有 7 组精选内容级/UI 转写级萃取;Ac Hampton `vXmF10ZNmoo` 为页面/章节/采样帧 v0.1,`e7oiWBn7KwU`/`xZjkLrHJheE`/`Y3iXtMjE4bw`/`NX-5ChIZBRQ`/`WkUkzdMnRHo` 为 UI 转写级,`1EgjCxk0-kM`/`aKIHLrdsv8o` 为 Apps 页面说明级 v0.1;Rihab Seb / Learn With Shopify / Emma Grede / Austin Rabin / Code with Chris / 梧桐小讲堂跨频道资料已入库;T6 执行队列、中文社媒入库 SOP 与离线入库工具已落地 |
+| T6 | 多源深挖 | 已有 7 组精选内容级/UI 转写级萃取;Ac Hampton `vXmF10ZNmoo` 为页面/章节/采样帧 v0.1,`e7oiWBn7KwU`/`xZjkLrHJheE`/`Y3iXtMjE4bw`/`NX-5ChIZBRQ`/`WkUkzdMnRHo` 为 UI 转写级,`1EgjCxk0-kM`/`aKIHLrdsv8o` 为 Apps 页面说明级 v0.1;Rihab Seb / Learn With Shopify / Emma Grede / Austin Rabin / Code with Chris / 梧桐小讲堂跨频道资料已入库;T6 执行队列、中文社媒入库 SOP、inbox 受控来源包、站外全域增长组合 SOP、广告诊断 SOP 与离线入库工具已落地 |
 | T7 | 接 AI-Toolkit/UCP | 测试店受控写验收 Runbook、测试店授权前置包与网站配置中心已落地;本地 preflight 可运行;真实读写仍待测试店授权与人审批准 |
 
 ## B. 各项执行方案
@@ -25,7 +25,7 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 
 **T2 · 网站迭代(P0,0.5 天)**
 - 做法:`build_site_data.py` 已加 `node.docs`(各节点专题文档);再(a)前端节点详情渲染「专题文档」可点开 modal;(b)路线图换 P0/P1/P2;(c)页脚改「10 源 + ABI」;(d)`sources` 注入页脚。重建 `kb_data.js` + `node --check` JS。
-- 验收:点节点能看到并打开其专题文档;下一步/页脚为最新;本地站点统计 647 chunks / 260 entities / 785 relations。
+- 验收:点节点能看到并打开其专题文档;下一步/页脚为最新;本地站点统计 672 chunks / 260 entities / 785 relations。
 
 **T3 · 完整 PRD(P0,0.5 天)**
 - 做法:基于 §C 的「每节点主-副工具×实现方法」核心表,补全 PRD 文档(背景/定位/用户/范围/架构/各节点功能需求/非功能需求/验收/里程碑/风险)。
@@ -85,6 +85,8 @@ summary: 盘点 T1–T7 当前执行状态,给出未完成任务计划;含每节
 - [x] T6 多源深挖执行队列 + 离线入库工具
 - [x] T6 视频深度萃取首批 7 组入库(browser-harness 页面/章节/采样帧或 UI 转写)
 - [x] T6 抖音/小红书入库 SOP(待真实帖子正文/清单/截图文字后写具体案例)
+- [x] T6 inbox 独立站实操资料包受控来源区(`_sources/inbox-independent-site`) + manifest/source_inventory
+- [x] T6 inbox 站外全域增长组合 SOP + 广告诊断 SOP 入库
 - [x] T7 测试店受控写验收 Runbook
 - [x] T7 测试店授权前置包 + 本地 preflight 脚本
 - [x] T7 网站配置与授权中心(测试店域名、preflight 命令、人审文本、本地证据台账)
